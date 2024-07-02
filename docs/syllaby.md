@@ -1,16 +1,18 @@
 ## Syllaby Archive
 
+* [Spring 2025](spring_2025.md)
+
 * [Fall 2024](fall_2024.md)
 
 * [Summer 2024](summer_2024.md)
 
 * [Spring 2024](spring_2024.md)
 
-* [Fall 2023](fall_2023.md)
+<!-- * [Fall 2023](fall_2023.md)
 
 * [Summer 2023](summer_2023.md)
 
-* [Spring 2023](spring_2023.md)
+* [Spring 2023](spring_2023.md) -->
 
 <!-- 
 

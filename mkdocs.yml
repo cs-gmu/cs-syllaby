@@ -2,5 +2,9 @@ site_name: CS DEPARTMENT SYLLABY PAGE
 
 nav:
   - Syllaby: syllaby.md
+  - Fall 2024: fall_2024.md
+  - Spring 2024: spring_2024.md
+  - Spring 2025: spring_2025.md
+  - Summer 2024: summer_2024.md
 
 
