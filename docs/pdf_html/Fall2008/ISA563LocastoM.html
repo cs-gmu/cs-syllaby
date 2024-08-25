@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>ISA 563: Fundamentals of Systems Programming</title>
+  </head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0000FF" 
+      vlink="#800000" alink="#FF00FF">
+ <div align="center">
+ <!-- CRN: 74023 -->
+ <h1>ISA 563: Fundamentals of Systems Programming (Fall 2008)</h1>
+ <i> Introduces systems and network programming using lectures and
+ hands-on Labs. Covers ANSI C programming, system libraries and APIs,
+ forking and threads, synchronization, debugging, and inter-process
+ communications. </i> <br/>
+
+ <a href="http://www.cs.gmu.edu/~mlocasto/">Michael E. Locasto</a>
+ </div> 
+
+ <hr width="100%" noshade="noshade"/> 
+
+ <div align="center"> 
+
+ [<a href="http://www.gmu.edu/cte/Teaching/Getting_Started/Designing_Syllabus/academic_honesty.html">GMU's Academic Honesty Page</a>] 
+ [<a href="http://honorcode.gmu.edu/">GMU Honor Code</a>]
+ [<a href="http://www.acm.org/constitution/code.html">ACM Code of Ethics</a>] 
+
+ [<a href="#policies">policies</a>] 
+ [<a href="http://registrar.gmu.edu/calendars/Fall08calendar.pdf">academic calendar (PDF)</a>] 
+ [<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">PuTTY (SSH client)</a>]
+ <!-- [<a href="links.html">links</a>]  -->
+ <!-- [<a href="faq.html">FAQ</a>]  -->
+ </div> 
+
+ <hr width="100%" noshade="noshade"/>
+
+ <p>
+ <a name="geninfo"></a>
+ <table width="100%" border="0" cellpadding="1" cellspacing="0">
+ <tr bgcolor="#3300AA">
+  <td><font color="#FFFFFF">General Information:</a></td>
+ </tr>
+ </table>
+ <p>
+ <b>Prerequisites:</b> INFS 590 or permission of Instructor. I also
+    assume you have access to a recent (2.6.x) Linux enviroment, a
+    decent editor (such as emacs or vi) or IDE, and the <a
+    href="http://www.gnu.org/software/gcc/">gcc</a> compiler.
+ <p>
+
+ <b>Description:</b> This course is a hands-on in-depth introduction
+    to the structure of the Unix operating system with emphasis to the
+    system libraries using ANSI C. It is appropriate for students who
+    want to learn the principles of how to design and implement system
+    applications. The course begins with an introduction of the C
+    programming language and continues with the basic Unix Operating
+    System data structures and Application Programming Interfaces
+    (APIs). Using hands-on laboratory exercises students will be
+    exposed to the concepts of inter-process communications,
+    synchronization, and process and thread management with emphasis
+    on security applications. 
+ <p>
+ <b>Goals:</b> 
+ <ul>
+  <li>Demystify systems programming</li>
+  <li>Focus on principles, methods, and tools</li>
+  <li>Sound application design principles</li>
+  <li>Efficient and Secure implementation strategies</li>
+  <li>Concepts and mechanics of secure programming.</li>
+  <li>UNIX operating system programming environment.</li>
+  <li>Develop applications using popular tools and systems including C, UNIX, IPC, and threading.</li>
+ </ul>
+
+ <p>
+ <b>Personnel:</b>
+  <table border="1" cellpadding="2" cellspacing="0" width="100%"> 
+   <tr>
+    <td><b>Name</b></td>
+    <td><b>Role</b></td>
+    <td><b>email</b></td>
+    <td><b>Office Hours</b></td>
+   </tr>
+   <tr>
+    <td><a href="http://www.cs.gmu.edu/~mlocasto/">Michael E. Locasto</a></td>
+    <td>Instructor</td>
+    <td>mlocasto</td>
+    <td>17:00 - 19:00 :: Thursdays, ST2 Rm 333, or by appointment</td>
+   </tr>
+   <tr>
+    <td>Venkatesh Laxminarayanan</td>
+    <td>TA</td>
+    <td>vlaxmina</td>
+    <td>14:00 - 15:00 :: Fridays, location TBD</td>
+   </tr>
+  </table>
+ <p>
+ <b>Class Time:</b> Thursday 19:20 -- 22:00 <br/>
+ <b>Class Duration:</b> August 25<sup>th</sup> to December 17<sup>th</sup>
+    <font color="red">*</font> <br/>
+ <b>Class Location:</b> Innovation Hall 223 <a href="http://eagle.gmu.edu/map/fairfax.php?building=innovation_hall">[map]</a> 
+     <a href="http://itu.gmu.edu/innovationhall/images/InnovationHall-2ndFloor_large.jpg">[floor plan]</a> <br/>
+ <p>
+ <font color="red">* the first meeting will be on Thursday, September 4<sup>th</sup>, 2008.</font><br/> 
+ <p>
+ <table width="100%" border="0" cellpadding="1" cellspacing="0">
+ <tr bgcolor="#3300AA">
+  <td><font color="#FFFFFF">Course Texts:</a></td>
+ </tr>
+ </table>
+ <br/>
+ <b>Required:</b>
+ <p>
+  <ol>
+   <li>
+    <i>The C Programming Language, Second Edition</i> by 
+    <a href="http://cm.bell-labs.com/cm/cs/cbook/">Kernighan and Ritchie</a>.
+    (ISBN 0-13-110362-8) 
+    [<a href="http://www.prenhall.com/catalog/academic/product/1,4096,0131103628,00.html">Prentice Hall</a>]
+    [<a href="http://www.amazon.com/exec/obidos/tg/detail/-/0131103628?v=glance">Amazon</a>] (<a href="http://en.wikipedia.org/wiki/The_C_Programming_Language_(book)">wikipedia entry</a>)
+   </li>
+   <li>
+Advanced Programming in the UNIX(R) Environment by W. Richard Stevens, Addison-Wesley Professional; 2nd edition (June 17, 2005), ISBN-10: 0201433079, ISBN-13: 978-0201433074. 
+   </li>
+  </ol>
+ <p>
+ <b>Supplemental Texts: (not required, but helpful C references)</b>
+ <p>
+  <ol>
+   <li>
+     <i>UNIX Systems Programming: Communication, Concurrency and Threads, 2 Ed.</i> by Kay Robbins and Steve Robbins. San Antonio, Texas, 
+    Prentice Hall ISBN-10:0130424110, ISBN-13: 978013042411
+   </li>
+   <li>
+    <i>Practical C Programming, Third Edition</i> by
+    Steve Oualline. (ISBN 1-56592-306-5)
+    [<a href="http://search.barnesandnoble.com/booksearch/isbninquiry.asp?userid=VJ6ZPTyBhA&pwb=1&ean=9781565923065">Barnes &amp; Noble</a>][<a href="http://www.amazon.com/exec/obidos/ASIN/1565923065/104-1806386-2623905">Amazon</a>][<a href="http://www.oreilly.com/catalog/pcp3/index.html">OReilly</a>]
+   </li>
+    <li>
+     <i>Mastering Algorithms with C</i> by Kyle Loudon. (ISBN 1-56592-453-3).
+     [<a href="http://www.amazon.com/exec/obidos/tg/detail/-/1565924533/104-9169115-0663963?v=glance">Amazon</a>][<a href="http://www.oreilly.com/catalog/masteralgoc">OReilly</a>][<a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?isbn=1565924533&itm=1">Barnes &amp; Noble</a>]
+    </li>
+    <li>
+      <i>C How To Program, Fourth Edition</i> by Harvey and Paul Deitel.
+      (ISBN 0-13-142644-3). [<a href="http://vig.prenhall.com/catalog/academic/product/0,1144,0131426443,00.html">Prentice Hall</a>][<a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?isbn=0131426443&TXT=Y&itm=4">Barnes &amp Noble</a>][<a href="http://www.amazon.com/exec/obidos/tg/detail/-/0131426443/104-1806386-2623905">Amazon</a>]
+    </li>
+  </ol>
+  <p>
+  If you're really interested in learning C and mastering it, then
+  the Loudon book is a good second step. The Oualline book covers much of what
+  Deitel<sup>2</sup> covers on C anyway. 
+
+<p>
+ <a name="schedule"></a>
+ <table width="100%" border="0" cellpadding="1" cellspacing="0">
+ <tr bgcolor="#3300AA">
+  <td><font color="#FFFFFF">Lecture Notes and Course Schedule:</a></td>
+ </tr>
+ </table>
+
+<ul>
+  <li> Week  1: Class Introduction and Overview.  The ANSI C Programming Language.
+  <li> Week  2: Programming using ANSI C: Types, Operators and Expressions. 
+  <li> Week  3: Programming using ANSI C: Control Flow, Functions and Program structure.
+  <li> Week  4: Programming using ANSI C: Pointers, Arrays, and Structures.
+  <li> Week  5: Programming using ANSI C: Debug methods including GDB.
+  <li> Week  6: Standard I/O Library: I/O, String, Math and Utility functions.
+  <li> Week  7: System Data Files and Information and the PROC File System.
+  <li> Week  8: Communicating with the OS: Libraries & System Calls.
+  <li> Week  9: Process Control: Forking.
+  <li> Week 10: Process Control II: Threads.
+  <li> Week 11: Basic Inter-Process Communication & Synchronization.
+  <li> Week 12: Advanced Inter-Process Communication & Synchronization.
+  <li> Week 13: Searching Data Patterns
+</ul>
+
+ <p>
+ <a name="policies"></a>
+ <table width="100%" border="0" cellpadding="1" cellspacing="0">
+ <tr bgcolor="#3300AA">
+  <td><font color="#FFFFFF">Course Policies:</a></td>
+ </tr>
+ </table>
+ <p>
+ The point of this course is your intellectual enlightenment and enjoyment.
+ I want the course to run as smoothly as possible, so I encourage feedback
+ on both positive and negative aspects. Feel free to drop by my office,
+ send email, or leave a note. Note that the Instructor reserves the right
+ to modify the schedule and topics as needed.
+ <p>
+ Your <b>grade</b> is based on 1000 points and is split according to the
+ following schedule:
+  <ul>
+    <li> 40% homeworks</li>
+    <li> 35% final exam</a></li>
+    <li> 20% mini-project</li>
+    <li> 5%  class participation </li>
+  </ul>
+ When your work is returned to you, check it. If you disagree about a
+ particular solution, please document in writing what you think the
+ grading mistake is. Please do not make immediate verbal complaints to
+ the professor or TA.
+ <p>
+ <b>Class participation</b> counts toward your grade. I expect and
+    encourage thoughtful and lively participation and discussion.
+ <p>
+ I typically DO NOT <b>scale</b> or <b>curve</b> grades unless there is
+ a classwide epidemic of failure. Plan your work and effort based on the
+ assumption that there will be no curve.
+ <p>
+ You can <b>contact me</b> via email, but please start your email's subject 
+ with the string <code>[ISA563]</code>; it helps me filter my email. Short
+ (one or two paragraphs) emails are appreciated.
+ <p>
+ While <b>collaboration</b> on homework and projects is greatly
+ encouraged, your answers must be original. No collaboration is
+ allowed on the final or midterm. Students collaborating on
+ assignments must clearly list with whom they worked.  The bottom line
+ is that general discussion is welcome, but specific solutions cross
+ the line.
+ <p>
+ <b>Cheating and Plagiarism</b> are absolutely forbidden.  I assume
+ that you have read GMU's policies on academic honesty.  Please refer
+ to the links at the top of this page. It is almost absurdly easy to
+ discover cheating.
+ <p>
+ <b>Late</b> work is generally not accepted. Late submission loses 10%
+ of the assignment's value per day.
+ <p>
+
+ Disability Statement: If you have a documented learning disability or
+ other condition that may affect academic performance you should make
+ sure this documentation is on file with the Office of Disability
+ Services: (SUB I, Rm. 222; 993-2474; www.gmu.edu/student/drc) to
+ determine the accommodations you need and talk with me to discuss
+ your accommodation needs.
+
+ <hr>
+ last updated: 2 September 2008<br/>
+ Copyright &copy; Michael E. Locasto 2008
+ <!--
+   $Id$
+   -->
+</body>
+</html>

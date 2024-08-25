@@ -1,0 +1,1928 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 12">
+<meta name="Originator" content="Microsoft Word 12">
+<link rel="File-List"
+href="Design_and_Implementation_of_Software_for_the_Web_files/filelist.xml">
+<link rel="Edit-Time-Data"
+href="Design_and_Implementation_of_Software_for_the_Web_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Design and Implementation of Software for the Web</title>
+<!--[if gte mso 9]><xml>
+ <o:documentproperties>
+  <o:author>jbaldo</o:author>
+  <o:lastauthor>jbaldo</o:lastauthor>
+  <o:revision>3</o:revision>
+  <o:totaltime>7</o:totaltime>
+  <o:created>2008-08-24T16:56:00Z</o:created>
+  <o:lastsaved>2008-08-24T17:03:00Z</o:lastsaved>
+  <o:pages>3</o:pages>
+  <o:words>1466</o:words>
+  <o:characters>8361</o:characters>
+  <o:company>Oracle Corporation</o:company>
+  <o:lines>69</o:lines>
+  <o:paragraphs>19</o:paragraphs>
+  <o:characterswithspaces>9808</o:characterswithspaces>
+  <o:version>12.00</o:version>
+ </o:documentproperties>
+</xml><![endif]-->
+<link rel="themeData"
+href="Design_and_Implementation_of_Software_for_the_Web_files/themedata.thmx">
+<link rel="colorSchemeMapping"
+href="Design_and_Implementation_of_Software_for_the_Web_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:worddocument>
+  <w:trackmoves>false</w:trackmoves>
+  <w:trackformatting/>
+  <w:validateagainstschemas/>
+  <w:saveifxmlinvalid>false</w:saveifxmlinvalid>
+  <w:ignoremixedcontent>false</w:ignoremixedcontent>
+  <w:alwaysshowplaceholdertext>false</w:alwaysshowplaceholdertext>
+  <w:donotpromoteqf/>
+  <w:lidthemeother>EN-US</w:lidthemeother>
+  <w:lidthemeasian>X-NONE</w:lidthemeasian>
+  <w:lidthemecomplexscript>X-NONE</w:lidthemecomplexscript>
+  <w:compatibility>
+   <w:breakwrappedtables/>
+   <w:snaptogridincell/>
+   <w:wraptextwithpunct/>
+   <w:useasianbreakrules/>
+   <w:dontgrowautofit/>
+   <w:splitpgbreakandparamark/>
+   <w:dontvertaligncellwithsp/>
+   <w:dontbreakconstrainedforcedtables/>
+   <w:dontvertalignintxbx/>
+   <w:word11kerningpairs/>
+   <w:cachedcolbalance/>
+  </w:compatibility>
+  <w:browserlevel>MicrosoftInternetExplorer4</w:browserlevel>
+  <m:mathpr>
+   <m:mathfont m:val="Cambria Math"/>
+   <m:brkbin m:val="before"/>
+   <m:brkbinsub m:val="&#45;-"/>
+   <m:smallfrac m:val="off"/>
+   <m:dispdef/>
+   <m:lmargin m:val="0"/>
+   <m:rmargin m:val="0"/>
+   <m:defjc m:val="centerGroup"/>
+   <m:wrapindent m:val="1440"/>
+   <m:intlim m:val="subSup"/>
+   <m:narylim m:val="undOvr"/>
+  </m:mathpr></w:worddocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:latentstyles deflockedstate="false" defunhidewhenused="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:lsdexception locked="false" priority="0" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:lsdexception locked="false" priority="9" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:lsdexception locked="false" priority="9" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 2"/>
+  <w:lsdexception locked="false" priority="9" qformat="true" name="heading 3"/>
+  <w:lsdexception locked="false" priority="9" qformat="true" name="heading 4"/>
+  <w:lsdexception locked="false" priority="9" qformat="true" name="heading 5"/>
+  <w:lsdexception locked="false" priority="9" qformat="true" name="heading 6"/>
+  <w:lsdexception locked="false" priority="9" qformat="true" name="heading 7"/>
+  <w:lsdexception locked="false" priority="9" qformat="true" name="heading 8"/>
+  <w:lsdexception locked="false" priority="9" qformat="true" name="heading 9"/>
+  <w:lsdexception locked="false" priority="39" name="toc 1"/>
+  <w:lsdexception locked="false" priority="39" name="toc 2"/>
+  <w:lsdexception locked="false" priority="39" name="toc 3"/>
+  <w:lsdexception locked="false" priority="39" name="toc 4"/>
+  <w:lsdexception locked="false" priority="39" name="toc 5"/>
+  <w:lsdexception locked="false" priority="39" name="toc 6"/>
+  <w:lsdexception locked="false" priority="39" name="toc 7"/>
+  <w:lsdexception locked="false" priority="39" name="toc 8"/>
+  <w:lsdexception locked="false" priority="39" name="toc 9"/>
+  <w:lsdexception locked="false" priority="35" qformat="true" name="caption"/>
+  <w:lsdexception locked="false" priority="10" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:lsdexception locked="false" priority="1" name="Default Paragraph Font"/>
+  <w:lsdexception locked="false" priority="11" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:lsdexception locked="false" priority="22" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:lsdexception locked="false" priority="20" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:lsdexception locked="false" priority="59" semihidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:lsdexception locked="false" unhidewhenused="false" name="Placeholder Text"/>
+  <w:lsdexception locked="false" priority="1" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:lsdexception locked="false" priority="60" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:lsdexception locked="false" priority="61" semihidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:lsdexception locked="false" priority="62" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:lsdexception locked="false" priority="63" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:lsdexception locked="false" priority="64" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:lsdexception locked="false" priority="65" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:lsdexception locked="false" priority="66" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:lsdexception locked="false" priority="67" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:lsdexception locked="false" priority="68" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:lsdexception locked="false" priority="69" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:lsdexception locked="false" priority="70" semihidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:lsdexception locked="false" priority="71" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:lsdexception locked="false" priority="72" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:lsdexception locked="false" priority="73" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:lsdexception locked="false" priority="60" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:lsdexception locked="false" priority="61" semihidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:lsdexception locked="false" priority="62" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:lsdexception locked="false" priority="63" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:lsdexception locked="false" priority="64" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:lsdexception locked="false" priority="65" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:lsdexception locked="false" unhidewhenused="false" name="Revision"/>
+  <w:lsdexception locked="false" priority="34" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:lsdexception locked="false" priority="29" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:lsdexception locked="false" priority="30" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:lsdexception locked="false" priority="66" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:lsdexception locked="false" priority="67" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:lsdexception locked="false" priority="68" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:lsdexception locked="false" priority="69" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:lsdexception locked="false" priority="70" semihidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:lsdexception locked="false" priority="71" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:lsdexception locked="false" priority="72" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:lsdexception locked="false" priority="73" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:lsdexception locked="false" priority="60" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:lsdexception locked="false" priority="61" semihidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:lsdexception locked="false" priority="62" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:lsdexception locked="false" priority="63" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:lsdexception locked="false" priority="64" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:lsdexception locked="false" priority="65" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:lsdexception locked="false" priority="66" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:lsdexception locked="false" priority="67" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:lsdexception locked="false" priority="68" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:lsdexception locked="false" priority="69" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:lsdexception locked="false" priority="70" semihidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:lsdexception locked="false" priority="71" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:lsdexception locked="false" priority="72" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:lsdexception locked="false" priority="73" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:lsdexception locked="false" priority="60" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:lsdexception locked="false" priority="61" semihidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:lsdexception locked="false" priority="62" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:lsdexception locked="false" priority="63" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:lsdexception locked="false" priority="64" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:lsdexception locked="false" priority="65" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:lsdexception locked="false" priority="66" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:lsdexception locked="false" priority="67" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:lsdexception locked="false" priority="68" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:lsdexception locked="false" priority="69" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:lsdexception locked="false" priority="70" semihidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:lsdexception locked="false" priority="71" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:lsdexception locked="false" priority="72" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:lsdexception locked="false" priority="73" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:lsdexception locked="false" priority="60" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:lsdexception locked="false" priority="61" semihidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:lsdexception locked="false" priority="62" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:lsdexception locked="false" priority="63" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:lsdexception locked="false" priority="64" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:lsdexception locked="false" priority="65" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:lsdexception locked="false" priority="66" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:lsdexception locked="false" priority="67" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:lsdexception locked="false" priority="68" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:lsdexception locked="false" priority="69" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:lsdexception locked="false" priority="70" semihidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:lsdexception locked="false" priority="71" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:lsdexception locked="false" priority="72" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:lsdexception locked="false" priority="73" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:lsdexception locked="false" priority="60" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:lsdexception locked="false" priority="61" semihidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:lsdexception locked="false" priority="62" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:lsdexception locked="false" priority="63" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:lsdexception locked="false" priority="64" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:lsdexception locked="false" priority="65" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:lsdexception locked="false" priority="66" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:lsdexception locked="false" priority="67" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:lsdexception locked="false" priority="68" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:lsdexception locked="false" priority="69" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:lsdexception locked="false" priority="70" semihidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:lsdexception locked="false" priority="71" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:lsdexception locked="false" priority="72" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:lsdexception locked="false" priority="73" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:lsdexception locked="false" priority="60" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:lsdexception locked="false" priority="61" semihidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:lsdexception locked="false" priority="62" semihidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:lsdexception locked="false" priority="63" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:lsdexception locked="false" priority="64" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:lsdexception locked="false" priority="65" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:lsdexception locked="false" priority="66" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:lsdexception locked="false" priority="67" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:lsdexception locked="false" priority="68" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:lsdexception locked="false" priority="69" semihidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:lsdexception locked="false" priority="70" semihidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:lsdexception locked="false" priority="71" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:lsdexception locked="false" priority="72" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:lsdexception locked="false" priority="73" semihidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:lsdexception locked="false" priority="19" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:lsdexception locked="false" priority="21" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:lsdexception locked="false" priority="31" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:lsdexception locked="false" priority="32" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:lsdexception locked="false" priority="33" semihidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:lsdexception locked="false" priority="37" name="Bibliography"/>
+  <w:lsdexception locked="false" priority="39" qformat="true" name="TOC Heading"/>
+ </w:latentstyles>
+</xml><![endif]-->
+<style>
+<!--
+body,p,b,i,em,dt,dd,dl,sl,caption,th,td,tr,u,blink,select,option,form,div,li { font-family: Arial, sans-serif; font-size: 12px; }
+body
+	{scrollbar-3dlight-color: #808080;
+	scrollbar-highlight-color: #808080;
+	scrollbar-face-color: #004000;
+	scrollbar-shadow-color: #808080;
+	scrollbar-darkshadow-color: #805B32;
+	scrollbar-arrow-color: #000000;
+	scrollbar-track-color: #F8EFE2;}
+textarea
+	{scrollbar-3dlight-color: #808080;
+	scrollbar-highlight-color: #808080;
+	scrollbar-face-color: #004000;
+	scrollbar-shadow-color: #808080;
+	scrollbar-darkshadow-color: #805B32;
+	scrollbar-arrow-color: #000000;
+	scrollbar-track-color: #F8EFE2;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:22.5pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#004000;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:13.5pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:#004000;
+	font-weight:bold;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1586304528;
+	mso-list-template-ids:814536826;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:1718503693;
+	mso-list-template-ids:-1221567634;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor="white" lang="EN-US" link="blue" vlink="purple" style="tab-interval: .5in">
+
+<div class="Section1">
+
+<div align="center">
+
+<table class="MsoNormalTable" border="0" cellspacing="1" cellpadding="0" width="780"
+ style="BACKGROUND:
+ white; WIDTH: 585pt; mso-cellspacing: .7pt; mso-yfti-tbllook: 1184; mso-padding-alt: 2.25pt 2.25pt 2.25pt 2.25pt">
+ <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+  <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+   >
+  <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+     >&nbsp;<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow: 1">
+  <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+   >
+  <p align="center" style="TEXT-ALIGN: center">&nbsp;</p>
+  <h1 align="center" style="TEXT-ALIGN: center"><span style="FONT-SIZE:
+  12pt; COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     ><a href="#Test"
+  target=_top>Syllabus</a>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<a href="#Schedule">Schedule</a>
+  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Resources</span><span style="mso-fareast-font-family:
+  'Times New Roman'"> <o:p></o:p></span></h1>
+  <h1 align="center" style="TEXT-ALIGN: center"><span style="mso-fareast-font-family:
+  'Times New Roman'">
+  <hr size="13" width="771" style="WIDTH: 578.25pt; COLOR:
+  green" noshade 
+      align=center>
+  </span></h1>
+  <h1 align="center" style="TEXT-ALIGN: center"><a name="Syllabus"><span
+    
+      style="FONT-SIZE: 24pt; COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >Syllabus</span></a><span
+  
+      style="mso-bookmark: Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'">
+  <o:p></o:p></span></span></h1>
+  <p align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><strong><span
+  style="FONT-SIZE: 24pt; COLOR: green" 
+     >SWE 432</span></strong> </span></p>
+  <h1 align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><span
+    
+      style="FONT-SIZE: 24pt; COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >Design
+  and Implementation of Software for the Web</span></span><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family: 'Times New Roman'">
+  <o:p></o:p></span></span></h1>
+  <p align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><strong><span
+  style="FONT-SIZE: 24pt; COLOR: green" 
+     >Fall 2008</span></strong> </span></p>
+  <span style="mso-bookmark: Syllabus"></span>
+  <div class="MsoNormal" align="center" style="TEXT-ALIGN: center"><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family: 'Times New Roman'">
+  <hr size="13" width="771" style="WIDTH: 578.25pt; COLOR:
+  green" noshade 
+      align=center>
+  </span></span></div>
+  <span style="mso-bookmark: Syllabus" 
+     ></span></td>
+  <span style="mso-bookmark: Syllabus" 
+   ></span>
+ </tr>
+ <tr style="mso-yfti-irow: 2">
+  <td style="PADDING-RIGHT: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt" 
+   >
+  <p class="MsoNormal" style="MARGIN:
+  0in 0.5in 0pt"><span style="mso-bookmark: Syllabus"><strong><span
+  style="COLOR: green">Office: S&amp;T II 435</span></strong></span></p>
+  </td>
+  <span style="mso-bookmark: Syllabus"></span>
+ </tr>
+ <tr style="mso-yfti-irow: 3">
+  <td style="PADDING-RIGHT: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt" 
+   >
+  <p class="MsoNormal" style="MARGIN:
+  0in 0.5in 0pt"><span style="mso-bookmark: Syllabus"><strong><span
+  style="COLOR: green" 
+     >Email:</span></strong></span><a
+  href="mailto:jbaldo@gmu.edu"><span style="mso-bookmark: Syllabus" 
+     ><strong><span
+  style="COLOR: green" 
+     >jbaldo@gmu.edu</span></strong></span><span
+  
+      style="mso-bookmark: Syllabus"></span></a><span style="mso-bookmark: Syllabus"></span></p>
+  </td>
+  <span style="mso-bookmark: Syllabus"></span>
+ </tr>
+ <tr style="mso-yfti-irow: 4">
+  <td style="PADDING-RIGHT: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt" 
+   >
+  <p class="MsoNormal" style="MARGIN:
+  0in 0.5in 0pt"><span style="mso-bookmark: Syllabus"><strong><span
+  style="COLOR: green">Class Hours: Monday 4:30 - 7:10, Enterprise Hall 176 </span></strong></span></p>
+  </td>
+  <span style="mso-bookmark: Syllabus" 
+   ></span>
+ </tr>
+ <tr style="mso-yfti-irow: 5">
+  <td style="PADDING-RIGHT: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt" 
+   >
+  <p class="MsoNormal" style="MARGIN:
+  0in 0.5in 0pt"><span style="mso-bookmark: Syllabus"><strong><span
+  style="COLOR: green" 
+     >Prerequisite: Math 125 and CS 421</span></strong></span></p>
+  </td>
+  <span style="mso-bookmark: Syllabus" 
+   ></span>
+ </tr>
+ <tr style="mso-yfti-irow: 6">
+  <td style="PADDING-RIGHT: 0.75pt; PADDING-LEFT: 0.75pt; PADDING-BOTTOM: 0.75pt; PADDING-TOP: 0.75pt" 
+   >
+  <p><span style="mso-bookmark: Syllabus" 
+     ><strong><span style="COLOR: green" 
+     >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      Office
+  Hours: Anytime electronically or by appointment</span></strong>&nbsp; </span></p></td>
+  <span style="mso-bookmark: Syllabus"></span>
+ </tr>
+ <tr style="mso-yfti-irow: 7; mso-yfti-lastrow: yes">
+  <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+   ><span style="mso-bookmark:
+  Syllabus"></span>
+  <div class="MsoNormal" align="center" style="TEXT-ALIGN: center"><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family: 'Times New Roman'">
+  <hr size="13" width="771" style="WIDTH: 578.25pt; COLOR:
+  green" noshade 
+      align=center>
+  </span></span></div>
+  <span style="mso-bookmark: Syllabus" 
+     ></span>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="FONT-SIZE:
+  12pt; COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     ><font size="4">TEXTS:</font> </span></span><span
+  
+      style="mso-bookmark: Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></h2>
+  <p class="MsoNormal" style="MARGIN-LEFT:
+  1in; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list .5in" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><![if !supportLists]><span style="FONT-SIZE:
+  10pt;
+  FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Symbol" 
+     ><span style="mso-list: Ignore" 
+     >·<span
+  style="FONT: 7pt 'Times New Roman'" 
+     >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><em><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >Designing Web Usability</span></em></span><span
+  
+      style="mso-bookmark: Syllabus"><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >, Nielsen, New Riders Publishing, 2000, ISBN: 1-56205-810-X. </span></span><span
+  style="mso-bookmark: Syllabus" 
+     ></span><a
+  
+      href="http://www.amazon.com/exec/obidos/ASIN/156205810X/qid=997108756/sr=1-2/ref=sc_b_2/103-9710108-78054355435" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >Amazon</span></span><span style="mso-bookmark: Syllabus"></span></a><span
+  
+      style="mso-bookmark: Syllabus"><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     > </span></span><span style="mso-bookmark: Syllabus" 
+     ></span><a
+  
+      href="http://www.peachpit.com/title/156205810X"><span style="mso-bookmark:
+  Syllabus"><span style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >New
+  Riders</span></span><span style="mso-bookmark: Syllabus"></span></a><span
+  
+      style="mso-bookmark: Syllabus"><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     > </span></span><span style="mso-bookmark: Syllabus" 
+     ></span><a
+  href="http://useit.com/errata/"><span style="mso-bookmark: Syllabus" 
+     ><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >Errors in text</span></span><span
+  
+      style="mso-bookmark: Syllabus"></span></a><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     > </span></span><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="MARGIN-LEFT:
+  1in; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list .5in" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><![if !supportLists]><span style="FONT-SIZE:
+  10pt;
+  FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Symbol" 
+     ><span style="mso-list: Ignore" 
+     >·<span
+  style="FONT: 7pt 'Times New Roman'" 
+     >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><em><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >Programming the World Wide Web</span></em></span><span
+  
+      style="mso-bookmark: Syllabus"><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >, Sebesta, Addison-Wesley, 2002, third edition. </span></span><span
+  style="mso-bookmark: Syllabus" 
+     ></span><a
+  
+      href="http://www.amazon.com/gp/product/0321303326/ref=ed_oe_p/102-0525814-2114546?%5Fencoding=UTF8" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >Amazon</span></span><span style="mso-bookmark: Syllabus"></span></a><span
+  
+      style="mso-bookmark: Syllabus"><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     > </span></span><span style="mso-bookmark: Syllabus" 
+     ><span
+    
+      style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="MARGIN-LEFT:
+  1in; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level1 lfo1; tab-stops: list .5in" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><![if !supportLists]><span style="FONT-SIZE:
+  10pt;
+  FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Symbol" 
+     ><span style="mso-list: Ignore" 
+     >·<span
+  style="FONT: 7pt 'Times New Roman'" 
+     >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >Reference books: </span></span><span style="mso-bookmark: Syllabus"><span
+    
+      style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="MARGIN-LEFT:
+  1.5in; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level2 lfo1; tab-stops: list 1.0in" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><![if !supportLists]><span style="FONT-SIZE:
+  10pt; FONT-FAMILY:
+  'Courier New'; mso-fareast-font-family: 'Courier New'; mso-bidi-font-size: 12.0pt" 
+     ><span style="mso-list: Ignore" 
+     >o<span style="FONT: 7pt 'Times New Roman'" 
+     >&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >HTML 4 for the World Wide Web, Castro, Peachpit Press. </span></span><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="MARGIN-LEFT:
+  1.5in; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l1 level2 lfo1; tab-stops: list 1.0in" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><![if !supportLists]><span style="FONT-SIZE:
+  10pt; FONT-FAMILY:
+  'Courier New'; mso-fareast-font-family: 'Courier New'; mso-bidi-font-size: 12.0pt" 
+     ><span style="mso-list: Ignore" 
+     >o<span style="FONT: 7pt 'Times New Roman'" 
+     >&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >Java Gently, Bishop, Addison-Wesley. </span></span><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="COLOR:
+  green; mso-fareast-font-family: 'Times New Roman'" 
+     ><font size="4">OBJECTIVE</font></span></span><span style="mso-bookmark:
+  Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'"><font size="4">:</font> <o:p></o:p></span></span><!-- From the catalog --></h2>
+  <div><!-- Use DIV because <p> puts in extra lines -->
+  <p class="MsoNormal" style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >This course teaches
+  students how to develop software for web applications. The concepts of
+  client-server computing, theories of usable graphical user interfaces, and models
+  for web-based information retrieval and processing are covered. In the past
+  few years, the way software is built has been rapidly changing. As use of
+  the world wide web has shifted from information presentation to information
+  gathering to direct customer sales (e-commerce) and to business-to-business
+  e-commerce (b2b), the amount and complexity of software has
+  steadily been increasing. At the same time, new models of programming and new
+  technology for designing and developing the software has made this complex
+  software easier to build. As a result, there are many opportunities for
+  personnel that have a light background in Computer Science theory, but a solid
+  level of knowledge of software and web-based technology. Thus, the topic
+  of this course is of interest to and accessible to students in a wide variety
+  of specializations.  </span></span><span style="mso-bookmark: Syllabus" 
+     ><span
+    
+      style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  </div>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="COLOR:
+  green; mso-fareast-font-family: 'Times New Roman'" 
+     >CONTENT</span></span><span style="mso-bookmark:
+  Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'">: <o:p></o:p></span></span></h2>
+  <p class="MsoNormal" style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >SWE 432 covers
+  some of the topics related to the exciting new programming models that are
+  used to support web and e-commerce applications. We will be studying the software
+  design, interface design, and development side of web applications.
+  Programming skills are required and students are expected to learn HTML on
+  their own. The class will be very practical (how to build things) and require
+  several small programming assignments. </span></span></p>
+  <p class="MsoNormal" style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark:
+  Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p><span style="mso-bookmark:
+  Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'"> <o:p></o:p></span></span></o:p></span></span>&nbsp;</p>
+  <h2 class="MsoNormal" style="MARGIN-LEFT: 0in; MARGIN-RIGHT: 
+     0px" 
+      align=left dir=ltr><span style="mso-bookmark:
+  Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p><span style="mso-bookmark:
+  Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'"> <o:p><font size="4">COURSE 
+      OUTCOMES:</font></o:p></span></span></h2></o:p></span></span>
+  <p style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+  
+      style="COLOR: green">        
+              
+              
+             
+         Upon completion of
+  this course, students should be able to: </span></span></p>
+      <ul>
+        <li>
+  <div style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+  
+      style="COLOR: green"><font face="Times New Roman" 
+        size=3>Understand how to design usable software interfaces and implement 
+        them on the web</font>        
+              
+              
+             
+           
+         </span></span></div></li>
+        <li>
+  <div style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+  
+      style="COLOR: green"><font face="Times New Roman" 
+        size=3>Understand&nbsp;how to build software that accepts information 
+        from users across the web and returns data to the 
+        user</font>        
+              
+              
+             
+           
+         </span></span></div></li>
+        <li>
+  <div style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+  
+      style="COLOR: green"><font face="Times New Roman" 
+        size=3>Understand how to interact with database engines to store and 
+        retrieve information</font>        
+              
+              
+             
+           
+         </span></span></div></li>
+        <li>
+  <div style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+  
+      style="COLOR: green"><font face="Times New Roman" 
+        size=3>Understand and acquire basic skills in utilzing the following 
+        technologies for designing and implementing web software: HTML, CGI 
+        programming, Java, Java applets, Javascripts, and Java 
+        servlets</font>        
+              
+              
+             
+           
+         </span></span></div></li></ul>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family:
+  'Times New Roman'"><span style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family:
+  'Times New Roman'"></span></span>READING: <o:p></o:p></span></span></h2>
+  <div>
+  <p class="MsoNormal" style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >We will read
+  from <b>the texts</b>, various sources on the web, and transparencies that
+  will be made available on the web site. The schedule for the readings are
+  given on the </span></span><span style="mso-bookmark: Syllabus" 
+     ></span><a
+  href="sched.html"><span style="mso-bookmark: Syllabus" 
+     ><span style="COLOR:
+  green; mso-fareast-font-family: 'Times New Roman'" 
+     >schedule</span></span><span style="mso-bookmark:
+  Syllabus"></span></a><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     > web page. </span></span><span
+  
+      style="mso-bookmark: Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  </div>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family:
+  'Times New Roman'">MAKEUPS: <o:p></o:p></span></span></h2>
+  <div>
+  <p class="MsoNormal" style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >Unless
+  arrangements are worked out in advance, missed assignments <b>cannot</b> be
+  made up, and 10% per week will be deducted for late submissions. I understand
+  that your job may occasionally take you out of town; so does mine. If you are
+  going to be forced to miss class on the day something is due, let me know
+  ahead of time by email or in writing. </span></span><span style="mso-bookmark:
+  Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  </div>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family:
+  'Times New Roman'">HOMEWORKS: <o:p></o:p></span></span></h2>
+  <div>
+  <p class="MsoNormal" style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >A number of
+  homework assignments will be given. I will make the assignment available on
+  the class web site and discuss each in class. You will submit your solutions
+  by placing them on your web sites. You should submit links to <em>executable</em>
+  versions of programs, but <em>may not</em> post source files. </span></span><span
+  style="mso-bookmark: Syllabus" 
+     ><b><u><span style="FONT-SIZE:
+  13.5pt; COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >Posting program source on your website will be
+  considered an honor code violation!</span></u></b></span><span
+  
+      style="mso-bookmark: Syllabus"><b><span style="COLOR: red; mso-fareast-font-family:
+  'Times New Roman'" 
+     > </span></b></span><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >Be sure that
+  you are on the class mailing list, as refinements and hints for the
+  assignments will be sent through email. <b>Homeworks must be submitted <u>before
+  class</u> on the day they are due. </b>Late submissions will be assessed a
+  10% penalty per class meeting, and you must inform the professor and TA by
+  email when a late assignment is ready for grading. All assignments must be
+  submitted before final exams start and will not be graded thereafter. </span></span><span
+  
+      style="mso-bookmark: Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  </div>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family:
+  'Times New Roman'">IN-CLASS COMPUTERS AND COMMUNICATION: <o:p></o:p></span></span></h2>
+  <div>
+  <p class="MsoNormal" style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >Phone calls,
+  text messages, instant messages, email, and general web surfing are <b>not
+  allowed</b> during class time. Computers may only be used to follow the
+  material in class. Violators will have their devices confiscated or asked to
+  leave the room. </span></span><span style="mso-bookmark: Syllabus" 
+     ><span
+    
+      style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  </div>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family:
+  'Times New Roman'">HONOR CODE STATEMENT: <o:p></o:p></span></span></h2>
+  <div>
+  <p class="MsoNormal" style="MARGIN-LEFT: 0.5in"><span style="mso-bookmark: Syllabus"><span
+    
+      style="COLOR: green; mso-fareast-font-family: 'Times New Roman'" 
+     >As with all GMU
+  courses, SWE 432 is governed by the </span></span><span style="mso-bookmark:
+  Syllabus"></span><a href="http://cs.gmu.edu/~offutt/classes/Honor.html"><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >GMU Honor Code</span></span><span style="mso-bookmark: Syllabus"></span></a><span
+  
+      style="mso-bookmark: Syllabus"><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >. In this course, <b>all</b> assignments, exams, and project
+  submissions carry with them an implicit statement that it is the sole work of
+  the author, unless joint work is explicitly authorized. Help may be obtained
+  from the instructor or other students to understand the description of the
+  problem and any technology, but the solution, particularly the design
+  portion, must be the student's own work. If joint work is authorized, all
+  contributing students must be listed on the submission. Any deviation from
+  this is considered an Honor Code violation, and as a minimum, will result in
+  failure of the submission and as a maximum, failure of the class. </span></span><span
+  
+      style="mso-bookmark: Syllabus"><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  </div>
+  <h2><span style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family:
+  'Times New Roman'">GRADING POLICIES: <o:p></o:p></span></span></h2>
+  <p class="MsoNormal" style="MARGIN-LEFT:
+  1in; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2; tab-stops: list .5in" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><![if !supportLists]><span style="FONT-SIZE:
+  10pt;
+  FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Symbol" 
+     ><span style="mso-list: Ignore" 
+     >·<span
+  style="FONT: 7pt 'Times New Roman'" 
+     >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >There will be several computer assignments (total 40%). </span></span><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="MARGIN-LEFT:
+  1in; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2; tab-stops: list .5in" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><![if !supportLists]><span style="FONT-SIZE:
+  10pt;
+  FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Symbol" 
+     ><span style="mso-list: Ignore" 
+     >·<span
+  style="FONT: 7pt 'Times New Roman'" 
+     >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >Each class (except the first one) will have a quiz. The lowest
+  three quizzes will be dropped, thus you can miss up to three quizzes. The 10
+  quizzes with the highest scores will be used to calculate the final grade (10
+  * 3% = 30%). </span></span><span style="mso-bookmark: Syllabus"><span
+    
+      style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  <p class="MsoNormal" style="MARGIN-LEFT:
+  1in; TEXT-INDENT: -0.25in; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo2; tab-stops: list .5in" 
+     ><span
+  style="mso-bookmark: Syllabus" 
+     ><![if !supportLists]><span style="FONT-SIZE:
+  10pt;
+  FONT-FAMILY: Symbol; mso-fareast-font-family: Symbol; mso-bidi-font-size: 12.0pt; mso-bidi-font-family: Symbol" 
+     ><span style="mso-list: Ignore" 
+     >·<span
+  style="FONT: 7pt 'Times New Roman'" 
+     >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span style="COLOR: green; mso-fareast-font-family:
+  'Times New Roman'" 
+     >There will be a closed book, in-class, comprehensive final exam
+  (30%). </span></span><span style="mso-bookmark: Syllabus" 
+     ><span
+    
+      style="mso-fareast-font-family: 'Times New Roman'" 
+     ><o:p></o:p></span></span></p>
+  <p><span style="mso-bookmark: Syllabus" 
+     ></span>&nbsp;</p>
+  <span style="mso-bookmark: Syllabus" 
+     ></span>
+  <h1 align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><span
+    
+      style="mso-fareast-font-family: 'Times New Roman'">
+  <hr size="13" width="771" style="WIDTH: 578.25pt; COLOR:
+  green" noshade 
+      align=center>
+  </span></span></h1>
+  <span style="mso-bookmark: Syllabus" 
+     ></span>
+  <h1 align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><a
+  name=Test></a><span style="mso-fareast-font-family: 'Times New Roman'" 
+     >Schedule<a
+  name=Schedule></a> <o:p></o:p></span></span></h1>
+  <h1 align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><span
+    
+      style="mso-fareast-font-family: 'Times New Roman'" 
+     >Design and Implementation
+  of Software for the Web<o:p></o:p></span></span></h1>
+  <p align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><strong><span
+  style="FONT-SIZE: 18pt; COLOR: #004000" 
+     >Fall 2008</span></strong> </span></p>
+  <span style="mso-bookmark: Syllabus"></span>
+  <div class="MsoNormal" align="center" style="TEXT-ALIGN: center"><span
+  style="mso-bookmark: Syllabus" 
+     ><span style="mso-fareast-font-family: 'Times New Roman'">
+  <hr size="13" width="771" style="WIDTH: 578.25pt; COLOR:
+  green" noshade 
+      align=center>
+  </span></span></div>
+  <span style="mso-bookmark: Syllabus" 
+     ></span>
+  <p align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><u>Note:
+  <i>N-Ch x</i> means chapter <i>x</i> in Nielsen; <i>S-Ch x</i> means chapter <i>x</i>
+  in Sebesta</u></span></p>
+  <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" align="left"
+   width="100%" style="BACKGROUND:
+   lime;
+   WIDTH:
+   100%; mso-cellspacing: 0in; mso-yfti-tbllook: 1184; mso-padding-alt: 2.25pt 2.25pt 2.25pt 2.25pt; mso-table-lspace: 2.25pt; mso-table-rspace: 2.25pt; mso-table-anchor-vertical: paragraph; mso-table-anchor-horizontal: column; mso-table-left: left" 
+     >
+   <tr style="mso-yfti-irow: 0; mso-yfti-firstrow: yes">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p align="center" style="TEXT-ALIGN: center"><span style="mso-bookmark: Syllabus"><span
+    
+            style="COLOR: green"><font face="Arial" 
+            color=#000000 
+            size=4><strong>Meeting</strong></font></span></span></p>
+    </td>
+    <span style="mso-bookmark: Syllabus"><font color="#000000" 
+          size=4><strong></strong></font></span>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p align="center" style="TEXT-ALIGN: center"><span style="COLOR: green"><font face="Arial" 
+            color=#000000 size=4><strong>Date</strong></font></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p align="center" style="TEXT-ALIGN: center"><span style="COLOR: green"><font face="Arial" 
+            color=#000000 size=4><strong>Topics</strong></font></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p align="center" style="TEXT-ALIGN: center"><span style="COLOR: green"><font face="Arial" 
+            color=#000000 size=4><strong>Readings</strong></font></span></p>
+    <p align="center" style="TEXT-ALIGN: center"><span style="COLOR: green"><font face="Arial" 
+            color=#000000 size=4><strong>Handouts</strong></font></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p align="center" style="TEXT-ALIGN: center"><span style="COLOR: green"><font face="Arial" 
+            color=#000000 size=4><strong>Web 
+          Resources</strong></font>
+    </span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p align="center" style="TEXT-ALIGN: center"><span style="COLOR: green"><font face="Arial" 
+            color=#000000 size=4><strong>Quizzes</strong></font></span></p>
+    <p align="center" style="TEXT-ALIGN: center"><span style="COLOR: green"><font color="#000000" 
+            size=4><strong><font 
+            face=Arial>Homewor</font>k</strong></font></span></p>
+    </td>
+   </tr>
+        <tr>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+          colSpan=6><strong><font size="4">I. Web Site 
+          Usability</font></strong></td></tr>
+   <tr style="mso-yfti-irow: 1">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >1<o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >8/25</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >Usability
+    Overview</span></strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p><strong>N-Ch 1, S-Ch 1 </strong><b><br>
+    <strong>Slides: </strong></b><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec01A-Intro.pdf" 
+           ><strong>Intro</strong></a><strong>&nbsp;
+    </strong><b><br>
+    <strong>Slides: </strong></b><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec01B-UIOverviewJB.pdf" 
+           ><strong>Overview</strong></a><strong>
+    </strong><b><br>
+    <strong>Slides: </strong></b><a
+     
+    href="http://mason.gmu.edu/~jbaldo/432Lec01C-ResponsibilitiesJB.pdf" 
+            slides 432Lec01C-Responsibilities.pdf?><strong>Responsibilities</strong></a><strong>
+    </strong><b><br>
+    </b><a href="http://www.demillo.com/internet_history.htm"><strong>Internet
+    history </strong></a></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><a
+    
+            href="http://mason.gmu.edu/~jbaldo/assigns.html" 
+           ><strong>Hwk 1 </strong></a><strong>assigned
+    </strong><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style="mso-yfti-irow: 2">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >9/1</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >Labor
+    Day/No Class</span></strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+   </tr>
+   <tr style="mso-yfti-irow: 3">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >2</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >9/8</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >Menus,
+    Forms, Pages</span></strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >N-Ch
+    2:pg 18-42 </span></strong><b><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><br>
+    <strong>Slides: </strong></span></b><span style="mso-fareast-font-family:
+    'Times New Roman'"><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec02A-MenusJB.pdf" 
+           ><strong>Menus</strong></a><strong>
+    </strong><b><br>
+    <strong>Slides: </strong></b><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec02B-ErrorMsgJB.pdf" 
+           ><strong>Error
+    Msgs</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><a
+    
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz01.html" 
+           ><strong>Quiz 1</strong></a><strong>
+    </strong><b><br>
+    </b><a href="http://mason.gmu.edu/~jbaldo/H2-sisJB.pdf"><strong>Hwk 2</strong></a><strong>
+    assigned </strong><b><br>
+    </b><a href="http://mason.gmu.edu/~jbaldo/432-h2bsisJB.pdf"><strong>Hwk 2
+    notes</strong></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style="mso-yfti-irow: 4">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >3</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >9/15</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >GUIs,
+    Page design</span></strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >N-Ch
+    2:pg 42-97 </span></strong><b><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><br>
+    <strong>Slides: </strong></span></b><span style="mso-fareast-font-family:
+    'Times New Roman'"><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec03A-HyperJB.pdf" 
+           ><strong>Hyper</strong></a><strong>
+    </strong><b><br>
+    <strong>Slides: </strong></b><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec03B-GUIJB.pdf" 
+           ><strong>GUIs</strong></a><strong>
+    </strong><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><a
+    
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz02.html" 
+           ><strong>Quiz 2</strong></a><strong>
+    </strong><b><br>
+    </b><a href="http://mason.gmu.edu/~jbaldo/H3-iseJB.pdf"><strong>Hwk 3</strong></a><strong>
+    assigned</strong><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style="mso-yfti-irow: 5">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >4</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >9/22</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >Widgets,
+    Content design </span></strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >N-Ch
+    3 </span></strong><b><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><br>
+    <strong>Slides: </strong></span></b><span style="mso-fareast-font-family:
+    'Times New Roman'"><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec04A-WidgetsJB.pdf" 
+           ><strong>Widgets</strong></a><strong>
+    </strong><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><a
+    
+            href="http://roachfiend.com/archives/2005/03/03/always-remember-password/" 
+           ><strong>Always
+    remember</strong></a><strong> </strong><b><br>
+    </b><a href="http://mason.gmu.edu/~jbaldo/focus-example.html"><strong>Focusing
+    in HTML</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><a
+    
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz03.html" 
+           ><strong>Quiz 3</strong></a><o:p></o:p></span></p>
+    </td>
+   </tr>
+   <tr style="mso-yfti-irow: 6">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >5</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >9/29</span></strong><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >Color,
+    Site design</span></strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><strong><span style="mso-fareast-font-family: 'Times New Roman'" 
+           >N-Ch
+    4 </span></strong><b><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><br>
+    <strong>Slides: </strong></span></b><span style="mso-fareast-font-family:
+    'Times New Roman'"><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec05A-ColorJB.pdf" 
+           ><strong>Color</strong></a><strong>
+    </strong><b><br>
+    <strong>Slides: </strong></b><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec05B-SiteDesignCh4JB.pdf" 
+           ><strong>Ch
+    4</strong></a><strong> </strong><b><br>
+    <strong>Slides: </strong></b><a
+    
+            href="http://mason.gmu.edu/~jbaldo/432Lec04B-ScientificMethodJB.pdf" 
+           ><strong>Science</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><a
+    href="http://www.dilbert.com/"><strong>Dilbert</strong></a><strong>: </strong><a
+    
+            href="http://mason.gmu.edu/~jbaldo/dilbert020923.gif" 
+           ><strong>[1]</strong></a><strong>
+    </strong><a href="http://mason.gmu.edu/~jbaldo/dilbert020924.gif"><strong>[2]</strong></a><strong>
+    </strong><b><br>
+    </b><a href="http://www.ficml.org/jemimap/style/color/wheel.html"><strong>Color
+    wheel</strong></a><strong> </strong><b><br>
+    </b><a href="javascript:newBigWindow('Resources/unix-vim.html')"><strong>Unix-Vim</strong></a><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><a
+    
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz04.html" 
+           ><strong>Quiz 4</strong></a><strong>
+    </strong><b><br>
+    </b><a href="http://mason.gmu.edu/~jbaldo/assigns/H4-swecsJB.htm"><strong>Hwk
+    4</strong></a><strong> assigned</strong><o:p></o:p></span></p>
+    </td>
+   </tr>
+        <tr>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+          colSpan=6><strong><font size="4">II. Client Side 
+            Programming</font></strong></td></tr>
+   <tr style="mso-yfti-irow: 7">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           >6<o:p></o:p></span></b></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           >10/6<o:p></o:p></span></b></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><b>Web Page Development <br>
+    Client Side Events <br>
+    (HTML, CSS, JS)</b><span style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal">S-Ch 5, 6 <br>
+    (<i>2, 3, 4 as background</i>) <br>
+    Slides: <a 
+            href="http://cs.gmu.edu/~offutt/classes/432/slides/432Lec06AHTML-JS.pdf"></a>
+    <br>
+    <a href="http://cs.gmu.edu/~offutt/classes/432/Examples/HTML-ex.html">HTML
+    Examples</a> <br>
+    <a href="http://cs.gmu.edu/~offutt/classes/432/Examples/JS/">JS Examples</a></b><b
+    
+            style="mso-bidi-font-weight: normal"><span style="mso-fareast-font-family:
+    'Times New Roman'"><o:p></o:p></span></b></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><a
+    
+            href="http://www.w3schools.com/">W3 Web Schools</a> <br>
+    <a href="javascript:newBigWindow('Resources/HTMLWebResources.html')">HTML
+    References</a> <br>
+    <a href="javascript:newBigWindow('Resources/AdvHTMLWebResources.html')">Advanced
+    HTML</a> <br>
+    <a
+    
+            href="http://cs.gmu.edu/~offutt/classes/432/Instructions/HTML-Kit-install.html" 
+           >HTML
+    editor</a> <br>
+    <a href="javascript:newBigWindow('Resources/DHTMLWebResources.html')">DHTML
+    and CSS</a> <br>
+    <a href="javascript:newBigWindow('Resources/JSWebResources.html')">JavaScripts</a></b><b
+    
+            style="mso-bidi-font-weight: normal"><span style="mso-fareast-font-family:
+    'Times New Roman'"><o:p></o:p></span></b></p>
+    </td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         >
+    <p class="MsoNormal"><b style="mso-bidi-font-weight: normal"><a
+    
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz05.html" 
+           >Quiz 5</a>
+    <br>
+    <a href="http://mason.gmu.edu/~jbaldo/assigns/H5-htmlform-JS.html">Hwk
+    5</a> assigned</b><b style="mso-bidi-font-weight: normal"><span
+      
+            style="mso-fareast-font-family: 'Times New Roman'" 
+           ><o:p></o:p></span></b></p>
+    </td>
+   </tr>
+   <tr style="mso-yfti-irow: 8">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>7</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>10/13</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>Form Handling<br>(PHP) </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>S-12.1-12.10 <br>Slides: </strong><a 
+            href="http://talks.php.net/show/egovos" 
+            target=_blank><strong>PHP</strong></a><strong> (<i>no IE</i>) 
+            <br></strong><a 
+            href="http://www.cs.gmu.edu/~jbaldoExamples/php/"><strong>PHP 
+            Examples</strong><strong> </strong></a></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/Instructions/phpdeploy.html"><strong>PHP 
+            deployment</strong></a></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz06.html"><strong>Quiz 
+            6</strong></a><strong> <!-- <br/>A HREF="assigns/h5-quizentry.html">Hwk 5 solution</a --><br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/assigns/H6-php.html"><strong>Hwk 
+            6</strong></a><strong> assigned</strong></td>
+   </tr>
+        <tr>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+          colSpan=6><strong><font size="4">III. Server Side 
+            Programming</font></strong></td></tr>
+   <tr style="mso-yfti-irow: 9">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>8</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>10/20</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>Java &amp; Client-Server<br>Programming 
+            Model <br>Web Applications </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>S-Appendix A <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec08A-JavaI.pdf"><strong>Java 
+            I</strong></a><strong> <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec08B-JavaII.pdf"><strong>Java 
+            II</strong></a><strong> <br>Fraction: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/Examples/Fraction.java"><strong>java</strong></a><strong> 
+            </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/Examples/Fraction.java"><strong>out</strong></a><strong> 
+            <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec09-Servlets.pdf"><strong>Servlets</strong></a><strong> 
+            </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/Resources/java-objc.html" 
+            target=_blank><strong>Java origins</strong></a><strong> 
+            <br></strong><a href="http://www.javaranch.com/style.jsp" 
+            target=_blank><strong>Java style</strong></a><strong> 
+            <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/Instructions/eclipse.html"><strong>Eclipse 
+            intro</strong></a><strong> </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz07.html"><strong>Quiz 
+            7</strong></a><strong> <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/assigns/H7-java.html"><strong>Hwk 
+            7</strong></a><strong> assigned</strong></td>
+   </tr>
+   <tr style="mso-yfti-irow: 10">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>9</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>10/27</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>Java Servlets </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>S-Ch 1.4, 1.7, 11.1-11.3 <br>Slides: 
+            </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec09-Servlets.pdf"><strong>Servlets</strong></a><strong> 
+            (<i>cont.</i>) <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/Examples/Servlets/"><strong>Examples</strong></a></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/Instructions/servletdeploy.html"><strong>Servlet 
+            deployment</strong></a><strong> <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/Instructions/TomcatInstall.html"><strong>Tomcat 
+            installation</strong></a><strong> <br></strong><a 
+            href="javascript:newBigWindow('Resources/ServletsWebResources.html')"><strong>Servlets</strong></a><strong> 
+            <br></strong><a 
+            href="http://www.eclipse.org/"><strong>eclipse.org</strong></a><strong> 
+            </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz08.html"><strong>Quiz 
+            8</strong></a><strong> <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/assigns/H8-servlet.html"><strong>Hwk 
+            8</strong></a><strong> assigned </strong></td>
+   </tr>
+   <tr style="mso-yfti-irow: 11">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>10</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>11/3</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>Servlets </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>S-Ch 11.4 <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec10A-Sessions.pdf"><strong>Sessions</strong></a><strong> 
+            <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec10B-Deploy.pdf"><strong>Deploying</strong></a></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong></strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz09.html"><strong>Quiz 
+            9</strong></a></td>
+   </tr>
+   <tr style="mso-yfti-irow: 12">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>11</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>11/10</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>Java Server Pages</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>S-Ch 11.5-11.6 <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec11-JSP1-intro.pdf"><strong>Intro</strong></a><strong> 
+            <br></strong><a 
+            href="http://www.apl.jhu.edu/~hall/java/Servlet-Tutorial/Servlet-Tutorial-JSP.html"><strong>JSP 
+            Tutorial</strong></a><strong> <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/Examples/JSP/"><strong>Examples</strong></a><strong> 
+            </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="javascript:newWindow('Resources/JSPWebResources.html')"><strong>JSP</strong></a><strong> 
+            <br></strong><a href="Instructions/JSPBeanInstall.html"><strong>JSP 
+            installation</strong></a><strong> <br></strong><a 
+            href="Instructions/JSPDebugHints.html"><strong>JSP 
+            debugging</strong></a><strong> </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz10.html"><strong>Quiz 
+            10</strong></a><strong> <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/assigns/H9-servlet2.html"><strong>Hwk 
+            9</strong></a><strong> assigned</strong></td>
+   </tr>
+   <tr style="mso-yfti-irow: 13">
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>12</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>11/17</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>Java Server Pages <br>Design 
+          </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec12A-JSP2-maint.pdf"><strong>JSP 
+            Maint</strong></a><strong> <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec12B-Design.pdf"><strong>J2EE 
+            Design</strong></a><strong> </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://java.sun.com/j2ee/tutorial/1_3-fcs/doc/Overview.html"><strong>J2EE 
+            Tutorial</strong></a><strong> <br></strong><a 
+            href="http://www.sdmagazine.com/documents/s=733/sdm0103a/0103a.htm"><strong>J2EE 
+            X .NET</strong></a><strong> </strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><a 
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz11.html"><strong>Quiz 
+            11</strong></a><strong> <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/assigns/H10-jsp.html"><strong>Hwk 
+            10</strong></a><strong> assigned</strong></td>
+   </tr>
+        <tr>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>13</strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>11/24</strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>XML 
+            and JDBC</strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>S-Ch 
+            8, <br>14.1-14.4, 14.7 <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec13A-XML.pdf"><strong>XML</strong></a><strong> 
+            <br>Slides: </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec13B-JDBC.pdf"><strong>JDBC</strong></a><strong> 
+            </strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><a 
+            href="javascript:newBigWindow('Resources/XMLWebResources.html')"><strong>XML</strong></a><strong> 
+            <br></strong><a 
+            href="javascript:newBigWindow('Resources/XMLSchemaWebResources.html')"><strong>XML 
+            Schema</strong></a><strong> </strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><a 
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz12.html"><strong>Quiz 
+            12</strong></a><strong> <br></strong><a 
+            href="http://mason.gmu.edu/~jbaldo/assigns/H11-access.html"><strong>Hwk 
+            11</strong></a><strong> assigned</strong> </td></tr>
+        <tr>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+          colSpan=6><strong><font size="4">IV. Web Site 
+            Management</font></strong></td></tr>
+        <tr>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>14</strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>12/1</strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>Web 
+            Application Security </strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>Slides: 
+            </strong><a 
+            href="http://mason.gmu.edu/~jbaldo/432Lec14A-Security.pdf"><strong>Security</strong></a><strong> 
+            </strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong></strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><a 
+            href="http://mason.gmu.edu/~jbaldo/quizzes/quiz13.html"><strong>Quiz 
+            13</strong></a> </td></tr>
+        <tr>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>15</strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><strong>12/8</strong></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"><em><strong>No 
+            class: Reading Day</strong></b> </em></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"></td>
+          <td 
+          style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt"></td></tr>
+   <tr style="mso-yfti-irow: 14; mso-yfti-lastrow: yes" 
+       >
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>16</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>12/15</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>Final Exam</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ><strong>4:30 PM - 7:10 PM</strong></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+    <td style="PADDING-RIGHT: 2.25pt; PADDING-LEFT: 2.25pt; PADDING-BOTTOM: 2.25pt; PADDING-TOP: 2.25pt" 
+         ></td>
+   </tr>
+  </table>
+  </td>
+ </tr></ 
+P>
+</table>
+
+</div>
+
+<p></ P></p>
+
+<p>&nbsp;</p>
+
+<p align="center" style="TEXT-ALIGN: center"><a
+ href="http://www.solutionsoft.com/w2w.htm" target="_top"><span
+
+ style="FONT-SIZE: 7.5pt; TEXT-DECORATION: none; mso-no-proof: yes; text-underline: none"><img id="_x0000_i1030" height="2" alt="word to html&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;
+ converter" src ="b.gif" width=2 border=0 ></span></a><span style="FONT-SIZE: 7.5pt">&nbsp; <o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,430 @@
+<html>
+<head>
+	<title>SWE 645: Component-Based Software Development</title>
+	<style>
+	body {
+	background: #DDDDDD;
+}
+
+body, li, td, div {
+	font: 13px verdana, arial, sans-serif;
+}
+
+hr {
+	visibility: hidden;
+	display: none;
+}
+
+img {
+	border:0px;
+}
+
+a {
+	padding:2px;
+	text-decoration:underline;
+}
+
+a:link {
+	color:#C64708;
+}
+
+a:visited {
+	color:#4D3A33;
+}
+
+a:active {
+	color:#C64708;
+}
+
+a:hover {
+	background:#C6B478;
+	color:#fff;
+}
+
+p.largefont {
+	text-align: left;
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+div.mainContent {
+	background: white;
+	padding:10px;
+	border: 1px solid silver;
+}
+
+div.section {
+	border: 2px double silver;
+	padding: 1px;
+	margin-bottom: 16px;
+}
+
+div.sectionHead {
+	padding: 4px;
+	background: #FFEEAA;
+	background: #EEEEEE;
+}
+
+div.sectionHead .headerText {	
+	font-weight: bold;
+	font-size: 120%;
+}
+
+div.sectionText {
+	padding: 4px;
+	background: #f9f9f9;
+}
+
+.importantNote {
+	font-weight: bold;
+	color: red;
+}
+
+.stress {
+	font-weight: bold;	
+}
+
+.stress:hover {
+	background:#C6B478;
+	color:#fff;
+}
+
+.sideHeaderText {	
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 130%;
+}
+
+#fullTable table {
+	margin-left:5px;
+	font-size:13px;
+	line-height:16.5px;
+	color:#4D3A33;
+	border-style: double;
+	border-spacing:0px;
+	border-color:#000000;
+	empty-cells: show;
+	border-collapse: collapse;
+	padding: 10 10 10 10;
+}
+#fullTable th {
+	vertical-align:top;
+	font-weight:bold;
+	text-align:center;
+	background: #DDDDDD;
+	border-style: solid;
+	border-width: 1px;	
+	padding: 10 10 10 10;
+}
+
+#fullTable tr {
+	vertical-align:top;
+	padding: 10 10 10 10;
+	background: #F9F9F9;
+}
+
+#fullTable td {	
+	border-style: solid;
+	border-width: 1px;
+	padding: 2px;
+}
+
+#navbar {
+	background: #F9F9F9;
+	border: 1px solid silver;
+	padding: 4px;
+}
+
+#navbar ul li {
+	font-weight: bold; 
+	padding: 1px 9px 9px 3px;
+}
+
+#fullTable ul {
+	padding: 0px 0px 0px 15px;
+}
+
+
+#fullTable ul li {
+	font-weight: bold; 
+	padding: 1px 1px 1px 1px;
+}
+
+#bottomlinks {
+	text-align: center;
+}
+
+#pageHeader h1 {
+	color:#000000;
+	font-size:30px;
+	height:15px;
+}
+
+#pageHeader h2 {
+	height:20px;
+	color:#000000;
+	font-size:19px;
+}
+
+#pagetitle {
+	color:#FFF78F;
+	background:#4A6774;
+	text-align: center;
+	font-size:17px;
+	font-weight:bold;
+	padding:4px;
+}
+	</style>
+</head>
+<body>
+	<table width='100%'>
+		<tr>
+			<td>
+				<div id="pageHeader">
+					<h1>SWE 645</h1>	
+					<h2>Component-Based Software Development</h2>
+				</div>
+				<div id="pagetitle">
+					<span>Course Web Site - Fall 2008</span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<div class="mainContent">
+					<div class="section">
+						<div class="sectionHead">
+							<div class="headerText">Course Information</div>
+						</div>
+						<div class="sectionText">
+						<table>
+							<tr>
+								<td>Professor:</td>
+								<td><span class="stress">Greg Martin</span></td>
+							</tr>			
+							<tr>
+								<td>Email:</td>
+								<td>g.martin@computer.org</td>
+							</tr>
+							<tr>
+								<td>Class Hours:</td>
+								<td>Wednesday 7:20 pm - 10:00 pm, Robinson Hall A247</td>
+			
+							</tr>
+							<tr>
+								<td><b>Course Web Page:</b></td>			
+								<td><b><a href="http://mason.gmu.edu/~gmartinc/swe645/">http://mason.gmu.edu/~gmartinc/swe645/</a></b></td>
+							</tr>
+						</table>
+						</div>
+					</div>
+
+					<div class="section">
+						<div class="sectionHead">
+							<div class="headerText">Objective</div>
+						</div>
+						<div class="sectionText">
+							<span>Detailed study of the concepts and engineering 
+							principles of software component and component-based 
+							software systems.  In depth study of one component 
+							model Enterprise JavaBean (EJB) and Web service. 
+							After the course, students should be prepared to 
+							create large-scale component-based software systems.</span>
+						</div>
+					</div>
+					<hr />
+					
+					<div class="section">
+						<div class="sectionHead">
+							<div class="headerText">Texts</div>
+						</div>
+						<div class="sectionText">
+							<p>There is one required text for the course:</p>
+							<ul>
+								<li>Enterprise JavaBeans 3.0 (5th Edition), by Bill Burke and Richard Monson-Haefel, O'reilly <br />
+								This book is not in the Johnson Center bookstore, however it can be found on any
+								online website, such as <a href="http://www.amazon.com/Enterprise-JavaBeans-3-0-Bill-Burke/dp/059600978X/ref=sr_1_1?ie=UTF8&s=books&qid=1216241351&sr=8-1">Amazon</a> and <a href="http://oreilly.com/catalog/9780596009786/">O'Reilly</a> and some commercial bookstores.
+								</li>
+							</ul>
+							<p>In addition to the required text, 
+							we will read from various 
+							sources on the web, and slides that will be made 
+							available on the web site. The schedule for the readings 
+							is given on the schedule web page.</p>
+
+							<p>
+								There are five recommended books for this couse, and can help
+								with further understanding of the subjects. They are not at the
+								Johnson Center Bookstore, but can be found online.
+							</p>
+							<ul>
+								<li>Mastering Enterprise JavaBeans (2nd Edition),by Ed Roman, Scott W. Ambler and Tyler Jewell, John Wiley & Sons, ISBN:0471417114</li>
+								<li>Java Web Services Architecture, by James McGovern, Sameer Tyagi, Michael Stevens and Sunil Mathew, Morgan Kaufmann, ISBN: 155860900</li>
+								<li>EJB Design Patterns, by Floyd Marinescu, John Wiley & Sons, ISBN:0471208310</li>
+								<li>Component-based development with visual C#, by Ted Faison, John Wiley & Sons; ISBN: 0764549146</li>
+								<li>Moving to ASP.NET: Web Development with VB .NET, by Steve Harris and Rob MacDonald, APress, ISBN: 1590590090 </li> 
+							</ul>
+							<p>Other web software reference books are listed on the 
+								assignment and resources page.
+							</p>
+						</div>
+					</div>
+					<hr />
+					<div class="section">
+						<div class="sectionHead">
+							<div class="headerText">Content:</div>
+						</div>
+						<div class="sectionText">
+							<p>SWE 645 covers some of the topics related to 
+							the software development models that are used to 
+							support component-based software systems. 
+							We will be studying the software design and 
+							development side of component-based software.</p>
+
+							<p>Though SWE 619 is the only required prerequisite, 
+							other topics such as web based Java programming 
+							(<a href="http://www.w3schools.com/html/default.asp">HTML</a>, <a href="http://java.sun.com/products/servlet/index.jsp">Servlets</a>, <a href="http://java.sun.com/products/jsp/">JSPs</a>,...) and 
+							database programming (<a href="http://java.sun.com/products/jdbc/overview.html">JDBC</a>) are going to 
+							be used throughout this course. Therefore, background knowledge will be helpful.
+							SWE 642, though not a required prerequisite, is a great background course for these topics.
+							The class will be very practical (how to build things) and require extensive programming assignments. 
+							</p>
+						</div>
+					</div>
+					<hr />
+				
+					
+					<div class="section">
+						<div class="sectionHead">
+							<div class="headerText">Homeworks:</div>
+						</div>
+						<div class="sectionText">
+							<p>A number of homework assignments will 
+							be given. I will discuss each in class and make the 
+							assignment available on the class web site. You will submit 
+							your solutions by sending an email to myself, and CC the TA. 
+							The email will contain a description on how to run, or access your assignment,
+
+							and a zip file containing all of your code. I reserve
+							the right to deduct points if the description and/or zip file is not 
+							included with the homework. Please read ALL of the assignment requirements, as
+							they will contain important informaton, such as procedures and naming conventions.
+							I will discuss how the assignments are to be deployed, and it will
+							be contained in the assignment requirements.<br />
+							Be sure that you are on the class mailing list, as refinements and 
+							hints for the assignments will be sent through email. 
+							Assignments will be checked immediately after the due date; 
+							if you finish an assignment late, you must inform us by 
+							email when it is ready for us to grade it. <b>Changing an 
+							assignment after the due date without prior permission will
+							be treated as a late submission.</b> Late submissions carry an automatic 10
+							percent deduction in grade for each week that it is late. No homeworks will be 
+							accepted after the start of the last lecture on 
+							Week 14 (12/10/2008).</p>
+							
+							<p>Assingments will be graded on the correctness of the code and the
+							adherance to the requirements. A more detailed description on the
+							homework grading will be included with the homework requirements 
+							when assigned.</p>
+							
+							<p>Since some of the assignments are web-based, it is
+							your responsibility to have the homework assignements hosted. George Mason
+							offers a JBoss application server to SWE 645 students as a convenience. However,
+							if you would like to host your homework elsewhere, that is permitted, <b>as long
+							as the TA and myself can access the assignment, and the server space where the assignment
+							is hosted</b> (in other words, we need SSH access to the server). Here are a couple companies that host
+							examples of Java EE and EJB applications:
+							<ul>
+								<li><a href="http://www.rackspace.com/">http://www.rackspace.com/</a></li>
+								<li><a href="http://www.visionwebhosting.net/">http://www.visionwebhosting.net/</a></li>
+								<li><a href="http://www.eapps.com/ManagedHosting/JBoss.jsp">http://www.eapps.com/ManagedHosting/JBoss.jsp</a></li>
+							</ul>
+							I highly reccomend downloading, and installing, 
+							the <a href="http://www.jboss.org/jbossas/downloads//">JBoss Applcation Server</a> on your own computer, 
+							so that you can still complete
+							your assignments, even if your application server, or Internet connection, is
+							down. </p>
+							
+						</div>
+					</div>
+					<hr />
+					<div class="section">
+						<div class="sectionHead">
+							<div class="headerText">Makeups &amp; Late Assignments:</div>
+						</div>
+						<div class="sectionText">
+							<p>Missed tests cannot be made up. Late assignments will 
+							be deducted 10 percent per class meeting. Assignments
+							that are handed in later than 2 weeks will receive a zero.
+							No homeworks will be accepted after the start 
+							of the last lecture on Week 14 (12/10/2008).</p>
+						</div>
+					</div>
+					<hr />
+					<div class="section">
+						<div class="sectionHead">
+							<div class="headerText">Honor Code Statement:</div>
+						</div>
+						<div class="sectionText">
+							<p class="p1"><span>As with all GMU courses, SWE 642 is 
+							governed by the GMU Honor Code. In this course, all 
+							assignments, exams, and project submissions carry with 
+							them an implicit statement that it is the sole work of the 
+							author, unless joint work is explicitly authorized. Help 
+							may be obtained from the instructor or other students to 
+							understand the description of the problem and any 
+							technology, but the solution, particularly the design 
+							portion, must be the student's own work. If joint work is 
+							authorized, all contributing students must be listed on the 
+							submission. Any deviation from this is considered an 
+							Honor Code violation, and as a minimum, will result in 
+							failure of the submission and as a maximum, failure of the 
+							class. Honor code violation may include, but are not limited to
+							the following examples:</span></p>
+							<ul>
+								<li>Copying answers from other students during exams.</li>
+								<li>Submitting homework that is not your own work.</li>				
+								<li>Copying and pasting someone else's code into your own files (even with slight modifications)</li>
+							</ul>
+							<p>The examples I show in class can be used to grow on, not to copy. 
+							I understand that in the real world, software reuse is considered the norm, and can 
+							drastically improve a projects schedule. However, in this class, software reuse 
+							will be considered an Honor Code violation, unless permission is granted before 
+							the project is submitted. When in doubt, ask me? It is better to find out what 
+							I would consider a violation before the assignment is submitted. This is not the real world,
+							and one of the requirements to passing this class is that you, the student, can handle the material
+							on your own.</p>
+							<p>For more information about the GMU Honor Code, 
+							<a href="http://deanofstudents.gmu.edu/honorcode/honor.html">
+							Please visit the GMU Honor Code page</a>.</p>
+						</div>
+					</div>
+					<hr />
+
+					<div class="section">
+						<div class="sectionHead">
+							<div class="headerText">Grading Policies:</div>
+						</div>
+						<div class="sectionText">
+							<ul>
+								<li>There will be 5 computer programming 
+								assignments (total 35% of the grade)</li>
+								<li>There will be a closed-book, in-class, 
+								midterm exam (total 30% of the grade)</li>
+								<li>There will be a closed-book, in-class, 
+								final exam (total 30% of the grade)</li>								
+							</ul>
+
+						</div>
+					</div>
+					<hr />
+					<div id="bottomlinks">
+						<a href="mailto:g.martin@computer.org">g.martin@computer.org</a><br />
+						The information on this page is subject to change.
+					</div>
+				</div>             
+			</td>			
+		</tr>
+	</table>
+</body>
+</html>
