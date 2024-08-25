@@ -1,0 +1,434 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List
+href="ISA674-IntrusionDetection-Fall2010-Syllabus_files/filelist.xml">
+<title>ISA 674 Intrusion Detection</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Xinyuan (Frank) Wang</o:Author>
+  <o:LastAuthor>Xinyuan Wang</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2787</o:TotalTime>
+  <o:LastPrinted>2005-08-29T19:47:00Z</o:LastPrinted>
+  <o:Created>2005-08-31T18:50:00Z</o:Created>
+  <o:LastSaved>2010-10-13T22:11:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>183</o:Words>
+  <o:Characters>1047</o:Characters>
+  <o:Company>George Mason University</o:Company>
+  <o:Lines>8</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1228</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.section1, li.section1, div.section1
+	{mso-style-name:section1;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.section1style4, li.section1style4, div.section1style4
+	{mso-style-name:"section1 style4";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.style41, li.style41, div.style41
+	{mso-style-name:style41;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.style1, li.style1, div.style1
+	{mso-style-name:style1;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:blue;}
+p.style2, li.style2, div.style2
+	{mso-style-name:style2;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:blue;}
+p.style4, li.style4, div.style4
+	{mso-style-name:style4;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.style6, li.style6, div.style6
+	{mso-style-name:style6;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:blue;
+	font-weight:bold;}
+span.style42
+	{mso-style-name:style42;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;}
+span.style11
+	{mso-style-name:style11;
+	color:blue;}
+span.style21
+	{mso-style-name:style21;
+	color:blue;}
+span.msonormal0
+	{mso-style-name:msonormal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:817385485;
+	mso-list-template-ids:-1777934066;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+.style7 {font-size: 12pt}
+.style8 {	font-size: 16.0pt;
+	font-weight: bold;
+	color: blue;
+}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+  <h1 align=center style='text-align:center'><span style='font-size:18.0pt;
+color:blue'>ISA 674 Intrusion Detection</span></h1>
+  <h1 align=center style='text-align:center'><span style='font-size:18.0pt;
+color:blue'>Fall 2011</span><span class=style7><span
+style='font-size:14.0pt;color:red'><o:p></o:p></span></span></h1>
+  <p class=section1 align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=section1 style='margin:0in;margin-bottom:.0001pt;line-height:150%'><span
+class=style42><b><span style='font-size:14.0pt;line-height:150%'>Time and
+Place:</span></b></span><span class=style42><span style='font-size:14.0pt;
+line-height:150%'> <span style='color:blue'>Wednesday 4:30~7:10pm at
+Innovation Hall, Room 134 </span></span></span><span style='font-size:
+14.0pt;line-height:150%;color:blue'><o:p></o:p></span></p>
+
+<p class=section1style4 style='margin:0in;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:14.0pt;line-height:150%'>Instructor</span></b><span
+style='font-size:14.0pt;line-height:150%'>: <span style='color:blue'>Dr.
+Xinyuan (Frank) Wang</span><o:p></o:p></span></p>
+
+<p class=section1style4 style='margin:0in;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:14.0pt;line-height:150%'>Office</span></b><span
+style='font-size:14.0pt;line-height:150%'>: <span style='color:blue'>Room 5331,
+Engineergin Building </span><o:p></o:p></span></p>
+
+<p class=section1style4 style='margin:0in;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:14.0pt;line-height:150%'>Office phone</span></b><span
+style='font-size:14.0pt;line-height:150%'>: <span style='color:blue'>(703)
+993-9461</span><o:p></o:p></span></p>
+
+<p class=section1style4 style='margin:0in;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:14.0pt;line-height:150%'>Office hours</span></b><span
+style='font-size:14.0pt;line-height:150%'>: <span style='color:blue'>Wednesday 3:00~4:20PM
+or by appointment<o:p></o:p></span></span></p>
+
+<p class=section1style4 style='margin:0in;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:14.0pt;line-height:150%'>Email</span></b><span
+style='font-size:14.0pt;line-height:150%'>: <span class=SpellE><span
+style='color:blue'>xwangc</span></span><span style='color:blue'> at <span
+class=SpellE>gmu</span> dot <span class=SpellE>edu</span></span><o:p></o:p></span></p>
+
+<p class=style41 style='margin:0in;margin-bottom:.0001pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%'>&nbsp;<o:p></o:p></span></p>
+
+<p class=section1style4 style='margin:0in;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:14.0pt;line-height:150%'>Teaching Assistant</span></b><span
+style='font-size:14.0pt;line-height:150%'>: <span
+style='font-size:14.0pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%'><span class=style11><span
+style='font-size:14.0pt;line-height:150%'><span
+style='font-size:14.0pt;line-height:150%'>Ajay</span> Nagarajan</span></span></span></span></span><span
+class=style11><o:p></o:p></span></p>
+
+<p class=section1style4 style='margin:0in;margin-bottom:.0001pt;line-height:
+150%'><b><span style='font-size:14.0pt;line-height:150%'>Office hours</span></b><span
+style='font-size:14.0pt;line-height:150%'>: <span class=style11>TBD,
+Engineering Building, Room 4456 </span><span style='color:blue'><br>
+</span><b>Email</b>: <span class=style11>anagara1@gmu.edu</span></span><span
+class=style21><o:p></o:p></span></p>
+
+<p class=style41 style='margin:0in;margin-bottom:.0001pt;line-height:150%'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='line-height:150%;mso-outline-level:2'><b><span
+style='font-size:16.0pt;line-height:150%;color:blue'>Course Description</span></b><b><span
+style='font-size:16.0pt;line-height:150%'><o:p></o:p></span></b></p>
+<p class=style41 style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;line-height:150%'>The objective of this course is to provide an in depth introduction to the science and art of intrusion detection. The course consists of lectures and a series of interactive research oriented seminars. Topics covered include: overview of intrusions, history and state of the art of intrusion detection, the principles and techniques of intrusion detection, the limitations and open problems of intrusion detection, countermeasures against intrusion detection, case study of representative techniques used in intrusion detection systems, forensics, virus and worm defense. In addtion to the principles and techniques of intrusion detection, the course will have suibstantial hands-on components. </p>
+<h1><span style='font-size:16.0pt;color:blue'><span class="MsoNormal"><b><span
+style='font-size:16.0pt;line-height:150%;color:blue'>Course Outcomes</span></b></span></span></h1>
+<ul>
+  <li>An comprehensive understanding on the subject of intrusion detection</li>
+  <li>
+    <![if !supportLists]>
+    A knowledge of the state of the art of intrusion detection research </li>
+  <li>
+    <![if !supportLists]>
+    A detailed understanding on how intrusion happens </li>
+  <li>A deep understanding on the principles and techniques used in intrusion detection, as well as the technical challenges and fundamental limitations of intrusion detection</li>
+  <li>Preparation to become either a capable practitioner or independent researcher in intrusion detection </li>
+</ul>
+<h1><span style='font-size:16.0pt;color:blue'>Course Prerequisite</span><span
+style='font-size:16.0pt'><o:p></o:p></span></h1>
+<p style='margin-left:.25in'>ISA 562, ISA 656, or permission by instructor.</p>
+<p style='margin-left:.25in'><span class="style41">The students are expected to have good understanding on operating system internals (e.g. system call internals, run-time memory organization, assembly language of x86). Proficiency in C programming is essential in order to be successful in the course homework and projects.</span></p>
+<h1><span style='font-size:16.0pt;color:blue'>Textbook and <st1:City w:st="on"><st1:place
+ w:st="on">Readings</st1:place></st1:City></span><span style='font-size:16.0pt'><o:p></o:p></span></h1>
+<p style='margin-left:.25in'>There is NO <span class=GramE>textbook</span> for this course. The course is in form of seminars, and it is based on current research papers!</p>
+<p style='margin-left:.25in'>Reading List (<a href="http://www.cs.gmu.edu/%7Exwangc/teaching/ISA674/IDS-Reading/IDS-index.htm">click to see</a>)</p>
+<p class=MsoNormal style='line-height:150%;mso-outline-level:2'><b><span
+style='font-size:16.0pt;line-height:150%;color:blue'>Class Schedule </span></b><span
+style='font-size:16.0pt;line-height:150%;color:blue;mso-bidi-font-weight:bold'>(<a href="http://www.cs.gmu.edu/%7Exwangc/teaching/ISA674/ISA674-IntrusionDetection-Fall2011-Schedule.htm">click to see</a>) <o:p></o:p></span></p>
+<p class=MsoNormal style='margin-left:.25in;line-height:150%;mso-outline-level:
+2'><span style='font-size:12.0pt;line-height:150%;mso-bidi-font-weight:bold'>Class schedule is tentative and subject to change. Please check frequently.<o:p></o:p></span></p>
+<h1><span style='font-size:16.0pt;color:blue'>Grading</span><span
+style='font-size:16.0pt'><o:p></o:p></span></h1>
+<p style='margin-left:.25in'><span style='color:red'>There will be one midterm exam, <o:p>3~4 home work assignments, and a final term project/presentation </o:p></span></p>
+<p style='margin-left:.25in'>The grade consists of</p>
+<p style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;margin-left:.5in;
+text-indent:-.25in;mso-list:l7 level1 lfo9;tab-stops:list .5in'>
+  <![if !supportLists]>
+  <span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
+  <![endif]>
+  Homework 30%</p>
+<p style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;margin-left:.5in;
+text-indent:-.25in;mso-list:l7 level1 lfo9;tab-stops:list .5in'>
+  <![if !supportLists]>
+  <span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
+  <![endif]>
+  Midterm exam 30%</p>
+<p style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;margin-left:.5in;
+text-indent:-.25in;mso-list:l7 level1 lfo9;tab-stops:list .5in'>
+  <![if !supportLists]>
+  <span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
+  <![endif]>
+  Class Discussion Participation 10%</p>
+<p style='margin-top:0in;margin-right:0in;margin-bottom:6.0pt;margin-left:.5in;
+text-indent:-.25in;mso-list:l7 level1 lfo9;tab-stops:list .5in'>
+  <![if !supportLists]>
+  <span
+style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'><span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span>
+  <![endif]>
+  Term paper/presentation<span
+style='mso-spacerun:yes'>&nbsp; </span>30% </p>
+<p style='margin-left:.25in;'>The final grade is based on the curve of the raw scores. How many will get A or B (or even C...) depends on the overall performance of all students. Usually the top 30% of the class will get at lease A-, the average grade of the whole class will normally be somewhere between A- and B+. However, it is possible for every student to get A if the performance of the whole class is exceptionally well.
+    <![if !supportLists]>
+    <span style='font-size:12.0pt;line-height:150%;mso-bidi-font-weight:bold'><o:p></o:p></span><span style='font-size:12.0pt;line-height:150%;mso-bidi-font-weight:bold'><o:p></o:p></span></p>
+<h1><b><span style='font-size:16.0pt;color:blue;mso-font-kerning:
+18.0pt'>Academic Integrity</span></b><b><span style='font-size:16.0pt;
+mso-font-kerning:18.0pt'><o:p></o:p></span></b></h1>
+<p class=MsoNormal style='margin-left:.25in;text-align:justify'><span
+style='font-size:12.0pt'>All students are required to follow all <a
+href="http://www.gmu.edu/catalog/apolicies/#Anchor12">university</a>, school and <a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage">department</a> policies regarding academic integrity. Violator of the Honor Code will result in a grade of F for the course, as well as any penalties imposed by the university and/or the CS department.<o:p></o:p></span></p>
+<p class=MsoNormal style='margin-left:.25in; margin-bottom: 6.0pt;'><o:p></o:p></p>
+<h1><span class="style8">Disability Statement </span><b><span style='font-size:16.0pt;
+mso-font-kerning:18.0pt'><o:p></o:p></span></b></h1>
+<p class=MsoNormal style='margin-left:.25in;text-align:justify'><span
+style='font-size:12.0pt'>If you have a documented learning disability or other condition that may affect academic performance you should: 1) make sure this documentation is on file with the Office of Disability Services (SUB I, Rm. 222; 703-993-2474; www.gmu.edu/student/drc) to determine the accommodations you need; and 2) talk with me to discuss your accommodation needs. All academic accommodations must be arranged through the ODS.</span></p>
+<p class=MsoNormal style='margin-left:.25in; margin-bottom: 6.0pt;'><o:p><span class="style7"></span></o:p></p>
+<p class=section1 style='margin:0in;margin-bottom:.0001pt;line-height:150%;
+mso-outline-level:2'><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>
+><o:p></o:p></p>
+
+</div>
+
+</body>
+
+</html>

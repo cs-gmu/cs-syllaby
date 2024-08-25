@@ -1,0 +1,984 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+
+
+<html>
+
+
+
+<head>
+
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+  <meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+  <title>CS 451 - Computer Graphics -- J. X. Chen</title>
+
+
+
+  <meta name="Generator" content="Cocoa HTML Writer">
+
+
+
+  <meta name="CocoaVersion" content="949.54">
+
+
+
+  <style type="text/css">
+
+
+
+    p.p1 {margin: 0.0px 0.0px 18.0px 0.0px; text-align: center; font: 18.0px Times New Roman}
+
+
+
+    p.p2 {margin: 0.0px 0.0px 16.0px 0.0px; text-align: center; font: 16.0px Times New Roman}
+
+
+
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px Helvetica}
+
+
+
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px Helvetica; min-height: 16.0px}
+
+
+
+    p.p5 {margin: 0.0px 0.0px 16.0px 48.0px; text-align: center; font: 16.0px Times New Roman}
+
+
+
+    p.p6 {margin: 0.0px 0.0px 8.0px 0.0px; text-align: center; font: 16.0px Times New Roman; min-height: 18.0px}
+
+
+
+    p.p7 {margin: 0.0px 0.0px 16.0px 0.0px; font: 16.0px Times New Roman}
+
+
+
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman}
+
+
+
+    p.p9 {margin: 0.0px 0.0px 21.0px 0.0px; font: 16.0px Times New Roman}
+
+
+
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman; min-height: 18.0px}
+
+
+
+    p.p11 {margin: 0.0px 0.0px 0.0px 48.0px; font: 16.0px Times New Roman}
+
+
+
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px Times New Roman; min-height: 18.0px}
+
+
+
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 16.0px Times New Roman}
+
+
+
+    span.s1 {font: 18.0px Lucida Grande}
+
+
+
+    span.s2 {font: 13.0px STHeiti Light}
+
+
+
+    span.s3 {text-decoration: underline}
+
+
+
+    ul.ul1 {list-style-type: disc}
+
+
+
+  </style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+<h1 align="center" style="margin: 0.0px 0.0px 18.0px 0.0px; font: 18.0px Times New Roman"><b>George 
+
+
+
+  Mason University </b><span class="s1"><b><br>
+
+
+
+  </b></span><b>DEPARTMENT OF COMPUTER SCIENCE</b></h1>
+
+
+
+<h1 align="center">CS 451 Computer Graphics - Fall'2013</h1>
+
+
+
+<div align="center">
+
+
+
+  <blockquote>&nbsp; </blockquote>
+
+
+
+</div>
+
+
+
+<blockquote> 
+
+  <p align="center">Computer Graphics - CS 451 - 001<br>
+
+    <br>
+
+    Instructors: <a href="http://www.cs.gmu.edu/%7Ejchen">Professor Jim X. Chen</a> 
+
+    <br>
+
+    Class 3:00 pm - 4:15 pm; TR; Innovation Hall 204; Aug 26, 2013 - Dec 18, 2013</p>
+
+
+
+  <p align="center">&nbsp;</p>
+
+
+
+</blockquote>
+
+
+
+<hr>
+
+
+
+<p class="p7"><b>ACTIONS:</b></p>
+
+
+
+<ul class="ul1">
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman"><a href="http://www.cs.gmu.edu/%7Ejchen/graphics/setup.html"><span class="s3">Set 
+
+
+
+    up your working environment at home</span></a></li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman"><a href="mailto:jchen@cs.gmu.edu"><span class="s3">Suggestions 
+
+
+
+    and comments about this course</span></a><br>
+
+
+
+  </li>
+
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+<br>
+
+
+
+<b>DESCRIPTION:</b>
+
+
+
+<ul>
+
+
+
+  <li>CS 451 is a 3-credit course with prerequisite MATH 203, CS 310, and CS 367. 
+
+
+
+    It gives a general introduction to basic graphics principles, graphics software 
+
+
+
+    design, and OpenGL programming. The programming platform is in Java or C. 
+
+
+
+    The course will be taught in Java. The course will include lecturing through 
+
+
+
+    the course notes, discussing the homeworks and the project, and student presentation 
+
+
+
+    at the end.</li>
+
+
+
+  <li>I am assuming you know the prerequisite material, Java (or C) programming, 
+
+
+
+    vector analysis, and matrix calculations. After this class, you will be able 
+
+
+
+    to do 2D/3D object transformation, rendering, and animation. Emphasis will 
+
+
+
+    be on the programming and implementation. 
+
+
+
+    <h4 style="margin: 0.0px 0.0px 21.0px 0.0px; font: 16.0px Times New Roman">&nbsp;</h4>
+
+
+
+    <h4 style="margin: 0.0px 0.0px 21.0px 0.0px; font: 16.0px Times New Roman"><b>Course 
+
+
+
+      Outcomes:</b></h4>
+
+
+
+    <ul>
+
+
+
+      <li>1) Apply trigonometry, geometry, vector analysis, and linear algebra 
+
+
+
+        to solve real world problems. Students can develop objects transformation 
+
+
+
+        and their own geometric transformation mechanism as the one implemented 
+
+
+
+        in the OpenGL system.</li>
+
+
+
+      <li>2) Analyze object positions and movements to define the computing methods 
+
+
+
+        and solutions for multiple objects’ movements, relations, and collision 
+
+
+
+        activities. Students can develop methods for objects moving and colliding 
+
+
+
+        in 3D space. </li>
+
+
+
+      <li>3) Collaborate with classmates in teams in achieving the course project. 
+
+
+
+        Students in teams are required to identify components to be implemented 
+
+
+
+        and efforts to accomplish the components.</li>
+
+
+
+      <li>4) Understand and use the current techniques, skills, and tools in GPU 
+
+
+
+        programming for advanced lighting calculations.</li>
+
+
+
+    </ul>
+
+
+
+  </li>
+
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+<br class="p8">
+
+
+
+<b>GRADING POLICY:</b>
+
+
+
+<blockquote> 
+
+
+
+  <p class="p7">There are all together 100 points:</p>
+
+
+
+  <ul>
+
+
+
+    <li>Eight homework/programming assignments (20 points)</li>
+
+
+
+    <li>Random in-class quizzes and class participation (20 points)</li>
+
+
+
+    <li>One midterm take-home exam (20 points)</li>
+
+
+
+    <li>One final comprehensive exam (40 points)</li>
+
+
+
+  </ul>
+
+
+
+  <p class="p7">Your overall course score, S, will be the sum of these points.</p>
+
+
+
+  <ul>
+
+
+
+    <li>A: S is at least 90 points</li>
+
+
+
+    <li>B: S is at least 80 points</li>
+
+
+
+    <li>C: S is at least 60 points</li>
+
+
+
+    <li>D: S is at least 45 points</li>
+
+
+
+    <li>F: S is less than 45 points<br>
+
+
+
+    </li>
+
+
+
+  </ul>
+
+
+
+  <p class="p7">Each assignment may not be accepted if it is not turned in on 
+
+
+
+    time. Therefore, you should plan on working early. If you cannot finish your 
+
+
+
+    assignment, you come to meet me or my TA during the office hours.</p>
+
+
+
+  <p class="p7">If there is an accident or emergency and you let me know, I will 
+
+
+
+    consider it accordingly.<br>
+
+
+
+  </p>
+
+
+
+</blockquote>
+
+
+
+<hr>
+
+
+
+<p class="p8"><br>
+
+
+
+  <b>OTHER POLICIES</b></p>
+
+
+
+<blockquote> 
+
+
+
+  <p class="p8"><b>General Course Policies</b></p>
+
+
+
+  <ul>
+
+
+
+    <li>Policies regarding attendance and participation: if you miss a quiz, you 
+
+
+
+      will not receive a grade for that quiz unless you have a serious reason, 
+
+
+
+      then you will receive a grade for the quiz according to your final grade.</li>
+
+
+
+    <li>Policy regarding late assignments, make-up exams, and extra credit: no 
+
+
+
+      late assignments, make-up exams, and extra credit in general.<span class="Apple-converted-space"> 
+
+
+
+      </span></li>
+
+
+
+    <li>Policy regarding incompletes: no incomplete in general.</li>
+
+
+
+    <li>Policy on electronic devices (cell phones, pagers, computers, etc.): should 
+
+
+
+      be turned off or on silence in class. </li>
+
+
+
+  </ul>
+
+
+
+  <p class="p7"><b>University Requirements</b></p>
+
+
+
+  <ul>
+
+
+
+    <li>Academic Honesty and Honor Code Statement: <a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage">http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage</a></li>
+
+
+
+    <li>Disability Statement: <a href="http://ods.gmu.edu">http://ods.gmu.edu</a>.</li>
+
+
+
+  </ul>
+
+
+
+</blockquote>
+
+
+
+<p class="p7"> <strong>ACADEMIC INTEGRITY</strong><br>
+
+
+
+  GMU is an Honor Code university; please see the University Catalog for a full 
+
+
+
+  description of the code and the honor committee process. The principle of academic 
+
+
+
+  integrity is taken very seriously and violations are treated gravely. What does 
+
+
+
+  academic integrity mean in this course? Essentially this: when you are responsible 
+
+
+
+  for a task, you will perform that task. When you rely on someone else’s work 
+
+
+
+  in an aspect of the performance of that task, you will give full credit in the 
+
+
+
+  proper, accepted form. Another aspect of academic integrity is the free play 
+
+
+
+  of ideas. Vigorous discussion and debate are encouraged in this course, with 
+
+
+
+  the firm expectation that all aspects of the class will be conducted with civility 
+
+
+
+  and respect for differing ideas, perspectives, and traditions. When in doubt 
+
+
+
+  (of any kind) please ask for guidance and clarification.<br>
+
+
+
+</p>
+
+
+
+<p class="p7"><strong> GMU EMAIL ACCOUNTS</strong><br>
+
+
+
+  Students must activate their GMU email accounts to receive important University 
+
+
+
+  information, including messages related to this class. You should understand 
+
+
+
+  that your emailbox may be full, so check your email and make sure you have enough 
+
+
+
+  space daily. <br>
+
+
+
+</p>
+
+
+
+<p class="p7"><strong>OFFICE OF DISABILITY SERVICES</strong><br>
+
+
+
+  If you are a student with a disability and you need academic accommodations, 
+
+
+
+  please see me and contact the Office of Disability Services (ODS) at 993-2474. 
+
+
+
+  All academic accommodations must be arranged through the ODS. <a href="http://ods.gmu.edu">http://ods.gmu.edu</a></p>
+
+
+
+<p class="p7"><br>
+
+
+
+  <strong>OTHER USEFUL CAMPUS RESOURCES:</strong><br>
+
+
+
+  WRITING CENTER: A114 Robinson Hall; (703) 993-1200; http://writingcenter.gmu.edu<br>
+
+
+
+  UNIVERSITY LIBRARIES “Ask a Librarian”<br>
+
+
+
+  http://library.gmu.edu/mudge/IM/IMRef.html</p>
+
+
+
+<p class="p7"><br>
+
+
+
+  <strong>COUNSELING AND PSYCHOLOGICAL SERVICES (CAPS)</strong>: (703) 993-2380;<br>
+
+
+
+  http://caps.gmu.edu</p>
+
+
+
+<p class="p7"><br>
+
+
+
+  <strong>UNIVERSITY POLICIES</strong><br>
+
+
+
+  The University Catalog, http://catalog.gmu.edu, is the central resource for 
+
+
+
+  university policies affecting student, faculty, and staff conduct in university 
+
+
+
+  affairs.</p>
+
+
+
+<hr>
+
+
+
+<p class="p7"><br>
+
+  <a href="http://cs.gmu.edu/department/TAofchours.html"><span class="s3"><strong>TEACHING 
+
+  ASSISTANT</strong></span></a><strong> and Office Hours</strong></p>
+
+
+
+<p class="p8">My office hours are specificed in <a href="http://cs.gmu.edu/%7Ejchen">my 
+
+  homepage</a> always. </p>
+
+
+
+<p class="p8">&nbsp;</p>
+
+
+
+<p class="p8">&nbsp;</p>
+
+
+
+<hr>
+
+
+
+<p class="p8">&nbsp;</p>
+
+
+
+<p class="p8"><br>
+
+
+
+  <b>GROUPS AND COLLABORATION:</b></p>
+
+
+
+<p class="p7">You may form into <b>study groups</b>. You can meet with your study 
+
+
+
+  group and discuss all homework questions freely and frequently in your group. 
+
+
+
+  <b>However, you must do your own assignments. </b>In short, collaborate freely, 
+
+
+
+  acknowledge all help and sources, and do your own work.</p>
+
+
+
+<p class="p8"><br>
+
+
+
+<b>ASSIGNMENTS:</b></p>
+
+
+
+<p class="p7">Will be announced in class and mostly due before next class. Homeworks 
+
+
+
+  are usually done with 2 hours of programming effort. Please submit your source 
+
+
+
+  code to through email. The midterm will be in-class in the middle of the semester.<span class="Apple-converted-space"> 
+
+
+
+  </span></p>
+
+
+
+<hr>
+
+
+
+<br>
+
+
+
+<p class="p7"><b>SYLLABUS: (tentative)</b></p>
+
+
+
+<p class="p7">Will mostly follow the <a href="http://cs.gmu.edu/%7Ejchen/graphics/jogl/notes/"><span class="s3"><strong>notes 
+
+
+
+  posted accompanying the text book</strong></span></a> with minor additions/modifications.<br>
+
+
+
+</p>
+
+
+
+<p class="p8"><br>
+
+
+
+<b>TEXTS :</b> <br>
+
+
+
+ </p>
+
+
+
+<p class="p11">1. Jim X. Chen and Chunyang Chen, <i>Foundation of 3D Graphics Programming Using JOGL and Java3D</i>, Second Edition, Springer Verlag. (<b>Required</b>)</p>
+
+
+
+<p class="p11">2. Jim X. Chen, <i>Guide to Graphics Software Tools</i>, Second Edition, Springer Verlag. (Recommended. This is the accompany book in C.)</p>
+
+
+
+<p class="p11">3. Mason Woo, Jackie Neider, and Tom Davis, <i>OpenGL Programming 
+
+
+
+  Guide</i>, Addison Wesley, latest version. (Recommended. This book is very popular 
+
+
+
+  on OpenGL programming in C.)</p>
+
+
+
+<hr>
+
+
+
+<p class="p11">&nbsp;</p>
+
+
+
+<p class="p7"><br>
+
+
+
+<b>REFERENCES:</b></p>
+
+
+
+<ul class="ul1">
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman"><a href="http://www.cs.gmu.edu/%7Ejchen/cs652/cs652-chen.html"><span class="s3">CS 
+
+
+
+    652 - Interactive Computer Graphics</span></a></li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman"><a href="http://cs.gmu.edu/%7Ejchen/team.html"><span class="s3">GMU 
+
+
+
+    Graphics Group</span></a></li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman"><a href="http://graphics.gmu.edu/"><span class="s3">GMU 
+
+
+
+    Graphics Research</span></a></li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman">Donald 
+
+
+
+    Hearn and M. Pauline Baker, <i>Computer Graphics</i>, C version, 2nd edition, 
+
+
+
+    Printice-Hall, latest version. </li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman">Edward 
+
+
+
+    Angle, <i>Interactive Computer Graphics: A Top-Down Approach with OpenGL</i>, 
+
+
+
+    Addison Wesley.</li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman">Cornel 
+
+
+
+    Pokorny, <i>COMPUTER GRAPHICS: an Object-Oriented Approach to the Art and 
+
+
+
+    Science</i>, Franklin, Beedle &amp; Associates, Incorporated.</li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman">James 
+
+
+
+    D. Foley, Andries van Dam, Steven K. Feiner, John F. Hughes, <i>Computer Graphics:Principles 
+
+
+
+    and Practice</i>, Addison-Wesley 2nd edition.</li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman">Grigore 
+
+
+
+    C. Burdea and Philippe Coiffet, <i>Virtual Reality Technology</i>, Wiley-Interscience, 
+
+
+
+    2nd edition. </li>
+
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+<p class="p7"><i>2013 by Prof. Jim X. Chen, Department of Computer Science, George 
+
+
+
+  mason University</i></p>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+tice</i>, Addison-Wesley 2nd edition.</li>
+
+
+
+  <li style="margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px Times New Roman">Grigore 
+
+
+
+    C. Burdea and Philippe Coiffet, <i>Virtual Reality Technology</i>, Wiley-Interscience, 
+
+
+
+    2nd edition. </li>
+
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+<p class="p7"><i>2011 by Prof. Jim X. Chen, Department of Computer Science, George 
+
+
+
+  mason University</i></p>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
