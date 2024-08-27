@@ -1,0 +1,269 @@
+<html>
+<title>CS 480-001 - Intro to AI - Fall 2023</title>
+<head>
+<style type="text/css">
+#A:link {text-decoration: underline; color: black}
+#A:visited {text-decoration: underline; color: gray}
+body{ font-family: serif; font-size:1.00em; text-align: center; margin: 10px 0 30px 0; virtical-align: middle }
+#content { width: 800px; text-align: left; margin: 0 auto}
+</style>
+<script type="text/javascript">
+var cells = new Array(40);
+var tmpCells = new Array(40);
+var canvas;
+var ctx;
+var speed = 100; //1500;
+var liveProb = 0.10;
+var starty;
+var goaly;
+function drawCells(){
+    for(var x=0;x<40;x++){
+        for(var y=0;y<17;y++){
+            if(cells[x][y])
+                ctx.fillStyle = "rgb(255,255,255)";
+            else
+                ctx.fillStyle = "rgb(0,0,0)";
+            ctx.fillRect((x*20),(y*20),20,20);
+        }
+    }
+    ctx.fillStyle = "rgb(0,255,0)";
+    ctx.fillRect(0,starty*20,20,20);
+    ctx.fillStyle = "rgb(255,0,0)";
+    ctx.fillRect((39*20),(goaly*20),20,20);
+    loop_IDS(5);
+}
+function isIn(a, obj){
+    var i = a.length;
+    while(i--){ 
+        if(a[i] == obj){
+            return true;
+        }
+    }
+    return false;
+}
+function IDS(currx,curry,depth,history){
+    if(cells[currx][curry] || depth < 0 || isIn(history,currx+"x"+curry)) 
+        return false;
+    history.push(currx+"x"+curry);
+    if(goaly == curry && currx == 39) return true;
+    if(currx==0 && curry == starty) ctx.fillStyle = "rgb(0,255,0)";
+    else ctx.fillStyle = "rgb(100,100,100)";
+    ctx.fillRect((currx*20),(curry*20),20,20);
+    if(currx < 39 && IDS(currx+1,curry,depth-1,history)){
+        if(currx!=0 || curry != starty){
+            ctx.fillStyle = "rgb(0,0,255)";
+            ctx.fillRect((currx*20),(curry*20),20,20);
+        }
+        return true;
+    }
+    if(curry < 16 && IDS(currx,curry+1,depth-1,history)){
+        if(currx!=0 || curry != starty){
+            ctx.fillStyle = "rgb(0,0,255)";
+            ctx.fillRect((currx*20),(curry*20),20,20);
+        }
+        return true;
+    }
+    if(currx > 0 && IDS(currx,curry-1,depth-1,history)){
+        if(currx!=0 || curry != starty){
+            ctx.fillStyle = "rgb(0,0,255)";
+            ctx.fillRect((currx*20),(curry*20),20,20);
+        }
+        return true;
+    }
+   if(currx > 0 && IDS(currx-1,curry,depth-1,history)){
+        if(currx!=0 || curry != starty){
+            ctx.fillStyle = "rgb(0,0,255)";
+            ctx.fillRect((currx*20),(curry*20),20,20);
+        }
+        return true;
+    }
+    if(currx==0 && curry==starty) ctx.fillStyle = "rgb(0,255,0)";
+    else ctx.fillStyle = "rgb(0,0,0)";
+    //ctx.fillRect((currx*20),(curry*20),20,20);
+    
+    return false;
+}
+function loop_IDS(depth){
+    if(!IDS(0,starty,depth,new Array()))
+        setTimeout("loop_IDS("+(depth+1)+")",100);
+}
+
+function ca(){
+    starty = Math.floor(Math.random()*17);
+    goaly = Math.floor(Math.random()*17);
+    for(var x=0; x<40;x++){
+        cells[x] = new Array(17);
+        tmpCells[x] = new Array(17);
+        for(var y=0; y<17; y++){
+            if(Math.random()<liveProb)
+                cells[x][y] = true;
+            else 
+                cells[x][y] = false;
+        }
+    }
+    cells[0][starty] = false;
+    cells[39][goaly] = false;
+    canvas = document.getElementById('banner');
+    ctx = canvas.getContext('2d');
+    drawCells();
+}
+</script>
+</head>
+
+<body onload="ca();">
+<canvas id="banner" width=800 height=340></canvas>
+<br>
+<!-- <img src="hb1.jpg" width=800 height=340> -->
+<div id="content">
+
+<h1>CS 480-001 Introduction to Artificial Intelligence &mdash; Fall 2023</h1>
+<p>
+    Tuesday &amp; Thursday 3:00-4:15pm, <a href="https://goo.gl/maps/QuQfwWzFPdXRyScv8">Horizon Hall</a> room 2009. See <a href="https://cs.gmu.edu/~hrolenok/teaching/cs-480-fall2023/index.html">https://cs.gmu.edu/~hrolenok/teaching/cs-480-fall2023/index.html</a> for current syllabus. Be sure to check your @gmu.edu email regularly for updates.
+</p>
+<p>
+    <b>Instructor</b>: Brian Hrolenok<br/>
+    <b>@gmu.edu email</b>: hrolenok<br/>
+    <b>Office Hours</b>: Thursdays 12:00pm-2:00pm, ENGR 4708<br/>
+</p>
+<p>
+    <b>TA</b>: Abhisekh Rana<br/>
+    <b>@gmu.edu email</b>: arana6<br/>
+    <b>Office Hours</b>: Wednesday/Friday 1:15pm-3:15pm, ENGR 4456<br/>
+</p>
+
+<h2>Course description</h2>
+<p>
+    CS 580 - Introduction to Artificial Intelligence is a 3-credit introductory course intended for undergraduate students. Artificial Intelligence is subfield of Computer Science which covers the design, implementation, and analysis of computational systems that can be said to reason, learn, or act rationally. This course presents a broad overview of this material using an agent based approach, and has a particular focus on the details of implementation. The class is programming intensive, and a strong background in the programming language of the assignments (Python) will be very useful.
+</p>
+<p><b>Learning objectives</b>:
+    <ul>
+        <li>To provide a broad survey of algorithms and approaches in AI.</li>
+        <li>To develop a deeper understanding of several major algorithms in AI.</li>
+        <li>To develop the design and programming skills that will help you to build computational artifacts that act intelligently.</li>
+        <li>To develop the basic skills necessary to pursue research in AI.</li>
+    </ul>
+</p>
+
+<p><b>Prerequisites</b>. 
+    The prerequisites for this course are CS 310 and CS 330, and familiarity in the following topics and strong mathematical maturity will be useful:
+    <ul>
+        <li>Probability</li>
+        <li>Linear algebra</li>
+        <li>Calculus</li>
+    </ul>
+</p>
+<p><b>Textbook</b>: <i>Artificial Intelligence: A Modern Approach</i> by Stuart Russell and Peter Norvig. <br>
+    The readings given below are for the third edition, section numbers may be different for other editions.  Ideally, readings should be completed before class so you can bring your questions to lecture.
+
+<h2>Homework and Problem Sets</h2>
+<p>
+    This semester, there will be two different kinds of take-home assignments: <i>homework</i> and <i>problem sets</i>. <b>Homework</b> assignments are programming focused, and come with an autograder for you to test your code. They are graded for correctness with the autograder and by manual inspection. Their purpose is to give you hands on practice implementing the algorithms and techniques discussed in class in a concrete setting, and, specifically, experience with the unique challenges of debugging in these domains.
+</p>
+<p>
+    <b>Problem sets</b> are more focused on understanding and exploring the lecture/reading topics from a theoretical and mathematical standpoint. They involve short-answer responses, proofs, open-ended exercises, and occasionally some short programming. These assignments <b><u>are not</u></b> graded for correctness and they have <b><u>no autograder</u></b> &mdash; any submission before the due date will receive full credit. The purpose of these assignments is to keep you synchronized with the course lectures and readings, give you touchstones for potentially challenging concepts that do not easily fit with the other programming based homework, and to expand on topics that we may not have time to cover in depth during lecture. Some solutions or solution approaches may be covered in lecture, time permitting. Problem set submissions should be a single PDF file unless specified otherwise in the assignment description.
+<p>
+    All assignment submissions will be handled through <a href="https://www.gradescope.com">Gradescope</a>, and are due by the date and time listed there. Submissions by email will not be accepted.
+</p>
+<h3>Collaboration</h3>
+<p>
+    All of the assignments in this course can be completed individually or in groups of two or three, <b><u>larger groups (4 or more) are not allowed</u></b>. If you do work as part of a team, make sure that you indicate this <i>very clearly</i> as part of your submission. For homework assignments, each file you submit should have a comment at the top with you and your partner's names and GMU ID numbers. For problem sets, be sure to include both of your names at the top of your submitted PDF. It is important that anything you submit reflects your understanding of the material.
+</p>
+<h3>Bug Bounty</h3>
+<p>
+    The homework assignments this semester have been adapted (with permission) from a similar course offered by Berkeley. The positive side of this is that we have access to some excellent GUI representations, rigorously checked solutions, and robust error checking and debugging messages. The downside is that these assignments were originally developed for Python 2, and have only recently been updated for Python 3. We've done our best to make sure the provided code works out-of-the-box on recent stable versions of Python (whatever version comes pre-installed on your computer, or installed directly from python.org), but there may be some rough edges that we've missed. To help us improve the course for future semesters, and to provide a bonus for engaged students, we're offering a small bug bounty (up to +1% to your semester grade, extra-credit) with the following conditions:
+    <ol>
+        <li>You must provide a fix, not just a bug report.</li>
+        <li>Only the first person to report and fix a given bug gets the bounty.</li>
+        <li>The fix must not break backwards compatibility to Python 3.6.</li>
+        <li>Maximum cumulative extra-credit can't exceed 5% of your overall grade.</li>
+        <li>It has to be reproducible on a TA or Instructor machine.</li>
+        <li>We have to agree it's actually a bug.</li>
+    </ol>
+    The last item above does not necessarily exclude display bugs, "text bugs", or typos, but these should rise to the level of significantly increasing the chances of confusion for future students if left unaddressed. For the most part, this bounty is restricted to the autograder provided with homework assignments, but particularly egregious typos on the syllabus, slides, or problem sets <i>may</i> also be considered. <b><u>Important note</u></b>: it is extremely easy to assume that the autograder is failing a particular test-case because of a bug in the grading script. <b><u>This is almost certainly not the case</u></b>. Especially for the search homework, many common mistakes in your own code can lead to <i>almost</i> but not quite correct implementations. When in doubt, assume the autograder is correct and bring your questions to office hours. To avoid a pile-up at the end of the semester, only bounties submitted by week 11 can earn extra-credit this way.
+</p>
+<h3>Late Policy</h3>
+<p>
+    You have five free late days to be used at your discretion throughout the semester, for either homework or problem set submissions. That means you might turn in one assignment two days late or two different assignments one day late, etc. To avoid an accounting nightmare, you can't pick and choose when to apply late days: a late day is "used" as soon as you submit an assignment late. The first late day is used when you submit one minute after the due date. Two late days are used when you submit 24 hours and one minute after the due date. A third late day is used 48 hours and one minute after the due date, etc. This also means you do not have to let us know ahead of time if you're using a late day. After the free late days are exhausted, you will receive a 20% penalty per day.
+</p>
+
+<h2>Exams</h2>
+<p>
+There will be two exams in this class, a midterm and a final (cumulative). The date for the midterm may differ from what is listed below, but the intent is for it to be roughly halfway through the semester. The date for the final is fixed by the registrar (see the registrar's <a href="https://registrar.gmu.edu/wp-content/uploads/Final-Exams-202370.pdf">final exam schedule</a>). You are allowed one 8.5x11in sheet of notes, front and back for the midterm and two sheets for the final. There will be no make up unless previously arranged <i>(well in advance)</i>.
+</p>
+
+<h2>Grading policies</h2>
+<p>
+    Your TA and I will strive to provide you reasonably detailed and timely feedback on every assignment and exam. If you have any questions about any of your grades please reach out to us, either by coming to scheduled office hours or via your "@gmu.edu" email address. If there is an error with your grade, please contact us within a week of when feedback is returned, otherwise we might not be able to change it.
+</p>
+
+<p>
+    Point breakdown:
+    <ul>
+        <li>Problem sets: 10% (2% each)</li>
+        <li>Homework: 30% (7.5% each)</li>
+        <li>Midterm: 25%</li>
+        <li>Final: 35%</li>
+    </ul>
+</p>
+
+<p><b>Academic Integrity</b><br>
+    All of the assignments you submit in this class must represent your own work. There are absolutely solutions to some of these assignments on the Internet. Do not use them. If you can find them, so can we, and we will check. It's probably a bad idea to even look for them, even for "an idea of how to start" because once you see <b>one</b> solution, its hard not to think of it as <b>the</b> solution. If you do end up "just looking", make sure you document it in your code. Otherwise, you run the risk of appearing to misrepresent someone else's work as your own. When in doubt, <b>be explicit</b> about where the code came from.
+</p>
+<h2>Accommodations</h2>
+<p>
+    If you need academic accommodations, please make sure you contact the instructor at the beginning of the semester or as soon as possible. Also make sure to contact GMU's Disability Services, available online (<a href="https://ds.gmu.edu">https://ds.gmu.edu</a>, <a href="mailto:ods@gmu.edu">ods@gmu.edu</a>) and by phone (703.993.2474), which coordinates all academic accommodations. After you have contacted ODS, you still need to contact the instructor so that appropriate arrangements can be made.
+</p>
+
+<h2>Topics</h2>
+The following is the tentative list of topics for the fall 2023 semester, roughly in the order they will be covered. Please check your email and Blackboard regularly for any changes, as this website may not be updated immediately.
+
+<p><b>Week 1</b><br/>
+Introductions and Logistics. <b>Reading</b>: Ch 1-2</p>
+
+<p><b>Week 2</b> &mdash; <b>Coding refresher problem set due</b> <i>(tentative).</i><br/>
+Coding refresher / Slack. <b>Reading</b>: None</p>
+
+<p><b>Week 3</b><br/>
+Uninformed search. <b>Reading</b>: Ch 3.1-3.4</p>
+
+<p><b>Week 4</b> <br/>
+A* search and heuristics. <b>Reading</b>: Ch 3.5-3.6</p>
+
+<p><b>Week 5</b> &mdash; <b>Search problem set due</b> <i>(tentative).</i><br/>
+Search in different domains. <b>Reading</b>: Ch 5.1-5.3, 5.5</p>
+
+<p><b>Week 6</b> &mdash; <b>Search homework due</b> <i>(tentative).</i> <br/>
+Probability and state uncertainty. <b>Reading</b>: Ch 13</p>
+
+<p><b>Week 7</b> &mdash; <b>Bayes nets problem set due</b> <i>(tentative)</i> <br/>
+Bayes Nets, Filtering & Smoothing. <b>Reading</b>: Ch 14.1-14.5, 15.1-15.3</p>
+
+<p><b>Week 8</b> &mdash; <b>Filtering homework due</b> <i>(tentative)</i>.<br/>
+Markov Decision Processes. <b>Reading</b>: Ch 17.1</p>
+
+<p><b>Week 9</b> <br/>
+Midterm. <b>Reading</b>: none.</p>
+
+<p><b>Week 10</b> &mdash; <b>Reinforcement Learning problem set due</b> <i>(tentative).</i><br/>
+Value Iteration and Q-learning. <b>Reading</b>: Ch 17.1, Ch 21.3.2</p>
+
+<p><b>Week 11</b> &mdash; <b>Reinforcement Learning homework due</b> <i>(tentative)</i>. <br/>
+Intro to Machine Learning. <b>Reading</b>: Ch 18.1, 18.2, 18.6.1, 18.6.2.</p>
+
+<p><b>Week 12</b> <br/>
+Classification, k-NN, Logistic Regression. <b>Reading</b>: Ch 18.6.4, 18.8.1.</p>
+
+<p><b>Week 13</b> &mdash; <b>Linear Regression problem set due</b> <i>(tentative)</i>.<br/>
+Decision Trees/Neural Networks. <b>Reading</b>: Ch 18.3/18.7</p>
+
+<p><b>Week 14</b> <br/>
+<!-- Clustering and k-Means, Gaussian Mixture Models and EM. <b>Reading</b>: Ch 20.3</p> -->
+Thanksgiving break, no class. <b>Reading</b>: none.</p>
+
+<p><b>Week 15</b> &mdash; <b>Machine Learning homework due</b><i>(tentative)</i>.<br/>
+Clustering and k-Means, Gaussian Mixture Models and EM. <b>Reading</b>: Ch 20.3</p>
+
+
+</div>
+</body>
+</html>
