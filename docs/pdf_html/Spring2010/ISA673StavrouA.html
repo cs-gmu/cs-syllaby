@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.style22 {font-size: 13px; color: #990000; }
+.style23 {color: #990000}
+.style24 {	color: #FFFFFF;
+	font-weight: bold;
+}
+.style25 {	color: #FFFFFF
+}
+.style27 {	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+}
+.style28 {font-style: italic; font-size: 12px;}
+.style35 {font-size: 11pt; }
+.style38 {font-size: 12pt}
+.style43 {font-size: 12px}
+.style46 {	color: #990000;
+	font-size: 11pt;
+}
+.style47 {	font-style: italic;
+	font-size: 11pt;
+}
+.style51 {color: #000000; font-size: 11pt; }
+.style53 {color: #000000}
+.style70 {	font-size: 14px;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style73 {color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; }
+.style74 {font-size: 14px; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.style75 {font-weight: bold; color: #990000;}
+.style77 {color: #990000; font-style: italic; }
+.style78 {color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+.style79 {text-transform: none; font-size: 14px; line-height: normal; font-variant: normal;}
+.style80 {line-height: normal; font-variant: normal; text-transform: none; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px;}
+.style82 {color: #000000; font-size: 14px;}
+.style84 {font-family: Geneva, Arial, Helvetica, sans-serif}
+-->
+</style>
+</head>
+
+<body>
+<div align="center">
+  <h3 class="style84"><strong><font color="#000066" size="5">ISA 673, Operating Systems' Security - Sping 2010</font></strong></h3>
+</div>
+<p align="center"><strong>[<a href="http://cs.gmu.edu/~astavrou/isa673_S10.html">Class Schedule</a> (see <a href="http://cs.gmu.edu/~astavrou/isa673_S10.html">Class Website</a>)]</strong></p>
+<hr />
+<p><span class="style43"><span class="style38"><strong>Instructor: <a href="http://cs.gmu.edu/~astavrou">Angelos Stavrou</a></strong><br />
+        <strong>Lecture:</strong> Wednesdays 7:20 - 10:00pm<strong> <br />
+          Room:</strong> <font color="#990000"><strong>Innovation Hall, room 223</strong></font><br />
+  <strong>Office Hours: </strong>Wednesday 5:00 - 7:00pm and by appointment<br />
+  <strong>Office: </strong>Research I, Rm 437<br />
+  <font face="Geneva, Arial, Helvetica, sans-serif"><strong>Email:</strong> astavrou(_)gmu.edu<br />
+</font></span></span></p>
+<table width="547" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="502" class="style38"><strong>Teaching 
+      Assistant: </strong>Sharath Hiremagalore<strong><br />
+        Office: </strong>Research I, Rm 439<br />
+      <strong>Office Hours: </strong>Thursday, 4:00 &ndash; 6:00pm<br />
+      <font face="Geneva, Arial, Helvetica, sans-serif"><strong>Email:</strong> shiremag(_)gmu.edu</font></td>
+  </tr>
+</table>
+<p><strong><u><font size="3">Cour</font></u></strong><strong><u><font size="3">se Description:</font></u></strong></p>
+<p>This course covers both fundamentals and advanced topics in operating system (OS) security. We will study OS level mechanisms and policies and how they relate to mitigating and defending against real-world attacks on computer systems, including self-propagating worms, large-scale botnets, and advanced malware. Basic OS security techniques such as logging, system call auditing, address space randomization, memory protection, virtual machine introspection (VMI) will be discussed. Recent advanced techniques such as host-based instrusion detectionsystem randomization, vulnerability fingerprinting, and virtualization will also be introduced.</p>
+<p><u><strong><font size="3">Topics Covered:</font></strong></u></p>
+<ol class="upper">
+  <li>Introduction
+    <ol class="lower">
+        <li>Operating Systems (OS)</li>
+      <li>Types of Threats</li>
+      <li>Basic OS Security Mechanisms</li>
+    </ol>
+  </li>
+  <li>Understanding the Threats
+    <ol class="lower">
+        <li>Malware Taxonomy</li>
+      <li>Viruses</li>
+      <li>Worms</li>
+      <li>Rootkits</li>
+      <li>Defense -- An Overview</li>
+    </ol>
+  </li>
+  <li>Logging, Auditing, and Recovery
+    <ol class="lower">
+        <li>Log Generation</li>
+      <li>Log Auditing</li>
+      <li>Log-based Recovery</li>
+    </ol>
+  </li>
+  <li>OS-level Memory Protection
+    <ol class="lower">
+        <li>Review of OS Memory Management</li>
+      <li>NX Bit</li>
+      <li>Randomizatio</li>
+    </ol>
+  </li>
+  <li>Virtualization Technology and Applications
+    <ol class="lower">
+        <li>Virtualization Taxonomy</li>
+      <li>Security Applications</li>
+      <li>Virtual Machine Introspection</li>
+    </ol>
+  </li>
+  <li>Vulnerability Analysis
+    <ol class="lower">
+        <li>Vulnerability Classification</li>
+      <li>Defense against Known Vulnerabilities</li>
+      <li>Defense against Unknown (0-day) Vulnerabilities</li>
+    </ol>
+  </li>
+  <li>Malware Capture and Analysis (Honeypots and Honeyfarm)
+    <ol class="lower">
+        <li>Honeypot Taxonomy</li>
+      <li>Recent Honeypot Advances</li>
+      <li>Deployment and Liabilit</li>
+    </ol>
+  </li>
+  <li>Advanced Topic -- Malware</li>
+  <ol class="lower">
+    <li> Polymorphic Malware</li>
+    <li> Malware Packers and Javascript Encoders</li>
+    <li> Analyzing Malware with PIN &amp; IDA Pro </li>
+  </ol>
+  <li>Advanced Topic -- Rootkits
+    <ol class="lower">
+        <li>Rootkit Basics</li>
+      <li>Advanced Rootkit Techniques</li>
+      <li>Rootkit Defense</li>
+    </ol>
+  </li>
+  <li>Advanced Topic -- Botnets </li>
+</ol>
+<p><u><strong><font size="3"> Prerequisites:</font></strong></u></p>
+<p><strong>CS571 and ISA 562</strong>; or permission of instructor. The coursework will include substantial programming projects; in order to be able to complete the projects, the students must  be comfortable with C/C++. <br />
+    <br />
+    <u><strong><font size="3"><a name="Bibliography" id="Bibliography"></a>Bibliography:</font></strong></u> </p>
+<p><span class="style27 style35">Required:<br />
+  </span><span class="style35"><em> <span class="style23">Professional Linux Kernel Architecture</span>,</em> Wolfgang Mauerer, John Wiley and Sons, New York, NY, 2008.<br />
+    Available by: [<a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470343435,descCd-description.html">Willey</a>] [<a href="http://www.amazon.com/gp/product/0470343435/ref=s9_simi_gw_s0_p14_i1?pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=center-2&amp;pf_rd_r=0YEQZJQY4ZCCTF3XGNW5&amp;pf_rd_t=101&amp;pf_rd_p=470938631&amp;pf_rd_i=507846">Amazon</a>]</span><span class="style47"><br />
+  </span><span class="style27 style35"><br />
+    Recommended:<br />
+  </span><span class="style43"><span class="style46"><em>Understanding the Linux Kernel, Third Edition</em></span><span class="style35"> Daniel P. Bovet  Marco Cesati  ISBN-10: 0596005652 ISBN-13:  978-0596005658 O'Reilly Media Available by:  [<a href="http://proquest.safaribooksonline.com/0596005652">Online for GMU</a>] [<a href="http://oreilly.com/catalog/9780596000028">O' Reilly</a>] [<a href="http://www.amazon.com/Understanding-Linux-Kernel-Third-Daniel/dp/0596005652/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1263964375&amp;sr=8-2">Amazon</a>]<br />
+  </span></span><span class="style27 style35"><br />
+  </span><span class="style46"><em>Modern Operating Systems,</em> 3/E</span><span class="style35"> Andrew S. Tanenbaum. ISBN-10: 0136006639 ISBN-13:  9780136006633 Prentice Hall Available by: [<a href="http://gmu.bncollege.com">GMU Bookstore</a>] [<a href="http://www.mypearsonstore.com/bookstore/product.asp?isbn=0136006639">Prentice Hall</a>] [<a href="http://www.amazon.com/Modern-Operating-Systems-3rd-GOAL/dp/0136006639">Amazon</a>]</span><span class="style27"><em><br />
+</em></span></p>
+<u><strong><font size="3">Grading:</font></strong></u>
+<ul>
+  <li class="style23">Class  Projects: 80%</li>
+  <li class="style23">Class Presentations: 15%</li>
+  <li class="style23">Class Participation: 5%</li>
+  <li class="style23">No Midterm or Final</li>
+</ul>
+<p>The students must achieve a total score of at least 90 (out of 100) to be considered for an A. This class is an upper-level class and is geared towards understanding the fundamental concepts behind Security for Computer systems. The students will be expected to participate in large projects under the guidance of the instructor.<br />
+    <br />
+    <u><strong><font size="3">Computer Accounts:<br />
+    </font></strong></u><br />
+  All students should have accounts on the central Mason Unix system mason.gmu.edu (also known as osf1.gmu.edu)<br />
+  and  on IT&amp;E Unix cluster zeus.ite.gmu.edu (Instructions and related links are <a href="http://labs.ite.gmu.edu/">here</a>). Please read the <a href="http://labs.ite.gmu.edu/index.php/FAQ/FAQ">FAQ</a> if you have any questions.
+  Students can  work in<a href="http://labs.ite.gmu.edu/"> IT&amp;E computer labs</a> for programming projects during the specified <a href="http://labs.ite.gmu.edu/index.php/Main/Schedule">hours</a>.<br />
+</p>
+<p class="style28"><span class="style4"><strong>Please read the <a href="http://www.gmu.edu/cte/Teaching/Getting_Started/Designing_Syllabus/academic_honesty.html">University's Academic Honesty Page</a> and </strong><a href="http://honorcode.gmu.edu/"><strong>GMU Honor Code</strong></a><strong>.</strong><br />
+      <em><strong><br />
+        Disability Statement</strong></em></span><br />
+  If you have a documented learning disability or other condition that may affect academic performance you should: <br />
+  1) Make sure this documentation is on file with the Office of Disability Services. <br />
+  All academic accommodations must be arranged through the ODS. <a href="http://ods.gmu.edu">http://ods.gmu.edu</a><br />
+  2) Talk with me to discuss your accommodation needs.</p>
+<p class="style28"><strong><u>Other Usefull Resources</u></strong><br />
+    <strong>Writing Center:</strong> A114 Robinson Hall; (703) 993-1200; <a href="http://writingcenter.gmu.edu">http://writingcenter.gmu.edu</a> <br />
+    <strong>University Libraries:</strong> &ldquo;Ask a Librarian&rdquo; <a href="http://library.gmu.edu/mudge/IM/IMRef.html">http://library.gmu.edu/mudge/IM/IMRef.html</a><br />
+    <strong>Counseling and Phychological Services (CAPS)</strong>: (703) 993-2380; <a href="http://caps.gmu.edu">http://caps.gmu.edu </a><br />
+    <strong>University Policies:</strong> The University Catalog, <a href="http://catalog.gmu.edu">http://catalog.gmu.edu,</a> is the central resource<br />
+  for university policies affecting student, faculty, and staff conduct in university affairs.<br />
+  <strong><br />
+  <a name="Projects" id="Projects"></a><span class="style51"><u>Projects</u></span></strong><br />
+  <strong><br />
+    TBD</strong><br />
+</p>
+<p><strong><font size="3"><a name="Schedule" id="Schedule"></a><span class="style51"><u>Class Schedule</u></span></font></strong></p>
+<table width="816" height="405" border="1">
+  <tbody>
+    <tr bgcolor="#006633">
+      <td width="15%" align="center" valign="middle"><div align="left" class="style24"><font size="4"><font face="Times New Roman, Times, serif">Week 
+        &amp; Date</font></font></div></td>
+      <td width="85%" height="27" valign="top"><div align="center" class="style25"><font size="4"><strong>Course 
+        Lectures &amp; Readings</strong></font> (Tentative)</div></td>
+    </tr>
+    <tr>
+      <td width="15%" align="center" valign="middle"><p align="left" class="style35"><font face="Times New Roman, Times, serif"> Week 1, Jan. 20</font></p></td>
+      <td width="85%" height="19"><p class="style70"><font face="Verdana, Arial, Helvetica, sans-serif">Introduction and Class Mechanics</font> [Lecture pdf]</p></td>
+    </tr>
+    <tr>
+      <td width="15%" height="22" align="center" valign="middle"><div align="left" class="style22 style35 style53"><span class="style35"><font face="Times New Roman, Times, serif"> Week 2, Jan. 27</font></span></div></td>
+      <td class="style78"><span class="style79"><font face="Verdana, Arial, Helvetica, sans-serif">Understanding the Security Threats </font></span><span class="style80">[Lecture pdf]</span></td>
+    </tr>
+    <tr>
+      <td width="15%" height="20" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        3, Feb. 3</font></div></td>
+      <td><p><strong><span class="style82">Operating System Logging Auditing &amp; Recovery </span><span class="style73"><span class="style80">[Lecture pdf]</span></span><br />
+      </strong></p></td>
+    </tr>
+    <tr>
+      <td height="22" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        4, Feb. 10</font></div></td>
+      <td class="angelos"><strong>Laboratory I: Debbugging the Linux Kernel</strong></td>
+    </tr>
+    <tr>
+      <td height="23" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        5, Feb. 17</font></div></td>
+      <td class="style74"><strong>OS-level Memory Protection - Assignment of Project I</strong></td>
+    </tr>
+    <tr>
+      <td height="24" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        6, Feb. 24</font></div></td>
+      <td class="style74"><strong>Virtualization Technology and Applications </strong></td>
+    </tr>
+    <tr>
+      <td height="21" align="left" valign="top"><div align="left"><span class="style35"><font face="Times New Roman, Times, serif">Week 
+        7, Mar. 3</font><br />
+      </span></div></td>
+      <td class="angelos"><strong>Laboratory II: Security using Virtualization Technologies (XEN, VMWare)</strong></td>
+    </tr>
+    <tr>
+      <td width="15%" align="left" valign="top"><div align="left" class="style23 style35 style22"><strong><font face="Times New Roman, Times, serif">Week 
+        8, Mar. 10<br />
+      </font></strong></div></td>
+      <td width="85%" height="20"><span class="style75">Spring Break, No Classes</span></td>
+    </tr>
+    <tr>
+      <td width="15%" height="22" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        9, Mar. 17<br />
+      </font></div></td>
+      <td><span class="style23"><strong>Team Project  Presentations</strong></span></td>
+    </tr>
+    <tr>
+      <td width="15%" height="20" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        10, Mar. 24</font></div></td>
+      <td><strong> Analysis of Current OS and Application Vulnerabilities - <span class="style77">Assignment of Project II</span></strong></td>
+    </tr>
+    <tr>
+      <td width="15%" height="21" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        11, Mar. 31</font></div></td>
+      <td><strong>Understanding Malware / Malware Capture and Analysis (Honeypots and Honeyfarm) </strong></td>
+    </tr>
+    <tr>
+      <td height="19" align="left" valign="top" style="vertical-align: top;"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        12, Apr. 7</font></div></td>
+      <td><strong><em>Laboratory III: Malware Packers and Javascript Encoders - Malware Analysis</em></strong></td>
+    </tr>
+    <tr>
+      <td width="15%" height="20" align="left" valign="top"><div align="left" class="style22 style35"><span class="style53"><font face="Times New Roman, Times, serif">Week 
+        13, Apr. 14</font></span><br />
+      </div></td>
+      <td><strong>Beyond Application Penetration - Rootkits</strong></td>
+    </tr>
+    <tr>
+      <td width="15%" height="19" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        14, Apr. 21</font></div></td>
+      <td><strong>Virtual Machine Introspection</strong></td>
+    </tr>
+    <tr>
+      <td width="15%" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        15, Apr. 28</font></div></td>
+      <td width="85%" height="19"><strong>Network Analysis of Botnets</strong></td>
+    </tr>
+    <tr align="left">
+      <td height="23" align="left" valign="top"><span class="style46"><font face="Times New Roman, Times, serif">Week 
+        16, May 5</font></span></td>
+      <td align="left"><span class="style75">Team Project Presentations</span></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
