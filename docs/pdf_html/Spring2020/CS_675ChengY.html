@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>CS 675 Distributed Systems - Spring 2020 </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <!--link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap-grid.min.css" rel="stylesheet"-->
+  </head>
+  <body>
+    <div class="container">
+	  </br></br>
+      <h1 class="display-5">CS 675: Distributed Systems – Spring 2020</h1>
+	  <hr class="my-4">
+	  <dl class="row">
+		<dt class="col-sm-3">Location</dt>
+		<dd class="col-sm-9">Innovation Hall 134</dd>
+
+		<dt class="col-sm-3">Meeting time</dt>
+		<dd class="col-sm-9">W 4:30 pm - 7:10 pm</dd>
+
+		<dt class="col-sm-3">Instructor</dt>
+		<dd class="col-sm-9"><a href="http://cs.gmu.edu/~yuecheng">Dr. Yue Cheng</a></dd>
+
+		<dt class="col-sm-3">Office</dt>
+		<dd class="col-sm-9">5324 Engineering Building</dd>
+
+		<dt class="col-sm-3">Email</dt>
+		<dd class="col-sm-9"><a href="mailto:yuecheng@gmu.edu">yuecheng _AT_ gmu.edu</a></dd>
+
+		<dt class="col-sm-3">Office hours</dt>
+		<dd class="col-sm-9">W 2 pm - 3 pm</dd>
+
+		<!--dt class="col-sm-3">TA</dt>
+		<dd class="col-sm-9">TBD</dd-->
+		</dl>
+		</dd>
+	  </dl>
+
+	  <div class="alert alert-warning" role="alert">
+	  Please note the syllabus is subject to change to enrich the
+	  student's learning experience :). Feel free to email <a
+		href="mailto:yuecheng@gmu.edu">yuecheng _AT_ gmu.edu</a> for
+	  questions and concerns.
+	  </div>
+	  <p></p>
+	</div> <!-- /container -->
+
+	<div class="container">
+	  <div class="row">
+		<div class="jumbotron">
+
+		  <h2>Description</h2>
+		  <p> Welcome to the graduate course on Distributed Systems.
+		  This course introduces you to an exciting range of materials in this
+		  broad and hugely important field, including the fundamentals of
+		  distributed systems, massive-scale cloud storage, big data
+		  foundation, serverless computing, systems support of distributed
+		  machine (deep) learning, and a wide range of other important
+		  techniques and case studies about this fascinating area of study.
+		  </p>
+		  </br>
+
+		  <h2>Prerequisites</h2>
+		  <p>The only prerequisite is CS571. However, if you believe
+you have some of the following background: </p>
+	      <ul>
+			<li>familiar with (operating/distributed/computer) systems; </li>
+			<li>have taken Mason’s undergrad operating systems course (CS471) and got a B- or better;</li>
+			<li>know how networks work (CS455);</li>
+			<li>have had industry experience.</li>
+		  </ul>
+		  <p>You should be in communication with me (the instructor) before the semester begins to request an override.
+		  </p></br>
+
+		  <h2>Who is this course for</h2>
+		  <p>This course is primarily intended for graduate students
+		  (CS/ECE/IST) and motivated seniors who want to learn the latest
+		  research advances in distributed systems and cloud computing areas,
+		  and are interested in building distributed systems used/demanded by
+		  existing/emerging data-intensive applications. </p>
+		  </br>
+
+		  <h2>Materials</h2>
+		  <p>No textbook required. The course is based on readings
+		  (listed in the schedule of the course web page: 
+		  <a href="https://tddg.github.io/cs675-spring20/">https://tddg.github.io/cs675-spring20/</a>) and
+		  in-class discussions/presentations.</p>
+		  </br>
+
+
+		  <h2>Topics</h2>
+		  <p>A tentative list of topics covered in this class:</p>
+		  <ul>
+			<li>Time & clocks, primary-backups</li>
+			<li>Remote procedure calls, and RPCs in Go</li>
+			<li>Go systems programming</li>
+			<li>Distributed consensus</li>
+			<li>MapReduce, Spark</li>
+			<li>Serverless computing</li>
+			<li>NoSQL, Memcached</li>
+			<li>Datacenter resource scheduling</li>
+			<li>Cluster scheduling</li>
+			<li>Machine learning systems</li>
+		  </ul>
+		  </br>
+		  
+		  <h2>Labs</h2>
+		  <p> There will be a few programming labs to get you
+		  warmed up and going this semester. They will be linked
+		  from the main page and due about 1 or 2+ weeks from the day
+		  they are assigned. In these lab assignments, you will learn
+		  hands-on what it is to build distributed systems and cloud
+		  computing applications, usually with one partner. <strong>The assignments will
+		  involve extensive use of Go language and real-world cloud resources. And therefore, each student
+		  is expected to receive a number of AWS (or Google) cloud
+credits ($50-$200) for working on real-world cloud platforms.
+</strong> You should expect two (and hopefully one optional)
+	programming labs: </p>
+		  <ul>
+			<li>Lab 1: Implement a basic pluggable RPC serverless framework.</li>
+			<li>Lab 2: Develop fault tolerant MapReduce atop the framework built in Lab 1.</li>
+			<li>Lab 3 (optional): Build a microservice app (e.g., Hotel reservation) by expanding on Lab 1.</li>
+		  </ul>
+		  </br>
+		  
+		  <h2>Course project</h2>
+		  <p>The most important work outside of class will be the
+		  final project. This will form a large part of your grade,
+		  and is also done with a parter or two.  Projects are the
+		  beginning of your venture into the world of research, and
+		  thus will be open-ended explorations of some kind. More
+		  information on final projects will be given about 1.5
+		  months from the beginning of the semester. The final
+		  projects consist of a few phases with milestones: i) project proposal,
+		  ii) project checkpoint report, iii) final presentation and/or demo,
+		  and iv) final report and source code.</p>
+		  </br>
+
+		  <h2>Grading policy</h2>
+		  <p>Your grade will be calculated as follows: </p>
+		  <ul>
+			<li>30% Labs</li>
+			<li>10% Midterm exam</li>
+			<li>15% Paper review forms</li>
+			<li>10% Final exam</li>
+			<li>35% Final project</li>
+		  </ul>
+		  <div class="alert alert-danger" role="alert">
+		  Note: No credit if your project does not compile. Late
+		  submissions of lab assignments and projects will be penalized at 15%
+		  each day, and will not be accepted after 3 days of the due date. The
+		  students are responsible for keeping back-ups of their work while
+		  they are working on an assignment. 
+		  </div>
+		  </br>
+
+		  <h2>Academic integrity</h2>
+		  <p>All students must adhere to the 
+		  <a href="http://oai.gmu.edu/the-mason-honor-code-2/">
+			GMU Honor Code</a>
+		  and the 
+		  <a href="http://cs.gmu.edu/resources/honor-code/">
+			Computer Science
+			Department's Honor Code
+		  </a>
+		  Policies. The students are supposed to work individually on
+		  the homeworks, assignments projects, unless told otherwise.
+		  We reserve the right to use 
+		  <a href="http://theory.stanford.edu/~aiken/moss/">
+			MOSS
+		  </a>
+		  to detect plagiarism. Violation of the Honor
+		  Code will result in an F. </p>
+		  </br>
+
+		  <h2>Accommodations for disabilities</h2>
+		  <p>If you have a documented learning disability or other condition that may
+		  affect academic performance, you should: </p>
+		  <ol>
+			<li>make sure this documentation is
+			  on file with Office for Disability Services (SUB I, Rm. 4205; 993-2474;
+			  <a href="http://ods.gmu.edu">
+				http://ods.gmu.edu</a>) to determine the accommodations you need;</li> 
+			<li>talk
+			  with the instructor within the first week of the semester
+			  to discuss any accommodation needs.</li>
+		  </ol>
+		  </br>
+
+		  <!--h2>Acknowledgments</h2>
+		  <p>This course contains matertials from Dr. Songqing Chen
+		  (GMU), Dr. Daniel Barbara (GMU), Dr. Hakan Aydin (GMU), Dr.
+		  Remzi Arpaci-Dusseau (U. Wisconsin), and Dr. David Mazières
+		  (Stanford).</p-->
+
+		</div>
+	  </div>
+	</div> <!-- /container -->
+
+    <!--div class="container">
+      <div class="row">
+        <div class="col-4" style="background-color:lavender;">.col-4</div>
+        <div class="col-4">.col-4</div>
+        <div class="col-4">.col-4</div>
+      </div>
+    </div--> <!-- /container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+</html>

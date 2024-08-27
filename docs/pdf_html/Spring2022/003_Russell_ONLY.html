@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>CS483 Syllabus Spring 2022 - Russell ONLY</title>
+<meta content="K. Raven Russell" name="author">
+<style type="text/css">
+	body {
+		margin: 10px;
+		line-height: 1.3;
+		font-family: Verdana, Geneva, sans-serif;
+		background: #fcfcfc; #cccccc; #ccffff;
+		color: #336666;
+	}
+
+	.normal {
+		line-height:1.3;
+		font-family: Verdana, Geneva, sans-serif;
+		font-size: 100%;
+		font-weight: normal;
+	}
+
+	p {
+		/* padding-top: 1ex; */
+		margin-top: 1ex;
+		margin-bottom: 1ex;
+	}
+
+	h1 {
+		font-size: 150%;
+		/*padding: 1ex;*/
+		padding-top: 1.5em;
+		margin: 0;
+	}
+
+	h2 {
+		font-size: 125%;
+		font-weight: bold;
+		/* padding-top: 2ex; */
+		margin-top: 1.5em;
+		margin-bottom: 1ex;
+	}
+
+	h3 {
+		font-size: 100%;
+		font-weight: bold;
+		/* padding-top: 2ex; */
+		margin-top: 1.5em;
+		margin-bottom: 1ex;
+	}
+
+	ul {
+		/* padding-top: .5ex; */
+		list-style-type: disc;
+		padding-left: 2em;
+	}
+
+	ul,ol{
+		margin-top: 1ex;
+		margin-bottom: 1ex;
+	}
+
+	li {
+		padding-bottom: 1ex;
+	}
+
+	.nopad {
+		padding: 0;
+	}
+
+	.clearfix {
+		clear: both;
+	}
+</style>
+
+<script type="text/javascript">
+function showHide(id) {
+	var x = document.getElementById(id);
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	}
+	else {
+		x.style.display = "none";
+	}
+}
+
+function showHideAll(show) {
+	var divs = document.getElementsByClassName("hidden");
+
+	var i;
+	for (i = 0; i < divs.length; i++) {
+		if(show) {
+			divs[i].style.display = "block";
+		}
+		else {
+			divs[i].style.display = "none";
+		}
+	}
+}
+
+window.onload = function() {
+	showHideAll(false);
+}
+
+</script>
+</head>
+<body>
+	<center>
+		<h1>
+			CS483: Analysis of Algorithms (Spring 2022)
+			<br />
+			Sections: Russell ONLY (001/003)
+		</h1>
+	</center>
+	
+	<button onclick="showHideAll(true)">Show All</button> <button onclick="showHideAll(false)">Hide All</button>
+
+	<!-- **************************************************************** -->
+	<h1>1. Course Basics</h1>
+
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('1.1')">1.1 Professor Information <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="1.1">
+	<table cellspacing="2" cellpadding="2" border="1">
+		<tbody>
+			<tr>
+				<td valign="top"><b>Professor</b></td>
+				<td valign="top"><b>Email</b></td>
+				<td valign="top"><b>Office</b></td>
+			</tr>
+			<tr>
+				<td valign="top"><b>K. Raven Russell</b></td>
+				<td valign="top">krusselc</td>
+				<td valign="top">ENGR 5328</td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('1.2')">1.2 Textbook <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="1.2">
+	<ul>
+		<li>
+			Kleinberg and Tardos, <a href="https://www.pearson.com/us/higher-education/program/Kleinberg-Algorithm-Design/PGM319216.html">Algorithm Design</a>, 2005. ISBN: 9780321295354<br>
+		</li>
+		<li>
+			It is assumed that students read the scheduled sections prior to each lecture.
+		</li>
+	</ul>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('1.3')">1.3 Software Requirements <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="1.3">
+	<p>For All Classes:</p>
+	<ul>
+		<li>
+			You will need a computer for this class with some modern operating system
+			capable of running a Java compiler (for Java 1.9 or higher, the latest
+			stable version of OpenJDK is preferred). Remember that lab computers are
+			also available on campus, see campus resources below.
+		</li>
+		<li>
+			Be prepared to move online if the semester requires it for any reason
+			(see online class requirements below).
+		</li>
+	</ul>
+	
+	<p>For Online and Hybrid Classes:</p>
+	<ul>
+		<li>
+			You will regularly use either <a href="https://mymason.gmu.edu">Blackboard Collaborate</a>
+			or <a href="https://zoom.us/">Zoom</a> for your class meetings.
+		</li>
+		<li>
+			You are required to have regular, reliable access to a computer
+			with an updated operating system (recommended: Windows 10 or Mac
+			OSX 10.13 or higher) and a stable broadband Internet connection
+			(cable modem, DSL, satellite broadband, etc., with a consistent
+			1.5 Mbps [megabits per second] download speed or higher.
+		</li>
+		<li>
+			You are required to have a device with a functional camera
+			and microphone.
+		</li>
+	</ul>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('1.4')">1.4 Course Communication<span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="1.4">
+	<ul>
+		<li>
+			The majority of course information and material will be available on
+			<a href="https://piazza.com/gmu/spring2022/cs483/">Piazza</a> 
+			(access code is "banana"), including TA contacts information
+			and office hours. Grades and other private information will be on
+			<a href="http://mymasonportal.gmu.edu/">Blackboard</a>.
+			You MUST read Piazza for clarifications and homework information/updates.
+		</li>
+		<li>
+			Most questions should be answerable in and before/after class,
+			however instructors and GTAs for this course will have some
+			additional office hours for questions and course help.
+		</li>
+		<li>
+			Announcements will often be made at the beginning of class.
+			If you miss the start of class, make sure to get the
+			information from a friend or colleague in the class.
+		</li>
+		<li>
+			No sharing answers or course material unless you've been
+			authorized to do so by your instructor. See section on
+			the Honor Code below.
+		</li>
+		<li>
+			Please email course staff only for personal issues
+			such as grading disputes, medical situations, etc.
+			Please do not e-mail course staff about homework
+			problems, use office hours and the before/after class time.
+		</li>
+	</ul>
+	</div>
+
+	<hr />
+
+	<!-- **************************************************************** -->
+	<h1>2. Course Description</h1>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('2.1')">2.1 Course Topics <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="2.1">
+	<p>
+		Analyzes computational resources for important problem types by alternative
+		algorithms and their associated data structures, using mathematically rigorous
+		techniques. Specific algorithms analyzed and improved.
+	</p>
+	<p>
+		Tentative topics to be covered include:
+	</p>
+	<ul>
+		<li>Introductory and Review Material (ch 1-3)</li>
+		<li>Algorithm Design and Advanced Analysis Techniques (thoughout, but esp. in ch 2 and 4-6)</li>
+		<li>Basic and Advanced Graph Algorithms (thoughout, but esp. in ch 3, 6, and 7)</li>
+		<li>NP-completeness and Computational Intractability (ch 8-9)</li>
+		<li>Advanced Topics (Time Permitting): Randomized Algorithms, Approximation Algorithms, PSPACE, etc.</li>
+	</ul>
+	<p>
+		See the schedule (on Piazza) for a more detailed topics list.
+	</p>
+	</div>
+	
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('2.2')">2.2 Prerequisites <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="2.2">
+	<p>Formal Prerequisites: C or better in: CS310, CS330, and Math 125.</p>
+	<p>More generally, you will be using knowledge introduced in a Formal Methods and Models course (such as CS 330) and by entension Discrete Mathematics (in Math 125). You also need knowledge gained from a Data Structures course (such as CS 310) and by extension multiple programming courses (such as CS 112 and CS 211).</p>
+	<p>Below is a more detailed (but not exhaustive) list of topics which may "come back to haunt you":</p>
+	<ul>
+		<li>Programming - Programming Logic, Recursion, Searching, Sorting, Big-O Analysis</li>
+		<li>Discrete Math - Proof Techniques, Mathematical Induction, Sets, Graphs, Trees, Recursion, Enumeration</li>
+		<li>Formal Methods and Models - Logic, Proofs, Mathematical Induction, Program Verification, Computability</li>
+		<li>Data Structures - Big-O Analysis, Lists, Stacks, Queues, Sets and Maps, Hash Tables, Trees, Search Trees, Priority Queues, Heaps, Graphs</li>
+	</ul>
+	</div>
+	
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('2.3')">2.3 Course Outcomes <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="2.3">
+	<p>
+		At the end of the course, students will be able to:
+	</p>
+	<ul>
+		<li>Understand classical problems in Computer Science</li>
+		<li>Understand classical algorithm design and analysis strategies</li>
+		<li>Analyze the computability of a problem</li>
+		<li>Design and analyze new algorithms to solve a computational problem</li>
+		<li>Reason algorithmically</li>
+	</ul>
+	</div>
+
+	<hr />
+
+	<!-- **************************************************************** -->
+	<h1>3. Grading</h1>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('3.1')">3.1 Assessment and Grades <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="3.1">
+	<table cellspacing="0" cellpadding="3" border="1">
+		<tbody>
+			<tr>
+				<td valign="top"><b>Category</b> </td>
+				<td valign="top"><b>Sub-Category</b> </td>
+				<td valign="top"><b>Percent</b> </td>
+			</tr>
+			<tr>
+				<td rowspan="3" valign="top">Homework</td>
+				<td valign="top">Non-Code (5)</td>
+				<td valign="top">15%</td>
+			</tr>
+			<tr>
+				<td valign="top">Mini-Code (4)</td>
+				<td valign="top">10%</td>
+			</tr>
+			<tr>
+				<td valign="top">Code (2)</td>
+				<td valign="top">10%</td>
+			</tr>
+			<tr>
+				<td rowspan="2" valign="top">Exams</td>
+				<td valign="top">Midterm</td>
+				<td valign="top">30%</td>
+			</tr>
+			<tr>
+				<td valign="top">Final</td>
+				<td valign="top">35%</td>
+			</tr>
+			<tr>
+				<td rowspan="2" valign="top">Extra Credit<br />Opportunities</td>
+				<td valign="top">EC HW 12</td>
+				<td valign="top">+1%</td>
+			</tr>
+			<tr>
+				<td valign="top">EC on Exams</td>
+				<td valign="top">+3.25%</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<p>The following will be applied <i>without</i> rounding:</p>
+	<ul>
+		<li>
+			A+ (&gt;= 98.0%) A (&gt;= 92.0%) A– (&gt;= 90.0%)
+		</li>
+		<li>
+			B+ (&gt;= 88.0%) B (&gt;= 82.0%) B– (&gt;= 80.0%)
+		</li>
+		<li>
+			C+ (&gt;= 78.0%) C (&gt;= 72.0%) C– (&gt;= 70.0%)
+		</li>
+		<li>
+			D (&gt;= 60.0%)
+		</li>
+		<li>
+			F (&lt; 60.0%)
+		</li>
+	</ul>
+	
+	<p> There will be no make-up assignments or unannounced
+	extra-credit opportunities at the end of the semester;
+	your grade should be a measure of your semester-long progress.</p>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('3.2')">3.2 Homework<span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="3.2">
+	<ul>
+		<li>
+			Homework will be submitted to Blackboard. <b>Turning in the wrong
+			files</b> will result in a zero (no exceptions). Any code for programming
+			projects that <b>does not compile</b>, specifically on Java 1.9,
+			will receive a zero (no exceptions, even if it is a
+			"small fix"). It is your responsibility to verify your submissions.
+			
+			<b>Blackboard being unavailable</b> is not an excuse for turning in a
+			late assignment; in the rare situation that the website is somehow
+			unavailable or giving an error, you MUST email your submission to
+			your TA (and CC your professor) before the deadline, otherwise
+			it will be considered late. <b>Catastrophic computer failure</b> will not
+			be cause for an extension. Use a backup service to back up your work!
+		</li>
+		<li>
+			<b>Homework is considered individual</b> unless otherwise
+			authorized by your instructor. Therefore no sharing of code
+			or solutons, and no discussion of problem solutions is
+			allowed with anyone except the TAs or the instructor. You may
+			not use the internet to find, develop, or solicit help for
+			code, assignments, or any other individual work.
+			
+			<b>It is your responsibility</b> to lock your computers with
+			a password, to not post your work to websites like Pastebin
+			that are publicly accessible, to guard your USB drives and
+			computers, to not upload your files to someone else's
+			computer, etc. You will be liable for any access gained to
+			your work.
+		</li>
+		<li>
+			<b>Homework must be submitted on time and extensions require
+			exceptional circumstances</b> (as judged by the instructor) and must be
+			arranged in advance. Extensions are never given <i>on or after</i>
+			the due day unless you have a university-accepted emergency.
+			GTAs cannot approve late submissions or extensions. Normal obligations
+			such as family or friend events, vacations, or other classes are <i>not</i>
+			exceptional circumstances (unless hospitals are involved).
+			
+			If you need an extension or miss a due date because of a
+			university-accepted emergency (such as being taken to the
+			hospital), you must notify your instructor within 24 hours
+			to make arrangements. You will be asked to provide documentation
+			of the emergency and your involvement. Failure to follow these
+			policies will result in a zero.
+			Instructors may elect to "exempt" a missed homework
+			rather than give an extension under certain circumstances. In this case, the
+			other homework in the same <i>sub</i>-category will gain more weight.
+			
+			Missing a homework due date for any non-university-accepted reason (such as 
+			not paying attention to when the due date is), will result in a zero.
+		</li>
+	</ul>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('3.3')">3.3 Exams <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="3.3">
+	<ul>
+		<li>
+			Exams are <b>closed book/notes</b> unless otherwise specified by
+			the instructor.
+		</li>
+		<li>
+			<b>All tests and exams are considered individual</b>
+			efforts. Resources available during exams will be specified by
+			the instructor on a exam-by-exam basis. Student exams will be
+			manually and automatically assessed for cheating.
+		</li>
+		<li>
+			All students must have their <b>GMU identification</b> available on
+			testing days (and will be required to show a photo ID as part
+			of the exam process). Alternative <i>photo</i> IDs options
+			may be required if your GMU ID is unavailable or unreadable.
+		</li>
+		<li>
+			<b>Early or late/makeup exams require exceptional circumstances</b>
+			(as judged by the instructor) and must be arranged in advance.
+			Vacation plans are not exceptional circumstances.
+			
+			If you miss an exam due to a university-accepted excused
+			absence (such as an illness or car accident the day and time of
+			the exam), notify your instructor within 24 hours of your absence 
+			to make arrangements for a makeup, and bring approved documentation
+			with you when you take the make-up exam.
+			Failure to follow these policies will result in a zero. Instructors may
+			elect to replace a missed midterm with some (or all) of the final
+			exam grade rather than offering a makeup exam under certain circumstances.
+			
+			Missing an exam due for any non-university-accepted reason (such as 
+			not paying attention to when the exam is), will result in a zero.
+		</li>
+	</ul>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('3.4')">3.4 Contesting Grades <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="3.4">
+	<ul>
+		<li>
+			If you feel points have been incorrectly deducted, contact the
+			grader. For homework, that is your GTA. For exams, that is your
+			instructor.
+		</li>
+		<li>
+			Contesting of grades on any/all submissions must be requested
+			within one week of receiving the grade (on BlackBoard). No grade
+			changes will be considered subsequent to that deadline or
+			subsequent to the final exam (whichever comes first).
+		</li>
+	</ul>
+	</div>
+
+	<hr />
+
+	<!-- **************************************************************** -->
+	<h1>4. University and Departmental Policies</h1>
+
+	<!-- **************************************************************** -->
+	
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('4.1')"><font color="#cc0000">4.1 Honor Code</font> <a name="honor_code"></a> <span style="font-size:50%">(click to expand)</span></h2>
+	<!-- **************************************************************** -->
+
+	<div class="hidden" id="4.1">
+	<ul>
+		<li>
+			All students are expected to abide by the <a
+			href="https://oai.gmu.edu/mason-honor-code/">GMU Honor Code</a>.
+			This policy is rigorously enforced. Cheating will be prosecuted
+			and result in a notification of the Honor Committee as outlined
+			in the GMU Honor Code. <font color="#ff0000">Sharing,
+			collaboration, or looking at any code or algorithm for the
+			homework that is not your own, including resources
+			from Internet, is considered cheating</font>.
+		</li>
+		<li>
+			The computer science department has an <a
+			href="http://cs.gmu.edu/resources/honor-code/">CS Honor Code
+			Policies</a> that you are subject to particularly for our
+			course. The document helps you to understand how GMU honor code
+			applies to programming and CS, what constitutes cheating in the
+			CS setting. It clarifies some scenarios that are unique to our
+			sorts of assignments. Make sure you read and familiarize
+			yourself with these rules.
+		</li>
+		<li>
+			The CS Department take the honor code quite seriously. Any attempts at
+			copying or sharing code, solutions, algorithms, or other violations of the
+			honor code simply will not be tolerated. We use automated
+			software to flag suspicious cases, and then review them to find
+			the cases that must be submitted to the Office of Academic
+			Integrity. The penalty for cheating will always be far worse
+			than a zero grade, to ensure it's not worth taking the chance.
+			<b>Confirmed cases of cheating almost always translate into course
+			failure.</b>
+		</li>
+	</ul>
+	</div>
+	
+	<h2 onclick="showHide('4.2')">4.2 Privacy <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="4.2">
+	<ul>
+		<li>
+			All course materials posted to Blackboard or other course sites
+			are private; by federal law, any materials that identify specific
+			students (via their name, voice, or image) must not be shared
+			with anyone not enrolled in this class.
+		</li>
+		<li>
+			Video recordings of class meetings that include audio or visual
+			information from other students are private and must not be shared.
+		</li>
+		<li>
+			Live Video Conference Meetings (e.g. Collaborate or Zoom) that
+			include audio or visual information from other students must be
+			viewed privately and not shared with others.
+		</li>
+	</ul>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('4.3')">4.3 Non-Discrimination and Inclusiveness <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="4.3">
+	<ul>
+		<li>
+			We are committed to providing an educational environment free from any discrimination
+			on the basis of race, color, religion, national origin, sex, disability,
+			veteran status, sexual orientation, gender identity, gender expression,
+			age, marital status, pregnancy status, or genetic information. If you
+			feel there has been a violation of the University's policies on this,
+			please contact GMU's Office of Compliance, Diversity, and Ethics
+			(703-993-8730; cde@gmu.edu).
+		</li>
+		<li>
+			Gender identity and pronoun use: If you wish, please share your name and gender
+			pronouns with us and we will attempt use them to address you in class and via email.
+			You can address any instructor as "Prof. [LAST NAME]" in email and verbally if you
+			aren't sure of their personal preferences.
+		</li>
+	</ul>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('4.4')">4.4 Sexual Harassment, Sexual Misconduct, and Interpersonal Violence <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="4.4">
+	<ul>
+		<li>
+			All faculty members are designated "Responsible Employees", and are required
+			to report all disclosures of sexual assault, interpersonal violence, and
+			stalking to Mason’s Title IX Coordinator per university policy 1412.
+			If you wish to speak with someone confidentially, please contact the Student
+			Support and Advocacy Center (703-380-1434) or Counseling and Psychological
+			Services (703-993-2380). You may also seek assistance from Mason’s Title IX
+			Coordinator (703-993-8730; titleix@gmu.edu).
+		</li>
+	</ul>
+	</div>
+
+	<hr />
+
+
+	<!-- **************************************************************** -->
+	<h1>5. Campus Resources</h1>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('5.1')">5.1 Disability Services <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="5.1">
+	<ul>
+		<li>
+			Due to the size of the class, individual instructors and graders cannot
+			support students with injuries or disabilities on an ad-hoc basis.
+			We ask that all accommodations for such conditions be arranged through
+			GMU's <a href="http://ds.gmu.edu" target="_blank">Office of Disability Services</a>.
+		</li>
+		<li>
+			Students with a physical or learning disability which is <b>already
+			documented with the <a href="http://ds.gmu.edu" target="_blank">Office of Disability
+			Services</a>)</b> should speak with the instructor ASAP to discuss
+			their approved accommodations. Even if you don't know whether you plan
+			on utilizing the accommodations for any assignment/test, you need to
+			make sure you and your instructor are working together from the beginning
+			of the semester to ensure your success in the class.
+		</li>
+		<li>
+			Students with a physical or learning disability who have <b>not yet registered
+			with the <a href="http://ds.gmu.edu" target="_blank">Office of Disability Services</a></b>
+			should register with that office as soon as possible. Even if you don't
+			know whether you'll need to utilize the accommodations, it's in your
+			best interest to prepare ahead of time and get your condition documented
+			as accommodations are not retroactive. They have a quick and easy registration
+			process. All you need is documentation for your condition.
+		</li>
+		<li>
+			The <a href="http://ds.gmu.edu" target="_blank">Office of Disability Services</a>
+			also <b>handles services for many temporary disabilities</b> (for example,
+			if you break your arm, they can arrange note taking services).
+			Please contact them if you discover any sudden impairment that affects
+			your ability to function in class and/or on your projects. They have
+			a quick and easy registration process. All you need is documentation
+			for your condition.
+		</li>
+	</ul>
+	</div>
+
+	<!-- **************************************************************** -->
+	<h2 onclick="showHide('5.2')">5.2 Other Campus Resources <span style="font-size:50%">(click to expand)</span></h2>
+
+	<div class="hidden" id="5.2">
+	<ul>
+		<li>
+			<a href="https://its.gmu.edu/service/computer-labs/" target="_blank">
+				Computer Labs
+			</a> and
+			<a href="https://its.gmu.edu/service/collaborative-learning-areas/" target="_blank">
+				Collaborative Learning Areas
+			</a> - there are several freely available computer labs on campus
+			as well as serveral open learning spaces for students
+		</li>
+		<li>
+			<a href="https://learningservices.gmu.edu" target="_blank">
+				GMU Learning Services
+			</a> - offers support and assistance for everything from
+			semester planning to test anxiety.
+		</li>
+		<li>
+			<a href="http://ssac.gmu.edu/" target="_blank">
+				Student Support and Advocacy Center (SSAC)
+			</a> - offers one-on-one consultations and resources in
+			the areas of interpersonal violence,
+			personal wellness, and alcohol/drug abuse
+		</li>
+		<li>
+			<a href="http://caps.gmu.edu/" target="_blank">
+				Counseling and Support Services (CAPS)
+			</a> - offers individual and/or group counseling, workshops
+			and community education programs
+		</li>
+		<li>
+			<a href="https://writingcenter.gmu.edu/consulting/esl-writing-support" target="_blank">
+				English s a Second Language (ESL) Writing Support
+			</a>
+		</li>
+	</ul>
+	</div>
+</body>
+</html>

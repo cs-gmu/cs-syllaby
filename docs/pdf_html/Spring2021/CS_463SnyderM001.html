@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CS 463 - Spring 2021</title>
+<!-- 2021-01-28 Thu 10:07 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Mark Snyder" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">CS 463 - Spring 2021</h1>
+<style>
+ 
+body {
+    background-color: #FFF;
+    color: #154360;
+    font-family: Helvetica, Arial, Verdana;
+    line-height: 1.5;
+    }
+table.outer { padding: 3em; }
+td.a { line-height: 1.5; text-align: right; vertical-align: top; padding-right: 2em; } 
+td.b { line-height: 1.5; border-left: 1px solid white; padding-left: 2em; vertical-align: top;  }
+h1 { line-height: 1.2; font-size: 200%;  color:#D9411E;}
+h2 { line-height: 1.2; font-size: 150%; color:#D9411E; padding-top: 2em; }
+h3 {
+     color:#D9411E; padding-top: 0.5em; padding-bottom: 0em; margin-bottom: 0em; font-size: 125%;}
+h4 {
+     color:#D9411E; padding-top: 0.5em; padding-bottom: 0em; margin-bottom: 0em; font-size: 110%;}
+a { text-decoration: none; color: #00C; border-bottom: 2px dotted #F1C40F; }
+a:hover { color: #FFDD55; }
+.list { color: #75A3D1; }
+th { text-align: left; font-weight: bold; color: #D9411E; padding-right: 2em; }
+td { padding-right: 2em; }
+td.r { text-align: right; font-weight: bold; color: ; }
+
+#content {
+  width: 1000px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+</style>
+
+<h1 style="text-align: center"> Syllabus </h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Basics</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Prerequisites: C or better in CS 310, CS 330, and CS 367.
+</li>
+<li><a href="http://cs.gmu.edu/~marks/463/schedule.html">Schedule can be found here</a>.
+</li>
+<li>Contact Information:
+<ul class="org-ul">
+<li><i>preferred: private posts on Piazza</i> (Our GTA can also answer
+here).
+</li>
+<li>for when confidentiality is required: <i>msnyde14@gmu.edu</i>
+</li>
+<li>(<i>virtual</i> - no office/phone access)
+</li>
+<li>Office hours: see piazza for up to date times.
+</li>
+</ul>
+</li>
+
+<li><i>Piazza</i> online discussion, shared documents, announcements.
+<ul class="org-ul">
+<li>I will manually add students to the piazza course.
+</li>
+</ul>
+</li>
+<li><a href="http://mymason.gmu.edu">BlackBoard</a>: turn in some assignments view post grades.
+</li>
+<li><a href="https://www.gradescope.com/">GradeScope.com</a>: online quizzes/tests, and some assignment uploads
+as well.
+</li>
+<li><a href="https://cs.gmu.edu/~marks/463/">all course documents</a> posted here: (including class examples)
+<ul class="org-ul">
+<li><a href="https://cs.gmu.edu/~marks/463/">https://cs.gmu.edu/~marks/463/</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Required Materials</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Technology</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>computer with ability to install (free) software on it
+</li>
+<li>ability to either draw diagrams digitally, or draw on paper and
+upload as image or pdf. (Some paper and pencil assignments,
+including tests, need diagrams).
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Textbooks (recommended; no purchases necessary for the course)</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li><i>Concepts of Programming Languages</i>, 12th edition. (earlier edition
+is fine with a bit of effort). Robert W. Sebesta. Used is fine.
+</li>
+<li><a href="http://book.realworldhaskell.org/">Real World Haskell</a>. Bryan O'Sullivan, Don Stewart, and John
+Goerzen. Available free online or for sale in hardcopy.
+</li>
+<li><a href="http://learnyouahaskell.com/">Learn You A Haskell For Great Good!</a>. available free online or for
+sale in hardcopy.
+</li>
+<li>other references and tutorials will be linked online throughout the
+semester.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Goals</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><b>Course Objectives</b>: Students will gain an understanding of key
+programming mechanisms described independently of particular
+machines or languages, including control, binding, procedural
+abstraction, types, and concurrency. Includes basic programming
+competence in several different types of programming languages.
+</li>
+
+<li><b>Course Outcomes</b>: At the end of this course, students should:
+<ul class="org-ul">
+<li>be able to read and use formal representations of programming
+language syntax.
+</li>
+<li>understand, in a language independent way, basic programming
+language components such as variables, types, expressions, scope,
+and control flow and see the choices made for these components by
+common languages.
+</li>
+<li>have an understanding of runtime procedure/function control and
+data flow implementation.
+</li>
+<li>have a basic understanding of the major programming language
+paradigms, including relevant application domains, strengths and
+weaknesses.
+</li>
+<li>have an understanding of the fundamentals of concurrent
+programming and the language-level constructs that are used in
+concurrent programming.
+</li>
+<li>gain basic programming competence in several different types of
+programming languages, facilitating transition to other current
+(and future) languages encountered during their professional
+career.
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Covid-19 Is Still Here&#x2026;</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Clearly this is an uncommon semester - and well beyond the procedural
+differences that have pushed us online.
+</p>
+<ul class="org-ul">
+<li>this syllabus can't pre-solve all the situations that could arise.
+</li>
+<li><b>please keep in communication</b> when things are getting rough - if
+you or people you take care of at home are ill and need all your
+attention; if you are facing evictions or problems that will impact
+your ability to participate in class and do the assignment work. We
+can strategize and think it through far better ahead of time than
+afterwards, for sure. We can affect the future far more effectively
+than the past!
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Grading Policy</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+The grade will be determined by grades obtained in assignments (avg),
+quizzes (avg), and test scores. If circumstances require it
+(e.g. weather, delays in course progress), the grading scale may be
+adjusted at the instructor's discretion, generally in the students'
+favor. If any extra credit is available, it will tend to be available
+on specific assignments, and not as an end-of-semester batch of extra
+work. If you're not happy with the trajectory of your grade, change
+something!
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Category</th>
+<th scope="col" class="left">Est.</th>
+<th scope="col" class="right">Weight</th>
+<th scope="col" class="left">Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Assignments</td>
+<td class="left">about 11</td>
+<td class="right">45%</td>
+<td class="left">lowest 2 count half as much</td>
+</tr>
+
+<tr>
+<td class="left">Quizzes</td>
+<td class="left">about 6</td>
+<td class="right">15%</td>
+<td class="left">drop 1 lowest, avg. the rest</td>
+</tr>
+
+<tr>
+<td class="left">Midterm</td>
+<td class="left">exactly 1</td>
+<td class="right">15%</td>
+<td class="left">higher final exam replaces grade</td>
+</tr>
+
+<tr>
+<td class="left">Final Exam</td>
+<td class="left">exactly 1</td>
+<td class="right">25%</td>
+<td class="left">cumulative</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Grade cutoff percentages:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">A+ 98</th>
+<th scope="col" class="left">A 92</th>
+<th scope="col" class="left">A- 90</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">B+ 88</td>
+<td class="left">B 82</td>
+<td class="left">B- 80</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">C+ 78</td>
+<td class="left">C 72</td>
+<td class="left">C- 70</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">D 60</td>
+<td class="left">F 0</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<ul class="org-ul">
+<li><b>Late Work</b>: 
+<ul class="org-ul">
+<li><i>No work is accepted later than 48 hours after the posted
+deadline.</i>
+</li>
+<li>For all assignments, students begin the semester with <i>three</i>
+<b>One-Day-Late</b> tokens. If you have a token left and turn in work
+late, the token is spent and no other deduction is made on the
+work. If you run out of tokens, then each day late drops the
+highest possible score by 25%. (Take the minimum of your raw
+score and 75%, for instance).
+</li>
+</ul>
+</li>
+
+<li><b>Contested Grades</b>: All requests are due within a week of the grade
+becoming available on Blackboard. To do so, either schedule a
+meeting in person or send an email requesting further feedback and
+consideration. After that week, the window to contest a grade has
+closed other than recording errors. Contact the GTA about
+homework/projects, and contact the professor about tests.
+</li>
+
+<li><b>Assignments</b> - some are on paper and pencil, others are coding
+exercises in various languages. All are weighted equally and the
+lowest two are counted half as much as the others. They generally
+will be the active assignment for about one week.
+</li>
+
+<li><b>Quizzes</b> - many weeks we will have a quiz related to the most
+recent assignment. Regardless of reason, we only drop the one
+lowest grade; if you miss multiple quizzes you will start having
+zeroes calculated in, whether it was for traffic, illness, a
+cousin's wedding, a court date, or attending a conference.
+</li>
+
+<li><b>Tests</b>
+<ul class="org-ul">
+<li>Student ID is required for all in-person tests.
+</li>
+<li>If the midterm is missed, the final exam automatically counts
+that much more.
+</li>
+<li>Missing the final exam is very hard to recover from - plan ahead!
+If you are flying anywhere, don't purchase tickets that overlap
+exams week. If we get enough snow days, our exam date will likely
+change. See the <a href="https://registrar.gmu.edu/calendars/spring-2020/">GMU Final Exams Schedule</a> for details.
+</li>
+</ul>
+</li>
+
+<li><b>Honor Code</b>: All graded work must be your own. Any attempts at
+cheating will not be tolerated, and will be turned in to the Honor
+Court with significant penalties recommended (usually F in the
+course and attendance in an Academic Integrity seminar for a first
+offense, and suspension/expulsion for second+ offenses). By this
+point you should be familiar with these:
+<ul class="org-ul">
+<li><a href="http://oai.gmu.edu/the-mason-honor-code-2/">the honor code at GMU</a>
+</li>
+<li>further details of the <a href="http://cs.gmu.edu/resources/honor-code/">CS Honor Code Policies</a>
+</li>
+<li><a href="http://cs.gmu.edu/~marks/honor.txt">my own thoughts</a> on the honor code.
+</li>
+</ul>
+<p>
+In short you should never see, share, or discuss any part of the
+solution to any graded work, from algorithm development to
+implementation to debugging to personal test cases.  When in doubt,
+ask your instructor instead of another student. For clarity, It's
+okay for this class to study together on completed works ahead of
+tests.
+</p>
+</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Statement on Inclusion</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+I value the many perspectives that all of you bring to our class. I
+value each and every one of you. I want you to succeed, to feel
+comfortable, to be seen and heard. Please help cultivate the
+supportive, positive environment for everyone in class that we all
+deserve. We are allowed to be unique individuals. Be patient and kind
+with each other as we all work through another interesting semester in
+each other's company. Assume the best of each other and our
+intentions, and own up to the effects we have on others. I will do my
+best to pay attention to how you have arrived at this course, meet you
+where you are, and help you get the most out of our time together. If
+you work harder, I will meet your efforts with you. If you feel lost
+or unsupported, I will help you when I can and help you find other
+supports that go beyond me.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Learning Disabilities and Support</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+I generally honor all accommodations formally established through
+GMU's <a href="https://ds.gmu.edu/">Office of Disability Services</a>. This requires students to
+self-advocate, and proactively request use of these accommodations
+(such as requesting alternate testing times a <i>week</i> in advance), so
+get things sorted out ahead of time in case you think it may be
+necessary or useful. They also assist with short-term situations such
+as concussions - if our tokens and drops policy can't handle a
+prolonged situation, then ODS is the right channel to establish what
+kind of support is appropriate for you to get through the semester
+successfully without needing a medical withdrawal.
+</p>
+<ul class="org-ul">
+<li><i>note - all test center scheduling can be done as early as day one of the semester - students with accommodations are encouraged to complete these requests early on.</i>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
