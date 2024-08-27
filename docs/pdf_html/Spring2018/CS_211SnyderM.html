@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CS 211 / 211H: Object Oriented Programming</title>
+<!-- 2018-04-19 Thu 09:48 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Mark Snyder" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">CS 211 / 211H: Object Oriented Programming</h1>
+<style type="text/css"> 
+@media screen {
+    html { 
+        font-family: serif; 
+        text-align: justify; 
+    } 
+    .src, .example { 
+        background-color: rgb(245,245,225); /*rgb(225,245,225)*/; 
+    } 
+    /* Merge subtitle area with title area */ 
+    .subtitle { 
+        text-align: center;
+        margin-top: -2em;
+        padding-top: 1em;
+        padding-bottom: 0.1em;
+    }
+    .title, .subtitle { color: white; background-color: #006633; }
+    /* Mason green section borders, left section header style */ 
+    div.outline-2, #table-of-contents { 
+        background-color: rgb(250,250,250);
+        border: 0.75em solid #006633; 
+        border-top: 0em;
+        padding: 0em .5em .5em .5em; /* top right bottom left */
+        margin: 1em 0em 1em 0em; /* top right bottom left */
+    } 
+    div.outline-2 > h2, #table-of-contents > h2 { 
+        background-color: #006633;
+        color: white;
+        font-variant: small-caps; 
+        padding: 0em 0em 0em .5em; /* top right bottom left */
+        margin: 0em -.5em 0em -.75em; /* top right bottom left */
+    }
+    blockquote {
+        font-style: italic;
+    }
+    td, th {
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+    body {
+        background-color: #EEE;
+        max-width:750px;
+        margin:0 auto;
+    }
+    .tag {
+      background-color: inherit; font-family: inherit;
+      padding: inherit; font-size: 80%; font-weight: inherit;
+      text-transform: uppercase;
+    }
+    
+    .figure p { text-align: inherit; }
+    figure-number { font-style: italic; }
+}
+
+@media print {
+    html {
+        font-family: serif; 
+        font-size: 10pt;
+        text-align: justify; 
+    }
+}
+</style>
+
+<div class="subtitle" align="center">
+<h2> George Mason University</h2>
+<h2> Spring 2018 </h2>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Staff</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li>Dr. Mark Snyder
+<ul class="org-ul">
+<li>msnyde14@gmu.edu - ENGR 5346
+</li>
+<li>office hours: Wednesdays 3-5pm
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+<b>prerequisite: grade of C or better in CS 112.</b>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Basics</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li><a href="https://cs.gmu.edu/~marks/211/schedule.html">schedule is here</a>.
+</li>
+<li><a href="http://piazza.com/gmu/spring2018/cs211">Piazza</a> - announcements and discussion forum
+</li>
+<li><a href="https://pytania.cs.gmu.edu/">Pytania</a> - Class participation tool. (Free - sign up with your <b>GMU</b>
+   email, and join the correct section of CS 211 for this semester).
+</li>
+<li><a href="https://mymasonportal.gmu.edu/">Blackboard</a> - turning in assignments and viewing grades
+</li>
+<li><a href="https://cs.gmu.edu/~marks/211/">web directory</a> of all shared files (projects, class examples,
+textbook, etc)
+</li>
+<li><a href="https://piazza.com/gmu/spring2018/cs211/staff">Resources → Staff</a> - all teaching assistants, including office hours
+and email addresses
+</li>
+<li>lectures:
+<ul class="org-ul">
+<li>CS211-003: TR 12:00pm-1:15pm, IN 105
+</li>
+<li>CS211-005/H01: TR 3:00pm-4:15pm,  DK 1006
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Textbooks</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li><b>Required:</b> <a href="https://cs.gmu.edu/~marks/211/textbook/">CS211 Textbook</a>, free for download.
+</li>
+<li><b>Required:</b> Zyante Java textbook. (<a href="https://learn.zybooks.com">Sign up here</a>, then use the code
+<b>GMUCS211SnyderSpring2018</b> to join our course edition). 
+</li>
+<li><b>Optional:</b> <i>Building Java Programs</i>, 3rd ed. By Reges and Stepp. It
+comes with useful exercises online, available to anyone (<a href="https://practiceit.cs.washington.edu/">Practice It!</a>).
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Learning Outcomes</h3>
+<div class="outline-text-3" id="text-2-2">
+<ol class="org-ol">
+<li>An understanding of basic object-oriented (OO) programming concepts
+and principles.
+</li>
+<li>An ability to apply basic object-oriented principles and techniques
+in the development of software systems using a specific programming
+language.
+</li>
+<li>An ability to effectively develop software systems using both basic
+command line tools and sophisticated integrated development
+environments, and to understand the advantages and limitations of
+each.
+</li>
+<li>An ability to successfully perform debugging operations and
+techniques.
+</li>
+<li>An ability to perform software development in both individual and
+team environments.
+</li>
+<li>An understanding of programming-related references/resources
+available to software developers and the ability to use them
+effectively – both in ongoing projects and in the acquisition of new
+technical skills.
+</li>
+<li>An understanding of how acquired programming skills facilitate
+success in upper level CS courses and in various professional
+environments.
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Coursework</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><b>Readings</b>: We have weekly deadlines for our <b>Zyante</b> online
+textbook, due the following Monday evening after it's scheduled.
+</li>
+<li><b>Labs</b>: We have weekly 50-minute lab sessions. Each lab is one of
+the three styles:
+<ul class="org-ul">
+<li><span class="underline">Exercise</span>: completely open resource and collaboration
+allowed/encouraged; turn in the work by the following Monday
+evening. Attendance is optional.
+</li>
+<li><span class="underline">Quiz</span>: paper and pencil assessment. Individual work, closed
+resources. Due at the end of lab. Attendance is required.
+</li>
+<li><span class="underline">Task</span>: computer-based assessment. Individual work, closed
+resources. Due at the end of lab. Attendance is required.
+</li>
+</ul>
+</li>
+<li><b>Projects</b>: Individual work. Long-term assignments that will take
+weeks to complete. It is strongly encouraged that you've completed
+all the readings (Zyante+CS211 Textbook) and lab exercises before
+attempting them, so that you learn the ideas in small settings and
+apply them later in these larger settings.
+<ul class="org-ul">
+<li><span class="underline">Honors Problems</span>: each project has an honors problem that
+extends the problem; it is required for honors students as part
+of the grade, and is not considered for other students (it's not
+extra credit). Honors students' projects will be graded as more
+than 100-point assignments, often 115 points. (so 115/115 ==
+100%).
+</li>
+</ul>
+</li>
+<li><b>Tests</b> There are two tests during lecture, and a cumulative final
+exam. Each is individual effort, focusing on applying concepts and
+showing ability to write in particular styles. Refer to the
+schedule for these dates. <b>Your Mason ID is required</b> for tests and
+final exams.
+</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Grading Policies</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Grade Distribution</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+Final grades will be determined by scores
+obtained on the components below according to their associated weight.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Component</th>
+<th scope="col" class="right">Weight</th>
+<th scope="col" class="left">Policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Pytania (class part.)</td>
+<td class="right">2%</td>
+<td class="left">answer for credit; correct for bonus</td>
+</tr>
+
+<tr>
+<td class="left">Zyante Reading</td>
+<td class="right">3%</td>
+<td class="left"><b>drop three subsections</b></td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Labs</td>
+<td class="right">10%</td>
+<td class="left"><b>drop two</b></td>
+</tr>
+
+<tr>
+<td class="left">Programming Projects (5-7)</td>
+<td class="right">40%</td>
+<td class="left"><b>no drops</b>, averaged equally</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Midterm Exams (2)</td>
+<td class="right">20%</td>
+<td class="left">10% each. higher final exam replaces.</td>
+</tr>
+
+<tr>
+<td class="left">Final Exam</td>
+<td class="right">25%</td>
+<td class="left">must pass avg. of all three exams (D) to pass class.</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+If circumstances require it, the grading scale may be adjusted,
+generally in the students' favor.
+</p>
+
+<p>
+Curves are not common in this course - an individual poor test might
+get one when grades are released, but your grade throughout the course
+is always what it is - no guesswork.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Grade Scale</h3>
+<div class="outline-text-3" id="text-4-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Percent</th>
+<th scope="col" class="left">Grade</th>
+<th scope="col" class="right">Percent</th>
+<th scope="col" class="left">Grade</th>
+<th scope="col" class="right">Percent</th>
+<th scope="col" class="left">Grade</th>
+<th scope="col" class="right">Percent</th>
+<th scope="col" class="left">Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">&gt;= 98</td>
+<td class="left">A+</td>
+<td class="right">89-88</td>
+<td class="left">B+</td>
+<td class="right">79-78</td>
+<td class="left">C+</td>
+<td class="right">69-60</td>
+<td class="left">D</td>
+</tr>
+
+<tr>
+<td class="right">97-92</td>
+<td class="left">A</td>
+<td class="right">87-82</td>
+<td class="left">B</td>
+<td class="right">77-72</td>
+<td class="left">C</td>
+<td class="right">&lt;60</td>
+<td class="left">F</td>
+</tr>
+
+<tr>
+<td class="right">91-90</td>
+<td class="left">A-</td>
+<td class="right">81-80</td>
+<td class="left">B-</td>
+<td class="right">71-70</td>
+<td class="left">C-</td>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Zyante Readings</h3>
+<div class="outline-text-3" id="text-4-3">
+<ul class="org-ul">
+<li>look at the schedule for each chapter deadline.
+</li>
+<li>all interactions and coding challenges are part of the grade for
+each subsection.
+</li>
+<li>Grades for reading will be posted at the end of the semester. You
+can complete readings after the deadline for no additional credit:
+if you keep missing deadlines, you will still get a zero even
+though you finished the work!
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Pytania: Class Participation</h3>
+<div class="outline-text-3" id="text-4-4">
+<ul class="org-ul">
+<li>we will regularly have questions to answer during lecture. Whatever
+fraction of questions you answer at all, you'll get participation
+points for.
+</li>
+<li>any questions you get correct are worth half again as a bonus (up
+to 1% of the semester grade!)
+</li>
+<li>roughly one day's worth of questions will be dropped from the
+denominator when calculating your participation:
+<pre class="example">
+participation = ( #answered + 0.5 * #correct ) / (num_asked - avg_day)
+</pre>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> Lab Grades</h3>
+<div class="outline-text-3" id="text-4-5">
+<ul class="org-ul">
+<li>exercises are entirely based on tester output, whether your code
+fails to compile (zero grade), passes everything (100%), or
+anywhere in between.
+</li>
+<li>quizzes are graded by hand, allowing partial credit.
+</li>
+<li>tasks are graded by hand and test cases, allowing partial credit.
+</li>
+<li><b>you must attend your registered lab section for all quizzes and tasks</b>.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-6" class="outline-3">
+<h3 id="sec-4-6"><span class="section-number-3">4.6</span> Project Grades</h3>
+<div class="outline-text-3" id="text-4-6">
+<ul class="org-ul">
+<li><b>all projects are individual work.</b> The only humans you can
+interact with on them in regards to your code or any planning
+stages (your algorithm) are UTAs, GTAs, and professors of our CS211
+course. (That's actually a lot of support!)
+</li>
+<li>Grading is usually split into automatic testing and manual
+inspection, roughly 50-50. You'll have both the test cases used for
+automated testing as well as the criteria for manual testing, so
+you should still be able to anticipate your grade with some
+precision.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-7" class="outline-3">
+<h3 id="sec-4-7"><span class="section-number-3">4.7</span> Emergency Tokens, Late Work</h3>
+<div class="outline-text-3" id="text-4-7">
+<ul class="org-ul">
+<li>Emergencies happen - that's life. Each student starts with three
+<b>Emergency Tokens</b>. They may be used on projects and lab
+<i>exercises</i>. Each one gives you an additional 24 hours in which to
+turn in the assignment.
+</li>
+<li><i>no work may be turned in more than 48 hours after the posted
+deadline</i>. (You can't use all three Emergency Tokens on one
+assignment).
+</li>
+<li>you can still turn in work up to 48 hours late if you've spent all
+your Emergency Tokens. Each 24-hour period entered without a token
+to spend lowers the maximum grade by 25%. One "penalty" day late:
+<code>score = min(raw_score, 75%)</code>. Two "penalty" days late: <code>score = min(raw_score, 50%)</code>.
+</li>
+<li>submissions turned in &gt;=48 hours late are ignored.
+</li>
+<li>unspent Emergency Tokens are worth 0.25% semester grade each.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-8" class="outline-3">
+<h3 id="sec-4-8"><span class="section-number-3">4.8</span> Blackboard Submissions</h3>
+<div class="outline-text-3" id="text-4-8">
+<ul class="org-ul">
+<li>Turn in work to Blackboard as many times as your want - only the
+last one is graded.
+</li>
+<li>tokens are automatically applied based on submissions - you can't
+request to not use them when work is turned in late.
+</li>
+<li>grades will be available one week from the latest possible
+submissions. Don't worry if one section gets their grades sooner
+than yours.
+</li>
+<li><i>Be sure you actually turned in your work!</i> We need <code>.java</code> files;
+<code>.class</code> files are worthless as a submission. If you tend to keep
+earlier versions in extra files, make sure you turned in the final
+product, as that is what will be graded.
+</li>
+<li>"saved" submissions in Blackboard are useless. You need to
+"<b>Submit</b>" your solution, or else we can't see it, and can't accept
+it later.
+</li>
+<li><b>BACK UP</b> your work, always! Without fail, each semester multiple
+students will lose, drown, crack, reformat, magnetize, or generally
+destroy their computers at the worst possible time. Keep everything
+somewhere backed up, such as a DropBox or Google Drive folder, so
+that this doesn't happen to you.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-4-9" class="outline-3">
+<h3 id="sec-4-9"><span class="section-number-3">4.9</span> Grading Disputes</h3>
+<div class="outline-text-3" id="text-4-9">
+<p>
+Address grading issues with the grader first via a direct email or in
+person within one week of the grade being made available. Email
+address for staff are at the top of the syllabus and on Piazza under
+<a href="https://piazza.com/gmu/spring2018/cs211/staff">Resources → Staff</a>.
+</p>
+<ul class="org-ul">
+<li>Projects: Email your lab GTA
+</li>
+<li>Lab work: Email your lab GTA
+</li>
+<li>Exams: Email your Professor
+</li>
+</ul>
+
+<p>
+This should be done respectfully either in person or via e-mail.  If
+it is not possible to reach a resolution, the professor may be
+contacted by the grader to resolve the dispute. Don't go to the
+professor first for project/lab grades.
+</p>
+
+<ul class="org-ul">
+<li><b>Honor Code</b>: All graded work must be your own. Any attempts at
+cheating will not be tolerated, and will be turned in to the Honor
+Court with significant penalties recommended (usually F in the
+course and attendance in an Academic Integrity seminar for a first
+offense). By this point you should be familiar with both <a href="http://oai.gmu.edu/the-mason-honor-code-2/">the honor
+code at GMU</a> and the further details of the <a href="http://cs.gmu.edu/resources/honor-code/">CS Honor Code Policies</a>
+but in short you should never see, share, or discuss any part of
+the solution to any graded work, from algorithm development to
+implementation to debugging to test cases.  When in doubt, ask your
+instructor instead of another student. Lastly, <a href="http://cs.gmu.edu/~marks/honor.txt">here are my own
+thoughts</a> on the honor code.
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Accommodations</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Students with a learning disability or other condition (documented
+with GMU's <a href="https://ds.gmu.edu/">Office of Disability Services</a>) that may impact academic
+performance should speak with the professor ASAP to discuss
+appropriate accommodations. We are quite happy to provide any and all
+accommodations recommended by ODS, but that process always begins with
+the student initiating the request. Keep in mind that accommodations
+must be approved prior to the test/assessment.
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>

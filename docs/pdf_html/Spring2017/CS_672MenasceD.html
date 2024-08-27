@@ -1,0 +1,393 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+ <html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; SunOS 5.7 sun4m) [Netscape]">
+   <title>CS 672 - Computer System Performance Evaluation - Spring 2017 - Menasce</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<center>
+<h2>
+CS672 -&nbsp;<a NAME="Computer"></a>Computer System Performance Evaluation
+- Spring 2017</h2></center>
+
+<center>George Mason University
+<br>DEPARTMENT OF COMPUTER SCIENCE
+<br>Tuesdays 4:30pm to 7:10pm Innovation Hall 134  
+<br><a href="http://www.cs.gmu.edu/faculty/menasce.html">Professor Daniel
+A. Menasce'</a>
+<br>Course office hours Tuesdays  3:00pm to 4:00 PM or by appt; e-mail at all times
+<br>Phone: 703-993-1537
+<br>E-mail: menasce at  gmu dot edu (please prefix the subject of your message
+with CS672)</center>
+
+<p>
+<hr>
+<ul>
+<li>
+<a href="#DESCRIPTION">DESCRIPTION</a></li>
+
+<li>
+<a href="#GRADING POLICY">GRADING POLICY</a></li>
+
+<li>
+<a href="#SYLLABUS">SYLLABUS</a></li>
+
+<li>
+<a href="#READINGS">READINGS</a></li>
+
+<li>
+<a href="#RESOURCES">RESOURCES</a></li>
+
+<li>
+<a href="#PROJECT">PROJECT</a></li>
+
+<li>
+<a href="#IMPORTANT DATES">IMPORTANT DATES</a></li>
+
+<li>
+<a href="#IMPORTANT RULES">IMPORTANT RULES</a></li>
+</ul>
+
+<hr><img SRC="http://cs.gmu.edu/~menasce/home.gif" ><a href="http://cs.gmu.edu/~menasce/cs672/cs672.html">CS
+672 Home Page</a>
+<br>&nbsp;
+<p><a NAME="DESCRIPTION"></a><i>DESCRIPTION :</i>
+<p>CS672 is a 3-credit course with CS571 as prerequisite. It introduces
+the main concepts and techniques needed to plan the capacity of computer
+systems, predict their future performance under different configurations,
+and design new applications that meet performance requirements. The course
+is mainly based on the use of analytic queuing network models of computer
+systems. These techniques are applied to study the performance of centralized,
+distributed, parallel, client/server systems, Web server and e-commerce
+site performance. The course also discusses performance measuring tools
+for operating systems such as Unix and Windows. The course provides
+the students with hands-on experience in performance evaluation through
+a project. The concept and applications of software performance engineering
+are also covered.
+<p><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<br>&nbsp;
+<br>&nbsp;
+<p><a NAME="GRADING POLICY"></a><i>GRADING POLICY:</i>
+<p>Grades are based on a midterm, a take-home final, and one project.
+Grades will be numerical on the scale 0-100. Your final numerical grade,
+G, is computed as:
+<br>
+G = 0.35* Midterm + 0.30 * Final + 0.35 * Project.
+<p>The following table is used to convert your numerical grade G to a letter grade:<p>
+<table border="1">
+  <tbody>
+    <tr>
+      <th><font face="Arial" color="#000080">G&nbsp;</font></th>
+      <th><font face="Arial" color="#000080">letter grade</font></th>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[97,100]&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">A+</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[93,97)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">A</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[88,93)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">A-</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[85,88)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">B+</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[81,85)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">B</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[77,81)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">B-</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[65, 77)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">C</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">< 65&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">F</font></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There is no curving. No extra credit assignments will be given after the
+semester is over to increase grades. The instructor may decide to give
+an extra-credit assignment during the semester. Everyone will be given
+the opportunity to do the extra-credit assignment.
+Several homeworks will be assigned during the semester but will
+not considered for the final grade. However, students who turn in all
+homeworks in time and get most of them correct may receive an upgrade
+in their letter grade if their numerical grade G is very close to the
+boundary between two letter grades.
+
+<p><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<p><a NAME="SYLLABUS"></a><i>SYLLABUS:</i>
+<table BORDER=0 CELLSPACING=18 >
+<tr>
+<td ALIGN=LEFT>Week 1:&nbsp;</td>
+
+<td ALIGN=LEFT>Computer System Lifecycle and From
+Systems to Descriptive Models</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Week 2:</td>
+
+<td ALIGN=LEFT>Quantifying Performance Models</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Weeks 3-4:</td>
+
+<td ALIGN=LEFT>Performance Engineering Methodology and
+Case Study I: A Database Service</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Week 5:</td>
+
+<td ALIGN=LEFT>Multiclass Open Queuing Network Models</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Weeks 6-7:</td>
+
+<td ALIGN=LEFT>Case Study II: A Web Server and
+Multiclass Closed Queuing Network Models</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Week 8:</td>
+
+<td ALIGN=LEFT>Midterm</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Week 9:</td>
+
+<td ALIGN=LEFT>Case Study III: A Data Center</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Week 10:</td>
+
+<td ALIGN=LEFT>Markov Models</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Week 11:</td>
+
+<td ALIGN=LEFT>Case Study IV: An E-Business Service
+and Case Study V: A Help-Desk Service</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Week 12:</td>
+
+<td ALIGN=LEFT>Queuing Networks with Load Dependent Devices.</td>
+</tr>
+
+<tr>
+<td ALIGN=LEFT>Week 13:</td>
+
+<td ALIGN=LEFT>Non-Product Form Queuing Network Models</td>
+</tr>
+</table>
+<a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back "to the top
+<p>
+<hr>
+<p><a NAME="READINGS"></a><i>READINGS:</i>
+<p>Required readings:
+<ol>
+<li>
+D. A. Menasc&eacute, V. Almeida, and Larry W. Dowdy, <a href="http://cs.gmu.edu/~menasce/perfbyd/">
+Performance by Design: Computer Capacity
+Planning by Example</a>, Prentice
+Hall, 2004.</li>
+
+<li>
+<a href="http://cs.gmu.edu/~menasce/cs672/slides/">Slides
+by D. A. Menasc&eacute;.</a></li>
+</ol>
+Other recommended books:
+<ol>
+<li>
+D. A. Menasc&eacute; and V. Almeida, <a href="http://cs.gmu.edu/~menasce/webservices/">Capacity
+Planning for Web Services: Metrics, Models, and Methods</a>,
+Prentice Hall, 2002.</li>
+
+<li>
+Performance Modeling and Design of Computer Systems: Queueing Theory in Action,
+Mor Harchol-Balter, 2013, Cambridge University Press.
+</li>
+<li>
+Introduction to Computer System Performance Evaluation, K. Kant, McGraw
+Hill, 1992.</li>
+
+<li>
+Probability, Stochastic Processes, and Queuing Theory, Randolph Nelson,
+Springer Verlag, 1995.</li>
+
+<li>
+Quantitative System Performance, E. Lazowska, J. Zahorjan, G. Graham, and
+K. Sevcik, Prentice Hall, 1984.</li>
+
+<li>
+The Benchmark Handbook for Database and Transaction Processing Systems,
+ed. Jim Gray, Morgan Kauffman, 1991.</li>
+
+<li>
+Optimizing Oracle Performance: A Practitioner's Guide to Optimizing
+Response Time, Cary Milsap, 2003, O'Reilly.
+</li>
+
+<li>
+Configuration and Capacity Planning for Solaris Servers, Brian Wong, Prentice
+Hall, 1997.</li>
+
+<li>Windows 2000 Performance Guide, M. Friedman and O. Pentakalos,
+O'Reilly, 2002.</li>
+
+<li>
+Sun Performance and Tuning, second edition, Adrian Cockcroft and Richard Pettit,Prentice Hall, 1998.</li>
+
+<li>Simulation Modeling and Analysis, A. M. Law and W. D. Kelton, 3rd edition, McGraw Hill,200.</li>
+<li>
+Simulation with Arena, W. David Kelton, Randall P. Sadowski, Deborah A.
+Sadowski, McGraw Hill, 1998.</li>
+</ol>
+Other sources of relevant material:
+<ol>
+<li>
+Proceedings of the <a href="http://www.acm.org/sigmetrics/">ACM Sigmetrics</a>
+Conference.</li>
+
+<li>
+Proceedings of the <a href="http://www.cmg.org">Computer Measurement Group
+(CMG)</a> Conference Proceedings.</li>
+</ol>
+<a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<p><a NAME="RESOURCES"></a><i>RESOURCES</i>
+<li>
+<a href="http://www.tpc.org">Transaction Processing Performance
+Council:</a> organization that defines and publishes transaction processing
+and database benchmarks known as the TPC benchmarks.</li>
+
+<li>
+<a href="http://open.specbench.org/">The Standard Performance Evaluation
+Corporation:</a> organization that establishes, maintains, and endorses
+a standardized set of benchmark metrics for performance evaluation known
+as SPEC ratings. They are also responsible for the SPECWeb benchmark for
+Web servers.</li>
+
+<li>
+<a href="http://www.mindcraft.com/webstone/">WebStone Benchmark:</a> a
+benchmark, orginally developed by SGI, used to assess Web servers.</li>
+
+<li>
+<a href="http://www.keynote.com">Keynote:</a>a service that measures end-user
+performance for E-commerce sites.</li>
+
+<li>
+<a href="http://www.cs.wpi.edu/~webbib/">The WEBBIB Project:</a> an online
+bibliography of distributed systems topics related to the WWW.</li>
+
+<li><a href="http://dl.acm.org/dl.cfm?coll=portal&dl=ACM">ACM Digital Library</a>: 
+look for the Proceedings of the ACM Sigmetrics conferences, as well as papers
+in other ACM conferences and journals.</li>
+
+<li><a href="http://ieeexplore.ieee.org/search/advsearch.jsp">IEEE/IEE Eletronic Library</a>:
+look for papers in the IEEE Tr. Computers, IEEE Tr. Software Engineering,
+IEEE Transactions on Parallel and Distributed Systems, Conference Proceedings, as well as in various
+IEEE magazines such as IEEE Internet Computing.</i>
+
+<li><a href="http://www.sciencedirect.com/">Performance Evaluation Journal:</a> Go to the Science Direct (Elsevier) link 
+on this page and select the Performance Evaluation journal.</li>
+
+
+<p><br><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><a NAME="PROJECT"></a><i>PROJECT:</i>
+<p>Students will work individuallyn a project and will make
+a presentation
+(a final exhibition) to the whole class.
+Each student  has to turn in a written
+report describing the performance problem being studied, the model built,
+the data collection procedures used, the various numerical results, and
+conclusions obtained. 
+In
+order for projects to complete successfully, it is very important to plan
+all activities and to follow a schedule. Starting to work on a project
+a few days before it is due will very likely cause problems to its successful
+completion. 
+
+
+<p><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<p><a NAME="IMPORTANT DATES"></a><i>IMPORTANT DATES :</i>
+<table BORDER=0 CELLSPACING=18 >
+<tr>
+<td ALIGN=LEFT>First Day of Classes&nbsp;</td>
+<td ALIGN=LEFT>January 24, 2017.&nbsp;</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Project Proposal Due</td>
+<td ALIGN=LEFT>March 7, 2017.</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Spring break  - No classes</td>
+<td ALIGN=LEFT>March 14, 2017.</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Midterm&nbsp;</td>
+<td ALIGN=LEFT>March 21, 2017.&nbsp;</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Final exam available&nbsp;</td>
+<td ALIGN=LEFT>May 2, 2017.</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Last day of classes</td>
+<td ALIGN=LEFT>May 2, 2017.</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Project presentations&nbsp;</td>
+<td ALIGN=LEFT>May 2, 2017.</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Final exam due date:&nbsp;</td>
+<td ALIGN=LEFT>May 10, 2017.</td>
+</tr>
+</table>
+<a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<p><a NAME="IMPORTANT RULES"></a><i>IMPORTANT RULES :</i>
+<p>No collaboration is allowed among students in any of the individual
+exams. Students are allowed to discuss with other students the solution
+of homework assignments. 
+
+<p><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<center>
+<p><font size=-1>Last updated: December 17, 2016.</font></center>
+
+</body>
+</html>

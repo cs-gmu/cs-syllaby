@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>CS330 - Formal Methods and Models -- Summer 2005 -- Richards</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; line-height: 14.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee}
+    p.p4 {margin: 0.0px 0.0px 6.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 12.0px 'Times New Roman'; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Cambria; color: #000000; -webkit-text-stroke: #000000}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 15.0px; font: 12.0px 'Times New Roman'; color: #000000; -webkit-text-stroke: #000000; min-height: 15.0px}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    li.li5 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    span.s3 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s4 {text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
+    span.s5 {-webkit-text-stroke: 0px #000000}
+    span.s6 {font: 12.0px Times; font-kerning: none}
+    span.s7 {font: 12.0px 'Times New Roman'; font-kerning: none}
+    span.s8 {font-kerning: none; -webkit-text-stroke: 0px #000000}
+    span.Apple-tab-span {white-space:pre}
+    ol.ol1 {list-style-type: decimal}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p2"><span class="s1"><b>George Mason University<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p2"><span class="s1"><b>DEPARTMENT OF COMPUTER SCIENCE</b></span></p>
+<p class="p2"><span class="s1"><b>CS330 - Formal Methods and Models - Spring 2018</b></span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space"> </span>TR 9:00–10:15, IN 204</span></p>
+<p class="p2"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s2"><a href="file:///Volumes/homes/cs330/cs330-richards-d.html~#PREREQ">Prerequisites</a></span><span class="s3"> | <a href="file:///Volumes/homes/cs330/cs330-richards-d.html~#DESCR"><span class="s4">Description</span></a> | <a href="file:///Volumes/homes/cs330/cs330-richards-d.html~#READINGS"><span class="s4">Readings</span></a> | <a href="file:///Volumes/homes/cs330/cs330-richards-d.html~#SYLLABUS"><span class="s4">Syllabus</span></a> | <a href="file:///Volumes/homes/cs330/cs330-richards-d.html~#GRADING"><span class="s4">Grading</span></a> | <a href="file:///Volumes/homes/cs330/cs330-richards-d.html~#LATE"><span class="s4">Late</span></a> | <a href="file:///Volumes/homes/cs330/cs330-richards-d.html~#TA"><span class="s4">TA</span></a> | <a href="file:///Volumes/homes/cs330/cs330-richards-d.html~#SYLLABUS"><span class="s4">Dates</span></a></span></p>
+<p class="p3"><span class="s1"><br>
+</span></p>
+<p class="p2"><span class="s1">This page last updated on 1/17/2018</span></p>
+<p class="p2"><span class="s1"><br>
+</span></p>
+<p class="p3"><span class="s2"><a href="http://www.cs.gmu.edu/faculty/richards.html">Professor Dana Richards<span class="Apple-converted-space"> </span></a></span></p>
+<p class="p2"><span class="s1">703-993-1545<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1">richards@gmu.edu</span></p>
+<p class="p2"><span class="s1">(Please prefix the subject of your email with CS330.)<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1"><br>
+</span></p>
+<p class="p2"><span class="s1">Course office hours: TR 10:30-11:30 or by appt.</span></p>
+<p class="p2"><span class="s1">Engineering Bldg 5320<span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><b><i>PREREQUISITES :</i><span class="Apple-converted-space"> </span></b></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">CS211 and Math 125 (C or better in both).</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><b><i>DESCRIPTION :</i><span class="Apple-converted-space"> </span></b></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">This course is an introduction to two kinds of formal systems - languages and logics - with important applications to computer science. The study of formal languages underlies important aspects of compilers and other language processing systems, as well as the theory of computation. Various systems of logic and automatic reasoning are put to use in artificial intelligence, database theory and software engineering. The entire course will give you practice in precise thinking and proof methods that play a role in the analysis of algorithms. The programming assignments provide practical experience with some theoretical topics.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1"><b><i>OUTCOMES :</i></b></span></p>
+<p class="p6"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1">Will understand the concepts and relevance of logic, formal languages and automata theory, and computability .</span></p>
+<p class="p6"><span class="s1">Will be able to able to do mechanical formal proofs, program correctness proofs and solve problems in first-order logic.</span></p>
+<p class="p6"><span class="s1">Will be able to solve problems in elementary machine models: designing finite-state, pushdown and Turing machines.</span></p>
+<p class="p6"><span class="s1">Will be able to solve problems in formal languages: writing regular expressions, regular grammars, and context-free grammars.</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><b><i>READINGS:<span class="Apple-converted-space"> </span></i></b></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<ol class="ol1">
+  <li class="li5"><span class="s5"></span><span class="s1">Logic and Languages Models for Computer Science: 3rd edition. World Scientific (not the spiral bound version)<span class="Apple-converted-space"> </span></span></li>
+</ol>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><b><i>SYLLABUS:</i></b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">The pace is <b>approximate</b>. Later chapters will not be covered as completely.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Topic <span class="Apple-converted-space">                                </span>Week<span class="Apple-converted-space">        </span>Chapters</span></p>
+<p class="p7"><span class="s1"><br>
+</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Introduction <span class="Apple-converted-space">                          </span>1<span class="Apple-converted-space">          </span>1</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Propositional Logic and Proofs <span class="Apple-converted-space">        </span>1-2<span class="Apple-converted-space">        </span>2-3</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Predicate Logic and Proofs <span class="Apple-converted-space">            </span>3-4<span class="Apple-converted-space">        </span>4-5</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Applications: Prolog and Verification <span class="Apple-converted-space">  </span>5-6<span class="Apple-converted-space">        </span>6-A</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Exam #1<span class="Apple-converted-space">                                </span>7</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Regular Languages &amp; Finite Automata<span class="Apple-converted-space">    </span>7-10 <span class="Apple-converted-space">      </span>7-9</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space"> </span>[AWK: Regular Expression Application<span class="Apple-converted-space">    </span>11 <span class="Apple-converted-space">        </span>B]</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Context-Free Grammars &amp; PDAs <span class="Apple-converted-space">          </span>12-13<span class="Apple-converted-space">      </span>10-11</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">  </span>Turing Machines &amp; Computability<span class="Apple-converted-space">        </span>14 <span class="Apple-converted-space">    <span class="Apple-tab-span">	</span>  </span>12</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><b><i>GRADING :<span class="Apple-converted-space"> </span></i></b></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Quizzes -- 20%</span></p>
+<p class="p5"><span class="s1">Program-- 20%</span></p>
+<p class="p5"><span class="s1">Exams -- 60%</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">The two exams each cover about a half of the semester; Exam #2 is not cumulative.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">Of these exams the highest score will count 35%, and the lowest 25%. <span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">Tentatively Exam #1 will be March 20. Exam #2 will be May 10 (at the official final exam time)</span></p>
+<p class="p5"><span class="s1"><br>
+<br>
+</span></p>
+<p class="p5"><span class="s1">Homework is ungraded.</span></p>
+<p class="p5"><span class="s1">Quizzes will test homework, typically every other class.</span></p>
+<p class="p5"><span class="s1">The lowest quiz grades will be dropped (best 10).</span></p>
+<p class="p5"><span class="s1">There will be small programming assignments in Prolog [and AWK. ]</span></p>
+<p class="p5"><span class="s1">(This semester there will be no AWK assignment.)<br>
+</span></p>
+<p class="p5"><span class="s1">All testing is closed book, but limited notes are permitted, as follows for exams (but not for quizzes). One sheet of notes<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">(8.5 by 11 inches, 1 side only). NO COPYING is allowed. That means no photocopying of anything, even the textbook,<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">though you may write out material from it verbatim. It also means no copying of anyone else's notes, even by hand.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">You may use a computer for editing your own notes. The sheet must be turned in with your exam.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">Violations of these rules for creating the notes is considered a violation of the Honor Code.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">There is to be NO group work on the programs.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">Receiving direct contributions to the code that is submitted is considered a violation of the Honor Code.<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1">(See <a href="http://cs.gmu.edu/resources/honor-code/"><span class="s4">http://cs.gmu.edu/resources/honor-code/</span></a><span class="Apple-converted-space">  </span>for the GMU and Computer Science guidelines.)<br>
+<br>
+</span></p>
+<p class="p9"><span class="s1">It is a departmental requirement that every CS major must see their academic advisor twice, once while enrolled in CS101 and in CS330.<span class="Apple-converted-space">  </span>Of course, you should see your advisor more often, as needed.<span class="Apple-converted-space">  </span>If you are in both CS330 and CS101, one visit per semester is enough.</span><span class="s6"> (Non-majors and graduate students are not included.)<span class="Apple-converted-space">  </span>The visit must be documented and signed/verified by the advisor.<br>
+</span></p>
+<p class="p9"><span class="s1"><b><span class="Apple-converted-space">      <span class="Apple-tab-span">	</span></span>If you do not do this you will receive an incomplete in CS330.</b></span></p>
+<p class="p9"><span class="s1"><br>
+</span></p>
+<p class="p9"><span class="s1">When you see your advisor you should discuss your degree progress and anticipate any reason your plan of study would be problematic.<span class="Apple-converted-space">  </span>Of course you may have other questions.<span class="Apple-converted-space">  </span>Also note that your advisor may not be able to meet with you at the last minute.</span></p>
+<p class="p9"><span class="s1"><br>
+</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space"> </span>What do you need to do? You should<span class="Apple-converted-space">  </span>print out the department’s form (cs.gmu.edu/resources/ student.forms)<span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s1">and a copy of your degree progress from DegreeWorks before the your meeting. Also your advisor can just send me email, if this is very late.</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><b><i>LATENESS:</i></b><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1">Programs will be marked down 25% each class they are late; in particular, it is marked down 25% after the due date.</span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><b><i>TA:</i></b><span class="Apple-converted-space">  </span></span><span class="s7"><span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1"><br>
+Sivani Tadepalli, stadepal@gmu.edu, ENGR 4456, M 10-12</span></p>
+<p class="p6"><span class="s1"><br>
+Jhanvi Rafalia, jrafalia@gmu.edu, ENGR 4456, W 2-4</span></p>
+<p class="p10"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">(TAs for the other sections Prakhar Dogra,</span><span class="s8"> TR 3-4, Neeraj Lamba T 4-5, W 11-12)</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><b>NO LAPTOPS, cell-phones, etc</b>. (If you NEED a laptop for note-taking then speak to me.)</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p5"><span class="s1"><br>
+</span></p>
+<p class="p11"><span class="s1"><span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>

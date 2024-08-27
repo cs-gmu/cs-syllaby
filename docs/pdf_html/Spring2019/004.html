@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CS310 Syllabus Fall 2018</title>
+    <meta content="Yutao Zhong" name="author">
+    <style type="text/css">
+body {
+margin: 10px;
+line-height: 1.3;
+font-family: Verdana, Geneva, sans-serif;
+background: #fcfcfc; #cccccc; #ccffff;
+color: #336666;
+}
+
+.normal
+{
+line-height:1.3;
+font-family: Verdana, Geneva, sans-serif;
+font-size: 100%;
+font-weight: normal;
+}
+
+p {
+/* padding-top: 1ex; */
+margin-top: 1ex;
+margin-bottom: 1ex;
+}
+
+h1 {
+font-size: 150%;
+
+/*padding: 1ex;*/
+margin: 0;
+}
+
+h2 {
+font-size: 100%;
+font-weight: bold;
+/* padding-top: 2ex; */
+margin-top: 1.5em;
+margin-bottom: 1ex;
+}
+ul {
+/* padding-top: .5ex; */
+list-style-type: disc;
+padding-left: 2em;
+}
+ul,ol{
+margin-top: 1ex;
+margin-bottom: 1ex;
+}
+
+.nopad {
+padding: 0;
+}
+
+.clearfix {
+clear: both;
+}
+</style>
+  </head>
+  <body>
+    <h1>CS310: Data Structures (Spring 2019)</h1>
+    <h1> </h1>
+    <h1>Sections 001/003/004 (<b>not</b> 005)</h1>
+    <br>
+    <h1>1. Course Basics</h1>
+    <h2>1.1 Prerequisite:</h2>
+    &nbsp;&nbsp;&nbsp; C or better in CS211 and MATH 113.<br>
+    <h2>1.2 Professor Information:</h2>
+    <table cellspacing="2" cellpadding="2" width="500" border="1">
+      <tbody>
+        <tr>
+          <td valign="top"><b>Professor</b></td>
+          <td valign="top"><b>Email</b></td>
+          <td valign="top"><b>Office</b></td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Katherine E Russell</b></td>
+          <td valign="top">krusselc</td>
+          <td valign="top">ENGR 5321</td>
+        </tr>
+        <tr>
+          <td valign="top"><b>Yutao Zhong</b> </td>
+          <td valign="top">yzhong</td>
+          <td valign="top">ENGR 4433</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>1.3 Textbook:</h2>
+    <ul>
+      <li>Mark Allen Weiss, <b>Data Structures &amp; Problem Solving
+          Using Java, </b>4th ed., Addison-Wesley, 2010. <a
+          href="http://users.cs.fiu.edu/%7Eweiss/dsj4/errata/">Errata</a><br>
+      </li>
+      <li>It is assumed that students read the scheduled sections
+          prior to each lecture.</li>
+    </ul>
+    <h2>1.4 Software &amp; Programming Requirements<br>
+    </h2>
+    <ul>
+      <li> You will need a computer for this class with some modern
+        operating system capable of running a Java compiler. Remember
+        that lab computers are also available on campus, see campus
+        resources below.</li>
+      <li>The prerequisite for this course is C or better in CS 211. We
+        will assume that you have developed a significant degree of
+        skill in programming (program organization, coding, documenting,
+        testing and debugging) -- you will develop yet more this
+        semester. We will also assume that you are acquainted with basic
+        complexity analysis ("big O") and are able to build abstract
+        data types using Java classes.<br>
+      </li>
+    </ul>
+    <h2>1.5 Discussion board: <b>Piazza</b></h2>
+    <ul>
+      <li>Course schedule, announcements, lecture slides, assignments,
+        discussion. GTA/UTA contacts and office hours will be on Piazza
+        too. Sign up yourself by following this link: <a
+          href="http://piazza.com/gmu/spring2019/cs310">http://piazza.com/gmu/spring2019/cs310</a><br>
+      </li>
+      <li><b>The discussion board on Piazza is required reading for all
+          projects</b>. You MUST read the discussion board for
+        clarifications and project updates.</li>
+      <li>All instructors and TAs can view all material on Piazza.</li>
+      <li>No sharing answers or code solutions to assignments on the
+        discussion board. You can include code in private posts to the
+        instructors (visible to all professors, GTAs, and UTAs). See
+        Honor code section below for more details.</li>
+      <li>Email course staff only for logistical issues such as meeting
+        outside of office hours, missing lab/lecture, grading disputes,
+        medical situations, etc. Email addresses are listed on Piazza.</li>
+      <li>Do not e-mail course staff about programming problems; use the
+        discussion board. <i>Project help questions sent via email are
+          of extremely low priority, as they were sent to the wrong
+          place.</i></li>
+    </ul>
+    <h2><b>1.6 </b><a href="http://mymasonportal.gmu.edu/"><b>Blackboard</b></a></h2>
+    <ul>
+      <li>Grades will be posted to Blackboard.</li>
+      <li>Projects assignments will be submitted (per published
+        deadlines) via Blackboard.</li>
+    </ul>
+    <h2><b>1.7 Office hours</b></h2>
+    <ul>
+      <li>Office hours are listed for all staff on Piazza under
+        (Resources/Staff).&nbsp; <br>
+      </li>
+      <li>Students must make significant, individual effort on all
+        projects before coming to see a GTA/professor. Waiting until the
+        last minute, in the expectations that the entire project will be
+        explained in one office hours session, is not feasible.</li>
+      <li>Office hours are often crowded - do not rely on them for last
+        minute help, as we cannot guarantee that we will be able to
+        spend significant time with every student. You can also use the
+        discussion board for posting questions.</li>
+    </ul>
+    <p><br>
+    </p>
+    <h1>2. Course Description</h1>
+    <h2>2.2 Course topics:</h2>
+    <p>&nbsp; CS 310 continues the study of data structures from CS 211.
+      Students will learn how to approach larger and more challenging
+      programming problems than the projects in CS 211. Programming is a
+      significant part of this course and students should expect to
+      spend a good deal of time on the programming projects. The course
+      also introduces a variety of data structures and illustrates the
+      types of problems for which they are useful.<br>
+      <br>
+      &nbsp; Tentative topics to be covered include:<br>
+    </p>
+    <ul>
+      <li>Lists, Stacks, and Queues</li>
+      <li>Hash Tables and Hashing</li>
+      <li>Trees and Basic Tree Algorithms</li>
+      <li>Graphs and Basic Graph Algorithms</li>
+    </ul>
+    <h2>2.2 Course Outcomes:</h2>
+    &nbsp;&nbsp; By the end of the semester, a passing student will be
+    able to carry out the following types of activities:<br>
+    <ul>
+      <li>Reinforce what they have learned about elementary data
+        structures from CS 211.</li>
+      <li>Extended their knowledge of data structures to more
+        sophisticated data structures. This includes balanced binary
+        search trees, B-trees and B+-trees, hashing, and basic graphs.</li>
+      <li>Use generic types in their data structures.</li>
+      <li>Do more demanding programming than they had in CS 211. All
+        programming is done in Java. This involves more program design
+        and debugging techniques.</li>
+    </ul>
+    <h1><br>
+      3. Grading</h1>
+    <h2>3.1 Assessment</h2>
+    <table cellspacing="0" cellpadding="3" border="1">
+      <tbody>
+        <tr>
+          <td valign="top"><b>Category</b> </td>
+          <td valign="top"><b>Percent</b> </td>
+        </tr>
+        <tr>
+          <td valign="top">Programming Assignments</td>
+          <td valign="top">40%</td>
+        </tr>
+        <tr>
+          <td valign="top">Participation<br>
+          </td>
+          <td valign="top">5%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Midterm Exam</td>
+          <td valign="top">25%</td>
+        </tr>
+        <tr>
+          <td valign="top">Final Exam</td>
+          <td valign="top">30%</td>
+        </tr>
+      </tbody>
+    </table>
+	<p>The following will be applied <i>without</i> rounding:</p>
+    <ul>
+      <li>A+ (&gt;= 98.0%) A (&gt;= 92.0%) A– (&gt;= 90.0%)</li>
+      <li>B+ (&gt;= 88.0%) B (&gt;= 82.0%) B– (&gt;= 80.0%)</li>
+      <li>C+ (&gt;= 78.0%) C (&gt;= 72.0%) C– (&gt;= 70.0%)</li>
+      <li>D (&gt;= 60.0%)</li>
+      <li>F (&lt; 60.0%)</li>
+    </ul>
+	<p>There will be no make-up or extra-credit assignments at the
+        end of the semester; your grade should be a measure of your
+        semester-long progress.</p>
+    <h2>3.2 Programming assignments<br>
+    </h2>
+    <p>Students will receive a number of programming projects during the
+      semester. These programming projects will be a primary focus of
+      your grade - each one should take multiple sessions of coding,
+      with questions asked in between. Don't be surprised if you're
+      spending 20+ hours on each one. All project grades will be
+      averaged together evenly. Programming projects are <b>INDIVIDUAL</b>
+      work.<br>
+    </p>
+    <ul>
+      <li>
+        <h2>Submission</h2>
+      </li>
+      <ul>
+        <li>All projects are to be submitted to Blackboard. You can
+          submit your work an unlimited number of times to BlackBoard,
+          and by default only the last version will be graded. <br>
+        </li>
+        <li>Turning in the wrong files will likely result in a zero. You
+          can and should download your submitted attempts to verify that
+          you turned in a working copy.</li>
+        <li><b>Broken Code == Bad Scores</b>. Any code turned in that
+          does not compile, specifically on Java 1.8 is likely to
+          receive a zero. If the grader is able to quickly fix your
+          code, you might get some points back. If the grader cannot
+          immediately spot and fix the issue, you'll be fortunate to get
+          any points at all.<br>
+        </li>
+      </ul>
+      <li>
+        <h2>Deadline</h2>
+      </li>
+      <ul>
+        <li>Projects can be turned in <b>at most 24 hours</b> late, no
+          exceptions.<br>
+        </li>
+        <li>Submitting a project after the deadline lowers the maximum
+		  score by <b>25%</b> (not quite the same as a 25% penalty). One minute
+		  late is the same as 23 hours and 59 minutes late.<br>
+        </li>
+        <li>Each student gets <b>two</b> "Emergency Day" tokens, which
+          are automatically used by late submissions to avoid the 25%
+          penalty; you still must turn in work within 24 hours of the
+          original deadline, even if you use tokens!</li>
+        </li>
+        <li>Unused emergency-tokens will be worth 0.25% bonus to a student's
+          overall grade at the semester's end.<br>
+        </li>
+        <li>Blackboard being unavailable is not an excuse for turning in
+          a late assignment; in the rare situation that the website is
+          somehow unavailable or giving the student an error, the
+          student MUST email their submission to their GTA before the
+          deadline, otherwise it will be considered late.</li>
+        <li>Catastrophic computer failure will not be cause for an
+          extension. Use a backup service such as DropBox (or any cloud
+          service), emailing yourself, storing to a USB drive, whatever
+          it takes. Every semester multiple students' computers die, are
+          stolen, or otherwise 'lose' projects. Don't be the student who
+          forgot to (frequently) back up your work!</li>
+      </ul>
+      <li>
+        <h2>Honor code</h2>
+      </li>
+      <ul>
+        <li>Programming projects are considered <b>individual</b>
+          efforts, therefore no sharing of code and/or discussion of
+          problem solutions are allowed with anyone except the TAs or
+          the professor. Student projects will be manually and
+          automatically assessed for cheating. <br>
+        </li>
+        <li>You may not use any Internet resources to create code or
+          algorithms, besides the textbooks, the slides, and Piazza,
+          unless otherwise specified. However, you are free to look up
+          the syntax errors your encounter online, to gain an
+          understanding of what the syntax error means. The projects
+          we're doing this semester can be directly solved using
+          techniques discussed in class, and no outside material is
+          needed unless otherwise noted.</li>
+        <li><b>It is your responsibility</b> to lock your computers with
+          a password, to not post your code to websites like Pastebin
+          that are publicly accessible, to guard your USB drives and
+          computers, to not upload your files to someone else's
+          computer, etc. You will be liable for any access gained to
+          your code. <br>
+        </li>
+      </ul>
+    </ul>
+    <h2>3.4 Participation:<br>
+    </h2>
+    <ul>
+      <li>5% of semester total is based on participation activities
+        determined by individual instructors.&nbsp; <br>
+      </li>
+    </ul>
+    <h2> </h2>
+    <h2>3.5 Exams </h2>
+    <ul>
+      <li>Exams are closed book/notes unless specified otherwise by
+        instructor. They will be entirely paper and pencil - no
+        computers.</li>
+      <li>All students must have their GMU identification available on
+        testing days.<br>
+      </li>
+      <li>The final exam is cumulative. <br>
+      </li>
+      <li>Early or Late/Makeup Exams require exceptional circumstances
+        (as judged by the instructors) and must be arranged in advance. Vacation
+        plans are not exceptional circumstances.</li>
+      <li>If you miss an exam due to a university-accepted excused
+        absence (such as an illness or car accident the day and time of
+        the exam), you must notify your professor within 24 hours of
+        your absence to make arrangements for a makeup, and bring
+        approved documentation with you when you take the make-up exam.
+        Failure to follow either of these policies will result in a
+        zero. We may also elect to allow the final exam to count the
+        extra amount to give you a sort of do-over. </li>
+    </ul>
+    <h2>3.6 Contested Grades<br>
+    </h2>
+    <ul>
+      <li>If you feel points have been incorrectly deducted, contact the
+        grader. For projects, that is your GTA. For exams, that is your
+        professor.</li>
+      <li>Contesting of grades on any/all submissions must be requested
+        within one week of receiving the grade (on BlackBoard). No grade
+        changes will be considered subsequent to that deadline.</li>
+    </ul>
+    <br>
+    <h1>4. <font color="#cc0000">Honor Code</font> <a
+        name="honor_code"></a> </h1>
+    <ul>
+      <li> All students are expected to abide by the <a
+          href="https://oai.gmu.edu/mason-honor-code/">GMU Honor Code</a>.
+        This policy is rigorously enforced. Cheating will be prosecuted
+        and result in a notification of the Honor Committee as outlined
+        in the GMU Honor Code. <font color="#ff0000">Sharing,
+          collaboration, or looking at any code or algorithm for the
+          programming projects that is not your own, including resources
+          from Internet, is considered cheating</font>.</li>
+    </ul>
+    <ul>
+      <li>The computer science department has an <a
+          href="http://cs.gmu.edu/resources/honor-code/">CS Honor Code
+          Policies</a> that you are subject to particularly for our
+        course. The document helps you to understand how GMU honor code
+        applies to programming and CS, what constitutes cheating in the
+        CS setting. It clarifies some scenarios that are unique to our
+        sorts of assignments. Make sure you read and familiarize
+        yourself with these rules. <br>
+      </li>
+    </ul>
+    <ul>
+      <li>We take the honor code quite seriously. Any attempts at
+        copying or sharing code, algorithms, or other violations of the
+        honor code simply will not be tolerated. We use automated
+        software to flag suspicious cases, and then review them to find
+        the cases that must be submitted to the Office of Academic
+        Integrity. The penalty for cheating will always be far worse
+        than a zero grade, to ensure it's not worth taking the chance. <b>Confirmed
+          cases of cheating almost always translate into course failure.</b></li>
+    </ul>
+    <p><br>
+    </p>
+    <h1>5. Learning Disabilities</h1>
+    Students with a learning disability or other condition (documented
+    with GMU's <a href="http://ds.gmu.edu">Office of Disability
+      Services</a>) that may impact academic performance should speak
+    with the professor ASAP to discuss appropriate accommodations. Even
+    if you don't know whether you plan on utilizing the accommodations
+    for any assignment/test, it's in your best interest to prepare and
+    get documented ahead of time.<br>
+    <br>
+    <h1>6. Campus Resources</h1>
+    <ul>
+      <li><a
+href="http://doit.gmu.edu/students/computer-labs/computer-lab-locations/">Computer
+          Labs</a> – there are several freely available computer labs on
+        campus</li>
+      <li><a href="https://learningservices.gmu.edu">GMU Learning
+          Services</a></li>
+      <li><a href="https://learningservices.gmu.edu"></a><a
+          href="http://ds.gmu.edu">Office of Disability Services</a></li>
+      <li><a href="http://caps.gmu.edu/">Counseling and Support Services</a></li>
+      <li><a
+          href="http://writingcenter.gmu.edu/tutoring/esl-writing-support">English
+          as a Second Language (ESL) Writing Support</a></li>
+    </ul>
+    <br>
+  </body>
+</html>
