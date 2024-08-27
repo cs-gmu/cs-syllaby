@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+    
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+
+
+
+    
+<title>ISA 673, Operating Systems' Security, Fall 2018 - Angelos Stavrou</title>
+
+
+
+    
+<style type="text/css">
+<!--
+.style27 {
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+}
+.style86 {color: #666666}
+.style87 {
+	color: #990000;
+	font-weight: bold;
+}
+.style88 {color: #990000}
+.style89 {color: #000000}
+-->
+    </style>
+  </head>
+  <body>
+    
+<script language="JavaScript" type="text/javascript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script> 
+<link rel="stylesheet" href="general.css" type="text/css">
+
+
+
+    
+<style type="text/css">
+<!--
+@import url("general.css");
+.style22 {font-size: 13px; color: #990000; }
+.style23 {color: #990000}
+.style24 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style25 {
+	color: #FFFFFF
+}
+.style28 {font-style: italic; font-size: 12px;}
+.style35 {font-size: 11pt; }
+.style38 {font-size: 12pt}
+.style43 {font-size: 12px}
+.style46 {
+	color: #990000;
+	font-size: 11pt;
+}
+.style47 {
+	font-style: italic;
+	font-size: 11pt;
+}
+.style51 {color: #000000; font-size: 11pt; }
+.style53 {color: #000000}
+.style70 {
+	font-size: 14px;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style74 {font-size: 14px; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.style75 {font-weight: bold; color: #990000;}
+.style78 {color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+.style79 {text-transform: none; font-size: 14px; line-height: normal; font-variant: normal;}
+.style82 {color: #000000; font-size: 14px;}
+.style84 {font-family: Geneva, Arial, Helvetica, sans-serif}
+.style85 {color: #990000; font-size: 14px; }
+.style99 {font-size: 14px}
+-->
+</style> 
+<table width="1024" align="left" cellspacing="5" cellpadding="0" border="0">
+
+
+
+      <tbody>
+        <tr>
+          <td class="leftside" width="140" height="1863" valign="top">
+            <table width="100%" cellspacing="2" cellpadding="1" border="0">
+              <tbody>
+                <tr>
+                  <td bordercolor="#FFFFFF" height="90" align="left" valign="top" bgcolor="#FFFFFF"><img src="http://www.cs.gmu.edu/%7Eastavrou/images/GMU_PLogo_RGB.jpg" width="120" height="79" align="top"></td>
+                </tr>
+                <tr>
+                  <td class="main" align="left" valign="top" bgcolor="#FFFFFF"><font size="3"><a href="isa673_S13.html">Home</a></font></td>
+                </tr>
+                <tr>
+                  <td class="main" align="left" valign="top" bgcolor="#FFFFFF">
+                    <font size="3">
+                      <div align="left"><a href="#Schedule">Class Schedule</a></div>
+                    </font></td>
+                </tr>
+                <tr>
+                  <td class="main" align="left" valign="top" bgcolor="#FFFFFF">
+                    <font size="3">
+                      <div align="left"><a href="#Bibliography">Bibliography</a></div>
+                    </font></td>
+                </tr>
+                <tr>
+                  <td class="main" align="left" valign="top" bgcolor="#FFFFFF">
+                    <font size="3">
+                      <div align="left"><a href="courses/ISA_673_S13/Projects.html">Projects</a></div>
+                    </font></td>
+                </tr>
+                <tr>
+                  <td class="main" align="left" valign="top" bgcolor="#FFFFFF">
+                    <font size="3">
+                      <div align="left"><a href="courses/CS_571_F09/resources.html">OS
+                          Resources</a></div>
+                    </font></td>
+                </tr>
+                <tr>
+                  <td class="main" align="left" valign="top" bgcolor="#FFFFFF">
+                    <font size="3">
+                      <div align="left"><font size="3"><a href="contact.html">Contact</a></font></div>
+                    </font></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+          <td width="637" valign="top">
+            <h3><span class="style84"><br>
+              </span></h3>
+            <div align="center">
+              <h3 class="style84"><strong><font size="5" color="#000066"> ISA
+                    673, Operating Systems' Security - Fall 2018<br>
+                  </font></strong></h3>
+            </div>
+            <p align="center"><strong>[<a href="#Schedule">Class Schedule</a>]</strong>
+              <strong> [Projects]
+                [OS Programming
+                  Resources]</strong></p>
+            <hr>
+            <p><span class="style43"><span class="style38"><strong>Instructor: <a href="http://cs.gmu.edu/%7Eastavrou">Angelos
+                      Stavrou</a></strong><br>
+                  <strong>Lecture:</strong> Wednesdays 7:20 - 10:00pm<strong> <br>
+                    Room:</strong> </span></span><span class="style43"><span class="style38"><font color="#990000"><strong>Art
+                      and Design Building 2026</strong></font><br>
+                  <strong>Office Hours: </strong>Wednesday 4:30 - 6:30pm and by
+                  appointment<br>
+                  <strong>Office: </strong>Research Hall, Rm 437<br>
+                  <font face="Geneva, Arial, Helvetica, sans-serif"><strong>Email:</strong>
+                    astavrou(_)gmu.edu<br>
+                  </font></span></span></p>
+            <table width="547" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr>
+                  <td class="style38" width="502"><strong>Teaching Assistant: TBD</strong><strong><br>
+                      Office: TBD</strong><br>
+                    <strong>Office Hours: </strong>TBD<br>
+                    <font face="Geneva, Arial, Helvetica, sans-serif"><strong>Email:</strong> TBD <br>
+</font></td>
+                </tr>
+              </tbody>
+            </table>
+            
+<p><strong><u><font size="3">Cour</font></u></strong><strong><u><font size="3">se
+                    Description:</font></u></strong></p>
+
+            <p>This course will cover both fundamentals and advanced topics in
+              operating system (OS) security. We will study OS level mechanisms
+              and policies and how they relate to mitigating and defending
+              against real-world attacks on computer systems, including
+              large-scale network threats, and advanced malware. Basic OS
+              security techniques such as logging, system call auditing, address
+              space randomization, memory protection, virtual machine
+              introspection (VMI) will be discussed. Recent advanced techniques
+              such as host-based intrusion detection, system randomization,
+              malware behavioral fingerprinting, mobile security, and
+              virtualization will also be discussed.</p>
+            <p><u><strong><font size="3">Topics Covered:</font></strong></u></p>
+            <ol class="upper">
+              <li>Introduction
+                <ol class="lower">
+                  <li>Operating Systems (OS)</li>
+                  <li>Types of Threats</li>
+                  <li>Basic OS Security Mechanisms: File System Security, ACLs</li>
+                </ol>
+              </li>
+              <li>Understanding the Threats
+                <ol class="lower">
+                  <li>Malware Taxonomy</li>
+                  <li>Defenses -- An Overview</li>
+                </ol>
+              </li>
+              <li>Logging, Auditing, and Recovery
+                <ol class="lower">
+                  <li>Log Generation</li>
+                  <li>Log Auditing</li>
+                  <li>Log-based Recovery</li>
+                </ol>
+              </li>
+              <li>OS-level Memory Protection
+                <ol class="lower">
+                  <li>Review of OS Memory Management</li>
+                  <li>NX Bit</li>
+                  <li>Randomization</li>
+                  <li>Other Defenses</li>
+                </ol>
+              </li>
+              <li>Virtualization Technology and Applications
+                <ol class="lower">
+                  <li>Virtualization Taxonomy</li>
+                  <li>Security Applications</li>
+                  <li>Virtual Machine Introspection</li>
+                </ol>
+              </li>
+              <li>Vulnerability Analysis
+                <ol class="lower">
+                  <li>Vulnerability Classification</li>
+                  <li>Defense against Known Vulnerabilities</li>
+                  <li>Defense against Unknown (0-day) Vulnerabilities</li>
+                </ol>
+              </li>
+              <li>Malware Capture and Analysis&nbsp;
+                <ol class="lower">
+                  <li>Honeypot Taxonomy</li>
+                  <li>Recent Honeypot Advances</li>
+                  <li>Deployment and Liabilities</li>
+                </ol>
+              </li>
+              <li>Advanced Topic: Malware</li>
+              <ol class="lower">
+                <li> Polymorphic Malware</li>
+                <li> Malware Packers and Javascript Encoders</li>
+                <li> Analyzing Malware with PIN &amp; IDA Pro </li>
+              </ol>
+              <li>Advanced Topic: Rootkits
+                <ol class="lower">
+                  <li>Rootkit Basics</li>
+                  <li>Advanced Rootkit Techniques</li>
+                  <li>Rootkit Defenses</li>
+                </ol>
+              </li>
+              <li>Advanced Topic: Botnets </li>
+            </ol>
+            <p><u><strong><font size="3"> Prerequisites:</font></strong></u></p>
+            <p><strong>CS571 and ISA 562</strong>; or permission of instructor.
+              The coursework will include substantial programming projects; in
+              order to be able to complete the projects, the students must be
+              comfortable with C/C++ or Java. <br>
+              <br>
+              <u><strong><font size="3"><a name="Bibliography"></a>Bibliography:</font></strong></u>
+            </p>
+            <p><span class="style27 style35">Required:<br>
+              </span><span class="style35"><em> <span class="style23">Professional
+                    Linux Kernel Architecture</span>,</em> Wolfgang Mauerer,
+                John Wiley and Sons, New York, NY, 2008.<br>
+                Available by: [<a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470343435,descCd-description.html">Willey</a>]
+                [<a href="http://www.amazon.com/gp/product/0470343435/ref=s9_simi_gw_s0_p14_i1?pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_s=center-2&amp;pf_rd_r=0YEQZJQY4ZCCTF3XGNW5&amp;pf_rd_t=101&amp;pf_rd_p=470938631&amp;pf_rd_i=507846">Amazon</a>]</span><span class="style47"><br>
+              </span><span class="style27 style35"><br>
+                Recommended:<br>
+              </span><span class="style43"><span class="style46"><em>Understanding
+                    the Linux Kernel, Third Edition</em></span><span class="style35">
+                  Daniel P. Bovet Marco Cesati ISBN-10: 0596005652 ISBN-13:
+                  978-0596005658 O'Reilly Media Available by: [<a href="http://proquest.safaribooksonline.com/0596005652">Online
+                    for GMU</a>] [<a href="http://oreilly.com/catalog/9780596000028">O'
+                    Reilly</a>] [<a href="http://www.amazon.com/Understanding-Linux-Kernel-Third-Daniel/dp/0596005652/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1263964375&amp;sr=8-2">Amazon</a>]<br>
+                </span></span><span class="style27 style35"><br>
+              </span><span class="style46"><em>Modern Operating Systems,</em>
+                3/E</span><span class="style35"> Andrew S. Tanenbaum. ISBN-10:
+                0136006639 ISBN-13: 9780136006633 Prentice Hall Available by: [<a href="http://gmu.bncollege.com">GMU
+                  Bookstore</a>] [<a href="http://www.mypearsonstore.com/bookstore/product.asp?isbn=0136006639">Prentice
+                  Hall</a>] [<a href="http://www.amazon.com/Modern-Operating-Systems-3rd-GOAL/dp/0136006639">Amazon</a>]</span><span class="style27"><em><br>
+                </em></span></p>
+            <u><strong><font size="3">Grading:</font></strong></u>
+            <ul>
+              <li class="style85">Midterm: 30%</li>
+<li class="style85">Homework: 30%</li>
+
+              <li class="style85">Class Projects: 35%<br>
+</li>
+<li class="style85">Class Participation: 5%</li>
+
+              
+            </ul>
+            
+<p>The students must achieve a total score of at least 90 (out of
+              100) to be considered for an A. The students will be
+              expected to participate in large projects under the guidance of
+              the instructor.<br>
+              <u><strong><font size="3"><br>
+Computer Accounts:</font></strong></u><br>
+Our classroom is a computer classroom. We will frequently be using 
+the internet as a means to enhance our discussions. We will also be 
+using the computers for our in-class writing assignments. Please be 
+respectful of your peers and your instructor and do not engage in 
+activities that are unrelated to the class. Such disruptions show a lack
+ of professionalism and may affect your participation grade.<meta http-equiv="content-type" content="text/html; charset=windows-1252"><br>
+  <u><strong><font size="3"><meta http-equiv="content-type" content="text/html; charset=windows-1252"></font></strong></u>
+              <br>
+All students should have accounts on the central Mason Unix system
+              mason.gmu.edu (also known as osf1.gmu.edu)<br>
+              and on IT&amp;E Unix cluster zeus.ite.gmu.edu (Instructions and
+              related links are <a href="http://labs.ite.gmu.edu/">here</a>).
+              Please read the <a href="http://labs.ite.gmu.edu/index.php/FAQ/FAQ">FAQ</a>
+              if you have any questions. Students can work in<a href="http://labs.ite.gmu.edu/">
+                IT&amp;E computer labs</a> for programming projects during the
+              specified <a href="http://labs.ite.gmu.edu/index.php/Main/Schedule">hours</a>.<br>
+<br>
+            </p>
+<u><strong><font size="3">
+Honor Code:</font></strong></u>
+  <br>
+The integrity of the University community is affected by the 
+individual choices made by each of us. Mason has an Honor Code with 
+clear guidelines regarding academic integrity. Three fundamental and 
+rather simple principles to follow at all times are that: (1) all work 
+submitted be your own; (2) when using the work or ideas of others, 
+including fellow students, give full credit through accurate citations; 
+and (3) if you are uncertain about the ground rules on a particular 
+assignment, ask for clarification. No grade is important enough to 
+justify academic misconduct. Plagiarism means using the exact words, 
+opinions, or factual information from another person without giving the 
+person credit.<br>
+&nbsp;<br>
+
+As in many classes, a number of projects in this class are designed 
+to be completed within your study group. With collaborative work, names 
+of all the participants should appear on the work. Collaborative 
+projects may be divided up so that individual group members complete 
+portions of the whole, provided that group members take sufficient steps
+ to ensure that the pieces conceptually fit together in the end product.
+ Other projects are designed to be undertaken independently. In the 
+latter case, you may discuss your ideas with others and conference with 
+peers on drafts of the work; however, it is not appropriate to give your
+ paper to someone else to revise. You are responsible for making certain
+ that there is no question that the work you hand in is your own. If 
+only your name appears on an assignment, your professor has the right to
+ expect that you have done the work yourself, fully and independently.<br>
+  <em></em><span class="style4"><strong></strong></span>
+<p class="style28"><span class="style4"><strong>Please read the </strong><a href="https://oai.gmu.edu/mason-honor-code/"><strong>GMU
+                    Honor Code</strong></a><span style="color: rgb(0, 0, 238);"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></span> <span style="font-weight: bold;">and the</span> <span style="font-weight: bold;"><a href="https://cs.gmu.edu/resources/honor-code/">CS Department Honor Code</a></span><br>
+                <em><strong></strong></em></span></p>
+<u><strong><font size="3"><br>
+Disability Statement</font></strong></u><br>
+If you have a documented learning disability or other condition
+              that may affect academic performance you should: <br>
+
+              1) Make sure this documentation is on file with the Office of
+              Disability Services: <br>
+(SUB I, Rm. 4205; 993-2474; <a href="http://ds.gmu.edu">http://ds.gmu.edu</a>).<br>
+  <br>
+2) Talk with me to discuss your accommodation needs.
+
+            <span class="style28"><strong></strong></span><br>
+  <u><strong><font size="3"><br>
+Other Useful Resources</font></strong></u><br>
+  <span class="style28"><strong>Writing Center:</strong> A114 Robinson Hall; (703)
+                993-1200; <a href="http://writingcenter.gmu.edu">http://writingcenter.gmu.edu</a>
+                <br>
+                <strong>University Libraries:</strong> “Ask a Librarian” <a href="http://library.gmu.edu/mudge/IM/IMRef.html">http://library.gmu.edu/mudge/IM/IMRef.html</a><br>
+                <strong>Counseling and Phychological Services (CAPS)</strong>:
+                (703) 993-2380; <a href="http://caps.gmu.edu">http://caps.gmu.edu
+                  </a><br> <strong>University Policies:</strong> The University
+                Catalog, <a href="http://catalog.gmu.edu">http://catalog.gmu.edu,</a>
+                is the central resource<br>
+                for university policies affecting student, faculty, and staff
+                conduct in university affairs.<br>
+                <strong></strong></span>
+<p><span class="style28"><strong><br>
+    </strong></span><u><strong><font size="3">Sample Projects</font></strong></u><br>
+</p>
+<p><span class="style28"><strong><span class="style99">
+                  </span></strong></span><span class="style99">- Android Kernel
+                Projects (Malware + Functionality)<br>
+                - Malware Related Projects<br>
+                - Surveillance Related Projects<br>
+                - Power Management Related Projects<br>
+                - Defense/Protection Related Projects<br>
+                - Logging and Forensics Related Projects</span><span class="style28"><br>
+                <br>
+              </span></p>
+
+            <p><strong><font size="3"><a name="Schedule"></a><span class="style51"><u>Class
+                      Schedule</u></span></font></strong> (Tentative)</p>
+            <table style="width: 826px; height: 208px;" border="1">
+              <tbody>
+                <tr>
+                  <td>
+                    <table style="width: 816px; height: 58px;" border="1">
+                      <tbody>
+                        <tr bgcolor="#006633">
+                          <td width="15%" align="center" valign="middle">
+                            <div class="style24" align="left"><font size="4"><font face="Times New Roman, Times, serif">Week
+                                  &amp; Date</font></font></div>
+                          </td>
+                          <td width="85%" height="27" valign="top">
+                            <div class="style25" align="center"><font size="4"><strong>Course
+                                  Lectures &amp; Readings</strong></font>
+                              (Tentative)</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="15%" align="center" valign="middle">
+                            <p class="style35" align="left"><font face="Times New Roman, Times, serif">
+                                Week 1, <font size="3"><span style="text-decoration: underline;"><span style="font-weight: bold;"></span></span></font>Aug. 29<br>
+</font></p>
+                          </td>
+                          <td width="85%" height="19">
+                            <p class="style70"><font face="Verdana, Arial, Helvetica, sans-serif">Introduction
+                                and Class Mechanics</font><br>
+</p>
+                          </td>
+                        </tr>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                      </tbody>
+                    </table>
+                    <p><strong><span class="style82"></span></strong></p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td width="140" height="100">&nbsp;</td>
+          <td valign="top">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+                <tr bordercolor="#FFFFFF" align="center">
+                  <td bordercolor="#FFFFFF" width="100%" height="100" align="center" valign="middle">
+                    <p class="copyright style86"> </p>
+                    <center> <a href="index.html">Home</a>&nbsp;- &nbsp;<a href="publications.html">Publications</a>&nbsp;-&nbsp;<a href="teaching.html">Teaching</a>
+                      - <a href="resume/cvstavrou.html">CV</a> - <a href="contact.html">Contact</a><br>
+                      <br>
+                      <small> Last updated:
+                        <script type="text/JavaScript"> document.write(document.lastModified)
+              </script> <br>
+                        <font size="1">Please feel free to send your comments
+                          and suggestions to Angelos Stavrou.<br>
+                          © 2018 Angelos Stavrou, Computer Science Department,
+                          George Mason University.</font>
+                        
+                      </small></center>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    
+</table>
+
+
+
+  
+  
+
+<!-- #EndTemplate --><!-- #EndTemplate --><!-- #EndTemplate --></body><!-- #EndTemplate --></html>

@@ -1,0 +1,484 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Microsoft Word - CSC210_Fall12</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	text-decoration:underline;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+p.CM1, li.CM1, div.CM1
+	{mso-style-name:CM1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM2, li.CM2, div.CM2
+	{mso-style-name:CM2;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM14, li.CM14, div.CM14
+	{mso-style-name:CM14;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM3, li.CM3, div.CM3
+	{mso-style-name:CM3;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.65pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM15, li.CM15, div.CM15
+	{mso-style-name:CM15;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM16, li.CM16, div.CM16
+	{mso-style-name:CM16;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM4, li.CM4, div.CM4
+	{mso-style-name:CM4;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.65pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM5, li.CM5, div.CM5
+	{mso-style-name:CM5;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM6, li.CM6, div.CM6
+	{mso-style-name:CM6;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.8pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM7, li.CM7, div.CM7
+	{mso-style-name:CM7;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.65pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM17, li.CM17, div.CM17
+	{mso-style-name:CM17;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM8, li.CM8, div.CM8
+	{mso-style-name:CM8;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.65pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM9, li.CM9, div.CM9
+	{mso-style-name:CM9;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:18.8pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM18, li.CM18, div.CM18
+	{mso-style-name:CM18;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM10, li.CM10, div.CM10
+	{mso-style-name:CM10;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:18.8pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM11, li.CM11, div.CM11
+	{mso-style-name:CM11;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:18.8pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.CM12, li.CM12, div.CM12
+	{mso-style-name:CM12;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:13.0pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.grame
+	{mso-style-name:grame;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;
+	text-decoration:underline;}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";
+	font-family:"Times New Roman",serif;}
+span.highlightedsearchterm
+	{mso-style-name:highlightedsearchterm;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.15in 45.35pt 71.3pt 60.5pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72" style='text-justify-trim:punctuation'>
+
+<div class=WordSection1>
+
+<p class=CM1>&nbsp;</p>
+
+<p class=Default>&nbsp;</p>
+
+<p class=CM1><b><span style='font-size:14.0pt;color:black'>Department of
+Computer Science </span></b></p>
+
+<p class=CM1><b><span style='font-size:14.0pt'>INFS 515 Computer Organization </span></b></p>
+
+<p class=CM1><b><span style='font-size:14.0pt;color:black'>Spring 2016</span></b></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=CM14 style='margin-bottom:4.9pt;text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in'><b><span style='font-size:11.5pt;color:black'>&nbsp;</span></b></p>
+
+</div>
+
+<p class=Default><b>Instructor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dr. Lei He</b></p>
+
+<p class=Default><b>E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; lhe3@gmu.edu</b></p>
+
+<p class=Default><b>Classroom:&nbsp;&nbsp;&nbsp;&nbsp; Art and Design Building L008</b></p>
+
+<p class=Default><b>Day &amp; Time:&nbsp; Mon&nbsp;&nbsp;&nbsp; 7:20pm – 10:00pm</b></p>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=CM14 style='margin-bottom:4.9pt;text-align:justify;text-justify:inter-ideograph;
+border:none;padding:0in'><b><span style='font-size:11.5pt;color:black'>Office
+Hour:  By appointment</span></b></p>
+
+</div>
+
+<p class=CM14 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:11.5pt;color:black'>Course Description </span></b></p>
+
+<p class=CM15 style='margin-top:6.0pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:11.0pt;color:black'>Computer hardware architecture concepts
+including arithmetic and logical operations, number systems, machine
+representation of numbers, instruction set formats, addressing techniques,
+memory organization, internal processor structure and operation. Symbolic
+assembly language and fundamental operating systems concepts: process
+synchronization and scheduling, interrupt and memory management, virtual
+memory, file I/O and disk management. Credit cannot be applied to a graduate
+degree in the Volgenau School or the BS degree in computer science.</span></p>
+
+<p class=CM15 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:11.5pt;color:black'>Textbooks&nbsp; </span></b></p>
+
+<p class=Default style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in'><span style='font-size:11.0pt'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.5pt'>Required</span></b><span
+style='font-size:11.0pt'><br>
+The Architecture of Computer Hardware and System Software: An Information
+Technology Approach, by Irv Englander </span></p>
+
+<p class=CM4 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+line-height:normal'><span style='font-size:11.0pt;color:black'>Publisher: Wiley;
+5th Edition (January 21, 2014) ISBN-10: 1118322630</span></p>
+
+<p class=CM15 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:11.5pt;color:black'>Course Format</span></b></p>
+
+<p class=CM15 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:11.0pt;color:black'>Lectures will be given by the instructor.
+Besides material from the textbook, topics not discussed in the book may also
+be covered. Handouts of material not covered in the book will be made
+available. Grading will be based on homework assignments and exams.</span></p>
+
+<p class=CM15 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:11.5pt;color:black'>Course Outcome</span></b></p>
+
+<p class=CM15 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:11.0pt;color:black'>As an outcome of taking this class, a
+student will be able to</span></p>
+
+<p class=Default style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Understand the basic concepts and
+techniques related to computer systems, including both hardware and software;</span></p>
+
+<p class=Default style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Know the current standards and
+protocols of computer network and the Internet;</span></p>
+
+<p class=Default style='margin-left:.5in;text-indent:-.25in'><span
+style='font-size:11.0pt;font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:11.0pt'>Read research papers pertaining to
+modern computing technologies.</span></p>
+
+<p class=CM15 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:11.5pt;color:black'>Grading </span></b></p>
+
+<p class=CM15 style='margin-top:6.0pt;margin-right:21.1pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:11.0pt;color:black'>Grades will be based on two examinations (30%),
+homework (40%), research paper review (20%), and class participation (10%). </span></p>
+
+<p class=CM14 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in'><span style='font-size:11.0pt;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:11.5pt;color:black'>Examinations (30%) <br>
+</span></b><span style='font-size:11.0pt;color:black'>All examinations are
+closed books, see the class schedule for the exam weeks. Make up exams and
+incompletes will not be given for this class. </span></p>
+
+<p class=CM14 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in'><span style='font-size:11.0pt;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:11.5pt;color:black'>Homework (40%) <br>
+</span></b><span style='font-size:11.0pt;color:black'>Homework writing
+assignments will be posted to your Blackboard account after each chapter.
+Working on your homework is critical to develop a deep understanding of the
+course topics. The homework assignments will not be graded based only on the
+correctness. The instructor will also record your efforts to solve problems.
+Proper documentation and typed homework is required. <br>
+<b>&lt;Late Work&gt; </b>Homework is due at the beginning of class on the due
+date. Late work will not be accepted. </span></p>
+
+<p class=CM14 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-.25in'><span style='font-size:11.0pt;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:11.5pt;color:black'>Research Paper Review (20%) <br>
+</span></b><span style='font-size:11.0pt;color:black'>You will review two
+papers of your selection on specific course topics (e.g., parallel computing,
+Internet), based on which a review report will be developed. More detailed
+requirements will be given in the assignments.</span></p>
+
+<p class=CM14 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-indent:-.25in'><span
+style='font-size:11.0pt;color:black'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:11.5pt;color:black'>Class Participation
+(10%) </span></b><span style='font-size:11.0pt;color:black'><br>
+Requirements include class attendance, active participation in discussions and
+in-class problem solving. Please let the instructor know in advance if you expect
+to be absent for any reason. If you must miss a class due to an emergency or
+documented illness, email the instructor as soon as possible. You are still
+responsible for any material covered, assignments given, and homework due
+during the missed classes unless pre-approved by the instructor. Each absence without
+prior notice will result in a 2% deduction on the grade.</span></p>
+
+<p class=CM2 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:11.5pt;color:black'>Tentative Class Schedule </span></b></p>
+
+<p class=CM15 style='margin-top:6.0pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:11.0pt;color:black'>Time may not permit the coverage of all
+the chapters of the book. The pacing below is not rigid, and the list is
+subject to change. The topics will be:&nbsp; </span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 1: Computer, systems </span><span style='font-size:11.0pt'>concepts
+and systems architecture</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 2: Numbers and data formats</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 3: Data representation</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 4: Little man computer</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 5: CPU and memory</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 6: Input and output</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 7: Exam 1.&nbsp; </span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 8: Computer peripherals</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 10: Modern computer systems</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 11: Networks and data communications</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 12: Ethernet and TCP/IP</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 13: Operating systems</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 14: File management</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 15: Internal operating system</span></p>
+
+<p class=CM5 style='margin-top:6.0pt;margin-right:0in;margin-bottom:0in;
+margin-left:.25in;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph'><span
+style='font-size:10.0pt;color:black'>&#61623; </span><span style='font-size:11.0pt;
+color:black'>Week 16: Exam 2 </span></p>
+
+<p class=Default><span style='font-size:11.0pt;color:windowtext'>&nbsp;</span></p>
+
+<p class=CM6 style='text-align:justify;text-justify:inter-ideograph;line-height:
+normal'><b><span style='font-size:11.5pt;color:black'>Honor Code Statement</span></b></p>
+
+<p class=CM6 style='margin-top:6.0pt;text-align:justify;text-justify:inter-ideograph;
+line-height:normal'><span style='font-size:11.0pt;color:black'>Collaboration on
+homework is permitted; copying of solutions is not. The work you hand in should
+be your own. Please check the Mason Honor Code at <a
+href="http://www.gmu.edu/academics/catalog/9798/honorcod.html">http://www.gmu.edu/academics/catalog/9798/honorcod.html</a>,
+<br>
+and the CS Department policies <a
+href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage">http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage</a>.
+</span></p>
+
+<p class=CM2 style='margin-top:12.0pt;text-align:justify;text-justify:inter-ideograph'><b><span
+style='font-size:11.5pt;color:black'>Disability Accommodations </span></b></p>
+
+<p class=Default style='margin-top:6.0pt'><span style='font-size:11.0pt'>If you
+are a student with a disability and you need academic accommodations, please
+see me and contact the Office of Disability Services (ODS) at 993-2474, <a
+href="http://ods.gmu.edu">http://ods.gmu.edu</a>. All academic accommodations
+must be arranged through the ODS.</span></p>
+
+</div>
+
+</body>
+
+</html>

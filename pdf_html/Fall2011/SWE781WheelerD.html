@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<head>
+  <title>SWE 781 001 (70704) / ISA 681 001 (75281) - Fall 2011</title>
+  <meta name="description" content="SWE 781/ISA 681 Home Page"></meta>
+  <meta name="keywords" content="Information systems, Software Engineering, Security Assurance, George Mason University, SWE 781, ISA 681, software security programming"></meta>
+  <meta name="author" content="David A. Wheeler"></meta>
+  <meta name="generator" content="vim"></meta>
+</head>
+
+<body>
+
+<h1>Syllabus for SWE 781 001 (70704) / ISA 681 001 (75281) - Fall 2011</h1>
+<p>
+<i>As soon as we started programming, we found to our surprise that it wasn't as easy to get programs right as we had thought. Debugging had to be discovered.  I can remember the exact instant when I realized that a large part of my life from then on was going to be spent in finding mistakes in my own programs. -- Maurice Wilkes (1949)<br><br></font></i>
+
+
+<p>
+<h1>What is this course?</h1>
+<p>
+GMU Catalog:
+"Theory and practice of software security, focusing in particular
+on some common software security risks, including buffer overflows,
+race conditions and random number generation, and on identification of
+potential threats and vulnerabilities early in design cycle. Emphasizes
+methodologies and tools for identifying and eliminating security
+vulnerabilities, techniques to prove absence of vulnerabilities, ways
+to avoid security holes in new software, and essential guidelines for
+building secure software: how to design software with security in mind
+from the ground up and integrate analysis and risk management throughout
+the software life cycle."
+
+<!--
+<p>
+This class will provide the theory and practice of software security, focusing in particular on some common software security risks, including buffer overflows, race conditions and random number generation, and on the identification of potential threats and vulnerabilities early in the design cycle. The emphasis is on methodologies and tools for identifying and eliminating security vulnerabilities, techniques to prove the absence of vulnerabilities, and ways to avoid security holes in new software and on essential guidelines for building secure software: how to design software with security in mind from the ground up and to integrate analysis and risk management throughout the software life cycle.
+-->
+
+<p>
+People around the world now depend vitally on computers for their health
+and well-being.
+Unfortunately, vulnerabilities in their software can sometimes be exploited,
+resulting in terrible harm.
+This class will study how to prevent these vulnerabilities
+from being in the software in the first place.
+The goal of the class is to prepare you to be able to develop software
+with far fewer security vulnerabilities than is typical today, and to
+prepare you to help others do the same.
+
+
+<a name="Key Information"></a>
+<h1>Key Information</h1>
+		
+<table frame="void" width="100%" cellspacing="1" cellpadding="1" align=center>
+<tr>
+	<td>Class:</td>
+	<td>SWE 781 / ISA 681 Secure Software Design and Programming</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Professor:</td>
+	<td><a href="http://www.dwheeler.com">Dr. David A. Wheeler</a>.
+        Email dwheele4 at gmu, dot, edu (no "r").  703-845-6662. Office hours by appointment only.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Guest Lecturer:</td>
+	<td>Dr. Ed Schneider, on 2011-08-29 (first day) and 2011-11-07.</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>Teaching Assistant:</td>
+	<td>Nan Li, nli1@masonlive.gmu.edu.
+            Office hours Thursdays 4-6pm.</td>
+	<td></td>
+</tr>
+
+<tr>
+	<td>Class Hours &amp; Location:</td>
+	<td>Tuesdays 7:20 pm - 10:00 pm, Krug Hall 5, Aug 29, 2011 - Dec 20, 2011</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Prerequisites:</td>
+	<td>SWE 619 or permission of instructor. Must be able to read <a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html">C and Java</a> and must be able to develop software.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>Class website:</td>
+	<td>Use Blackboard 9.1.  Log in to mymasonportal.gmu.edu, select the "Sources" tab, and select "ISA-681-001 / SWE-781-001"</td>
+	<td></td>
+</tr>
+</table>
+
+<p>
+Do <i><b>not</b></i> use "http://mason.gmu.edu/~dwheele4/swe781/" as that
+is an obsolete site.
+
+<p>
+<a name="Reading List"></a>
+<h1>Reading List</h1>
+<p>
+Here is the current reading list (the first two are the required textbooks; the second one is free online):
+
+<ul>
+<li><a href="http://www.amazon.com/Programming-Analysis-Addison-Wesley-Software-Security/dp/0321424778">Brian Chess and Jacob West, Secure Programming with Static Analysis</a> (required)</a>
+<li><a href="http://www.dwheeler.com/secure-class/Secure-Programs-HOWTO/">David A. Wheeler, Secure Programming for Linux and Unix HOWTO, Version 3.5, Aug 2004</a>  <a href="http://www.dwheeler.com/secure-class/Secure-Programs-HOWTO.pdf">(PDF Version)</a> (required).  <b>WARNING: Check the version - Google may find others</b>
+<li><a href="http://www.sans.org/top25-software-errors/">CWE/SANS Top 25 Most Dangerous Software Errors</a>; be sure to click and read "The New 25 Most Dangerous Programming Errors"
+<li><a href="https://www.owasp.org/index.php/OWASP_Top_Ten">OWASP Top 10</a>
+<li><a href="https://buildsecurityin.us-cert.gov/swa/pocket_guide_series.html#development">Software Assurance (SwA) Pocket Guides</a>: "Key Practices for Mitigating the Most Egregious Exploitable Software Weaknesses" (Development Volume II,Version 1.3 May 24, 2009) and "Secure Coding Development, Volume VI" (Version 1.1, February 22, 2011)
+<li><a href="http://iac.dtic.mil/iatac/download/security.pdf">Goertzel et al, Software Security Assurance State of the Art Report, May 2007 (portions).
+<li><a href="http://insecure.org/stf/smashstack.html">Aleph One, Smashing the Stack for Fun and Profit.  Phrack Vol 7, Nr. 49</a>
+<li><a href="http://www.usenix.org/publications/library/proceedings/sec98/full_papers/cowan/cowan.pdf">Cowan et al, StackGuard: Automatic Adaptive Detection and Prevention of Buffer-Overflow Attacks</a>
+<li><a href="http://www.cs.berkeley.edu/~daw/teaching/cs261-f07/reading/beyondsmashing.pdf">Pincus, Baker, Beyond Stack Smashing: Recent Advances in Exploiting Buffer Overruns</a>
+<li><a href="http://www.thenewsh.com/~newsham/format-string-attacks.pdf">Tim Newsham, Format String Attacks, Guardent tech report, Sept 2000</a>
+</ul>
+<p>
+As we progress there will probably be some additional reading assignments.
+<!--
+<li><a href="http://www.securityfocus.com">BugTraq</a> (selected articles)
+-->
+
+<a name="Schedule"></a>
+<h1>Schedule</h1>
+
+<p>
+The lectures will cover the key issues and
+explain some things that might not be clear otherwise.
+However, you are responsible for reading and understanding the material
+in the assigned readings (and not just knowing what's in the lectures).
+
+<!--
+None of the following 2011
+dates hits "NON-WORK" religious holidays listed in
+http://ulife.gmu.edu/religious_calendar.php
+-->
+
+<p>
+<!--
+STILL ON FOR:
+2011-11-22 (Note: Thanksgiving recess is Nov. 23-27, doesn't include this date)
+2011-12-06 (Note: last day of classes is 12-10)
+The finals date for this class is: Tues. 12/13 	7:30 pm – 10:15 pm
+-->
+
+ 
+<table border="1" cellspacing="1" cellpadding="1">
+<tr>
+	<td width="12%">2011-08-30 (guest)</td>
+	<td>Lecture 1 - Introduction; Chess/West chapter 1, Wheeler chapters 1,2,3</td>
+</tr>
+<tr>
+	<td>2011-09-06</td>
+	<td>Lecture 2 - Attacker Overview; also read SANS Top 25, SwA Pocket Guides</td>
+</tr>
+<tr>
+	<td>2011-09-13</td>
+	<td>Lecture 3 - Input Validation; Chess/West chapter 5, Wheeler chapter 5 (includes regular expressions)</td>
+</tr>
+<tr>
+	<td>2011-09-20</td>
+	<td>Lecture 4 - Buffer Overflows; Chess/West chapters 6, 7; Wheeler chapter 6, Aleph, Cowan, Pincus papers</td>
+</tr>
+<tr>
+	<td>2011-09-27</td>
+	<td>Lecture 5 - Error Handling; Chess/West chapter 8; Wheeler chapter 9 (9.1, 9.2, 9.3 only), Newsham; Minor Assignment <b>DUE</b></td>
+</tr>
+<tr>
+	<td>2011-10-04</td>
+	<td>Lecture 6 - Privacy, Secrets, and Cryptography; Chess/West chapter 11; Wheeler chapter 11 (11.3, 11.4, 11.5 only). Topic proposal <b>DUE</b> (ungraded; 1-2 sentences; Goertzel may help!), Major assignment introduction.</td>
+</tr>
+<tr>
+	<td>2011-10-11</td>
+	<td><a href="http://registrar.gmu.edu/calendars/2011Fall.html">Columbus Day recess (Monday classes/labs meet Tuesday. Tuesday classes do not meet this week)</a></td>
+</tr>
+<tr>
+	<td>2011-10-18</td>
+	<td><b>Mid Term Exam</b></td>
+</tr>
+<tr>
+	<td>2011-10-25</td>
+	<td>Lecture 7 - Implementing Authentication and Access Control.  Membership and goal of major project teams <b>DUE</b> (ungraded; just report who).</td>
+</tr>
+<tr>
+	<td>2011-11-01</td>
+	<td>Lecture 8 - Web Application Vulnerabilities; Chess/West chapter 9,10, OWASP Top 10.  Major assignment stage check <b>DUE</b> (ungraded; short 1-pager on who, what you will do, and how)</td>
+</tr>
+<tr>
+	<td>2011-11-08 (guest)</td>
+	<td>Lecture 9 - Secure Programming Best Practices; Chess/West chapter 12; Wheeler chapters 7,8,9,10.</td>
+</tr>
+<tr>
+	<td>2011-11-15</td>
+	<td>Lecture 10 - Static Code Analysis and Runtime Analysis</td>
+</tr>
+<tr>
+	<td>2011-11-22</td>
+	<td>Topic Presentations (<i>you</i> present!)</td>
+</tr>
+<tr>
+	<td>2011-11-29</td>
+	<td>Topic Presentations (<i>you</i> present!). Topic papers <b>DUE</b>.</td>
+</tr>
+<tr>
+	<td>2011-12-06</td>
+	<td>Topic Presentations (<i>you</i> present!) and "Miscellaneous topics"</td>
+</tr>
+<tr>
+	<td>2011-12-13</td>
+	<td>Major Project Presentations and Project <b>DUE</b>. Every project will give a 5 minute presentation/demo of their result.  (This is the exam period.)</td>
+</tr>
+</table>
+
+<p>
+The schedule and topics to be covered is subject to change.
+My thanks to
+<a href="http://cs.gmu.edu/~rritchey/">Ron Ritchie</a> for many
+of the original slides.
+See also the
+<a href="http://registrar.gmu.edu/calendars/2011Fall.html">GMU Fall 2011
+Semester calendar</a>.
+
+
+<h1>Grading</h1>
+<table border="1">
+<tr>
+	<td>Minor Assignment</td>
+	<td>5%</td>
+	<td>Pick a known vulnerability in a specific program, write a short (1-2 page) paper explaining it and how it could be fixed.</td>
+</tr>
+<tr>
+	<td>Mid Term Exam</td>
+	<td>30%</td>
+	<td>Covers everything up to that point.</td>
+</tr><tr>
+<tr>
+	<td>Topic Paper and Presentation</td>
+	<td>35%</td>
+	<td>An 8+ page paper on a class-related topic (25%) and matching 10-minute presentation (10%). Everyone's topic <i>must</i> be different.</td>
+</tr><tr>
+	<td>Major (End-of-Semester) Programming Project</td>
+	<td>30%</td>
+	<td>Create a secure game, in teams of 1-3 people (I encourage pairs).</td>
+</tr>
+</table>
+<p>
+Do <b>not</b> turn in materials late.  Penalty is
+10%/day and they won't be accepted after three days
+(except for unexpected health/ family emergencies or <i>special</i> permission).
+
+
+<h1>Other information</h1>
+<p>
+In class, please pay attention and don't distract others.
+Please configure cell phones to vibrate in class, and
+if you use a laptop to take notes, please don't surf the net during class
+(unless told otherwise).
+Talk to me ahead-of-time if you have an anticipated absence that will
+interfere with class (especially the mid-term exam), e.g.,
+a <a href="http://ulife.gmu.edu/religious_calendar.php">non-work religious holiday</a>,
+out-of-town work travel, or GMU athletic meet.
+
+<h1>Important information for any GMU class</h1>
+<p>
+<h2>Academic Integrity (Honor Code)</h2>
+<p>
+GMU is an <a href="http://academicintegrity.gmu.edu/honorcode/">Honor Code</a>
+university; please see the University Catalog for
+a full description of the code and the honor committee process. The
+principle of academic integrity is taken very seriously and violations
+are treated gravely. What does academic integrity mean in this
+course? Essentially this: when you are responsible for a task, you
+will perform that task. When you rely on someone else's work in an
+aspect of the performance of that task, you will give full credit in the
+proper, accepted form. Another aspect of academic integrity is the free
+play of ideas. Vigorous discussion and debate are encouraged in this
+course, with the firm expectation that all aspects of the class will be
+conducted with civility and respect for differing ideas, perspectives,
+and traditions. When in doubt (of any kind) please ask for guidance
+and clarification.
+<b>Do not plagerize.</b>
+See the
+<a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage">Computer Science Honor Code policies</a> for more.
+
+<p>
+<h2>GMU Email Accounts</h2>
+<p>
+Students must use their Mason email accounts - either the existing
+"MEMO" system or a new "MASONLIVE" account to receive important
+University information, including messages related to this class. See
+http://masonlive.gmu.edu for more information.
+Please use the instructor's email address for class questions.
+
+<p>
+<h2>Office of Disability Services (ODS)</h2>
+<p>
+If you are a student with a disability and you need academic accommodations,
+please see
+me and contact the Office of Disability Services (ODS) at 993-2474 or
+<a href="http://ods.gmu.edu">http://ods.gmu.edu</a>.
+All academic accommodations must be arranged through the ODS.
+If you qualify for accommodation,
+the ODS staff will give you a form detailing appropriate accommodations
+for your instructor (me).
+
+<p>
+<h2>Other Useful Campus Resources &amp; University Policies</h2>
+<p>
+<ul>
+<li>Writing Center: A114 Robinson Hall; (703) 993-1200; http://writingcenter.gmu.edu
+<li>University Libraries "Ask a Librarian" http://library.gmu.edu/mudge/IM/IMRef.html
+<li>Counseling and Psychological Services (CAPS): (703) 993-2380; http://caps.gmu.edu
+<li>The University Catalog:
+<a href="http://catalog.gmu.edu">http://catalog.gmu.edu</a>.
+This is the central resource for university
+policies affecting student, faculty, and staff conduct in university
+academic affairs.
+<li>Other policies are available at:
+<a href="http://universitypolicy.gmu.edu/">http://universitypolicy.gmu.edu/</a> . All members of the university
+community are responsible for knowing and following established policies.
+</ul>
+
+<p>
+<h1>Related Links</h1>
+<table>
+<tr><td>
+<ul>
+<li><a href="https://buildsecurityin.us-cert.gov/daisy/bsi/home.html">DHS Build Security In</a>
+<li><a href="http://samate.nist.gov">SAMATE Group at NIST -- reference set of vulnerable code</a>
+<li><a href="https://www.securecoding.cert.org/confluence/display/seccode/CERT+Secure+Coding+Standards">CERT's Secure Coding Standards</a>
+<li><a href="http://www.owasp.org/index.php/Main_Page">Open Web Application Security Project (OWASP)</a>
+<li><a href="http://www.kernel.org/pub/linux/libs/pam/">Linux Pluggable Authentication Modules (PAM)</a>
+</ul>
+</td><td>
+<ul>
+<li><a href="http://radajo.blogspot.com/2007/05/gdb-hints-for-dancing-in-stack.html">RaDaJo Security Blog -- GDB hints for dancing in the stack, May 1, 2007</a>
+<li><a href="http://findbugs.sourceforge.net/">FindBugs -- uses static analysis to look for bugs in Java code</a>
+<li><a href="http://www.cs.auckland.ac.nz/~pgut001/tutorial/index.html">Peter Gutmann's Crypto Tutorial</a>
+<li><a href="http://www.eskimo.com/~weidai/cryptlib.html">Crypto++:  A free C++ cryptography library by Wei Dai</a>
+<li><a href="http://www.cryptix.org/">Cryptix: Open source cryptography libraries for Java and Perl</a>
+</ul>
+</td></tr></table>
+
+<p>
+<!-- This syllabus is version 2011-08-29. -->
+This syllabus is version 2011-09-05.
+
+</body>
+</html>
+

@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CS 465 Syllabus - Fall 2022</title>
+    <meta content="Yutao Zhong" name="author">
+    <style type="text/css">
+body {
+    margin: 10px;
+    line-height: 1.3;
+    font-family: Verdana, Geneva, sans-serif;
+    background: #fcfcfc; 
+    color: #336666;
+}
+<!#cccccc; #ccffff;  color: #336666;
+>
+
+.normal
+{
+    line-height:1.3;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+p {
+    /* padding-top: 1ex; */
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+
+h1 {
+    font-size: 150%;
+    
+    /*padding: 1ex;*/
+    margin: 0;
+}
+h2 {
+    font-size: 100%;
+    font-weight: bold;
+    /* padding-top: 2ex; */
+    margin-top: 1.5em;
+    margin-bottom: 1ex;
+}
+ul {
+    /* padding-top: .5ex; */
+    list-style-type: disc;
+    padding-left: 2em;
+}
+ul,ol{
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+</style>
+  </head>
+  <body vlink="#551A8B" text="#000000" link="#0000EE" bgcolor="#cccccc"
+    alink="#EE0000">
+    <h1 align="left">CS465 - 001: Computer Systems Architecture (Fall
+      2022)</h1>
+    <h1><br>
+    </h1>
+    <h1>1 Course Basics</h1>
+    <h2>Meeting Time and Location:</h2>
+    <ul>
+      <li>Tuesday/Thursday 1:30-2:45pm,
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+        Music/Theater Building 1005 </li>
+    </ul>
+    <h2>Instructor: <span class="normal">Dr. Yutao Zhong</span></h2>
+    <ul>
+      <li><strong>Email:</strong> yzhong (at) gmu (dot) edu </li>
+      <li><b>Office: </b>ENGR 4433<br>
+      </li>
+      <!--<li><b>Office:</b> Engineering Building 4433</li>-->
+    </ul>
+    <h2>GTA: <span class="normal">Mr. </span>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      Sina Yari-karin</h2>
+    <ul>
+      <li><strong>Email:</strong> syarikar (at) gmu (dot) edu</li>
+      <li><b>Office: </b>ENGR 4456, check piazza for office hour time<br>
+      </li>
+    </ul>
+    <h2><span class="normal">
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+      </span></h2>
+    <h2><span class="normal"></span></h2>
+    <h2>Course Outcomes:</h2>
+    <ul>
+    </ul>
+    <ul>
+      <li>Be able to analyze and compare performance characteristics of
+        a computer.</li>
+      <li>Be able to demonstrate knowledge of instruction set
+        architectures; be able to show how instructions are represented
+        at both the machine level and in the context of a symbolic
+        assembler; be able to read and write small assembly programs.<br>
+      </li>
+      <li>Be able to manipulate low-level data representations and
+        understand the implementation of computer arithmetic operations.<br>
+      </li>
+      <li>Be able to explain how an instruction is executed; be able to
+        explain the role of datapath and control; be able to explain
+        pipelining and the relevant improvement technologies.<br>
+      </li>
+      <li>Be able to understand the effect and implementation of memory
+        hierarchy, in particular, the role of cache and virtual memory.<br>
+      </li>
+      <li>Become familiar with advanced topics and the latest evolvement
+        in computer architecture.</li>
+    </ul>
+    <ul>
+    </ul>
+    <h2>Prerequisite:</h2>
+    <p>C or better in CS 367.<br>
+    </p>
+    <h2>Textbook:</h2>
+    <ul>
+      <li><b>Required -</b> Computer Organization and Design: the
+        Hardware/Software Interface, 5th edition, John L. Hennessy and
+        David A. Patterson, Morgan Kaufmann, 2014.&nbsp; <a
+          href="http://booksite.elsevier.com/9780124077263/index.php">Companion
+
+
+
+
+
+
+
+          Material</a> </li>
+    </ul>
+    <h2>Other Useful Resources:</h2>
+    <ul>
+      <li><b><a href="http://mymasonportal.gmu.edu/"><b>Blackboard</b></a>:
+        </b>Course schedule, announcements, lecture slides, assignments,
+        and quizzes.&nbsp; Grades release and exercises submission. We
+        will use Blackboard Collaborate Ultra for lectures and office
+        hours.<br>
+      </li>
+      <li><b>Piazza</b>: Discussion forum. Follow the link on Blackboard
+        to sign up. <br>
+      </li>
+      <li><b>Gradescope</b>: Homework submission. Link will be available
+        from Blackboard. </li>
+    </ul>
+    <h1><br>
+    </h1>
+    <h1>2 Grading</h1>
+    <table width="42%" cellspacing="0" cellpadding="3" border="1">
+      <tbody>
+        <tr>
+          <td valign="top"><b>Category</b><br>
+          </td>
+          <td valign="top"><b>Percent</b><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Homeworks<br>
+          </td>
+          <td valign="top">40%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Quizzes<br>
+          </td>
+          <td valign="top">10%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Exercises<br>
+          </td>
+          <td valign="top">5%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Midterm<br>
+          </td>
+          <td valign="top">20% <br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Final exam<br>
+          </td>
+          <td valign="top">25%<br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>2.1 Assessment</h2>
+    <p>Grade cutoff percentages (Cutoffs will be applied <i><b>without</b></i>
+      rounding): <br>
+    </p>
+    <ul>
+      <li>A+ (&gt;= 98.0%) A (&gt;= 92.0%) A– (&gt;= 90.0%)</li>
+      <li>B+ (&gt;= 87.0%) B (&gt;= 81.0%) B– (&gt;= 79.0%)</li>
+      <li>C+ (&gt;= 76.0%) C (&gt;= 70.0%) C– (&gt;= 68.0%)</li>
+      <li>D (&gt;= 60.0%)</li>
+      <li>F (&lt; 60.0%)</li>
+    </ul>
+    <h2>2.2 Homework</h2>
+    <ul>
+      <li>Homework assignments might require some programming. <br>
+      </li>
+      <li>Homework assignments must be done on an individual basis
+        unless stated otherwise.</li>
+      <li>All assignment grades are normalized and each contributes to
+        your final grade evenly. <br>
+      </li>
+      <li>Incorrect/broken submissions: </li>
+      <ul>
+        <li>Turning in the wrong files or corrupted files will likely
+          result in a zero. <br>
+        </li>
+        <li>Code that doesn't compile/run will likely get a very low
+          score. </li>
+        <li>If you turn in the wrong files, the ONLY way you MIGHT
+          receive credit is by showing your professor a backup where the
+          modified date on the files is<span
+            class="Apple-converted-space">&nbsp;</span><b>outside of
+            your control</b>. Modified dates on personal computers
+          and/or public computers are<span class="Apple-converted-space">&nbsp;</span><i>NEVER</i><span
+            class="Apple-converted-space">&nbsp;</span>accepted as proof
+          of work. Backups which WILL ALWAYS be considered are: backup
+          copy on zeus; prior submissions to Gradescope/Blackboard; or
+          emails to your Professor/GTA. Backups which MIGHT be accepted
+          include: emails from your GMU email to yourself, uploading to
+          certain backup services (such as OneDrive or a <u>private</u>
+          GitHub repo), and uploads to the discussion forum.</li>
+      </ul>
+      <li><font color="#ff6600"><b>Late Policy</b>: </font></li>
+      <ul>
+        <li>Homework can be turned in <b>at most 24 hours</b> late, no
+          exceptions.</li>
+        <li>Submitting an assignment late
+          <meta http-equiv="content-type" content="text/html;
+            charset=UTF-8">
+          incurs a <b>25%</b> ceiling penalty so that RecordedGrade =
+          min(75%, RawGrade).<br>
+        </li>
+        <li>Each student gets <b>two</b> "Emergency Day" tokens, which
+          are <i>automatically</i> used by late submissions to avoid
+          the 25% penalty. <u>Only one token can be applied to each
+            assignment</u><u>.</u> </li>
+        <li>Unused emergency-tokens will be worth 0.25% bonus to a
+          student's overall grade at the semester's end.<br>
+        </li>
+        <li>Blackboard/Gradescope being unavailable is not an excuse for
+          turning in a late assignment; in the rare situation that the
+          website is somehow unavailable or giving the student an error,
+          the student MUST email their submission to their Professor/GTA
+          before the deadline, otherwise it will be considered late.</li>
+        <li>Catastrophic computer failure will not be cause for an
+          extension. Use a backup service such as OneDrive (or any cloud
+          service), emailing yourself, making multiple rounds of
+          submissions to Blackboard/Gradescope, whatever it takes. <br>
+        </li>
+      </ul>
+    </ul>
+    <blockquote>
+      <ul>
+      </ul>
+    </blockquote>
+    <ul>
+      <ul>
+      </ul>
+    </ul>
+    <h2>2.3 Quizzes</h2>
+    <ul>
+      <li>There will be weekly online quizzes on Blackboard for most of
+        the weeks.</li>
+      <li>The lowest quiz grade will be dropped.</li>
+      <li><font color="#ff6600"><b>Late Policy</b>:</font> <b>no late
+          submission</b> accepted for quizzes.</li>
+    </ul>
+    <h2>2.4 Exercises</h2>
+    <ul>
+      <li>There will be in-class exercises and grading will be based on
+        <b>participation</b>.</li>
+      <li>The lowest exercise grade will be dropped.</li>
+      <li><font color="#ff6600"><b>Late Policy</b>:</font> <b>no late
+          submission</b> accepted for exercises.</li>
+    </ul>
+    <h2>2.5 Exams</h2>
+    <ul>
+      <li>Exams are closed book unless specified otherwise by the
+        instructor.&nbsp; They will be entirely paper and pencil - no
+        computers.</li>
+      <li>All students must have their GMU identification available on
+        testing days.</li>
+      <li>Early or Late/Makeup Exams require exceptional circumstances
+        (as judged by the professor) and must be arranged in advance.
+        Vacation plans are not exceptional circumstances.<br>
+      </li>
+      <li>
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+        Missing an exam due for any non-university-accepted reason (such
+        as not paying attention to when the exam is), will result in a
+        zero. </li>
+      <li>If you miss an exam due to a university-accepted excused
+        absence (such as an illness or car accident the day and time of
+        the exam), you must notify your professor within 24 hours of
+        your absence to make arrangements for a makeup, and bring
+        approved documentation with you when you take the make-up exam.
+        Failure to follow either of these policies will result in a
+        zero.&nbsp;</li>
+      <li>
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+        We may elect to replace a missed midterm with some (or all) of
+        the final exam grade rather than offering a makeup exam. </li>
+      <li>We reserve the right to give oral makeup exams in lieu of
+        written. </li>
+      <li>The final will not be given early. You are starting the course
+        with knowledge of the schedule (see GMU's Final Exam Calendar
+        for the latest schedule, updated as weather events require).<br>
+      </li>
+    </ul>
+    <ul>
+    </ul>
+    <h2>2.6 Discussion Board</h2>
+    <ul>
+      <li>Students are encouraged to use the discussion board, <b>Piazza</b>,
+        to ask and answer questions.&nbsp; <i>Link/access code to
+          Piazza will be available on Blackboard</i>.<br>
+      </li>
+      <li>No sharing answers to homework assignments on the discussion
+        board.&nbsp; <br>
+      </li>
+      <li>Under no circumstances should your code of assignments be
+        posted publicly to the discussion board. Students can post
+        questions and code privately, although the instructor reserves
+        the right to make any post public, so that other students can
+        see the responses. </li>
+    </ul>
+    <h2>2.7 Other<br>
+    </h2>
+    <ul>
+      <li><b>Contested Grades</b>: Contesting of grades on any/all
+        submissions must be requested within one week of receiving the
+        grade. No grade changes will be considered subsequent to that
+        deadline.</li>
+      <li>There will be no make-up or extra-credit assignments at the
+        end of the semester; your grade should be a measure of your
+        semester-long progress.<br>
+      </li>
+      <li>IN (Incomplete) policy as indicated in the catalog will be
+        strictly adhered to. You must provide the necessary back-up
+        documentation (e.g. medical certificate) for your application to
+        be considered favorably. In all circumstances, the written
+        request, with all the back up documentation, must be received
+        before the final exam week.</li>
+    </ul>
+    <h1><br>
+    </h1>
+    <h1>3 University and Departmental Policies</h1>
+    <h2>3.1 <font color="#ff0000">Honor Code</font><br>
+    </h2>
+    <ul>
+      <li>All students are expected to abide by the <a
+          href="http://oai.gmu.edu/mason-honor-code/">GMU Honor Code</a>.
+        This policy is rigorously enforced. The computer science
+        department has an <a
+          href="http://cs.gmu.edu/resources/honor-code/">CS Honor Code
+          Policies</a> that you are subject to particularly for our
+        course<b>.&nbsp; </b>Cheating on any assignment will be
+        prosecuted and result in a notification of the Honor Committee
+        as outlined in the GMU Honor Code. <font color="#ff0000">Sharing,
+
+          collaboration, or looking at any code, algorithm, or solutions
+          of assignments that is not your own (or outside the group for
+          group assignments), including resources from Internet, is
+          considered cheating</font>. </li>
+    </ul>
+    <ul>
+      <li> We take the honor code quite seriously. Any attempts at
+        copying or sharing code, algorithms, or other violations of the
+        honor code simply will not be tolerated. We use automated
+        software to flag suspicious cases, and then review them to find
+        the cases that must be submitted to the Office of Academic
+        Integrity. The penalty for cheating will always be far worse
+        than a zero grade, to ensure it's not worth taking the chance. <b>Confirmed
+
+          cases of cheating almost always translate into course failure.</b>
+      </li>
+    </ul>
+    <h2>3.2 Privacy</h2>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <div class="hidden" id="4.2" style="display: block;">
+      <ul>
+        <li> All course materials posted to Blackboard or other course
+          sites are private; by federal law, any materials that identify
+          specific students (via their name, voice, or image) must not
+          be shared with anyone not enrolled in this class. </li>
+        <li> Video recordings of class meetings that include audio or
+          visual information from other students are private and must
+          not be shared. </li>
+        <li> Live Video Conference Meetings (e.g. Collaborate or Zoom)
+          that include audio or visual information from other students
+          must be viewed privately and not shared with others. </li>
+      </ul>
+    </div>
+    <h2 onclick="showHide('4.3')">3.3 Non-Discrimination and
+      Inclusiveness</h2>
+    <div class="hidden" id="4.3">
+      <ul>
+        <li> We are committed to providing an educational environment
+          free from any discrimination on the basis of race, color,
+          religion, national origin, sex, disability, veteran status,
+          sexual orientation, gender identity, gender expression, age,
+          marital status, pregnancy status, or genetic information. <br>
+        </li>
+        <li> Gender identity and pronoun use: If you wish, please share
+          your name and gender pronouns with us and we will attempt use
+          them to address you in class and via email. You can address
+          any professor as "Prof. [LAST NAME]" in email and verbally if
+          you aren't sure of their personal preferences. </li>
+      </ul>
+    </div>
+    <h2 onclick="showHide('4.4')">3.4 Sexual Harassment, Sexual
+      Misconduct, and Interpersonal Violence</h2>
+    <ul>
+      <li>All faculty members are designated "Responsible Employees",
+        and are required to report all disclosures of sexual assault,
+        interpersonal violence, and stalking to Mason’s Title IX
+        Coordinator per university policy 1412. If you wish to speak
+        with someone confidentially, please contact the Student Support
+        and Advocacy Center (703-380-1434) or Counseling and
+        Psychological Services (703-993-2380). You may also seek
+        assistance from Mason’s Title IX Coordinator (703-993-8730;
+        titleix@gmu.edu). </li>
+    </ul>
+    <p><br>
+    </p>
+    <h1>4 Campus Resources</h1>
+    <h2>4.1 Disability Services<br>
+    </h2>
+    <div class="hidden" id="5.1">
+      <ul>
+        <li> Due to the size of the class, individual professors and
+          graders cannot support students with injuries or disabilities
+          on an ad-hoc basis. We ask that all accommodations for such
+          conditions be arranged through GMU's <a
+            href="http://ds.gmu.edu" target="_blank">Office of
+            Disability Services</a>. </li>
+        <li> Students with a physical or learning disability which is <b>already
+
+
+
+            documented with the <a href="http://ds.gmu.edu"
+              target="_blank">Office of Disability Services</a>)</b>
+          should speak with the professor ASAP to discuss their approved
+          accommodations. Even if you don't know whether you plan on
+          utilizing the accommodations for any assignment/test, you need
+          to make sure you and your professor are working together from
+          the beginning of the semester to ensure your success in the
+          class. </li>
+        <li> Students with a physical or learning disability who have <b>not
+
+
+            yet registered with the <a href="http://ds.gmu.edu"
+              target="_blank">Office of Disability Services</a></b>
+          should register with that office as soon as possible. Even if
+          you don't know whether you'll need to utilize the
+          accommodations, it's in your best interest to prepare ahead of
+          time and get your condition documented as accommodations are
+          not retroactive. They have a quick and easy registration
+          process. All you need is documentation for your condition. </li>
+        <li> The <a href="http://ds.gmu.edu" target="_blank">Office of
+            Disability Services</a> also <b>handles services for many
+            temporary disabilities</b> (for example, if you break your
+          arm, they can arrange note taking services). Please contact
+          them if you discover any sudden impairment that affects your
+          ability to function in class and/or on your projects. They
+          have a quick and easy registration process. All you need is
+          documentation for your condition. </li>
+      </ul>
+    </div>
+    <h2>4.2 Other Resources<br>
+    </h2>
+    <ul>
+      <li><a href="http://ods.gmu.edu/">Office of Disability Services</a></li>
+      <li><font color="#ff6600"><a
+            href="https://learningservices.gmu.edu/" style=""
+            moz-do-not-send="true">Learning Services</a></font></li>
+      <li><a href="http://oai.gmu.edu">Office of Academic Integrity</a><br>
+      </li>
+      <li><a href="http://shs.gmu.edu/">Student Health Service</a></li>
+      <li><a href="http://caps.gmu.edu/">Counseling and Psychological
+          Services (CAPS) <br>
+        </a></li>
+      <li><a href="http://ssac.gmu.edu/">Student Support and Advocacy
+          Center(SSAC) <br>
+        </a></li>
+      <li><a
+          href="https://writingcenter.gmu.edu/for-esol-students/overview"
+          moz-do-not-send="true"> The Writing Center|Support for
+          Multilingual Students</a></li>
+      <li><a href="http://its.gmu.edu/service/computer-labs/">Computer
+          Labs</a></li>
+      <li>List of <a
+href="https://stearnscenter.gmu.edu/knowledge-center/knowing-mason-students/student-support-resources-on-campus/">Student
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          Support Resources on Campus</a> from <a
+          href="https://stearnscenter.gmu.edu/">Stearn Center</a></li>
+    </ul>
+    <p> </p>
+    <ul>
+    </ul>
+    <ul>
+    </ul>
+  </body>
+</html>

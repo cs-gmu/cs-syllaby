@@ -1,0 +1,468 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>ISA 673, Operating Systems' Security, Spring 2013 -  Angelos Stavrou</TITLE>
+<style type="text/css">
+<!--
+.style27 {
+	font-size: 12px;
+	font-style: italic;
+	font-weight: bold;
+}
+.style86 {color: #666666}
+-->
+</style>
+</HEAD>
+</HTML>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script language="JavaScript" type="text/javascript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<LINK rel="stylesheet" href="general.css" type="text/css">
+<style type="text/css">
+<!--
+@import url("general.css");
+.style22 {font-size: 13px; color: #990000; }
+.style23 {color: #990000}
+.style24 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style25 {
+	color: #FFFFFF
+}
+.style28 {font-style: italic; font-size: 12px;}
+.style35 {font-size: 11pt; }
+.style38 {font-size: 12pt}
+.style43 {font-size: 12px}
+.style46 {
+	color: #990000;
+	font-size: 11pt;
+}
+.style47 {
+	font-style: italic;
+	font-size: 11pt;
+}
+.style51 {color: #000000; font-size: 11pt; }
+.style53 {color: #000000}
+.style70 {
+	font-size: 14px;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.style74 {font-size: 14px; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; font-family: Verdana, Arial, Helvetica, sans-serif;}
+.style75 {font-weight: bold; color: #990000;}
+.style78 {color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; }
+.style79 {text-transform: none; font-size: 14px; line-height: normal; font-variant: normal;}
+.style82 {color: #000000; font-size: 14px;}
+.style84 {font-family: Geneva, Arial, Helvetica, sans-serif}
+.style85 {color: #990000; font-size: 14px; }
+.style99 {font-size: 14px}
+-->
+</style>
+</HEAD>
+
+<BODY>	
+ <TABLE width="800" border="0" align="center" cellpadding="0" cellspacing="5">
+  
+  <TR> 
+    <TD width="140" height="1863" valign="top" class="leftside"> 
+      <TABLE width="100%" border="0" cellspacing="2" cellpadding="1">
+        <TR> 
+          <TD height="90" align="left" valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><img src="http://www.cs.gmu.edu/~astavrou/images/GMU_PLogo_RGB.jpg" width="137" height="87" align="top"></font></TD>
+        </TR>
+        <TR>
+          <TD align="left" valign="top" bgcolor="#FFFFFF" class="main"><font size="3"><a href="ISA673_S13.html">Home</a></font></TD>
+        </TR>
+        <TR> 
+          <TD align="left" valign="top" bgcolor="#FFFFFF" class="main"> <font size="3"><div align="left"><a href="#Schedule">Class Schedule</a></div></TD>
+        </TR>
+        <TR> 
+          <TD align="left" valign="top" bgcolor="#FFFFFF" class="main"> <font size="3"><div align="left"><a href="#Bibliography">Bibliography</a></div></TD>
+        </TR>
+        <TR> 
+          <TD align="left" valign="top" bgcolor="#FFFFFF" class="main"> <font size="3">
+          <div align="left"><a href="#Assignments">Projects</a></div></TD>
+        </TR>
+        <TR> 
+          <TD align="left" valign="top" bgcolor="#FFFFFF" class="main"> <font size="3">
+          <div align="left"><a href="courses/CS_571_F09/resources.html">OS Resources</a></div></TD>
+        </TR>
+        <TR> 
+          <TD align="left" valign="top" bgcolor="#FFFFFF" class="main"> <font size="3"><div align="left"><font size="3"><a href="contact.html">Contact</a></font></div></TD>
+        </TR>
+      </TABLE></TD>
+    <TD width="637" valign="top"> <h3><span class="style84"><BR>
+    </span></h3>
+      <div align="center">
+        <h3 class="style84"><strong><font color="#000066" size="5">
+          ISA 673, Operating Systems' Security - Sping 2013</font></strong></h3>
+      </div>
+      <p align="center"><strong>[<a href="#Schedule">Class Schedule</a>]</strong> <strong> [<a href="#Projects">Projects</a>] [<a href="courses/CS_571_F09/resources.html">OS Programming Resources</a>]</strong></p>
+      <hr>
+      <p><span class="style43"><span class="style38"><strong>Instructor: 
+              <a href="http://cs.gmu.edu/~astavrou">Angelos Stavrou</a></strong><br>
+              <strong>Lecture:</strong> Wednesdays 7:20 - 10:00pm<strong> <br>
+        Room:</strong> <font color="#990000"><strong>Nguyen Engineering Building 5358</strong></font><br>
+        <strong>Office Hours:        </strong>Wednesday 4:30 - 6:30pm and by appointment<br>
+        <strong>Office: </strong>Research Hall, Rm 437<br>
+        <font face="Geneva, Arial, Helvetica, sans-serif"><strong>Email:</strong> astavrou(_)gmu.edu<br>
+        </font></span></span></p>
+      <table width="547" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="502" class="style38"><strong>Teaching 
+      Assistant: </strong>Rahul Murmuria<strong><br>
+      Office: </strong>Research Hall, Rm 439<br>
+      <strong>Office Hours: </strong>Thursday 4-6PM<br>
+      <font face="Geneva, Arial, Helvetica, sans-serif"><strong>Email:</strong> rmurmuri_gmu.edu</font></td>
+        </tr>
+      </table>
+        <p><strong><u><font size="3">Cour</font></u></strong><strong><u><font size="3">se Description:</font></u></strong></p>
+      <p>This course covers both fundamentals and advanced topics in operating system (OS) security. We will study OS level mechanisms and policies and how they relate to mitigating and defending against real-world attacks on computer systems, including self-propagating worms, large-scale botnets, and advanced malware. Basic OS security techniques such as logging, system call auditing, address space randomization, memory protection, virtual machine introspection (VMI) will be discussed. Recent advanced techniques such as host-based intrusion detections, system randomization, vulnerability fingerprinting, and virtualization will also be introduced.</p>
+      <p><u><strong><font size="3">Topics Covered:</font></strong></u></p>
+      <ol class="upper">
+      <li>Introduction
+                <ol class="lower">
+                  <li>Operating Systems (OS)</li>
+                  <li>Types of Threats</li>
+                  <li>Basic OS Security Mechanisms</li>
+                </ol>
+      </li>
+
+              <li>Understanding the Threats
+                <ol class="lower">
+                  <li>Malware Taxonomy</li>
+                  <li>Viruses</li>
+                  <li>Worms</li>
+                  <li>Rootkits</li>
+                  <li>Defense -- An Overview</li>
+                </ol>
+              </li>
+              <li>Logging, Auditing, and Recovery
+                <ol class="lower">
+                  <li>Log Generation</li>
+                  <li>Log Auditing</li>
+                  <li>Log-based Recovery</li>
+                </ol>
+              </li>
+              <li>OS-level Memory Protection
+                <ol class="lower">
+                  <li>Review of OS Memory Management</li>
+                  <li>NX Bit</li>
+                  <li>Randomization</li>
+                </ol>
+              </li>
+
+      <li>Virtualization Technology and Applications
+          <ol class="lower">
+
+            <li>Virtualization Taxonomy</li>
+            <li>Security Applications</li>
+            <li>Virtual Machine Introspection</li>
+          </ol>
+              </li>
+              <li>Vulnerability Analysis
+                <ol class="lower">
+                  <li>Vulnerability Classification</li>
+                  <li>Defense against Known Vulnerabilities</li>
+
+                  <li>Defense against Unknown (0-day) Vulnerabilities</li>
+                </ol>
+              </li>
+              <li>Malware Capture and Analysis (Honeypots and Honeyfarm)
+                <ol class="lower">
+                  <li>Honeypot Taxonomy</li>
+                  <li>Recent Honeypot Advances</li>
+                  <li>Deployment and Liabilities</li>
+                </ol>
+              </li>
+              <li>Advanced Topic: Malware</li>
+             <ol class="lower">
+              <li> Polymorphic Malware</li>
+              <li> Malware Packers and Javascript Encoders</li>
+              <li> Analyzing Malware with PIN &amp; IDA Pro </li>
+        </ol>
+              <li>Advanced Topic: Rootkits
+                <ol class="lower">
+                  <li>Rootkit Basics</li>
+                  <li>Advanced Rootkit Techniques</li>
+
+                  <li>Rootkit Defenses</li>
+                </ol>
+              </li>
+              <li>Advanced Topic: Botnets      </li>
+      </ol>
+                <p><u><strong><font size="3">
+        Prerequisites:</font></strong></u></p>
+      <p><strong>CS571 and ISA 562</strong>; or permission of instructor. The coursework will include substantial programming projects; in order to be able to complete the projects, the students must  be comfortable with C/C++ or Java. <br>
+        <br>
+      <u><strong><font size="3"><a name="Bibliography"></a>Bibliography:</font></strong></u> </p>
+<p><span class="style27 style35">Required:<br>
+          </span><span class="style35"><em> <span class="style23">Professional Linux Kernel Architecture</span>,</em> Wolfgang Mauerer, John Wiley and Sons, New York, NY, 2008.<br>
+          Available by: [<a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470343435,descCd-description.html">Willey</a>] [<a href="http://www.amazon.com/gp/product/0470343435/ref=s9_simi_gw_s0_p14_i1?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=center-2&pf_rd_r=0YEQZJQY4ZCCTF3XGNW5&pf_rd_t=101&pf_rd_p=470938631&pf_rd_i=507846">Amazon</a>]</span><span class="style47"><br>
+          </span><span class="style27 style35"><br>
+        Recommended:<br>  
+        </span><span class="style43"><span class="style46"><em>Understanding the Linux Kernel, Third Edition</em></span><span class="style35"> Daniel P. Bovet  Marco Cesati  ISBN-10: 0596005652 ISBN-13:  978-0596005658 O'Reilly Media Available by:  [<a href="http://proquest.safaribooksonline.com/0596005652">Online for GMU</a>] [<a href="http://oreilly.com/catalog/9780596000028">O' Reilly</a>] [<a href="http://www.amazon.com/Understanding-Linux-Kernel-Third-Daniel/dp/0596005652/ref=sr_1_2?ie=UTF8&s=books&qid=1263964375&sr=8-2">Amazon</a>]<br>
+        </span></span><span class="style27 style35"><br>
+        </span><span class="style46"><em>Modern Operating Systems,</em> 3/E</span><span class="style35"> Andrew S. Tanenbaum. ISBN-10: 0136006639 ISBN-13:  9780136006633 Prentice Hall Available by: [<a href="http://gmu.bncollege.com">GMU Bookstore</a>] [<a href="http://www.mypearsonstore.com/bookstore/product.asp?isbn=0136006639">Prentice Hall</a>] [<a href="http://www.amazon.com/Modern-Operating-Systems-3rd-GOAL/dp/0136006639">Amazon</a>]</span><span class="style27"><em><br>
+        </em></span></p>
+<u><strong><font size="3">Grading:</font></strong></u>
+      <ul>
+        <li class="style85">Class  Projects: 80%</li>
+        <li class="style85">Class Presentations: 15%</li>
+        <li class="style85">Class Participation: 5%</li>
+        <li class="style85">No Midterm or Final</li>
+      </ul>
+      <p>The students must achieve a total score of at least 90 (out of 100) to be considered for an A. This class is an upper-level class and is geared towards understanding the fundamental concepts behind Security for Computer systems. The students will be expected to participate in large projects under the guidance of the instructor.<br>
+        <br>
+      <u><strong><font size="3">Computer Accounts:<br>
+      </font></strong></u><br>
+      All students should have accounts on the central Mason Unix system mason.gmu.edu (also known as osf1.gmu.edu)<br> 
+      and  on IT&amp;E Unix cluster zeus.ite.gmu.edu (Instructions and related links are <a href="http://labs.ite.gmu.edu/">here</a>). Please read the <a href="http://labs.ite.gmu.edu/index.php/FAQ/FAQ">FAQ</a> if you have any questions.
+      Students can  work in<a href="http://labs.ite.gmu.edu/"> IT&amp;E computer labs</a>  for programming projects during the specified <a href="http://labs.ite.gmu.edu/index.php/Main/Schedule">hours</a>.<br>
+      </p>
+<p class="style28"><span class="style4"><strong>Please read the <a href="http://www.gmu.edu/cte/Teaching/Getting_Started/Designing_Syllabus/academic_honesty.html">University's Academic Honesty Page</a> and </strong><a href="http://honorcode.gmu.edu/"><strong>GMU Honor Code</strong></a><strong>.</strong><br>
+            <em><strong><br>
+Disability Statement</strong></em></span><br>
+If you have a documented learning disability or other condition that may affect academic performance you should: <br>
+1) Make sure this documentation is on file with the Office of Disability Services. <br>
+All academic accommodations must be arranged through the ODS. <a href="http://ods.gmu.edu">http://ods.gmu.edu</a><br>
+2) Talk with me to discuss your accommodation needs.</p>
+<p><span class="style28"><strong><u>Other Usefull Resources</u></strong><br>
+  <strong>Writing Center:</strong> A114 Robinson Hall; (703) 993-1200; <a href="http://writingcenter.gmu.edu">http://writingcenter.gmu.edu</a> <br>
+  <strong>University Libraries:</strong> &ldquo;Ask a Librarian&rdquo; <a href="http://library.gmu.edu/mudge/IM/IMRef.html">http://library.gmu.edu/mudge/IM/IMRef.html</a><br>
+  <strong>Counseling and Phychological Services (CAPS)</strong>: (703) 993-2380; <a href="http://caps.gmu.edu">http://caps.gmu.edu </a><br>
+  <strong>University Policies:</strong> The University Catalog, <a href="http://catalog.gmu.edu">http://catalog.gmu.edu,</a> is the central resource<br>
+  for university policies affecting student, faculty, and staff conduct in university affairs.<br>
+        <strong><br>
+        <a name="Projects"></a><span class="style51"><u>Projects</u></span></strong><br>
+        <strong><span class="style99"><br>
+        </span></strong></span><span class="style99">- Android Kernel Projects (Malware + Functionality)<br>
+      - Malware Related Projects<br>
+      - Surveilance Related Projects<br>
+      - Power Management Related Projects<br>
+      - Defense/Protection Related Projects<br>
+      - Logging and Forensics Related Projects</span><span class="style28"><br>
+      <span class="style99">(See Detailed Project Descriptions [<a href="courses/ISA_673/Projects.html">Here</a>])</span><br>
+      </span></p>
+<p><strong><font size="3"><a name="Schedule"></a><span class="style51"><u>Class Schedule</u></span></font></strong> (Tentative)</p>
+      <table width="816" height="2060" border="1">
+        <tbody><tr><td height="2054"><table width="816" height="1693" border="1">
+        <tbody>
+          <tr bgcolor="#006633">
+            <td width="15%" align="center" valign="middle"><div align="left" class="style24"><font size="4"><font face="Times New Roman, Times, serif">Week 
+              &amp; Date</font></font></div></td>
+            <td width="85%" height="27" valign="top"><div align="center" class="style25"><font size="4"><strong>Course 
+              Lectures &amp; Readings</strong></font> (Tentative)</div></td>
+          </tr>
+          <tr>
+            <td width="15%" align="center" valign="middle"><p align="left" class="style35"><font face="Times New Roman, Times, serif"> Week 1, Jan. 23</font></p></td>
+            <td width="85%" height="19"><p class="style70"><font face="Verdana, Arial, Helvetica, sans-serif">Introduction and Class Mechanics</font> [<a href="courses/ISA_673_S13/Introduction.pdf">Lecture pdf</a>]</p></td>
+          </tr>
+          <tr>
+            <td width="15%" height="22" align="center" valign="middle"><div align="left" class="style22 style35 style53"><span class="style35"><font face="Times New Roman, Times, serif"> Week 2, Jan. 30</font></span></div></td>
+            <td class="style78"><p class="style79"><font face="Verdana, Arial, Helvetica, sans-serif">Understanding the Security Threats<br>
+            </font><br>
+                <span class="style74">Managed Code Rootkits [<a href="courses/ISA_673/BHUSA09-Metula-ManagedCodeRootkits-SLIDES.pdf">PDF</a>] [<a href="http://www.applicationsecurity.co.il/english/ManagedCodeRootkits/tabid/183/Default.aspx">HTML</a>] [<a href="http://www.applicationsecurity.co.il/english/JavaRootkits/tabid/185/Default.aspx">Java Rootkits</a>]<br>
+                Erez Metula, 2BSecure, BHUSA, 2009.<br>
+                <br>
+                <strong>LAB</strong><br>
+                Back|track Linux Distribution [<a href="http://www.backtrack-linux.org/">HTML</a>]<br>
+                Durzosploit [<a href="http://www.engineeringforfun.com/wiki/index.php/Durzosploit_Introduction">HTML</a>]</span></p>              </td>
+          </tr>
+          <tr>
+            <td width="15%" height="249" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              3, Feb. 6</font></div></td>
+            <td><p><strong> Memory Exploitation &amp; Protection<br>
+              </strong></p>
+              <p class="style74">Practical Windows XP/2003 Heap Exploitation [<a href="courses/ISA_673/BHUSA09-McDonald-WindowsHeap-PAPER.pdf">PDF</a>] [<a href="http://www.iss.net/threats/bheDirectorydemo.mp4">Demo</a>]<br>
+                John McDonald  Chris Valasek  IBM ISS X-Force Research, BHUSA, 2009.<br>
+                <br>
+                Heaps About Heaps [<a href="http://www.insomniasec.com/publications/Heaps_About_Heaps.ppt">PDF</a>]<br>
+                Moore, Brett, SyScan 2008.<br>
+              </p>
+              <p class="style74"> Understanding and bypassing Windows Heap Protection [<a href="http://www.immunityinc.com/downloads/Heap_Singapore_Jun_2007.pdf">PDF</a>]<br>
+                Waisman, Nicolas, SyScan 2007.</p>
+              <p class="style74">Heap Feng Shui in JavaScript [<a href="http://www.phreedom.org/research/heap-feng-shui/">HTML</a>]</p>
+              <p><span class="style74">NOZZLE: A Defense Against Heap-spraying Code Injection Attacks [<a href="http://research.microsoft.com/pubs/76528/tr-2008-176.pdf">PDF</a>]</span><strong><br>
+                </strong></p>              </td>
+          </tr>
+          <tr>
+            <td height="139" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              4, Feb. 13</font></div></td>
+            <td><p class="style23"><strong>Project I Discussion &amp; Assignments</strong></p>
+              <p><span class="style74"><strong>LAB</strong></span><span class="angelos"><strong> Android Introduction [<a href="courses/ISA_673/Android Platform.pdf">PDF</a>]<br>
+              </strong></span><span class="style74">Google Android SDK [<a href="http://developer.android.com/sdk/index.html">HTML</a>]<strong><br>
+            </strong>Developer's Guide [<a href="http://developer.android.com/guide/developing/device.html">HTML</a>]</span></p>
+              <p><span class="angelos"><strong>Android Programming Model</strong></span><br>
+Android Emulator [<a href="http://developer.android.com/guide/developing/tools/emulator.html">HTML</a>]<br>
+Android Debug Bridge [<a href="http://developer.android.com/guide/developing/tools/adb.html">HTML</a>]<br>
+<br>
+<strong>Introductory LAB Excercises</strong> [<a href="http://sites.google.com/site/androidappcourse/labs">HTML</a>]<br>
+              </p>              </td>
+          </tr>
+          <tr>
+            <td height="23" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              5, Feb. 20</font></div></td>
+            <td class="style74"><p><span class="style74"><strong>Malware Packers and Javascript Encoders - Malware Analysis<em><br>
+            </em></strong><em><br>
+The Art of Unpacking</em> [<a href="courses/ISA_673/bh-usa-07-yason-WP.pdf">PDF</a>]<br>
+Mark Vincent Yason, IBM Internet Security Systems, Blackhat 2007</span></p>
+              <p class="style99">Malware Reverse Engineering Unpacking Binary Packers [<a href="courses/ISA_673_S12/Malware Reverse Engineering(Packers).pdf">PDF</a>]<br>
+                VMware Image (<strong>1.1GB</strong>) [<a href="https://nisl.cs.gmu.edu/~angelos/ISA673_VM.zip">Link</a>] <br>
+              </p>              </td>
+          </tr>
+          <tr>
+            <td height="24" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              6, Feb. 27</font></div></td>
+            <td class="style74"><p><strong>Guest Lecture Dr. Arnur Tokhtabayev</strong></p>
+              <p><strong>Malware Reverse Engineering:</strong> Anti-Debuggers [<a href="courses/ISA_673_S12/Malware Reverse Engineering(anti-debugging).pdf">PDF</a>]<br>
+              </p>
+              <p>Android API, HAL and SDK [<a href="courses/ISA_673_S12/Android_Platform_Extended.pdf">PDF</a>]</p>
+              <p><strong>LAB Debbugging the  Android Applications</strong><strong><br>
+                  </strong>Fundamentals [<a href="http://developer.android.com/guide/topics/fundamentals.html">HTML</a>]<br>
+                Notepad Tutorials [<a href="http://developer.android.com/resources/tutorials/notepad/index.html">HTML</a>]<br>
+                Sample Applications:<br>
+                Bluetooth Chat [<a href="http://developer.android.com/resources/samples/BluetoothChat/index.html">Link</a>] (P2P for two users, can we extend it?)<br>
+                Android Global Time [<a href="http://code.google.com/p/apps-for-android/downloads/list">Link</a>]<strong><br>
+                </strong></p>
+              <p><br>
+  <strong>Introductory LAB Excercises</strong> (cont) [<a href="http://sites.google.com/site/androidappcourse/labs">HTML</a>]</p></td>
+          </tr>
+          <tr>
+            <td height="21" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              7, Mar. 6</font><br>
+            </div></td>
+            <td class="style74"><p><strong>Android Permission Model<br>
+            </strong>Semantically Rich Application-Centric Security in Android<br>
+Machigar Ongtang, Stephen McLaughlin, William Enck, and Patrick McDaniel.<br>
+(ACSAC), December 2009.[<a href="http://www.patrickmcdaniel.org/pubs/acsac09a.pdf">PDF</a>]<br>
+</p>
+              <p><strong>Understanding Malware / Malware Capture and Analysis (Honeypots and HoneyClients) </strong>[<a href="courses/ISA_673/Honeypots_honeyclients.pdf">PDF</a>]<strong><br>
+                <br>
+                  </strong>Creating a keyboard logger using Common Tasks and How to Do Them in Android [<a href="http://developer.android.com/guide/appendix/faq/commontasks.html">HTML</a>]<strong><br>
+                    </strong><strong>Open Lab - Kernel and Application Development for Android</strong></p>
+              <p>Android Programming Model using HTML for the UI [<a href="courses/ISA_673/ISA673_android_programming.html">HTML</a>]</p>
+              <p>Android Kernel Programming How To [<a href="courses/ISA_673/ISA673_android_Kernel.html">HTML</a>]</p>
+              <p>IBM's Tapping into Android Sensors' Page [<a href="http://www.ibm.com/developerworks/opensource/library/os-android-sensor/index.html">HTML</a>]<br>
+              </p>              </td>
+          </tr>
+          <tr>
+            <td width="15%" align="left" valign="top"><div align="left" class="style23 style35 style22"><strong><font face="Times New Roman, Times, serif">Week 
+              8, Mar. 13<br>
+            </font></strong></div></td>
+            <td width="85%" height="20"><span class="style75">Spring Break, No Classes</span></td>
+          </tr>
+          <tr>
+            <td width="15%" height="22" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              9, Mar. 20<br>
+            </font></div></td>
+            <td><p><strong> Security using Virtualization Technologies </strong>[<a href="courses/ISA_673/Lecture_VMMs.pdf">PDF</a>]</p>
+              <p>The Role of Virtualization in Embedded Systems [<a href="http://ertos.nicta.com.au/publications/papers/Heiser_08.pdf">PDF</a>]<br>
+                Gernot Heiser<br>
+                <br>
+                <strong>Project I Discussions (Cont)</strong><br>
+              </p>              </td>
+          </tr>
+          <tr>
+            <td width="15%" height="84" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              10, Mar. 27</font></div></td>
+            <td><p><strong> Analysis of Current OS and Application Vulnerabilities<br>
+            </strong><br>
+                Android Application Debugging [<a href="courses/ISA_673/Android_Debugging/index.html">HTML</a>]<br>
+                Android Kernel Debbugging [<a href="courses/ISA_673/Android_Debugging/Android_GDB.pdf">PDF</a>]<br>
+                Creating a keyboard logger using Common Tasks and How to Do Them in Android [<a href="http://developer.android.com/guide/appendix/faq/commontasks.html">HTML</a>]</p>              </td>
+          </tr>
+          <tr>
+            <td width="15%" height="21" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              11, Apr. 3</font></div></td>
+            <td><p><strong>Malware Defenses for Smartphones</strong><br>
+                <br>
+              Google Android: A State-of-the-Art Review of Security Mechanisms [<a href="http://arxiv4.library.cornell.edu/pdf/0912.5101v1">PDF</a>]<br>
+              A. Shabtai et al.<br>
+  <br>
+  <a href="http://www.mcafee.com/us/resources/.../rp-securing-mobile-devices.pdf"><strong>Securing Mobile Devices: Present and Future</strong></a> from Mcafee</p>
+              <p><a href="http://www.av-test.org/fileadmin/pdf/avtest_2012-02_android_anti-malware_report_english.pdf"><strong>Test Report: Anti-Malware solutions for Android</strong></a> from AVTest<br>
+                </p></td>
+          </tr>
+          <tr>
+            <td height="19" align="left" valign="top" style="vertical-align: top;"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              12, Apr. 10</font></div></td>
+            <td><strong>Open Discussion and Presentation Preparation</strong><strong><em><br>
+                </em></strong></td>
+          </tr>
+          <tr>
+            <td width="15%" height="20" align="left" valign="top"><div align="left" class="style22 style35"><span class="style53"><font face="Times New Roman, Times, serif">Week 
+              13, Apr. 17</font></span><br>
+            </div></td>
+            <td><strong>Malware Packers and Javascript Encoders - Malware Analysis II<br>
+                <br>
+</strong>Circumventing Automated JavaScript Analysis [<a href="courses/ISA_673/Hoffman-BH2008-CircumventingJavaScript.ppt">PPT</a>]<br>
+Billy Hoffman, HP Web Security Research Group, Blackhat 2009<br>
+<br>
+Unpacking and decrypting malware [<a href="courses/ISA_673/unpacking_and_decrypting_malware.pdf">PDF</a>]<em><br>
+</em>Jarkko Turkulainen, F-Secure Corporation, Blackhat 2009<strong><br>
+                    </strong></td>
+          </tr>
+          <tr>
+            <td width="15%" height="19" align="left" valign="top"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+              14, Apr. 24</font></div></td>
+            <td><p><strong>Mobile Device Managers (MDMs)</strong></p>
+              <p><strong><a href="http://www.sap.com/campaigns/2011_04_mobility/assets/GartnerReport_MDM_MQ_April2011.pdf">Magic Quadrant for Mobile Device Management Software</a></strong> by Gartner<br>
+                  <br>
+                          <a href="http://www.nsa.gov/ia/_files/Mobility_Capability_Pkg_(Version_1.1U).pdf"><strong>Mobility Capability Package - National Security Agency</strong></a><br>
+                </p></td>
+          </tr>
+          <tr>
+            <td width="15%" align="left" valign="top"><div align="left" class="style35 style23"><font face="Times New Roman, Times, serif">Week 
+              15, May 1</font></div></td>
+            <td align="left"><span class="style75">Team Project Presentations I</span></td>
+          </tr>
+          <tr align="left">
+            <td height="23" align="left" valign="top"><span class="style46"><font face="Times New Roman, Times, serif">Week 
+              16, May 8</font></span></td>
+            <td><span class="style75">Team Project Presentations II</span></td>
+          </tr>
+        </tbody>
+      </table>        
+      <p><strong><span class="style82"></span></strong></p>            </td>
+          </tr>
+      </tbody>
+    </table>    </TD>
+  </TR>
+  <TR> 
+    <TD width="140" height="100">&nbsp;</TD>
+    <TD valign="top"> 
+      <TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+        <TR align=center bordercolor="#FFFFFF" > 
+          <TD width="100%" height="100" align="center" valign="middle" bordercolor="#FFFFFF"> 
+            <P class="copyright style86"> <center> <a href="index.html">Home</a>&nbsp;- 
+              &nbsp;<a href="publications.html">Publications</a>&nbsp;-&nbsp;<A href="teaching.html">Teaching</A> 
+              - <a href="resume/cvstavrou.html">CV</a> - <a href=contact.html>Contact</a><br>
+              <br><small>
+              Last updated: 
+              <script type="text/JavaScript"> document.write(document.lastModified)
+              </script>
+              <a href="file:///"></a><BR>
+              <font size="1">Please feel free to send your comments and suggestions to Angelos Stavrou.<br>
+&copy; 2010 Angelos Stavrou, Computer Science Department, George Mason University.</font></span></P></TD>
+        </TR>
+      </TABLE></TD>
+  </TR>
+</TABLE>
+</BODY>
+<!-- #EndTemplate -->
+</HTML>
+

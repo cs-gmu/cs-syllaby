@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CS 310: Data Structures</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="CS 310: Data Structures"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2013-08-19 16:03:13 EDT"/>
+<meta name="author" content="Chris Kauffman"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:right;  }
+  th.left   { text-align:left;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+
+/* Left section header style */
+  div.outline-2 {
+      /* display: block; */
+      /* position: relative;   */
+      margin: 3em 0;
+      border-left: 0.75em solid #006633; /* #369; */
+      padding-left: .5em;
+      padding-bottom: 0px;
+      background: rgb(250,250,250);
+  }
+
+  div.outline-2 > h2 {
+      background: #006633; /* #369; */
+      /* width: 8em; */
+      color: white; /* #FFCC33; */ 
+      font-size: 1.5em;
+      font-variant: small-caps;
+      /* padding-left:0.25em; */
+      margin-left:-0.5em;
+      /* float:left; */
+      /* display:inline-block; */
+
+  }
+
+  div.outline-text-2, div.outline-text-3, div.outline-3 [id=postamble]{ 
+      /* float:left; */
+      /* display:inline-block; */
+      /* width:75%; */
+  }
+
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">CS 310: Data Structures</h1>
+
+
+<div align="center">
+<h2> George Mason University <br/>  Spring 2013  <br/> 3 Credits </h2>
+<!-- <h3> Last Updated: Mon Aug 19 13:36:24 EDT 2013 -->
+<!-- </h3> -->
+</div>
+
+
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Basic Course Information</h2>
+<div class="outline-text-2" id="text-1">
+
+<dl>
+<dt>Prerequisites</dt><dd>C or better in CS 211.
+</dd>
+<dt>Course Meeting Time and Location</dt><dd>
+<table  border="1" cellspacing="0" cellpadding="6" rules="groups" frame="none">
+<caption></caption>
+<colgroup><col class="right" /><col class="center" /><col class="center" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="right">Section</th><th scope="col" class="center">Days</th><th scope="col" class="center">Time</th><th scope="col" class="left">Professor</th><th scope="col" class="left">Location</th></tr>
+</thead>
+<tbody>
+<tr><td class="right">001</td><td class="center">T/R</td><td class="center">12:00-1:15</td><td class="left">Carver</td><td class="left">Art and Design Building 2026</td></tr>
+</tbody>
+</table>
+
+</dd>
+<dt>Instructors</dt><dd>
+<table  border="1" cellspacing="0" cellpadding="6" rules="groups" frame="none">
+<caption></caption>
+<colgroup><col class="right" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="right"><i>Name</i></td><td class="left">Richard Carver</td></tr>
+<tr><td class="right"><i>Sections</i></td><td class="left">001</td></tr>
+<tr><td class="right"><i>Office Hours</i></td><td class="left">T/R 11:30am-noon</td></tr>
+<tr><td class="right"></td><td class="left">R 3:30-4:15pm</td></tr>
+<tr><td class="right"><i>Office</i></td><td class="left">Engineering 5318</td></tr>
+<tr><td class="right"><i>Email</i></td><td class="left">rcarver@cs.gmu.edu</td></tr>
+<tr><td class="right"><i>Phone</i></td><td class="left">703-993-1550</td></tr>
+</tbody>
+</table>
+
+</dd>
+</dl>
+
+<dl>
+<dt>Text</dt><dd>Mark Allen Weiss, <i>Data Structures &amp; Problem Solving Using            Java, 4th ed.</i>, Addison-Wesley, 2010
+</dd>
+<dt>Web Sites</dt><dd>
+<p>
+  CS 310 shares web sites amongst all 3 sections (001-Carver, 002-Kauffman, 003-Kauffman).<br>
+  Carver section 001 has a <a href="http://cs.gmu.edu/~rcarver/cs310"> course page </a>.
+</p><dl>
+<dt><a href="http://www.piazza.com/">Piazza</a></dt><dd>The central site course site.  The announcements,
+              discussion board, and documents posted there are part of
+              the required reading for the course.
+<ul>
+<li>All instructors and TAs can view all material on Piazza
+</li>
+<li>Use public posts on Piazza to discuss programming assignments,
+      HW, and other material related to the course.
+</li>
+<li>Use private messages on Piazza for personal questions involving
+      your own code or situation.
+</li>
+<li>Refer to the Piazza main page for etiquette on what should be
+      posted publicly versus privately
+</li>
+</ul>
+
+</dd>
+<dt><a href="http://mymasonportal.gmu.edu">BlackBoard</a></dt><dd>Used for assignment submission and to disseminate
+                  grades on assignment
+</dd>
+<dt>Office Hours</dt><dd>Listed for all Instructors and TAs on Piazza
+       (Course Page &ndash;&gt; Staff).
+</dd>
+</dl>
+
+</dd>
+</dl>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Course Description</h2>
+<div class="outline-text-2" id="text-2">
+
+
+</div>
+
+<div id="outline-container-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Goals</h3>
+<div class="outline-text-3" id="text-2-1">
+
+<p>CS 310 continues the study of data structures from CS 211. Students
+will learn how to approach larger and more challenging programming
+problems than the projects in CS 211. Programming is a significant part
+of this course and students should expect to spend a good deal of time
+on the programming projects.  The course also introduces a variety of
+data structures and illustrates the types of problems for which they
+are useful.
+</p>
+<p>
+Topics to be covered include.
+</p><ul>
+<li>Generics and Collections
+</li>
+<li>Basic Complexity Analysis
+</li>
+<li>Linked Lists
+</li>
+<li>Stacks and Queues
+</li>
+<li>Simple and Balanced Binary Search Trees
+</li>
+<li>B-Trees and File Organization
+</li>
+<li>Hash Tables
+</li>
+<li>Priority Queues
+</li>
+<li>Splay Trees
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Learning Outcomes</h3>
+<div class="outline-text-3" id="text-2-2">
+
+<p>By the end of the semester, a passing student will be able to carry
+out the following types of activities:
+</p><ul>
+<li>Reinforce what they have learned about elementary data structures
+  from CS 211
+</li>
+<li>Extend their knowledge of data structures to more sophisticated data
+  structures. This includes balanced binary search trees, B-trees and
+  B+-trees, hashing, and basic graphs.
+</li>
+<li>Use generic types in their data structures.
+</li>
+<li>Do more demanding programming than they had in CS 211. All
+  programming is done in Java. This involves more program design and
+  debugging techniques.
+</li>
+</ul>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Coursework</h2>
+<div class="outline-text-2" id="text-3">
+
+
+</div>
+
+<div id="outline-container-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Lectures</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<p>During lectures we will discuss programming concepts and instructors
+will provide demos of programming relevant to assignments.
+Programming labs will be for students to work on additional exercises
+and get immediate help from teaching assistants.  In addition to
+attending the regular meeting times, you are strongly encouraged to
+visit the professor and teaching assistant(s) during office hours to
+further your understanding of the material: we are here to help you
+learn.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Reading</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<p>Readings from the textbook relevant to each lecture are listed in the
+schedule.  You will increase your understanding of lectures by reading
+associated textbook sections ahead of time, though this is not
+assumed.  Additional reading material may be provided to supplement
+the textbook which will be posted on the course web page.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Programming Assignments</h3>
+<div class="outline-text-3" id="text-3-3">
+
+<p>Students will receive a number of programming assignments during the
+semester.  Each assignment will involve writing programs and answering
+questions about them to illustrate an understanding of course
+material.  The programming assignments will be electronically
+submitted to Blackboard on dates specified in the assignment by 11:59
+p.m.  Students may submit assignments as many times as needed up to
+the deadline.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-3-4" class="outline-3">
+<h3 id="sec-3-4"><span class="section-number-3">3.4</span> Exams</h3>
+<div class="outline-text-3" id="text-3-4">
+
+<p>There will be one midterm exam during the course during the regularly
+scheduled lecture time.  There will also be a comprehensive final exam
+at the end semester.  Refer to the schedule for dates of the exams.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Grading Policy</h2>
+<div class="outline-text-2" id="text-4">
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Components</h3>
+<div class="outline-text-3" id="text-4-1">
+
+<p>Final grades will be determined by scores obtained on homework assignments,
+quizzes, projects, the two midterm exams, and final exams. If
+circumstances require it, the grading scale may be adjusted, generally
+in the students' favor.
+</p>
+<table  border="1" cellspacing="0" cellpadding="6" rules="groups" frame="none">
+<caption></caption>
+<colgroup><col class="left" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Component</th><th scope="col" class="right">Weight</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">Programming Assignments</td><td class="right">35%</td></tr>
+<tr><td class="left">Midterm Exams</td><td class="right">30%</td></tr>
+<tr><td class="left">Final Exam</td><td class="right">35%</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Final Grade Determination</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<p>Final grades will be assigned <b>without rounding</b> according to the
+following criteria. It is a 10-point scale per letter grade, with the
+upper and lower 2% of each 10% earning a + or -.
+</p>
+<table  border="1" cellspacing="0" cellpadding="6" rules="groups" frame="none">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /></colgroup>
+<colgroup><col class="right" /><col class="left" /></colgroup>
+<colgroup><col class="right" /><col class="left" /></colgroup>
+<colgroup><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Percent</th><th scope="col" class="left">Grade</th><th scope="col" class="right">Percent</th><th scope="col" class="left">Grade</th><th scope="col" class="right">Percent</th><th scope="col" class="left">Grade</th><th scope="col" class="left">Percent</th><th scope="col" class="left">Grade</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">&gt;=98</td><td class="left">A+</td><td class="right">90-88</td><td class="left">B+</td><td class="right">80-78</td><td class="left">C+</td><td class="left">70-60</td><td class="left">D</td></tr>
+<tr><td class="left">98-92</td><td class="left">A</td><td class="right">88-82</td><td class="left">B</td><td class="right">78-72</td><td class="left">C</td><td class="left">&lt;60</td><td class="left">F</td></tr>
+<tr><td class="left">92-90</td><td class="left">A-</td><td class="right">82-80</td><td class="left">B-</td><td class="right">72-70</td><td class="left">C-</td><td class="left"></td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Grading Disputes</h3>
+<div class="outline-text-3" id="text-4-3">
+
+<p>Address grading issues with the grader (usually a graduate TA) first.
+This should be done respectfully either in person or via e-mail.  If
+it is not possible to reach a resolution, the professor may be
+contacted by the grader to resolve the dispute.
+</p>
+<p>
+If you have not initiated contact within <b>1 week</b> after receiving a
+grade, the chance to contest the grade has closed.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4-4" class="outline-3">
+<h3 id="sec-4-4"><span class="section-number-3">4.4</span> Homework</h3>
+<div class="outline-text-3" id="text-4-4">
+
+<p>Homework is due via electronic submission by 11:59 p.m. on the dates
+specified.  You can submit work to BlackBoard as many times as
+desired.  Only the last submission will be graded.
+</p>
+<p>
+<b>It is at the sole discretion of the instructor whether to accept late homework assignments.</b> Health or family emergencies are usually legitimate
+reasons for lateness but forgetfulness and procrastination are not.
+Notify the instructor via e-mail (preferred) or phone if you know you
+will miss a HW.  In the case of an emergency, notify the instructor as
+soon as possible.  Reductions in credit may be given in any case for
+late homework at the discretion of the instructor.  Typically this
+will be on the order of <b>10% reduction in credit per day late</b>.
+</p>
+<p>
+On-time submissions will generally be graded and available a week from
+submission.  Late submissions will be graded in as timely a fashion as
+schedules allow.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4-5" class="outline-3">
+<h3 id="sec-4-5"><span class="section-number-3">4.5</span> Exams</h3>
+<div class="outline-text-3" id="text-4-5">
+
+<p><b>Missing an exam results in a zero score and make-up exams will be considered only in situations involving death and near death.</b>
+</p>
+<p>
+Students are <b>required to take the final exam</b> though performance on
+it impacts the overall grade only according to the weight table.  The
+same criteria for missing exams will be applied for a making up a
+missed final.  The final exam will consist of a comprehensive set of
+questions covering all material covered in the course.  Problems will
+be similar to those encountered on homework and exams. 
+</p>
+<p>
+<b>A valid mason ID is required</b> when taking exams to verify student
+identity. 
+</p>
+<p>
+Final exams are scheduled for the below dates.
+</p>
+<table  border="1" cellspacing="0" cellpadding="6" rules="groups" frame="none">
+<caption></caption>
+<colgroup><col class="right" /><col class="left" /><col class="center" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="right">Section</th><th scope="col" class="left">Professor</th><th scope="col" class="center">Lecture Day/Time</th><th scope="col" class="left">Final Exam Day/Time</th></tr>
+</thead>
+<tbody>
+<tr><td class="right">001</td><td class="left">Carver</td><td class="center">T/R 12:00-1:15</td><td class="left">R 12/12 10:30am-1:15pm</td></tr>
+<tr><td class="right">002</td><td class="left">Kauffman</td><td class="center">M/W 12:00-1:15</td><td class="left">M 12/16 10:30am-1:15pm</td></tr>
+<tr><td class="right">003</td><td class="left">Kauffman</td><td class="center">M/W 3:00-4:15</td><td class="left">M 12/16 1:30pm-4:15pm</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Academic Integrity</h2>
+<div class="outline-text-2" id="text-5">
+
+<p><b>PRIME DIRECTIVE: Be able to explain your own work including homework code and exam solutions.</b>
+</p>
+<p>
+Nearly all cheating in programming can be averted by adhering to the
+<b>PRIME DIRECTIVE.</b> Students may be asked at any time to explain code
+or exam solutions they submit.  Inability to do so will be construed
+as evidence of misconduct.  More specific guidelines are given below.
+</p>
+
+</div>
+
+<div id="outline-container-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Thou Shalt Not</h3>
+<div class="outline-text-3" id="text-5-1">
+
+<p>For the purposes of this course, the following actions constitute
+scholastic misconduct (cheating):
+</p><ul>
+<li>Directly copying someone else's solution to a homework problem,
+  including student solutions from a previous semester
+</li>
+<li>Directly copying an answer from some outside source such as the
+  Internet or friend for a homework problem
+</li>
+<li>Making use of an Instructor Solution manual to complete homework
+  problems
+</li>
+<li>Paying someone for a homework solution
+</li>
+<li>Posting solutions to our discussion board or any other web site
+</li>
+<li>Collaborating or copying someone else's answer during an exam
+</li>
+<li>Aiding or abetting any of the above
+</li>
+<li>Witnessing any of the above and failing to report it the instructor
+  immediately
+</li>
+</ul>
+
+
+<p>
+Refer to the following links for additional information.
+</p><ul>
+<li>Computer science specific policies on scholastic dishonesty:
+  <a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/CSHonorCodePolicies">http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/CSHonorCodePolicies</a>
+</li>
+<li>University Honor Code:
+  <a href="http://academicintegrity.gmu.edu/honorcode/">http://academicintegrity.gmu.edu/honorcode/</a>
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> Penalties</h3>
+<div class="outline-text-3" id="text-5-2">
+
+<p>Any instance of misconduct that is detected will be referred to the
+honor board and will likely result in failing the course.  Be advised
+that the teaching team will be employing <b>electronic means to detect plagiarism</b>.  This is extremely easy with computer code so keep your
+nose clean.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-5-3" class="outline-3">
+<h3 id="sec-5-3"><span class="section-number-3">5.3</span> Fair Collaboration</h3>
+<div class="outline-text-3" id="text-5-3">
+
+<p>The purpose of this course is to learn about programming and learning
+from one another is a great help.  To that end, the following actions
+<b>will NOT be considered cheating in this course.</b>
+</p><ul>
+<li>Talking to other students in the course about HW problems and
+  informally describing how a problem may be solved.
+<ul>
+<li>Be <b>very careful</b> as you do this that you do not share any sort of
+    code as this will be detected and referred to the honor committee.
+</li>
+</ul>
+
+</li>
+<li>Getting or giving help fixing a small bug or two: a second set
+  of eyes is a great boon to finding that misplaced semicolon that is
+  preventing your code from compiling.
+</li>
+<li>Searching the Internet for alternative presentations of a
+  programming concept.  
+</li>
+<li>When unsure whether collaboration is fair or not, stop the activity
+  until it can be cleared with instructor.
+</li>
+</ul>
+
+<p>At all times keep the <b>PRIME DIRECTIVE</b> in mind when studying with
+another student.  The above collaborations should be limited to
+getting someone over a hurdle, not carrying them across the finish
+line.
+</p>
+<p>
+A significant portion of your grade will depend on programming
+assignments.  Doing them individually prepares you for the exams in which
+no collaboration of any kind is allowed.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Additional Policies</h2>
+<div class="outline-text-2" id="text-6">
+
+
+</div>
+
+<div id="outline-container-6-1" class="outline-3">
+<h3 id="sec-6-1"><span class="section-number-3">6.1</span> Programming Assignments</h3>
+<div class="outline-text-3" id="text-6-1">
+
+<p>Since this is a programming course, some special policies will be in
+effect.
+</p><ul>
+<li>Programming assignments will be submitted to Blackboard at the
+  specified dates.  You may submit assignments to Blackboard as many
+  times as you like: only the most recent submission will be graded
+  (up to the deadline). 
+</li>
+<li>Back up your program regularly.  This is usually as simple as
+  making a copy of the assignment folder. Submitting occasional early
+  versions to Blackboard is also extremely helpful.  Should
+  last-minute problems happen such as accidental deletion, you will at
+  least have some of your work to show.  No code to submit means no
+  credit.
+</li>
+<li>Submitted code that does not compile will receive little to no
+  credit. 
+</li>
+<li>When test cases are provided by the instructor use them and make
+  sure your code passes all tests.
+</li>
+<li>Familiarize yourself with how plagiarism works with programming as
+  described in other parts of the syllabus.
+</li>
+<li>Keep an untouched copy of your final code submission. It is
+  important that you not touch your programs once you have made your
+  final submission. If there are any submission problems,
+  consideration for credit will only be given if it can be verified
+  that the programs were not changed after being submitted.
+</li>
+<li>You may develop programs using any computer system available.
+  However, submitted assignments must run under the Java environment
+  available on either Zeus or Mason.  No extensions will be given due
+  to compiler/runtime incompatibilities.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-6-2" class="outline-3">
+<h3 id="sec-6-2"><span class="section-number-3">6.2</span> Behavior and Accommodations</h3>
+<div class="outline-text-3" id="text-6-2">
+
+<p>Students are expected to maintain a high level of civility for all
+participants in and out of class meetings.  This includes respecting
+the beliefs of participants of all genders, ethnicities, and social
+backgrounds.  Harassment of any type will not be tolerated and failure
+to behave in a respectful manner will result in referrals to
+University Counseling or the Office of Student Judicial Affairs.  Any
+instances of sexual harassment will be reported to the Office of Equal
+Opportunity according the following policy:
+<a href="http://universitypolicy.gmu.edu/1202gen.html">http://universitypolicy.gmu.edu/1202gen.html</a>
+</p>
+<p>
+Observance of religious events will be accommodated for students of any
+faith.
+</p>
+<p>
+All possible accommodations will be made for students with
+disabilities.  Please contact Disability Services
+(<a href="http://ods.gmu.edu/">http://ods.gmu.edu/</a>) and the instructor for further information.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6-3" class="outline-3">
+<h3 id="sec-6-3"><span class="section-number-3">6.3</span> Additional Policies for Prof. Carver's Sections</h3>
+<div class="outline-text-3" id="text-6-3">
+
+<p>Attending both lecture is generally beneficial to learning the
+material and exam questions based may stem from class discussion. No
+explicit attendance credit will be given for attendance however a
+total 3% bonus will be distributed onto the exams to mirror the bonus
+credit available in Prof. Kauffman's sections.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Guidelines for Success</h2>
+<div class="outline-text-2" id="text-7">
+
+<ul>
+<li>Most homework problems have analogs that are (1) discussed in
+  lecture or (2) described in an example problem in the textbook.
+  This should encourage you to
+<ul>
+<li>Attend lecture and take notes
+</li>
+<li>Read the content of each section of the textbook carefully
+</li>
+<li>Analyze the example code distributed by the instructor
+</li>
+</ul>
+
+<p>  Most successful students do all of these.
+</p></li>
+<li>Seek help from the instructor or teaching assistant when a
+  concept is unclear.  If you blow a problem on a HW or exam and don't
+  see why, attend office hours to ask about it.  We are here to aid
+  your learning process.
+</li>
+<li>Form good habits early on.  We have a large amount of material to
+  cover which means you will need to spend time outside of lecture
+  reading and experimenting. Things will move <b>fast</b> so don't fall
+  behind.
+</li>
+<li>There is a wealth of information on data structures online.  Don't
+  be afraid to consult online tutorials if a particular topic is
+  troublesome for you.  However, <b>do not</b> misuse to the Internet to
+  obtain solutions that you don't understand.  Follow the <b>PRIME   DIRECTIVE</b> at all times.
+</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

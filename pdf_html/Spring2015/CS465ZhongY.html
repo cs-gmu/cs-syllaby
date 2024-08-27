@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CS 465 Syllabus - Spring 2015</title>
+    <meta content="Yutao Zhong" name="author">
+    <style type="text/css">
+body {
+    margin: 10px;
+    line-height: 1.3;
+    font-family: Verdana, Geneva, sans-serif;
+    background: #ccffff;
+    color: #336666;
+}
+
+.normal
+{
+    line-height:1.3;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+p {
+    /* padding-top: 1ex; */
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+
+h1 {
+    font-size: 150%;
+    
+    /*padding: 1ex;*/
+    margin: 0;
+}
+h2 {
+    font-size: 100%;
+    font-weight: bold;
+    /* padding-top: 2ex; */
+    margin-top: 1.5em;
+    margin-bottom: 1ex;
+}
+ul {
+    /* padding-top: .5ex; */
+    list-style-type: disc;
+    padding-left: 2em;
+}
+ul,ol{
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+</style>
+  </head>
+  <body>
+    <h1 align="left">CS465: Computer Systems Architecture (Spring 2015)</h1>
+    <h1><br>
+    </h1>
+    <h1>1 Course Basics</h1>
+    <h2>Meeting Time and Location:</h2>
+    <ul>
+      <li>T 4:30-7:10pm, Robinson Hall A111</li>
+    </ul>
+    <h2>Instructor: <span class="normal">Dr. Yutao Zhong</span></h2>
+    <ul>
+      <li><strong>Email:</strong> yzhong (at) gmu (dot) edu </li>
+      <li><b>Office:</b> Engineering Building 5337</li>
+      <li><b><a href="http://cs.gmu.edu/%7Eyzhong/465/schedule.html">Schedule
+
+
+
+
+
+
+
+
+
+          </a></b>(Tentative) </li>
+    </ul>
+    <h2> </h2>
+    <h2>Graduate TA: TBA<span class="normal"></span></h2>
+    <h2>Course Outcomes:</h2>
+    <ul>
+    </ul>
+    <ul>
+      <li>Be able to explain the organization of the classical von
+        Neumann machine and its major functional components </li>
+      <li>Be able to compare performance of simple system configurations
+        and understand the performance implications of architectural
+        choices <br>
+      </li>
+      <li>Be able to show how instructions are represented at both the
+        machine level and in the context of a symbolic assembler; be
+        able to understand small MIPS programs and write MIPS assembly
+        program segments <br>
+      </li>
+      <li>Be able to use different formats to represent numerical data
+        and convert numerical data from one format to another <br>
+      </li>
+      <li>Be able to explain how an instruction is executed and the
+        concept of datapaths and control <br>
+      </li>
+      <li>Be able to explain basic instruction level parallelism using
+        pipelining and the major hazards that may occur <br>
+      </li>
+      <li>Be able to explain the effect of memory latency on running
+        time; be able to describe the use of memory hierarchy to reduce
+        the effective memory latency, in particular, the role of cache
+        and virtual memory; be able to understand the principles of
+        memory management</li>
+      <li>Be able to explain the basic issues related to concurrent
+        programming <br>
+      </li>
+    </ul>
+    <ul>
+    </ul>
+    <h2>Prerequisite:</h2>
+    <p>C or better in CS 367.<br>
+    </p>
+    <h2>Textbook:</h2>
+    <ul>
+      <li><b>Required -</b> Computer Organization and Design: the
+        Hardware/Software Interface, 5th edition, John L. Hennessy and
+        David A. Patterson, Morgan Kaufmann, 2014.&nbsp; <a
+          href="http://booksite.elsevier.com/9780124077263/index.php">Companion
+
+          Material</a> </li>
+    </ul>
+    <h2>Other Useful Resources:</h2>
+    <ul>
+      <li><a href="http://piazza.com/gmu/spring2015/cs465"><b>Piazza</b></a>:
+        Announcements, lecture slides, assignments, discussion. Contacts
+        and office hours will be on Piazza too.<br>
+      </li>
+      <li><a href="https://mymasonportal.gmu.edu/"><b>Blackboard</b></a>:
+        Grades and assignments submitting.</li>
+    </ul>
+    <h1><br>
+    </h1>
+    <h1>2 Grading</h1>
+    <table border="1" cellpadding="3" cellspacing="0" width="30%">
+      <tbody>
+        <tr>
+          <td valign="top"><b>Category</b><br>
+          </td>
+          <td valign="top"><b>Percent</b><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Homework<br>
+          </td>
+          <td valign="top">50%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">In-class exercises<br>
+          </td>
+          <td valign="top">5%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Midterm<br>
+          </td>
+          <td valign="top">20% <br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Final exam<br>
+          </td>
+          <td valign="top">25%<br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Assessment</h2>
+    <p>Letter grades will be assigned by subjectively identifying
+      brackets in the numeric scores. In order to obtain an A, your
+      final score should be <b>at least 90</b>. A total score of <b>less
+
+
+        than 60</b> will result in an F.</p>
+    <h2>Homework</h2>
+    <ul>
+      <li>Homework assignments will require some programming. <br>
+      </li>
+      <li>Homework assignments must be done on an individual basis
+        unless stated otherwise.</li>
+      <li>Please ensure that the assignments are submitted on-time to
+        Blackboard, before class begins (hard-copy and soft-copy). <b>No
+
+
+
+          late submissions</b>.</li>
+      <li>Catastrophic computer failure will not be cause for an
+        extension. Use a backup service such as DropBox (or any cloud
+        service), emailing yourself, storing to a USB drive, whatever it
+        takes. <br>
+      </li>
+    </ul>
+    <blockquote>
+      <ul>
+      </ul>
+    </blockquote>
+    <ul>
+      <ul>
+      </ul>
+    </ul>
+    <h2>Exams</h2>
+    <ul>
+      <li>Exams are closed book/notes unless specified otherwise by
+        instructor.<br>
+      </li>
+      <li>They will be entirely paper and pencil - no computers.</li>
+      <li>All students must have their GMU identification available on
+        testing days<br>
+      </li>
+      <li>If you know in advance that you are unable to make an exam for
+        a valid and unavoidable reason (such as a scheduled surgery,
+        etc), you must notify the professor at least one week before the
+        scheduled exam date to make arrangements for a make-up, and
+        bring documentation with you when you take the make-up. <br>
+      </li>
+      <li>If you miss an exam due to a university-accepted excused
+        absence (such as an illness or car accident the day and time of
+        the exam), you must notify your professor within 24 hours of
+        your absence to make arrangements for a makeup, and bring
+        approved documentation with you when you take the make-up exam.
+        Failure to follow either of these policies will result in a
+        zero. We may also elect to allow the final exam to count the
+        extra amount to give you a sort of do-over. </li>
+      <li>The final will not be given early. You are starting the course
+        with knowledge of the schedule (see GMU's Final Exam Calendar
+        for the latest schedule, updated as weather events require).<br>
+      </li>
+    </ul>
+    <h2>Attendance</h2>
+    <ul>
+      <li>Attendance is not compulsory but highly recommended for doing
+        well in the class. <br>
+      </li>
+      <li>In-class exercises require classroom attendance and 5% grade
+        is devoted to it.<br>
+      </li>
+    </ul>
+    <h2>Discussion board</h2>
+    <ul>
+      <li>Students are encouraged to use the discussion board, Piazza,
+        to ask and answer questions.&nbsp;&nbsp;</li>
+      <li>No sharing answers to homework assignments on the discussion
+        board.&nbsp; <br>
+      </li>
+      <li>Under no circumstances should code be posted publicly to the
+        discussion board. Students can post questions and code
+        privately, although the instructor reserves the right to make
+        any post public, so that other students can see the responses. </li>
+    </ul>
+    <h2>Other<br>
+    </h2>
+    <ul>
+      <li>There will be no make-up or extra-credit assignments at the
+        end of the semester; your grade should be a measure of your
+        semester-long progress.<br>
+      </li>
+      <li>Contesting of grades on any/all submissions must be requested
+        within one week of the item's return. No grade changes will be
+        considered subsequent to that deadline, or after the final exam
+        meeting.</li>
+      <li>IN (Incomplete) policy as indicated in the catalog will be
+        strictly adhered to. You must provide the necessary back-up
+        documentation (e.g. medical certificate) for your application to
+        be considered favorably. In all circumstances, the written
+        request, with all the back up documentation, must be received
+        before the final exam week.</li>
+    </ul>
+    <h1><br>
+    </h1>
+    <h1>3 <font color="#cc0000">Honor Code</font></h1>
+    <p>All students are expected to abide by the <a
+        href="http://oai.gmu.edu/the-mason-honor-code-2/">GMU Honor Code</a>.
+      This policy is rigorously enforced. All class-related assignments
+      are considered individual efforts unless explicitly expressed
+      otherwise (in writing). Cheating on any assignment will be
+      prosecuted and result in a notification of the Honor Committee as
+      outlined in the GMU Honor Code. Sharing, collaboration, or looking
+      at any code or algorithm related to programming assignments that
+      is not your own is considered cheating.<br>
+      <br>
+      The computer science department has an additional, more
+      restrictive <a
+        href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/CSHonorCodePolicies">CS
+
+
+
+
+
+
+
+
+
+
+        Honor Code</a> that you are also subject to. Make sure you read
+      and familiarize yourself with these rules. We use automated
+      software to flag suspicious cases, and then review them by hand to
+      find the cases that must be submitted to the Office of Academic
+      Integrity. The penalty for cheating will always be far worse than
+      a zero grade, to ensure it's not worth taking the chance.
+      Confirmed cases of cheating almost always translate into course
+      failure.<br>
+      <br>
+    </p>
+    <b>It is your responsibility</b> to lock your computers with a
+    password, to not post your code to websites like Pastebin that are
+    publicly accessible, to guard your USB drives and computers, to not
+    upload your files to someone else's computer, etc. You will be
+    liable for any access gained to your code. Stating that "I don't
+    know how he/she got access to my code", or "I left the room and they
+    stole my code" are not an acceptable excuses in an honor code
+    violation. <br>
+    <br>
+    <h1>4 Learning Disabilities</h1>
+    <p>Students with a learning disability or other condition
+      (documented with GMU's <a href="http://ods.gmu.edu">Office of
+        Disability Services</a>) that may impact academic performance
+      should speak with the professor ASAP to discuss appropriate
+      accommodations. <br>
+    </p>
+    <ul>
+    </ul>
+    <ul>
+    </ul>
+  </body>
+</html>

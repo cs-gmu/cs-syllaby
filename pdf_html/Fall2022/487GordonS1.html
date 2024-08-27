@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0059)http://cs.gmu.edu/syllabus/syllabi-fall15/CS600GordonD.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>CS 499 / CS 587: Cryptography -- Fall 2022</title>
+<style type="text/css">
+<!--
+body{padding:30px;margin:0;font-size:13px;font-family:Arial, Helvetica, sans-serif;}
+h1{font-size: 36px;color: #333333;}
+h3{color: #333333;}
+h6{color: #333333;}
+a{color:#8aa4bc;text-decoration:none;}
+a:hover{text-decoration:underline;}
+p{width:70%;color:#666666;font-size:13px;margin-bottom:20px;margin-top:5px}
+p2{width:70%;color:#666666;font-size:13px;margin-bottom:20px;margin-top:5px}
+select{color:#666666;font-size:13px;}
+.header{font-weight:normal;margin:-30px;margin-bottom:20px;padding:12px;padding-top:37px;padding-left:28px;background-image:url(http://www.udel.edu/present/tools/syllabi/templates/gray-blue/background.jpg);}
+.header a{text-decoration:none;color:white;}
+h3.title{color:#333333;text-decoration:none;font-size:16px;font-weight:bold;padding-right:25px;border-bottom:1px solid #EFF6FF;max-width:300px;}
+h2.title{color: #333333;font-size: 20px;}
+span{margin-left:30px;font-size:13px;color:#888;display:none}
+#copyright{margin-left:0px;display:inline;font-size:13px;color:#aaa;}
+#navlinks{list-style:none;padding:5px;}
+#navcontainer{
+	width:232px;
+	position:absolute;
+-moz-border-radius:4px;	float:right;
+	margin-top:60px;
+	background:#f5f5f5;
+	border:1px solid #dddddd;
+	right:30px;
+	padding:5px 8px 8px 15px;
+	font-size:12px;
+	color:#aaaaaa;
+	border-width:0 1px 1px 0;
+}
+-->
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>CS 499 / CS 587: Cryptography, Fall 2022</h1>
+</div>
+<div style="float:left;">
+  <h2 class="title">Course Overview</h2>
+  <h3>Course Description</h3>
+   <blockquote>
+    <p><em><strong>Content</strong></em><br>
+      The course will provide an introduction to modern cryptography.
+      We will cover many practical topics, such as how to correctly
+      use block ciphers and hash functions for the most common tasks:
+      encryption and message authentication, the differences
+      between public key cryptography and symmetric key cryptography,
+      and a few ways to build public key encryption and signatures.
+      We will learn about how to properly define security, and how to
+      prove that our constructions are secure.  In addition, with what
+      time we remains, we may cover several recent topics in
+      cryptography, such as the use of blockchains for crypto
+      currencies, and securely computing on private data. </p>
+      
+    <p> <em><strong>Objectives</strong></em><br>
+      The main objectives are to convey the importance
+      of <em>provable</em> security, to teach students how to use
+      cryptographic tools in a way that is provably secure, to
+      provide students with the ability to decide whether a
+      protocol is secure, and to demonstrate the range of what can be
+      achieved with provable security.  </p>
+
+    <p> <em><strong>Course Outcomes</strong></em><br>
+	Students taking this class will: (a) be able to understand the
+	security properties achieved by common cryptographic
+	mechanisms such as encryption or digital signatures, (b) be
+	familiar with a number of cryptographic primitives
+	available to solve a variety of problems, (c) gain
+	some experience with how these cryptographic tools can be used to secure
+	modern systems.   
+      
+    <p> <em><strong>Prerequisites</strong></em><br>
+      CS 330, CS 310, and STAT 344.  More generally, 
+      students should have some level of mathematical
+      maturity.  Students should be comfortable writing proofs, and
+      should have comfort with basic probability theory.   </p>
+
+    </blockquote>
+    <h3> Logistics </h3>
+    <blockquote>
+             <p><em><strong>Office Hours</strong></em><br>
+		 I will hold office hours in-person, in my office, on Tuesdays
+		 and Wednesdays.  (Time, TBA here.) These sessions
+		 will be streamed on Zoom as well, and I will post
+		 links to
+		 recordings on piazza.  Occasionally, by announcement,
+      I will instead hold my Tuesday office hours 
+      virtually.
+      My office hours should be viewed as study sessions: homework is
+      almost always due on Wednesday at class time, and I will help
+      you with the homework in my office hours.  All are
+      welcome at the same time! I'll take questions and we'll work through problems
+      together.  For
+      students that expect to struggle with the material, I
+      strongly encourage you to attend at least one, and preferably both hours
+      each  week.  If you lose points on a homework, you should see
+      this as an indication that you need help, and you should try to
+      attend office hours.  The TA will also hold hours, and he is
+      able to help you in the same manner.   To speak to me privately, please
+      email me ahead of time so we can schedule something.
+ 
+ 
+
+      
+      	 </p>
+
+ 	   <p><em><strong>Piazza</strong></em><br>
+	       <b>All class announcements will be made on Piazza.</b>
+	       I will answer all questions on Piazza.
+	       My email inbox is typically swamped, and
+	       anything sent there has a good chance of being missed.
+	       If you do email me, put 487/587 in the subject line.
+	       But better is to message me on piazza.  Students are
+	       encouraged to post homework questions on piazza!  I realize that some posts need to be private,
+	       but when in doubt, I encourage you to <b>make your
+	       posts public!</b>  Everyone will benefit from your
+	       questions, and I prefer that we all learn from them.
+	       Generally, I'm not that worried about questions that
+	       give hints.  (Within reason.)    
+	       
+	   
+	   <p><em><strong>Gradescope</strong></em><br>
+	       Quizzes, homeworks and
+	       exams will all be submitted through Gradescope.
+	       You can find gradescope through Blackboard:
+	       click on Tools, then gradescope.  You should also be
+	       able to access it directly from the gradescope website,
+	       if you use your GMU login.   When submitting an
+	       assignment, <b>please</b> mark each question with the
+	       appropriate question number, as this makes grading much
+	       easier.
+
+
+	   <p><em><strong>Overleaf</strong></em><br>
+	       I will release some assignments on overleaf. This is a
+	       web-based platform for writing latex documents.  You do
+	       not need special software, and I will not insist that
+	       you use latex to write your answers.  You can simply
+	       view the PDF from the webpage, and submit answers to
+	       Gradescope in whatever format you like.  However,
+	       I <b>encourage</b> you to use latex - it is fairly
+	       easy, and produces nice PDFs.  To do that, just copy
+	       the project that I've shared, and edit.  You still
+	       submit the resulting PDF through Gradescope.
+
+	   
+	   
+	   
+       <p><em><strong>Lecture Videos</strong></em><br>
+	   Students are expected to watch videos each week, prior to
+	   the class meeting time.  In the meeting, I will review
+	   questions about those videos, and we will work through
+	   related problems.  Links to the videos can be found below,
+	   under the class schedule. </p>
+
+
+    </blockquote>
+
+
+    <h2 class="title">&nbsp;</h2>
+  <h2 class="title">Course Requirements</h2>
+
+  <h3>Homework</h3>
+  <blockquote>
+    <p>There will be roughly 10 homework assignments. Homework will be due
+    <b>at class time</b> on Wednesdays.  All assignments will be
+    posted on this page, below, and are to be submitted through
+    Gradescope.  Some assignments will require written responses, while
+    others will require python submissions using the <a href="https://ucsdcse107.github.io/playcrypt/">playcrypt</a> framework. 
+    I intend to make a VM available to help with installation, though
+    the installation is fairly simple in any linux environment.  Students are welcome to work in groups, but <em>every student
+    must write/code their solutions independently.</em>  Homework that
+    appear overly similar will be considered to violate the honor
+    code.    </p>
+  </blockquote>
+  <h3>Exams</h3>
+  <blockquote>
+    <p> 
+     There will be one midterm and one final exam.  The better score
+     will count more heavily towards your final grade.  The final
+     mostly covers the 2nd half.  However, I may include some
+     material from the first half if I feel students did not
+     understand it sufficiently well.  I will inform
+     you ahead of time if I choose to do this. </p>
+    </blockquote>
+  <h3>Quizzes</h3>
+  <blockquote>
+    <p> 
+     Quizzes are short: 1-2 questions, multiple choice or
+     fill-in-the-blank. They will be administered through 
+    Gradescope.    Each
+     single quiz is worth < 1% of your grade. They will be released on
+     Friday, and due by the start of class on Wednesday. Each will cover
+     the videos that were intended to be watched at home, in
+     preperation for the lecture to come.  They mainly 
+     serve to help me gauge what the students have understood from the
+     videos, and
+     what needs further explanation.  </p>
+    </blockquote>
+
+<h3>CS 587</h3>
+  <blockquote>
+    <p>Students in CS 587 will be be given extra homework problems on
+    most homeworks, and an extra problem on each of the exams.  They
+      will also have to read Chapter 7 independently.</p>
+    </blockquote>
+
+    
+  <h3>Grading</h3>
+  <blockquote>
+    	  Quizzes -- 10%.  The lowest two quiz grades will be dropped. <br>
+	  Homeworks -- 30%.  The lowest two homework
+	  grades will be dropped. <br>  
+	  <!-- Programming assignment -- 20% <br> -->
+	  Midterm Exam -- 25% or 35%. <br>
+	  Final Exam --  35% or 25%. <br>
+	  (The better exam score will count for 35%) 	  </blockquote>
+
+<blockquote><p>Do I curve?  The short answer is yes.  The more accurate answer is
+  more subtle.  I do not force the final grades to fit any kind of
+  curve.  Doing this would require a certain  number of A's and a
+  certain number of F's.  I do not believe that there must be some
+minimum  number of failures, or
+  that there should be some maximum number of A's. (Before you
+  get too excited, the 
+  symmetric argument is valid as well.)</p>
+
+  <p>When the final exam is
+  graded, I will re-weight everyone's score according the weights
+  described above, and I will sort them.  I will then look to draw
+  lines where there are clear gaps in the scores.  For example, it is possible that
+  an 83 will get an A, and an 81 will not.  To help give you a sense
+  of where you stand, after the midterm, I will give a histogram of
+  score projections, and a spreadsheet that allows you to see how you
+  will compare to those projected scores based on how you perform on
+  the remaining assignments.</p>     </blockquote>
+
+
+
+	<a name="schedule"></a>
+        <h2 class="title">Intended Schedule and Material</h2>
+
+  <div id="maincontent">
+
+
+ For an updated schedule, see the class webpage <a href="https://cs.gmu.edu/~gordon/teaching/crypto/syllabus.html">here</a>
+ 	  </div>
+
+	 
+  <h6 align="center" class="title">&nbsp;</h6>
+</div>
+<div id="navcontainer">
+     
+  <div id="sidebar">
+    <h5>Contact Information </h5>
+    <p2> Prof. Dov Gordon<br>
+	Engineering, Office 5332<br>
+	Email: <a href="mailto:gordon@gmu.edu?subject=CS487/587">gordon@gmu.edu</a><br>
+	<br>
+	  Office Hours: <br>&nbsp Tues. in-person  TBD.<br> &nbsp (Occasionally, by
+	      announcement, <br>&nbsp Tues. 
+	      on <a href="">zoom</a> instead.)<br> &nbsp
+	      Wedn. in-person TBD.   <br> 
+	      TA: <a href="mailto:ayadav5@gmu.edu?subject=CS487/587">Aayush</a> Office
+	      Hours: <br>&nbsp; TBD on <a href="">zoom</a><br><br>
+
+	
+</p2>
+    <h5>Course Information </h5>
+    <p2>Room location: Horizon Hall, 1014 <br> 
+	    Meeting Times: <br>&nbsp;&nbsp; Wednesday, 4:30-7:10pm</p2>
+
+    <h5>Links </h5>
+    <p2>Course Textbook
+    (Required): <a href="https://gmu.bncollege.com/c/Introduction-to-Modern-Cryptography/p/MBS_5646149_new?currentCampus=366&currentTerm=366_366_22_W&currentCourse=366_366_22_W_270_487_1">Introduction
+    to Modern Cryptography, 3rd edition</a><br> by Katz and Lindell
+  </p2></div>
+</div>
+
+
+
+</body></html>

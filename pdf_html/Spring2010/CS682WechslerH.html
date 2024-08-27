@@ -1,0 +1,565 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="CS682-Spring10-WechslerH_files/filelist.xml">
+<title>INFS 755</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Subject>data mining - Fall 09</o:Subject>
+  <o:Author>wechsler</o:Author>
+  <o:LastAuthor>wechsler</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>31</o:TotalTime>
+  <o:LastPrinted>2007-05-03T23:57:00Z</o:LastPrinted>
+  <o:Created>2009-12-18T23:29:00Z</o:Created>
+  <o:LastSaved>2009-12-18T23:29:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>337</o:Words>
+  <o:Characters>1925</o:Characters>
+  <o:Bytes>103424</o:Bytes>
+  <o:Lines>16</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2258</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SelectEntireFieldWithStartOrEnd/>
+   <w:UseWord2002TableStyleRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"New York";
+	panose-1:2 4 5 3 6 5 6 2 3 4;
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:536902279 -2147483648 8 0 511 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:0 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:1 135135232 16 0 262144 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	font-weight:bold;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-weight:bold;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0pt;
+	margin-bottom:3.0pt;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0pt;
+	margin-right:126.0pt;
+	margin-bottom:9.0pt;
+	margin-left:0pt;
+	text-align:justify;
+	mso-pagination:none;
+	tab-stops:54.0pt 130.5pt 252.0pt 324.0pt 432.0pt 445.0pt;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"New York";
+	mso-fareast-font-family:SimSun;
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:18.0pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	tab-stops:54.0pt 130.5pt 252.0pt 324.0pt 346.5pt 468.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:0pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+tt
+	{font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+p.hr-headline, li.hr-headline, div.hr-headline
+	{mso-style-name:hr-headline;
+	mso-margin-top-alt:auto;
+	margin-right:0pt;
+	mso-margin-bottom-alt:auto;
+	margin-left:9.0pt;
+	mso-pagination:widow-orphan;
+	font-size:15.0pt;
+	font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	color:white;}
+span.spelle
+	{mso-style-name:spelle;}
+span.grame
+	{mso-style-name:grame;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:73211580;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1381839028 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:420494213;
+	mso-list-type:hybrid;
+	mso-list-template-ids:538879904 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:502403257;
+	mso-list-template-ids:2049738754;}
+@list l2:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:580262258;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1588280594 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l4
+	{mso-list-id:670566151;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1563241764 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1031803884;
+	mso-list-template-ids:-731071230;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l6
+	{mso-list-id:1077822581;
+	mso-list-type:hybrid;
+	mso-list-template-ids:847441504 67698689 -1973880304 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+@list l6:level2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";}
+@list l7
+	{mso-list-id:1203666725;
+	mso-list-template-ids:-61015442;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+ol
+	{margin-bottom:0pt;}
+ul
+	{margin-bottom:0pt;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0pt 5.4pt 0pt 5.4pt;
+	mso-para-margin:0pt;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<h2><span style='font-style:normal;mso-bidi-font-style:italic'>Spring 2010<o:p></o:p></span></h2>
+
+<h2><span style='font-style:normal;mso-bidi-font-style:italic'><a
+href="https://patriotweb.gmu.edu/pls/prod/bwckschd.p_disp_detail_sched?term_in=200970&amp;crn_in=71086"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>Computer
+Vision - 13770 – CS 682 - 001</span></a><o:p></o:p></span></h2>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:14.0pt;font-family:Arial'>Prerequisite</span></b><span
+style='font-size:14.0pt;font-family:Arial'>: <span
+style='mso-spacerun:yes'> </span><b style='mso-bidi-font-weight:normal'>CS 580
+and 583</b>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b><span
+style='font-size:14.0pt;font-family:Arial'>Instructor</span></b><span
+style='font-size:14.0pt;font-family:Arial'>:&nbsp; Prof. Harry Wechsler <a
+href="http://cs.gmu.edu/~wechsler/"><span style='text-decoration:none;
+text-underline:none'>http://cs.gmu.edu/~wechsler/</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+Arial'>Day, Time, and <span style='mso-spacerun:yes'> </span><span
+style='mso-spacerun:yes'> </span>Venue</span></b><span style='font-size:14.0pt;
+font-family:Arial'>: <b style='mso-bidi-font-weight:normal'>R</b>, <b
+style='mso-bidi-font-weight:normal'>4:30 pm - 7:10 pm, Robinson Hall A243</b><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:14.0pt;font-family:Arial'>[<span
+class=GramE>first</span> day of classes, Thursday, January 21]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:14.0pt;font-family:Arial'>[<span
+class=GramE>no</span> classes on March 11, Spring Break] <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:14.0pt;font-family:Arial'>[<span
+class=GramE>last <span style='mso-spacerun:yes'> </span>day</span> of classes,
+Thursday, April 29]<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:14.0pt;font-family:Arial'><a
+href="http://registrar.gmu.edu/calendars/2010Spring.html">http://registrar.gmu.edu/calendars/2010Spring.html</a>
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+Arial'>Office Hours: </span></b><span style='font-size:14.0pt;font-family:Arial'>Thursday<b
+style='mso-bidi-font-weight:normal'>, </b>3:15 pm – 4:15 pm (ENGR - 4448)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;font-family:
+Arial'>Textbook (required): <span style='mso-spacerun:yes'> </span>Computer
+Vision by Forsyth and Ponce, Prentice Hall, 2003<span style='mso-bidi-font-weight:
+bold'><o:p></o:p></span></span></b></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:Arial'>Textbook (recommended):<span
+style='mso-spacerun:yes'>  </span>Computer Vision: Algorithms and Applications
+by <span class=SpellE>Szelisky</span>, Microsoft Research (free online draft)<o:p></o:p></span></b></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'><a
+href="http://research.microsoft.com/en-us/um/people/szeliski/Book/">http://research.microsoft.com/en-us/um/people/szeliski/Book/</a><o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span class=GramE><span
+style='font-size:14.0pt;font-family:Arial'>slides</span></span><span
+style='font-size:14.0pt;font-family:Arial'>:<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'><a
+href="http://www.cs.washington.edu/education/courses/cse576/08sp/">http://www.cs.washington.edu/education/courses/cse576/08sp/</a>
+<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:14.0pt;font-family:Arial'>Languages</span></b><span
+style='font-size:14.0pt;font-family:Arial'>: MATLAB, <span class=SpellE>OpenCV</span>,
+and R<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><b style='mso-bidi-font-weight:
+normal'><u><span style='font-size:14.0pt;font-family:Arial'>Tentative Syllabus<o:p></o:p></span></u></b></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'>Background, Vision Architectures, and Applications<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'>Image Capture and Formation<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'>Linear Systems and Filtering, Scale Space and Gabor Filters<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'>Edges and Contours, Texture, and Color<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'>Motion Analysis and Tracking<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'>Image Segmentation<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'>Model-Based Vision, Learning, and Recognition<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'>Applications: Digital Libraries and Biometrics<o:p></o:p></span></p>
+
+<p style='margin:0pt;margin-bottom:.0001pt'><span style='font-size:14.0pt;
+font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<h3><span style='font-size:14.0pt'>Grading:<o:p></o:p></span></h3>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo5;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:14.0pt;font-family:Arial'>Homework
+Assignments </span><b><i><span style='font-size:14.0pt;color:black'>– </span></i></b><span
+style='font-size:14.0pt;font-family:Arial'>20 %<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo5;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:14.0pt;font-family:Arial'>Mid
+Term </span><b><i><span style='font-size:14.0pt;color:black'>–</span></i></b><span
+style='font-size:14.0pt;font-family:Arial;color:black;mso-bidi-font-weight:
+bold;mso-bidi-font-style:italic'> March 18 </span><b><i><span style='font-size:
+14.0pt;color:black'>– </span></i></b><span style='font-size:14.0pt;font-family:
+Arial'>20 %<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo5;tab-stops:list 54.0pt'><![if !supportLists]><span
+style='font-size:14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:14.0pt;font-family:Arial'>Term
+TEAM Project </span><b><i><span style='font-size:14.0pt;color:black'>– </span></i></b><span
+style='font-size:14.0pt;font-family:Arial'>20 %<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo5;
+tab-stops:list 54.0pt'><![if !supportLists]><span lang=PT-BR style='font-size:
+14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;mso-ansi-language:PT-BR'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span lang=PT-BR style='font-size:14.0pt;
+font-family:Arial;mso-ansi-language:PT-BR'>Final<span
+style='mso-spacerun:yes'>  </span></span><b><i><span lang=PT-BR
+style='font-size:14.0pt;color:black;mso-ansi-language:PT-BR'>– </span></i></b><span
+lang=PT-BR style='font-size:14.0pt;font-family:Arial;color:black;mso-ansi-language:
+PT-BR;mso-bidi-font-weight:bold;mso-bidi-font-style:italic'><a
+href="http://registrar.gmu.edu/calendars/2010SpringExam.html">http://registrar.gmu.edu/calendars/2010SpringExam.html</a></span><span
+lang=PT-BR style='font-size:14.0pt;font-family:Arial;mso-ansi-language:PT-BR'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span lang=PT-BR style='font-size:14.0pt;font-family:Arial;
+mso-ansi-language:PT-BR'><span style='mso-spacerun:yes'>              </span></span><span
+style='font-size:14.0pt;font-family:Arial;color:black;mso-bidi-font-weight:
+bold;mso-bidi-font-style:italic'>Thursday,</span><b><i><span style='font-size:
+14.0pt;color:black'> </span></i></b><span style='font-size:14.0pt;font-family:
+Arial;color:black;mso-bidi-font-weight:bold;mso-bidi-font-style:italic'>May 6 <span
+style='mso-spacerun:yes'> </span></span><b><i><span style='font-size:14.0pt;
+color:black'><span style='mso-spacerun:yes'> </span>– <span
+style='mso-spacerun:yes'> </span></span></i></b><span style='font-size:14.0pt;
+font-family:Arial'>40 %<o:p></o:p></span></p>
+
+<h3><span style='font-size:14.0pt'>Honor Code<o:p></o:p></span></h3>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt;
+font-family:Arial'>You are expected to abide by the GMU honor code. Homework
+assignments and exams are individual efforts. Information on the university
+honor code can be found at <a href="http://academicintegrity.gmu.edu/honorcode/">http://academicintegrity.gmu.edu/honorcode/</a>.
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt;
+font-family:Arial'>Additional departmental CS information: <a
+href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/CSHonorCodePolicies">http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/CSHonorCodePolicies</a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+margin-left:18.0pt;text-align:justify'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

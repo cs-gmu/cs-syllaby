@@ -1,0 +1,267 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description" content="No Title">
+  <meta name="keywords" content="syllabus">
+  <meta name="resource-type" content="document">
+  <meta name="distribution" content="global">
+  <title>CS 675</title>
+</head><body>
+
+
+<P>
+<H2 ALIGN="CENTER"><B>CS 675 - Distributed Systems</B></H1>
+<P ALIGN="CENTER"><STRONG><TABLE CELLPADDING=3>
+
+  <TR><TD ALIGN="LEFT"><FONT SIZE="+1"><B>Location:</B> </FONT></TD>
+    <TD ALIGN="LEFT"><FONT SIZE="+1"> Art and Design Building 2026 </FONT></TD>
+<!--
+  <TD ALIGN="LEFT"><FONT SIZE="+1"> Online (Synchronous, Zoom link
+  available in Blackboard)</FONT></TD>
+  -->
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="+1"><B>Meeting Time:</B> </FONT></TD>
+<TD ALIGN="LEFT"><FONT SIZE="+1">Wednesday 4:30 - 7:10 pm </FONT></TD>
+</TR>
+<!--
+<TR><TD ALIGN="LEFT"><FONT SIZE="+1"><B>Meets:</B> </FONT></TD>
+<TD ALIGN="LEFT"><FONT SIZE="+1"> asynchronously (with synchronous
+  exams and class activities)</FONT></TD>
+</TR>
+-->
+<TR><TD ALIGN="LEFT"><FONT SIZE="+1"><B>Instructor:</B> </FONT></TD>
+<TD ALIGN="LEFT"><FONT SIZE="+1"> Dr. Songqing Chen</FONT></TD>
+</TR>
+<!--
+<TR><TD ALIGN="LEFT"><FONT SIZE="+1"> 
+</FONT><FONT SIZE="+1"><B>Office:</B>     </FONT></TD>
+<TD ALIGN="LEFT"><FONT SIZE="+1"> 5319 Engineering Building</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="+1"> 
+</FONT><FONT SIZE="+1"><B>Phone:</B>      </FONT></TD>
+<TD ALIGN="LEFT"><FONT SIZE="+1"> 703-993-3176 </FONT></TD>
+</TR>
+-->
+<TR><TD ALIGN="LEFT"><FONT SIZE="+1"> 
+</FONT><FONT SIZE="+1"><B>E-mail:</B>     </FONT></TD>
+<TD ALIGN="LEFT"><FONT SIZE="+1"> sqchen AT gmu dot edu</FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="+1"> 
+</FONT><FONT SIZE="+1"><B>Office Hours:</B> </FONT></TD>
+<TD ALIGN="LEFT"><FONT SIZE="+1"> Friday 5:00 - 6:00 PM
+<!--
+  (Blackboard
+    Collaborate Ultra)
+  -->
+  or email
+    for an appointment </FONT></TD>
+</TR>
+<TR><TD ALIGN="LEFT"><FONT SIZE="+1"> 
+</FONT></TD>
+</TR>
+
+</TABLE> 
+</STRONG></P>
+
+<!--
+
+<h1 ALIGN="CENTER" ><font size="4"><b>
+CS 675 - Distributed Systems</b><br>
+Fall 2024<br>Art and Design Building 2026<br>
+Wednesday 4:30 - 7:10 pm </small></font></small></h1>
+<h1 ALIGN="CENTER" ><font size="4"><a href="http://www.cs.gmu.edu/%7Esqchen/">Dr. Songqing Chen</a> <br>
+<a href="mailto:sqchen@cs.gmu.edu">sqchen at gmu dot edu</a> <br>
+703-993-3176<br>
+All course materials are available on course web page: http://www.cs.gmu.edu/~sqchen/courses/CS675F24/
+</font></h1>
+-->
+
+<h2>Course Overview</h2>
+<p>This course focuses on basic concepts underlying the design,
+implementation, and management of distributed systems. It covers
+fundamental topics in distributed systems, including but not limited to
+distributed system architectures, inter-process communication,
+distributed middleware, synchronization and coordination,&nbsp;
+distributed agreement, concurrency control, replication, and fault
+tolerance.<br>
+<p>All course materials are available on course web page: http://www.cs.gmu.edu/~sqchen/courses/CS675F24/</p>
+<h2>Prerequisites<br>
+</h2>
+CS 571 (Operating Systems).&nbsp; <!--<span style="color: rgb(255, 0, 0);">NOTE:
+Prerequisites will be
+enforced </span><span style="color: rgb(255, 0,
+0);">strictly</span><span style="color: rgb(255, 0, 0);">.</span>--><br>
+Students should also be proficient in network (e.g., socket) programming. 
+<h2>Readings</h2>
+<p>The textbook for this class is&nbsp; <span style="font-weight: bold;">Andrew Tannenbaum and Maarten van
+Steen, ``Distributed Systems:
+Paradigms and Principles'', Prentice-Hall, 3rd edition, version 3.01, 2017.&nbsp; </span>Additionally,
+the following books may be used as reference texts.<br>
+</p>
+<ol>
+  <li><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none;">&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none;"></span>G.
+Coulouris, J. Dollimore, T. Kindberg,
+&#8220;Distributed Systems: Concepts and
+Design,&#8221; 5th Edition, Addison-Wesley, 2012.</li>
+  <li><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none;">&nbsp;
+    </span><!--[endif]-->K. Birman, "Reliable Distributed Systems:
+Technologies, Web Services and Applications,"&nbsp; Springer Verlag,
+2009.<span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none;">
+    </span></li>
+  </ol>
+  <p>We will also have reading assignments based on research papers
+  available from the course web page. </p>
+<h2>Topics <br>
+</h2>
+Tentatively, the following topics will be
+covered (not necessarily in the order below)<br>
+<ul>
+  <li><!--[if !supportLists]--><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none;"></span><span style="font-family: &quot;times new roman&quot;;"></span>Introduction<br>
+  </li>
+  <li><span style="font-family: &quot;times new roman&quot;;"></span><span style="font-family: &quot;Times New Roman&quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none;"></span><!--[endif]-->Distributed
+System Architectures</li>
+  <li>Communication in Distributed Systems</li>
+  <li>Distributed Middleware</li>
+  <li>Client/Server Design Issues</li>
+  <!--
+  <li>Virtualization &amp; Code Migration</li>
+  <li>Naming</li>
+  -->
+  <li>Distributed Synchronization &amp; Coordination</li>
+  <li>Consistency &amp; Replication in Distributed Systems</li>
+  <li>Fault Tolerance</li>
+  <li>P2P Systems</li>
+  <li>Cloud Computing<br>
+  </li>
+</ul>
+
+
+<h2>Learning Outcomes<br>
+</h2>
+
+<ul>
+
+  <li>
+  Students will be able to demonstrate knowledge of basic information
+  about distributed systems. 
+  </li>
+
+
+  <li>
+  Students will be able to analyze requirements for synchornization,
+  concurrency, and fault tolerance in different distributed systems. 
+ </li>
+
+  <li>
+   Students will be able to apply the course knowledge and skills to
+  real world distributed systems. 
+  </li>
+
+  
+  </ul>
+
+
+
+
+
+<h2>Projects</h2>
+<p style="margin-right: 146.85pt;">There will be several programming
+projects. The software required for these projects is available on
+the computers in the CEC Lab.
+
+
+<p>
+<b>Please NOTE</b> 
+<ul>
+<li>If your code does not compile or run on the CEC Lab machine, you will get no credit.</li>
+
+<li> Late projects lose 20% credit and will not be accepted
+2 days after due, unless under prearranged conditions.
+</li>
+
+<li>Projects are due at the start of the class, not during class. </li>
+
+</ul>
+</p>
+
+
+
+<h2>Grading</h2>
+<ul>
+  <li>
+  Labs: 30%
+ </li>
+  <li>
+ Paper review: 10%
+ </li>
+  <li>
+ Class participation: 5%
+ </li>
+  <li>
+ Project: 30%
+ </li>
+  <li>
+ Midterm exam: 10%
+ </li>
+ <li>
+ Final exam: 15%
+ </li>
+  </ul>
+<P>No early exams will be given. 
+Missed/make-up exams are strongly discouraged and must be arranged with the instructor BEFORE the exam
+date with an official and verifiable excuse.<br>
+
+
+<span style="font-weight: bold;"><br>
+</span><b><font size="5">Exam Schedule</font></b>
+<p><b>Mid-term: </b>around mid October (date to be announced later)<span style="font-weight: bold;"> &nbsp; Final exam:&nbsp; </span>Wednesday,
+Dec. 11
+(4:30
+- 7:10
+pm)
+</p>
+<h2>Academic Integrity<br>
+</h2>
+<p>
+</p>
+<p>You are expected to abide by the <a href="http://oai.gmu.edu/">University's
+honor
+code</a> and the <a href="http://cs.gmu.edu/resources/honor-code/">CS
+Department's
+Honor
+Code and Academic Integrity Policies </a>during the
+semester, i.e., collaboration between students in
+different groups on an assignment
+is unacceptable. Any violation of the honor code will result in
+referral to the honor council.</p>
+
+
+
+<p><em><span style="color: rgb(255, 0, 0);">NOTE: I will be
+using tools, e.g., </span> 
+</em><a href="http://theory.stanford.edu/~aiken/moss/">MOSS</a><em>
+<span style="color: rgb(255, 0, 0);">, to detect plagiarism in the
+programming
+assignments</span></em>.</p>
+
+
+<h2>Other Information</h2>
+
+<p><i><a href="https://stearnscenter.gmu.edu/home/gmu-common-course-policies/">Common
+Policies Addendum</a><br>
+
+
+<p><i><a href="http://registrar.gmu.edu/calendars/">GMU Academic Calendar</a><br>
+
+<p><i><a href="http://oai.gmu.edu">Honor Code</a></i></p>
+<p><i><a href="http://ods.gmu.edu/">Disability Resource Center</a></i></p>
+
+<p><i><a href="http://catalog.gmu.edu/">University Catalog</a></i></p>
+
+<p><i><a href="http://universitypolicy.gmu.edu/">University Policies</a></i></p>
+
+
+<br>
+</body></html>

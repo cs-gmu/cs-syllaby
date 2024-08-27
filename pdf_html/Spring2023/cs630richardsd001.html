@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>CS583 - Analysis of Algorithms -- Fall 2007 -- Richards</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #262626; -webkit-text-stroke: #262626}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #000000; -webkit-text-stroke: #000000; min-height: 15.0px}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Times New Roman'; color: #000000; -webkit-text-stroke: #000000}
+    p.p12 {margin: 0.0px 0.0px 6.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    li.li11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    span.s3 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s4 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
+    span.s5 {-webkit-text-stroke: 0px #000000}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p2"><span class="s1"><b>George Mason University<span class="Apple-converted-space"> </span></b></span></p>
+<p class="p2"><span class="s1"><b>DEPARTMENT OF COMPUTER SCIENCE</b></span></p>
+<p class="p3"><span class="s1"><b>CS630 - Advanced Algorithms - Spring 2023</b></span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p2"><span class="s1">M 4:30-7:10, Planetary Hall 129</span></p>
+<p class="p2"><span class="s1"><br>
+</span></p>
+<p class="p4"><span class="s2"><a href="file:///Volumes/homes-6/cs583/syllabi/cs583-richards-d.html#PREREQ">Prerequisites</a></span><span class="s3"> | <a href="file:///Volumes/homes-6/cs583/syllabi/cs583-richards-d.html#DESCR"><span class="s4">Description</span></a> | <a href="file:///Volumes/homes-6/cs583/syllabi/cs583-richards-d.html#READINGS"><span class="s4">Readings</span></a> | <a href="file:///Volumes/homes-6/cs583/syllabi/cs583-richards-d.html#SYLLABUS"><span class="s4">Syllabus</span></a> | <a href="file:///Volumes/homes-6/cs583/syllabi/cs583-richards-d.html#GRADING"><span class="s4">Grading</span></a> | <a href="file:///Volumes/homes-6/cs583/syllabi/cs583-richards-d.html#LATE"><span class="s4">Late</span></a> | <a href="file:///Volumes/homes-6/cs583/syllabi/cs583-richards-d.html#SYLLABUS"><span class="s4">Dates</span></a></span></p>
+<p class="p4"><span class="s2"><a href="file:///Volumes/homes-6/cs583/syllabi/cs583-richards-d.html#TA">TA and Instructions for Mailing List</a></span></p>
+<p class="p4"><span class="s1"><br>
+</span></p>
+<p class="p2"><span class="s1">This page last updated on 1/20/23<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p4"><span class="s2"><a href="http://www.cs.gmu.edu/faculty/richards.html">Professor Dana Richards<span class="Apple-converted-space"> </span></a></span></p>
+<p class="p2"><span class="s1">703-993-1545<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">richards@gmu.edu (email should have "CS630" in the subject line</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1">Course office hours: W, 3:00–5:00 or by appt.</span></p>
+<p class="p2"><span class="s1">Engineering Bldg 5320<span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1"><b><i>PREREQUISITES :</i><span class="Apple-converted-space"> </span></b></span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">CS583 (and therefore CS310, CS 330 and discrete mathematics OR CS530 and CS531).<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1"><b><i>DESCRIPTION :</i><span class="Apple-converted-space"> </span></b></span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p8"><span class="s1">Provides an overview of advanced algorithm design and analysis techniques. Topics include algorithms for hash tables, matrix operations, number theory, string matching, computational geometry, combinatorial optimization, and linear programming; also the areas of NP-completeness and approximation algorithms.</span><span class="s3"><span class="Apple-converted-space"> </span></span></p>
+<p class="p9"><span class="s1"></span><br></p>
+<p class="p10"><span class="s1">This course covers those topics in the text not usually discussed in CS583, plus a few other topics.</span></p>
+<p class="p6"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1"><b><i>READINGS:<span class="Apple-converted-space"> </span></i></b></span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<ul class="ul1">
+  <li class="li6"><span class="s5"></span><span class="s1">Cormen, Leiserson, Rivest and Stein, Introduction to Algorithms, 2022 fourth edition.</span></li>
+  <li class="li11">also material removed from the third edition at the book’s web page under “resources”</li>
+  <li class="li7"><span class="s1"></span><br></li>
+  <li class="li7"><span class="s1"></span><br></li>
+</ul>
+<p class="p6"><span class="s1"><b><i>SYLLABUS:</i></b><span class="Apple-converted-space"> </span></span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">The material will be drawn from.<span class="Apple-converted-space"> </span></span></p>
+<ul class="ul1">
+  <li class="li6"><span class="s5"></span><span class="s1">assorted problems from review chapters</span></li>
+  <li class="li11">assorted new proofs from review chapters</li>
+  <li class="li11">matroids [from 3rd]</li>
+  <li class="li11">hashing</li>
+  <li class="li11">fibonacci heaps</li>
+  <li class="li11">van Emde Boas [from 3rd]</li>
+  <li class="li11">disjoint sets</li>
+  <li class="li11">flow and matching</li>
+  <li class="li11">parallel</li>
+  <li class="li11">on-line</li>
+  <li class="li11">computational geometry [from 3rd]</li>
+  <li class="li11">additional NP-completeness</li>
+  <li class="li11">approximation algorithms</li>
+  <li class="li11">FFT</li>
+  <li class="li11">LP</li>
+</ul>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">There are more chapters listed here than we will have time to cover.</span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1"><b><i>GRADING :<span class="Apple-converted-space"> </span></i></b></span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">Exams -- 100%<br>
+</span></p>
+<p class="p6"><span class="s1">The two exams, the midterm and the final, each cover about a half of the semester; i.e., the final is not cumulative.<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">Of these exams the highest score will count 60% and the lowest 40%.<span class="Apple-converted-space"> </span></span></p>
+<p class="p7"><span class="s1"></span><br></p>
+<p class="p6"><span class="s1">Late work and missed exams will not be allowed without an official university excuse.<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">The midterm date will be announced; it is tentatively scheduled for March 20.<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1">The final is scheduled for May 15.<span class="Apple-converted-space"> </span></span></p>
+<p class="p12"><span class="s1"></span><br></p>
+<p class="p13"><span class="s1"><b>NO LAPTOPS</b>, etc. (If you NEED a laptop for note-taking then speak to me.)</span></p>
+<p class="p6"><span class="s1"><br>
+</span></p>
+</body>
+</html>

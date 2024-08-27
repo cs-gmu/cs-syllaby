@@ -1,0 +1,412 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>ISA 562, Security Laboratory -  Angelos Stavrou Fall 2015</TITLE>
+<style type="text/css">
+<!--
+.style1 {color: #006633}
+-->
+</style>
+<style type="text/css">
+<!--
+.oa1 {
+border-top:1.0pt solid #94B6D2;
+border-right:none;
+border-bottom:1.0pt solid #94B6D2;
+border-left:1.0pt solid #94B6D2;
+background:#94B6D2;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa2 {
+border-top:1.0pt solid #94B6D2;
+border-right:none;
+border-bottom:1.0pt solid #94B6D2;
+border-left:none;
+background:#94B6D2;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa3 {
+border-top:1.0pt solid #94B6D2;
+border-right:1.0pt solid #94B6D2;
+border-bottom:1.0pt solid #94B6D2;
+border-left:none;
+background:#94B6D2;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa4 {
+border-top:1.0pt solid #94B6D2;
+border-right:none;
+border-bottom:1.0pt solid #94B6D2;
+border-left:1.0pt solid #94B6D2;
+background:#EFF3F7;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa5 {
+border-top:1.0pt solid #94B6D2;
+border-right:none;
+border-bottom:1.0pt solid #94B6D2;
+border-left:none;
+background:#EFF3F7;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa6 {
+border-top:1.0pt solid #94B6D2;
+border-right:1.0pt solid #94B6D2;
+border-bottom:1.0pt solid #94B6D2;
+border-left:none;
+background:#EFF3F7;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa7 {
+border-top:1.0pt solid #94B6D2;
+border-right:none;
+border-bottom:1.0pt solid #94B6D2;
+border-left:1.0pt solid #94B6D2;
+background:white;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa8 {
+border-top:1.0pt solid #94B6D2;
+border-right:none;
+border-bottom:1.0pt solid #94B6D2;
+border-left:none;
+background:white;
+text-align:center;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa9 {
+border-top:1.0pt solid #94B6D2;
+border-right:1.0pt solid #94B6D2;
+border-bottom:1.0pt solid #94B6D2;
+border-left:none;
+background:white;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+.oa10 {
+border-top:1.0pt solid #94B6D2;
+border-right:none;
+border-bottom:1.0pt solid #94B6D2;
+border-left:none;
+background:#EFF3F7;
+text-align:center;
+vertical-align:top;
+padding-bottom:3.6pt;
+padding-left:7.2pt;
+padding-top:3.6pt;
+padding-right:7.2pt;
+}
+-->
+</style>
+</HEAD>
+</HTML>
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script language="JavaScript" type="text/javascript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<LINK rel="stylesheet" href="general.css" type="text/css">
+<style type="text/css">
+<!--
+@import url("general.css");
+.angelos {
+	color: #000;
+}
+table {
+	font-size: 16px;
+}
+-->
+</style>
+</HEAD>
+
+<BODY>
+<div align="center"><strong><font color="#000066" size="5" face="Geneva, Arial, Helvetica, sans-serif">ISA 564/CS499, Security Laboratory Fall 2015</font></strong></div>
+<p align="center"><strong>[<a href="#Schedule">Class Schedule</a>]</strong> [<strong>Projects</strong>]</p>
+<hr>
+<p><strong><font size="3">Instructor: <a href="http://cs.gmu.edu/~astavrou">Angelos Stavrou</a></font></strong><font size="3"><br>
+  <strong>Lecture:</strong> Tuesday 7:20pm 
+  - 10:00pm<strong> <br>
+    Room:</strong> ENGR 5358<br>
+  </font><font size="3"><strong>Office Hours: </strong>Tuesday 4:30pm - 6:30pm, and by appointment<br>
+  </font><font size="3" face="Geneva, Arial, Helvetica, sans-serif"><strong>Email:</strong> astavrou(_)gmu.edu</font><font face="Geneva, Arial, Helvetica, sans-serif"></font></font></p>
+<table width="632" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="632"><font size="3"><strong>Teaching 
+      Assistant: </strong><span class="style1"><strong>Maofei Chen</strong></span> <strong><br>
+        Office: </strong>ENGR 5321</font><font size="3"><br>
+          <strong>Office Hours: </strong>Tuesday: 2:30pm - 4:30pm &amp; 
+          Wednesday: 3:00pm -5:00pm</font><br>
+      <font size="3" face="Geneva, Arial, Helvetica, sans-serif"><strong>Email:</strong> mchen18(_)gmu.edu</font></td>
+  </tr>
+</table>
+<p><strong><u><font size="3"><br>
+Cour</font></u></strong><strong><u><font size="3">se Description:</font></u></strong></p>
+<p>This class will be focused on current research in Security with emphasis in Network and Software Security including: </p>
+<ul>
+  <li>Experiment with Attacks against Networks and Machines:
+    <ul>
+      <li>Denial-of-service (Dos) attack </li>
+    </ul>
+  </li>
+  <ul>
+    <li>Host-based Attacks (Buffer overflows, Kernel rootkits)</li>
+  </ul>
+  <li> Defenses, Forensics and diagnostics for security:
+    <ul>
+      <li>Detect and Trace the attack either real-time or after the fact<br>
+      </li>
+    </ul>
+  </li>
+  <li>Install and Test Defenses including Intrusion and anomaly detection Systems (IDS)</li>
+  <li>Examine the functionality of Botnets, Malware, anti-virus, anti-spyware</li>
+</ul>
+<p><u><strong><font size="3"><br>
+  Class Objectives:</font></strong></u><br>
+  <br>
+  This course provides hands-on experience in configuring and experimenting with commodity networked systems and security software in a live laboratory environment, with the purpose of understanding real-world security threats. This course will take both <em>offensive</em> and <em>defensive</em> approaches and expose students to a variety of real-world attacks, including viruses, worms, rootkits, and botnets. Possible mitigation and defending mechanisms such as firewalls and intrusion detection software will also be covered.<br>
+</p>
+<p><u><font size="3" class="style38"><strong>Prerequisites:</strong></font></u></p>
+<p><strong>The prerequisite for this topics class is a C or better in CS 310 Data Structures and CS 367 Computer Systems &amp;  Programming</strong>; or permission of instructor. The coursework will include substantial programming projects; in order to be able to complete the projects, the students must  be comfortable with C and Systems' programming.</p>
+<p><u class="style38"><strong>Grading:</strong></u></p>
+<table width="338" border="0" align="center" cellpadding="0" cellspacing="0" style="border-collapse:collapse;width:338pt;">
+  <col width="226" style="width:226pt;">
+  <col width="57" style="width:57pt;">
+  <col width="55" style="width:55pt;">
+  <tr style="height:38.76pt;">
+    <td class="oa1" width="226" style="height:38.76pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="language:en-US; font-family:'Tw Cen MT'; font-size:12.0pt; color:white; font-weight:bold; ">Topics</span></p></td>
+    <td class="oa2" width="57" style="width:57pt;"><p style="line-height:normal;margin-top:0pt;margin-bottom:0pt;margin-left:0in;margin-right:0in;text-indent:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="language:en-US; font-family:'Tw Cen MT'; font-size:11.0pt; color:white; font-weight:bold; ">Duration</span></p>
+    <p style="line-height:normal;margin-top:0pt;margin-bottom:0pt;margin-left:0in;margin-right:0in;text-indent:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="language:en-US; vertical-align:baseline; font-family:'Tw Cen MT'; font-size:11.0pt; color:white; font-weight:bold; ">(</span><span style="font-family:'Tw Cen MT'; font-size:11.0pt; color:white; font-weight:bold; ">Weeks)</span></p></td>
+    <td class="oa3" width="55" style="width:55pt;"><p style="line-height:normal;margin-top:0pt;margin-bottom:0pt;margin-left:0in;margin-right:0in;text-indent:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:'Tw Cen MT'; font-size:12.0pt; color:white; font-weight:bold; ">Grade</span></p></td>
+  </tr>
+  <tr style="height:22.15pt;">
+    <td class="oa4" width="226" style="height:22.15pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="language:en-US; font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Class </span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">p</span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">articipation </span></p></td>
+    <td class="oa5" width="57" style="width:57pt;"></td>
+    <td class="oa6" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">10%</span></p></td>
+  </tr>
+  <tr style="height:22.15pt;">
+    <td class="oa7" width="226" style="height:22.15pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Lab   1: </span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Buffer</span><span style="language:en-US; vertical-align:baseline; font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; "> Overflows</span></p></td>
+    <td class="oa8" width="57" style="width:57pt;"><p style="text-align:center;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">2</span></p></td>
+    <td class="oa9" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">10%</span></p></td>
+  </tr>
+  <tr style="height:22.15pt;">
+    <td class="oa4" width="226" style="height:22.15pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Lab   2</span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">: Network Penetration</span></p></td>
+    <td class="oa10" width="57" style="width:57pt;"><p style="text-align:center;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">1</span></p></td>
+    <td class="oa6" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">5%</span></p></td>
+  </tr>
+  <tr style="height:22.15pt;">
+    <td class="oa7" width="226" style="height:22.15pt;width:226pt;"><p style="line-height:normal;margin-top:0pt;margin-bottom:0pt;margin-left:0in;margin-right:0in;text-indent:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Lab   3: </span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Malware &amp; </span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Shellcode</span></p></td>
+    <td class="oa8" width="57" style="width:57pt;"><p style="text-align:center;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">2</span></p></td>
+    <td class="oa9" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">10%</span></p></td>
+  </tr>
+  <tr style="height:38.76pt;">
+    <td class="oa4" width="226" style="height:38.76pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Lab   4: Network Attacks &amp; Remote Exploitation</span></p></td>
+    <td class="oa10" width="57" style="width:57pt;"><p style="text-align:center;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold;">1</span></p></td>
+    <td class="oa6" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">5%</span></p></td>
+  </tr>
+  <tr style="height:36.51pt;">
+    <td class="oa7" width="226" style="height:36.51pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Lab   5:</span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; "> </span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Firewalls   &amp;</span></p>
+      <p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Intrusion Detection Systems</span></p></td>
+    <td class="oa8" width="57" style="width:57pt;"><p style="text-align:center;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">2</span></p></td>
+    <td class="oa9" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">10%</span></p></td>
+  </tr>
+  <tr style="height:26.35pt;">
+    <td class="oa4" width="226" style="height:26.35pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Lab   6: </span><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Wireless Exploitation</span></p></td>
+    <td class="oa10" width="57" style="width:57pt;"><p style="text-align:center;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold;">1</span></p></td>
+    <td class="oa6" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">5%</span></p></td>
+  </tr>
+  <tr style="height:23.42pt;">
+    <td class="oa7" width="226" style="height:23.42pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Lab   7: Web Vulnerabilities</span></p></td>
+    <td class="oa8" width="57" style="width:57pt;"><p style="text-align:center;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">1</span></p></td>
+    <td class="oa9" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">5%</span></p></td>
+  </tr>
+  <tr style="height:22.15pt;">
+    <td class="oa4" width="226" style="height:22.15pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Midterm</span></p></td>
+    <td class="oa10" width="57" style="width:57pt;"><p style="text-align:center;">&nbsp;</p></td>
+    <td class="oa6" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">15%</span></p></td>
+  </tr>
+  <tr style="height:22.15pt;">
+    <td class="oa7" width="226" style="height:22.15pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Final   or Team Project</span></p></td>
+    <td class="oa8" width="57" style="width:57pt;"><p style="text-align:center;">&nbsp;</p></td>
+    <td class="oa9" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">25%</span></p></td>
+  </tr>
+  <tr style="height:22.15pt;">
+    <td class="oa4" width="226" style="height:22.15pt;width:226pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">Total</span></p></td>
+    <td class="oa10" width="57" style="width:57pt;"></td>
+    <td class="oa6" width="55" style="width:55pt;"><p style="margin-top:0pt;margin-bottom:0pt;margin-left:0in;text-align:left;direction:ltr;unicode-bidi:embed;word-break:normal;punctuation-wrap:hanging;"><span style="font-family:Palatino; font-size:12.0pt; color:black; font-style:normal; font-weight:bold; ">100%</span></p></td>
+  </tr>
+</table>
+<p>The students must achieve a total score of at least 90 (out of 100) to be considered for an A. This class is an advanced graduate-level class and is geared towards understanding the fundamental concepts behind Digital Forensics. The students will be expected to participate in large projects under the guidance of the instructor.</p>
+<p><u><strong><font size="3">Bibliography:</font></strong></u></p>
+<p><em><strong>We are going to cover  topics using the provided slides, papers, and online material</strong></em>.</p>
+<p>On the course web page you will also find assigned reading from on-line articles, code snippets, and research publications. I will also have supplementary materials on reserve or handed out during class.</p>
+<p><span class="style38"><u><font size="3"><strong>Computer Accounts:</strong></font></u></span><u><font size="3"><strong><br />
+</strong></font></u><br />
+All students should have accounts on the central Mason Unix system mason.gmu.edu (also known as osf1.gmu.edu)<br />
+and  on IT&amp;E Unix cluster zeus.ite.gmu.edu (Instructions and related links are <a href="http://labs.ite.gmu.edu/">here</a>). Please read the <a href="http://labs.ite.gmu.edu/index.php/FAQ/FAQ">FAQ</a> if you have any questions.
+        Students can  work in<a href="http://labs.ite.gmu.edu/"> IT&amp;E computer labs</a> for programming projects during the specified <a href="http://labs.ite.gmu.edu/index.php/Main/Schedule">hours</a>.<br />
+        <br />
+<u><font size="3"><strong>Honor Code:</strong></font></u></p>
+<p><strong>Please read and adhere to the <a href="http://www.gmu.edu/cte/Teaching/Getting_Started/Designing_Syllabus/academic_honesty.html">University's Academic Honesty Page</a>, <a href="http://honorcode.gmu.edu/">GMU Honor Code</a>, CS Department <a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage">Honor Code</a></strong><span class="style28"><span class="style4"><br />
+  <em><strong><br />
+    </strong></em></span></span><span class="style43"><span class="style38"><strong>Disability Statement</strong></span></span><span class="style28"><br />
+      </span><em>If you have a documented learning disability or other condition that may affect academic performance you should: <br />
+        1) Make sure this documentation is on file with the Office of Disability Services. <br />
+        All academic accommodations must be arranged through the ODS. <a href="http://ods.gmu.edu">http://ods.gmu.edu</a><br />
+        2) Talk with me to discuss your accommodation needs.</em></p>
+<p><span class="style43"><strong class="style38"><br />
+  Other Usefull Resources</strong></span><span class="style28"><br />
+  </span><em><strong><br />
+    Writing Center:</strong> A114 Robinson Hall; (703) 993-1200; <a href="http://writingcenter.gmu.edu">http://writingcenter.gmu.edu</a> <br />
+  <strong>University Libraries:</strong> &ldquo;Ask a Librarian&rdquo; <a href="http://library.gmu.edu/mudge/IM/IMRef.html">http://library.gmu.edu/mudge/IM/IMRef.html</a><br />
+  <strong>Counseling and Phychological Services (CAPS)</strong>: (703) 993-2380; <a href="http://caps.gmu.edu">http://caps.gmu.edu </a><br />
+  <strong>University Policies:</strong> The University Catalog, <a href="http://catalog.gmu.edu">http://catalog.gmu.edu,</a> is the central resource<br />
+    for university policies affecting student, faculty, and staff conduct in university affairs.</em></p>
+<p><strong><font size="3"><br />
+  <a name="Schedule" id="Schedule"></a><span class="style38">Class Schedule</span></font></strong> </p>
+<table width="816" height="681" border="1">
+  <tbody>
+    <tr bgcolor="#006633">
+      <td width="16%" align="center" valign="middle"><div align="left"><font color="#FFFFFF" size="4" face="Times New Roman, Times, serif"><strong>Week 
+        &amp; Date</strong></font></div></td>
+      <td width="84%" height="27" valign="top"><div align="center"><font color="#FFFFFF" size="4"><strong>Course 
+        Lectures &amp; Readings</strong></font> <span class="style48 style93">(Tentative)</span></div></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" class="angelos"><p align="left" class="style35"><font face="Times New Roman, Times, serif"> Week 1, Sept 1</font></p></td>
+      <td height="77" valign="top"><p class="style86"><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><strong>Intro &amp; Class Mechanics [<a href="courses/ISA_564_F15/Introduction_ISA564_F15.pdf">PDF</a>] </strong></font></p>
+        <div>
+          <p>Metasploit using Kali Linux: <a href="https://www.kali.org/downloads/">https://www.kali.org/downloads/</a></p>
+<p>Metasploitable: <a href="http://sourceforge.net/projects/metasploitable/files/Metasploitable2/">http://sourceforge.net/projects/metasploitable/files/Metasploitable2/</a></p>
+        </div>
+<p class="style86"><strong><a href="https://www.wireshark.org/">Wireshark</a> Lab [<a href="courses/ISA_564_F15/Wireshark-Tutorial.pdf">PDF</a>] <br>
+</strong></p></td>
+    </tr>
+    <tr>
+      <td align="center" valign="middle" class="angelos"><p align="left" class="style35"><font face="Times New Roman, Times, serif"> Week 2, Sept 8</font></p></td>
+      <td height="40"><p class="style86"><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><strong>Lab 1:  Buffer Overflows [Link]  Guest Lecture Prof. Dan Fleck<br />
+      </strong></font><br />
+        </p></td>
+    </tr>
+    <tr>
+      <td width="16%" height="38" align="center" valign="middle" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+      3, Sept 15</font></div></td>
+      <td width="84%" valign="top"><p><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><strong>Lab 1: Buffer Overflows [Link]</strong></font></p></td>
+    </tr>
+    <tr>
+      <td height= "36" valign="top" class="angelos"><font face="Times New Roman, Times, serif" class="style35">Week 
+        4,</font><font face="Times New Roman, Times, serif"> Sept 22</font></td>
+      <td valign="top"><p><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><strong>Lab 2: Network Reconnaissance and Pentration [Link]</strong><span style="font-weight: bold"><strong><br />
+        </strong></span><span class="style87"><strong><br />
+        <br />
+          </strong></span></font></p></td>
+    </tr>
+    <tr>
+      <td height="39" align="left" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif" class="style35">Week 5,</font><font face="Times New Roman, Times, serif"> Sept 29</font></div></td>
+      <td valign="top"><p><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><strong>Lab 3: Malware &amp; Shellcode</strong></font><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><strong><br />
+        </strong></font></p></td>
+    </tr>
+    <tr>
+      <td height="29" align="left" valign="top" class="angelos"><div align="left"><font face="Times New Roman, Times, serif">Week 
+        6, Oct 6</font></div></td>
+      <td><p class="style2"><span class="style86"><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><strong>Lab 3: Malware &amp; Shellcode</strong></font><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><strong><br />
+      </strong></font><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><span class="style87"><br />
+      </span></font></strong></span></p></td>
+    </tr>
+    <tr>
+      <td height="33" align="left" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        7, Oct 13</font></div></td>
+      <td valign="top" class="style112"><p class="style2  style124"><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif">Columbus Day - No Class</font></strong></p></td>
+    </tr>
+    <tr>
+      <td height="31" align="left" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        8, Oct 20</font></div></td>
+      <td><p class="style2"><span class="style86"><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif"><span class="style87">Midterm<br />
+      </span></font></strong></span></p></td>
+    </tr>
+    <tr>
+      <td height="30" align="left" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+      9,Oct 27</font></div></td>
+      <td valign="top" class="style112"><p class="style2  style124"><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif">Lab 4: Network Attacks &amp; Remote Exploitation</font></strong></p></td>
+    </tr>
+    <tr>
+      <td height="39" align="left" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        10, Nov 3</font></div></td>
+      <td valign="top" class="style112"><p class="style2  style124"><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif">Lab 5: Defenses: Firewalls &amp; Intrusion Detection Systems</font></strong></p></td>
+    </tr>
+    <tr>
+      <td height="37" align="left" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        11, Nov 10</font></div></td>
+      <td width="84%"><p><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif">Lab 5: Defenses: Firewalls &amp; Intrusion Detection Systems</font></strong></p></td>
+    </tr>
+    <tr>
+      <td height="29" align="left" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        12, Nov 17</font></div></td>
+      <td style="vertical-align: top;"><p><span class="style2  style124"><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif">Lab 6: Wireless Exploitation</font></strong></span></p></td>
+    </tr>
+    <tr>
+      <td align="left" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        13, Nov 24</font></div></td>
+      <td width="84%" height="29"><p class="style129"><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif">Thanksgiving recess - No Class</font></strong><br />
+        <br />
+      </p></td>
+    </tr>
+    <tr align="left">
+      <td height="31" valign="top" class="angelos"><span class="style35"><font face="Times New Roman, Times, serif">Week 
+      14, Dec 1</font></span></td>
+      <td align="left"><span class="style2  style124"><strong><font color="#006633" face="Verdana, Arial, Helvetica, sans-serif">Lab 7: Web Vulnerabilities</font></strong></span></td>
+    </tr>
+    <tr align="left">
+      <td height="52" valign="top" class="angelos"><div align="left" class="style35"><font face="Times New Roman, Times, serif">Week 
+        14, Dec 7</font></div></td>
+      <td align="left"><span class="style129"><strong>Final or Final Project Presentations</strong><br />
+      </span></td>
+    </tr>
+  </tbody>
+</table>
+</BODY>
+<!-- #EndTemplate -->
+</HTML>
+

@@ -1,0 +1,245 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+ <html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; SunOS 5.7 sun4m) [Netscape]">
+   <title>CS 788 - Autonomic Computing - Fall 2017 - Menasce</title>
+</head>
+<body bgcolor="#FFFFFF">
+
+<center>
+<h2>
+CS 788 -&nbsp;<a NAME="Computer"></a>Autonomic Computing
+- Fall 2017</h2></center>
+
+<center>George Mason University
+<br>DEPARTMENT OF COMPUTER SCIENCE
+<br>Course Description
+<br>Mondays 4:30-7:10PM; Art & Design Bldg L0008   
+<br><a href="http://www.cs.gmu.edu/faculty/menasce.html">Professor Daniel
+A. Menasce'</a>
+<br>Engineering Building Suite 5307  
+<br>Course office hours: Mondays 3:00 to 4:00 PM or by appt; e-mail at all times
+<br>E-mail: menasce at gmu dot edu (please prefix the subject of your message
+with CS 788)</center>
+
+<p>
+<hr>
+<ul>
+<li>
+<a href="#DESCRIPTION">DESCRIPTION</a></li>
+
+<li>
+<a href="#GRADING POLICY">GRADING POLICY</a></li>
+
+<li>
+<a href="#SYLLABUS">SYLLABUS</a></li>
+
+<li>
+<a href="#READINGS">READINGS</a></li>
+
+<li>
+<a href="#RESOURCES">RESOURCES</a></li>
+
+<li>
+<a href="#TERM-PAPERS">TERM PAPERS</a></li>
+
+<li>
+<a href="#IMPORTANT DATES">IMPORTANT DATES</a></li>
+
+<li>
+<a href="#IMPORTANT RULES">IMPORTANT RULES</a></li>
+</ul>
+
+<hr><img SRC="http://cs.gmu.edu/~menasce/home.gif" ><a href="http://cs.gmu.edu/~menasce/cs788/cs788.html">CS
+788 Home Page</a>
+<br>&nbsp;
+<p><a NAME="DESCRIPTION"></a><i>DESCRIPTION :</i>
+<p>CS 788 is a 3-credit doctoral seminar that studies a very hot area in Computer Science called
+<i>autonomic computing</i>. These systems have the property of being self-managing, self-optimizing,
+self-configuring, self-tuning, self-healing, and self-protecting.
+For this reason, autonomic systems are also known as <i>self-*</i> systems.
+The main motivations for autonomic systems include the ever increasing complexity of modern computer systems 
+(e.g., cloud computing, e-commerce systems, systems based on Web Services, Service-Oriented Architectures, and Grid Computing) 
+and the highly unpredictable demands on these systems. These factors make it difficult, and sometimes 
+impossible, for human beings to constantly reconfigure the systems to adapt to varying load and 
+occurrence of failures or security attacks.
+Therefore, systems have to be able to adapt themselves as the human body adapts itself to various
+sorts of external  conditions.  
+<p>
+This course addresses many types of autonomic systems as well as various techniques to design and
+build such systems. This is a doctoral seminar based on reading and analysis of current papers.
+Master students are allowed to take the course based on instructor permission.
+
+
+<p><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<br>&nbsp;
+<br>&nbsp;
+<p><a NAME="GRADING POLICY"></a><i>GRADING POLICY:</i>
+<p>Grades are based on class participation, presentation of papers in class, and on two term papers.
+Grades will be numerical on the scale 0-100. Your final numerical grade,
+G, is computed as:
+<br>
+G = 0.15* Class Participation + 0.20 * Paper Presentations in Class + 0.25 * Term Paper 1 + 0.4 * Term Paper 2
+
+<p>The following table is used to convert your numerical grade G to a letter grade:<p>
+<table border="1">
+  <tbody>
+    <tr>
+      <th><font face="Arial" color="#000080">G&nbsp;</font></th>
+      <th><font face="Arial" color="#000080">letter grade</font></th>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[97,100]&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">A+</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[93,97)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">A</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[88,93)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">A-</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[85,88)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">B+</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[81,85)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">B</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[77,81)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">B-</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">[65, 77)&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">C</font></td>
+    </tr>
+    <tr>
+      <td align="middle"><font face="Arial" color="#000080">< 65&nbsp;</font></td>
+      <td align="middle"><font face="Arial" color="#000080">F</font></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There is no curving. No extra credit assignments will be given after the
+semester is over to increase grades. The instructor may decide to give
+an extra-credit assignment during the semester. Everyone will be given
+the opportunity to do the extra-credit assignment.
+
+<p><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<p><a NAME="SYLLABUS"></a><i>SYLLABUS:</i>
+Week 1 will be devoted to an introduction to the topic and to course logistics.
+Each week thereafter will be devoted to the the analysis and discussion of papers.
+Papers will be assigned in advance and two or three  students will be selected to be the
+primary presenters of the paper to the class.
+
+
+<br>Students assigned to papers have to prepare a power point presentation about the paper. The first 
+slide has to contain the name of the paper, its full citation (authors and were it appeared), and the phrase
+"Summarized by <student name>".
+
+
+ Discussion will follow each presentation. Students have to
+come prepared to discuss the papers in class. All  students will be required to bring 
+a one-page summary/critique of the papers read each week. This will count toward class participation.
+<p><a NAME="READINGS"></a><i>READINGS:</i>
+<p>Papers will be selected from various sources including (links to conferences
+only point to the latest one but previous and recent ones will be considered):
+<ol>
+<li>
+Proceedings of the  <a href="http://icac2017.ece.ohio-state.edu">Intl. Conf.  Autonomic Computing (ICAC)</a>
+<li>Proceedings of the <a href="http://autonomic-conference.org/">IEEE Intl. Conf. Cloud and Autonomic Computing (ICCAC)</a>.
+<li>
+Proceedings of the <a href="https://wp.doc.ic.ac.uk/seams2017/">
+Intl. Symposium on Software Engineering for Adaptive and Self-Managing Systems<a/>
+
+<li> Papers from the <a href="http://dl.acm.org/pub.cfm?id=J1010">ACM Transactions on Autonomous and Adaptive Systems (TAAS)</a>
+<li>
+Proceedings of the <a href="https://www.iaria.org/conferences2017/ICAS17.html">Autonomous and Autonomic Systems (ICAS) Conference</a>
+<li>Papers in <a href="http://wwww.cs.gmu.edu/~menasce/autonomic/">Menasce's autonomic web site</a>
+</ol>
+Other recommended books:
+<ol>
+<li>
+<a href="http://www.springer.com/us/book/9781447150060">Autonomic Computing: Principles, Design and Implementation</a>,
+ Philippe Lalanda, Julie A. McCann, Ada Diaconescu,
+Springer, 2013, ISBN: 978-1-4471-5007-7.
+<li>
+Self-Star Properties in Complex Information Systems, O. Babaoglu, M. Jelasity, A. Montresor, C. Fetzer , S. Leonardi, A. van Moorsel, and M. van Steen, eds., Lecture Notes in Computer Science, Vol. 3460, Springer Verlag, 2005.
+</ol>
+<p><a NAME="RESOURCES"></a><i>RESOURCES</i>
+<li><a href="http://infowiz.gmu.edu/dbs/subjects/it">ACM Digital Library.</a>
+<li>Scroll down to <a href="http://infowiz.gmu.edu/dbs/subjects/it">IEEE/IET Electronic Library.</a>
+<li><a href="http://scholar.google.com">Google Scholar</a>
+<p><br><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<br>&nbsp;
+<br>&nbsp;
+<p>
+<hr><a NAME="TERM-PAPERS"></a><i>TERM PAPERS:</i>
+<p>For each term paper, students will select a coherent set of a minimum of 4 to 5 papers, the core papers,
+ on which they
+will base the term paper. The term paper has to cover at least the following topics:
+a) general area of the issue addressed within autonomic computing; b) summary of the contributions
+presented in the core papers.  This summary must be written in your own words in a way that clearly
+lays out the assumptions and limitations of each contribution; c) critique of the papers; and
+d) open problems and future work that could be derived from the work presented in the core papers.
+Grading will be based on content, organization, and readibility.
+It is expected that the second term paper has some novel material that, if worked up some more, could lead to the submission
+of a conference paper.
+
+<p>
+Students will present to the class their second term paper on the last day of classes.
+
+<p><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<p><a NAME="IMPORTANT DATES"></a><i>IMPORTANT DATES:</i>
+<table BORDER=0 CELLSPACING=18>
+<tr>
+<td ALIGN=LEFT>First Day of Classes&nbsp;</td>
+<td ALIGN=LEFT>August 28, 2017.&nbsp;</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Labor day (no classes)</td>
+<td ALIGN=LEFT>September 4, 2017</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Columbus Day: no class</td>
+<td ALIGN=LEFT>October 9, 2017</td>
+</tr>
+<td ALIGN=LEFT>Make-up day</td>>
+<td ALIGN=LEFT>October 10, 2017</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Term Paper 1 Due:</td>
+<td ALIGN=LEFT>October 30, 2017</td>
+</tr>
+<tr>
+<td ALIGN=LEFT>Last day of classes and 2nd term paper presentation:</td>
+<td ALIGN=LEFT>December 4, 2017</td>
+</tr>
+<td ALIGN=LEFT>Term Paper 2 Due:</td>
+<td ALIGN=LEFT>December 4, 2017</td>
+</tr>
+</table>
+<a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<p><a NAME="IMPORTANT RULES"></a><i>IMPORTANT RULES :</i>
+<p>No collaboration is allowed among students in any of the individual
+assignments.
+<p><a href="#Computer"><img SRC="http://cs.gmu.edu/~menasce/first.gif" ></a>Back to the top
+<p>
+<hr>
+<center>
+<p><font size=-1>Last updated: July 19, 2017</font></center>
+
+</body>
+</html>

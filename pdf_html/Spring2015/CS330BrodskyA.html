@@ -1,0 +1,632 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:css="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title
+content="CS330 - Formal Methods and Models -- Summer 2005 -- Richards">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="syllabusCS330_files/filelist.xml">
+<title>CS330 - Formal Methods and Models -- Summer 2005 -- Richards</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Alexander Brodsky</o:Author>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Alexander Brodsky</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>12</o:TotalTime>
+  <o:Created>2015-01-21T03:55:00Z</o:Created>
+  <o:LastSaved>2015-01-21T03:55:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>541</o:Words>
+  <o:Characters>3084</o:Characters>
+  <o:Company>George Mason University</o:Company>
+  <o:Lines>25</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3787</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>150</w:Zoom>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.p1, li.p1, div.p1
+	{mso-style-name:p1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p2, li.p2, div.p2
+	{mso-style-name:p2;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p3, li.p3, div.p3
+	{mso-style-name:p3;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:15.5pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p4, li.p4, div.p4
+	{mso-style-name:p4;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p5, li.p5, div.p5
+	{mso-style-name:p5;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#0000EE;}
+p.p6, li.p6, div.p6
+	{mso-style-name:p6;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#0000EE;}
+p.p7, li.p7, div.p7
+	{mso-style-name:p7;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p8, li.p8, div.p8
+	{mso-style-name:p8;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p9, li.p9, div.p9
+	{mso-style-name:p9;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p10, li.p10, div.p10
+	{mso-style-name:p10;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p11, li.p11, div.p11
+	{mso-style-name:p11;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Courier;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Courier;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p12, li.p12, div.p12
+	{mso-style-name:p12;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Courier;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Courier;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.p13, li.p13, div.p13
+	{mso-style-name:p13;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.s1
+	{mso-style-name:s1;
+	text-decoration:underline;
+	text-underline:single;}
+span.s2
+	{mso-style-name:s2;
+	color:black;}
+span.s3
+	{mso-style-name:s3;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Times;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;}
+span.apple-tab-span
+	{mso-style-name:apple-tab-span;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:1612742531;
+	mso-list-template-ids:985061720;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p class=p1><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p2><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-family:
+"Times New Roman"'>George Mason University<span class=apple-converted-space>&nbsp;</span></span></b><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p2><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-family:
+"Times New Roman"'>DEPARTMENT OF COMPUTER SCIENCE</span></b><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p3><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-family:
+"Times New Roman"'>CS330 - Formal Methods and Models - Spring 2015</span></b><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'>Monday, Wednesday
+1:30 – 2:45pm,<span style="mso-spacerun: yes">&nbsp; </span>Innovation Hall 136<o:p></o:p></span></p>
+
+<p class=p4><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p6><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'>This page last
+updated on 1/20/2015<o:p></o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'>Prof.
+Alexander Brodsky<o:p></o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'>703-993-1529<o:p></o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'>brodsky@gmu.edu<o:p></o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'>(Please prefix
+the subject of your email with CS330.)<span class=apple-converted-space>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=p4><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'>Office
+hours:<span style="mso-spacerun: yes">&nbsp; </span>Thursday 3:30 – 5:00 pm <o:p></o:p></span></p>
+
+<p class=p2><span style='mso-bidi-font-family:"Times New Roman"'>Engineering
+Bldg 4418<span class=apple-converted-space>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=p7><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'>PREREQUISITES :</span></i></b><span
+class=apple-converted-space><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>&nbsp;</span></b></span><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>CS211 and Math
+125 (C or better in both).<o:p></o:p></span></p>
+
+<p class=p7><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'>DESCRIPTION :</span></i></b><span
+class=apple-converted-space><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>&nbsp;</span></b></span><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>This course is
+an introduction to two kinds of formal systems - languages and logics - with
+important applications to computer science. The study of formal languages
+underlies important aspects of compilers and other language processing systems,
+as well as the theory of computation. Various systems of logic and automatic
+reasoning are put to use in artificial intelligence, database theory and
+software engineering. The entire course will give you practice in precise
+thinking and proof methods that play a role in the analysis of algorithms. The
+programming assignments provide practical experience with some theoretical
+topics.<span class=apple-converted-space>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p10><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'>OUTCOMES :</span></i></b><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p10><span style='mso-bidi-font-family:"Times New Roman"'>Will
+understand the concepts and relevance of logic, formal languages and automata
+theory, and computability .<o:p></o:p></span></p>
+
+<p class=p10><span style='mso-bidi-font-family:"Times New Roman"'>Will be able
+to able to do mechanical formal proofs, program correctness proofs and solve
+problems in first-order logic.<o:p></o:p></span></p>
+
+<p class=p10><span style='mso-bidi-font-family:"Times New Roman"'>Will be able
+to solve problems in elementary machine models: designing finite-state,
+pushdown and turing machines.<o:p></o:p></span></p>
+
+<p class=p10><span style='mso-bidi-font-family:"Times New Roman"'>Will be able
+to solve problems in formal languages: writing regular expressions, regular
+grammars, and context-free grammars.<o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'>READINGS:<span
+class=apple-converted-space>&nbsp;</span></span></i></b><span style='mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo1;tab-stops:list .5in'>Logic
+     and Languages Models for Computer Science: second edition, by Richards and
+     Hamburger.</li>
+</ol>
+
+<p class=p8><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp;</span></span><span class=apple-tab-span><span
+style='mso-bidi-font-family:"Times New Roman"'><span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span
+style='mso-bidi-font-family:"Times New Roman"'>(available as a packet at the
+bookstore) (soon)<o:p></o:p></span></p>
+
+<p class=p7><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'>SYLLABUS:</span></i></b><span
+class=apple-converted-space><span style='mso-bidi-font-family:"Times New Roman"'>&nbsp;</span></span><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>The pace is <b
+style='mso-bidi-font-weight:normal'>approximate</b>. Later chapters will not be
+covered as completely.<span class=apple-converted-space>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Topic
+<span class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>Week<span
+class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; </span>Part/Chapters<o:p></o:p></span></p>
+
+<p class=p12><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Introduction
+<span class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>1<span
+class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>1<o:p></o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Propositional
+Logic and Proofs <span class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; </span>1-2<span
+class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; </span>2-3<o:p></o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Predicate
+Logic and Proofs <span class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; </span>3-4<span class=apple-converted-space>&nbsp; &nbsp; &nbsp;
+&nbsp; </span>4-5<o:p></o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Applications:
+Relational Calculus <o:p></o:p></span></p>
+
+<p class=p11><span style='mso-bidi-font-family:"Times New Roman"'><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>and
+Datalog<span style="mso-spacerun: yes">&nbsp; </span><span style='mso-tab-count:
+1'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun: yes">&nbsp;</span><span class=apple-converted-space>&nbsp;
+<span style="mso-spacerun: yes">&nbsp;&nbsp;</span></span>5-6<span
+class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; </span>Lecture Notes<o:p></o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Exam
+#1<span class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span>7<o:p></o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Finite
+Automata, Regular Expressios<span class=apple-converted-space>&nbsp; &nbsp; </span>7-9<span
+class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; </span>7-9<o:p></o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>AWK:
+Regular Expression Application<span class=apple-converted-space>&nbsp; &nbsp; </span>10
+<span class=apple-converted-space>&nbsp; &nbsp; &nbsp; &nbsp; </span>B<o:p></o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Context-Free
+Grammars &amp; PDAs <span class=apple-converted-space>&nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; </span>11-12<span class=apple-converted-space>&nbsp; &nbsp;
+&nbsp; </span>10-11<o:p></o:p></span></p>
+
+<p class=p11><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp; </span></span><span style='mso-bidi-font-family:"Times New Roman"'>Turing
+Machines &amp; Computability<span class=apple-converted-space>&nbsp; &nbsp;
+&nbsp; &nbsp; </span>13-14<span class=apple-converted-space>&nbsp; &nbsp;
+&nbsp; </span>12<o:p></o:p></span></p>
+
+<p class=p12><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp;</span></span><span style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p8><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'>GRADING :<span
+class=apple-converted-space>&nbsp;</span></span></i></b><span style='mso-bidi-font-family:
+"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>Quizzes -- 20%<o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>Programming
+Assignments -- 20%<o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>Exams -- 60%<o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>The two exams,
+including the final, each cover about a half of the semester; the final is not
+cumulative.<span class=apple-converted-space>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>Of these exams
+the highest score will count 35%, and the lowest 25%. <span
+class=apple-converted-space>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>Homework is
+ungraded.<o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>Quizzes will
+test homework, typically every other class class.<o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>The lowest
+quiz grades will be dropped.<o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>There will be
+small programming assignments in Relational Calculus/ Datalog and AWK.<span
+class=apple-converted-space>&nbsp;</span><o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>All testing is
+closed book.<o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>There is to be
+NO group work on the programs. Receiving direct contributions to the code that
+is submitted is considered a violation of the Honor Code. (See
+cs.gmu.edu/wiki/pmwiki.php/HonorCode for the GMU and Computer Science
+guidelines.)<o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p13><span style='mso-bidi-font-family:"Times New Roman"'>It is a
+departmental requirement that students in CS330 <b style='mso-bidi-font-weight:
+normal'>must see their advisor</b> and discuss their degree progress.<span
+class=apple-converted-space>&nbsp; </span>Students not fulfilling this
+requirement will receive an Incomplete grade. (Non-majors and graduate students
+are not included.)<span class=apple-converted-space>&nbsp; </span>The visit
+must be documented by a signed note or email from your advisor.<o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'>LATENESS:</span></i></b><span
+class=apple-converted-space><span style='mso-bidi-font-family:"Times New Roman"'>&nbsp;</span></span><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=p8><span style='mso-bidi-font-family:"Times New Roman"'>Programming
+assignments will be marked down 25% each class they are late; in particular, it
+is marked down 25% after the due date.<o:p></o:p></span></p>
+
+<p class=p7><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p10><span class=s3><b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'><span style='mso-bidi-font-family:"Times New Roman"'>TA:</span></i></b></span><span
+class=s3><span style='mso-bidi-font-family:"Times New Roman"'> </span></span><span
+class=apple-converted-space><span style='font-family:Times;mso-bidi-font-family:
+"Times New Roman"'>&nbsp;</span></span><span style='mso-bidi-font-family:"Times New Roman"'>
+Ivan Avromovic,<span class=apple-converted-space>&nbsp; </span>iavramo2@gmu.edu,
+hours TBA<o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p8><b style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-family:
+"Times New Roman"'>NO LAPTOP USAGE during class </span></b><span
+style='mso-bidi-font-family:"Times New Roman"'>(If you NEED a laptop for
+note-taking then speak to me.)<o:p></o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p9><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=p9><span class=apple-converted-space><span style='mso-bidi-font-family:
+"Times New Roman"'>&nbsp;</span></span><span style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

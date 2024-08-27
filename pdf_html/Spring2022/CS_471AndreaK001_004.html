@@ -1,0 +1,1290 @@
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta name="generator" content="HTML Tidy for Mac OS X (vers 31
+      October 2006 - Apple Inc. build 16.1), see www.w3.org">
+    <title>CS 471 Syllabus - Spring 2022</title>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+    <meta name="author" content="Kevin Andrea">
+    <style type="text/css">
+<!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+  </style>
+    <script type="text/javascript">
+/*
+  @licstart  The following is the entire license notice for the
+  JavaScript code in this tag.
+
+  Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+  The JavaScript code in this tag is free software: you can
+  redistribute it and/or modify it under the terms of the GNU
+  General Public License (GNU GPL) as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option)
+  any later version.  The code is distributed WITHOUT ANY WARRANTY;
+  without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+  As additional permission under GNU GPL version 3 section 7, you
+  may distribute non-source (e.g., minimized or compacted) forms of
+  that code without the copy of the GNU GPL normally required by
+  section 4, provided you include this license notice and a URL
+  through which recipients can access the Corresponding Source.
+
+
+  @licend  The above is the entire license notice
+  for the JavaScript code in this tag.
+  */
+  <!--/*--><![CDATA[/*><!--*/
+  function CodeHighlightOn(elem, id)
+  {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+  }
+  function CodeHighlightOff(elem, id)
+  {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+  }
+  /*]]>*///-->
+  </script>
+    <style type="text/css">
+/*<![CDATA[*/
+  @media print {#ghostery-purple-box {display:none !important}}
+  /*]]>*/
+  </style>
+    <style type="text/css">
+/*<![CDATA[*/
+  /* Mason green section borders */
+  /* Left section header style */ 
+  div.outline-2, #table-of-contents {
+  /* display: block; */ 
+  /* position: relative; */
+  margin: 3em 0; 
+  border-left: 0.75em solid #006633; /* #369; */
+  padding-left: .5em;
+  padding-bottom: 0px;
+  background: rgb(250,250,250);
+  }
+
+  div.outline-2 > h2, #table-of-contents > h2 {
+  background: #006633; /* #369; */
+  /* width: 8em; */
+  color: white; /* #FFCC33; */
+  font-size: 1.5em; 
+  font-variant: small-caps;
+  /* padding-left:0.25em; */
+  margin-left:-0.5em;
+  /* float:left; */
+  /* display:inline-block; */
+  }
+
+  body {
+    background-color: #CCC;
+    color: #000;
+    font-family: Helvetica, Arial, Verdana;
+    line-height: 1.5;
+   max-width:900px;
+   margin:0 auto;
+    }
+
+
+  /*]]>*/
+  </style>
+  </head>
+  <body>
+    <div id="content">
+      <h1 class="title">Operating Systems (CS 471) <br>
+        Syllabus - Spring 2022<br>
+      </h1>
+      <div id="outline-container-sec-1" class="outline-2">
+        <h2 id="sec-1"><span class="section-number-2">1</span> Course
+          Basics</h2>
+        <div id="outline-container-sec-1-1" class="outline-3">
+          <h3 id="sec-1-1">Course Overview</h3>
+          <div class="outline-text-3" id="text-1-1">
+            <p>CS471 provides an introduction to the principles of
+              operating systems theory and practice. Fundamental
+              concepts such as processes, synchronization, scheduling,
+              memory management, file systems, and security will be
+              presented.</p>
+            <p>Topics for this semester will include.</p>
+            <ul class="org-ul">
+              <li>Operating System Fundamentals</li>
+              <li>Processes</li>
+              <li>Concurrency and Synchronization</li>
+              <li>CPU Scheduling</li>
+              <li>Memory Management and Virtual Memory</li>
+              <li>File and Storage Systems</li>
+              <li>Security</li>
+            </ul>
+            <h3 id="sec-1-1"><span class="section-number-3">1.0</span>
+              Active Learning<br>
+            </h3>
+            <ul>
+              <li>We will be engaging in <b>Active Learning</b> during
+                this semester.</li>
+              <li>The room is set up where several students will be
+                sitting around small group tables.</li>
+              <ul>
+                <li>Everyone will be sitting closely together around
+                  circular tables in the classroom.<br>
+                </li>
+                <li> There is no concept of the 'front' or 'back' of the
+                  classroom, as I'll be walking throughout the room
+                  during the lectures.</li>
+                <ul>
+                  <li>There are monitors on each wall to show the
+                    current information on the lecture slides that we're
+                    discussing.</li>
+                </ul>
+              </ul>
+              <li><b>Before</b> each lecture, the full slides with
+                explanations and examples will be available on
+                Blackboard to review.</li>
+              <li><b>During</b> each lecture, we will use a subset of
+                these and focus on the discussion, derivation, concepts,
+                and exercises on those topics.</li>
+              <ul>
+                <li>This will be our opportunity to discuss and work
+                  together on mastering the various concepts and
+                  algorithms that are used in our Operating Systems.</li>
+              </ul>
+              <li><b>After </b>each lecture, go through the slides for
+                additional details on the topics.</li>
+              <ul>
+                <li><b>Watch</b> the topic videos for any topic that you
+                  would like more details on.</li>
+                <ul>
+                  <li>There is an ~15 minute long video where I go
+                    through the full material on the slides and slowly
+                    work out the examples from the slides, for every
+                    topic in the course.</li>
+                </ul>
+              </ul>
+              <li><b>Homework</b> will involve material from the slides,
+                which is our primary resource for the course, and
+                lectures.<br>
+              </li>
+              <ul>
+                <li>Homeworks are used to help bridge, by referencing
+                  the concepts and details from the information on the
+                  slides, and allowing additional practice on the
+                  activities and exercises that we focus on in the
+                  lecture.</li>
+              </ul>
+              <li><b>Review the Textbook </b>for deeper study into the
+                topics.&nbsp; <br>
+              </li>
+              <ul>
+                <li>The free, online textbook is supplementary material
+                  and deeper explanations on these topics.</li>
+                <li>The primary material for the course will still be
+                  from the slides.<br>
+                </li>
+              </ul>
+            </ul>
+            <ul class="org-ul">
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-sec-1-1" class="outline-3">
+          <h3 id="sec-1-1"><span class="section-number-3">1.1</span>
+            Schedule</h3>
+          <div class="outline-text-3" id="text-1-1">
+            <ul class="org-ul">
+              <li>The planned course schedule will be found on
+                Blackboard under Schedule when Blackboard is Opened.</li>
+              <li>All courses will meet in-person at the times listed in
+                the following section using Blackboard Collaborate
+                Ultra.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-sec-1-2" class="outline-3">
+          <h3 id="sec-1-2"><span class="section-number-3">1.2</span>
+            Professor and Section Information</h3>
+          <p>
+            <meta http-equiv="content-type" content="text/html;
+              charset=windows-1252">
+          </p>
+          <p><b>Face Masks and In-Person Classes: </b><br>
+          </p>
+          <ul>
+            <li>As of August 11, 2021, everyone, including those who are
+              vaccinated, are required to wear a face mask in buildings.<br>
+            </li>
+            <ul>
+              <li><a moz-do-not-send="true"
+href="https://universitypolicy.gmu.edu/policies/covid-19-public-health-and-safety-precautions-face-coverings/">https://universitypolicy.gmu.edu/policies/covid-19-public-health-and-safety-precautions-face-coverings/</a></li>
+            </ul>
+            <li><b>In-Person Classes are all going to be held as
+                scheduled.&nbsp;</b></li>
+            <ul>
+              <li>If anything changes, we will let you know any
+                alternate meeting policies as needed.&nbsp; <br>
+              </li>
+              <li>Blackboard Collaborate is the online instructional
+                method that we would be using in that scenario.<br>
+              </li>
+            </ul>
+            <li><b>More Information on the Safe Return to Campus is in
+                Section 3 of the Syllabus.</b></li>
+          </ul>
+          <div class="outline-text-3" id="text-1-2">
+            <table rules="groups" frame="hsides" width="883"
+              height="133" cellspacing="0" cellpadding="6" border="2">
+              <colgroup> <col class="right"> <col class="left"> <col
+                  class="left"> <col class="left"> <col class="left">
+                <col class="left"> </colgroup> <thead> <tr>
+                  <th scope="col" class="right">Lecture</th>
+                  <th scope="col" class="left">Professor</th>
+                  <th scope="col" class="left">Email</th>
+                  <th scope="col" class="left">Class Time</th>
+                  <th scope="col" class="left">Class Location</th>
+                </tr>
+              </thead> <tbody>
+                <tr>
+                  <td class="right">001</td>
+                  <td class="left">Prof. Kevin Andrea</td>
+                  <td class="left">kandrea (at) gmu (dot) edu</td>
+                  <td class="left" align="left">MW 12:00pm - 1:15pm<br>
+                  </td>
+                  <td class="left">Horizon Hall 2016<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td valign="top" align="right">004<br>
+                  </td>
+                  <td valign="top">Prof. Kevin Andrea<br>
+                  </td>
+                  <td valign="top">kandrea (at) gmu (dot) edu<br>
+                  </td>
+                  <td valign="top">TR 12:00pm - 1:15pm<br>
+                  </td>
+                  <td valign="top">Horizon Hall 2016<br>
+                  </td>
+                  <td valign="top"><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>GTA for Section 001 is Michael Crawshaw
+              (mcrawsha@gmu.edu)<br>
+              GTA for Section 004 is Nathan Spivy (nspivy@gmu.edu)<br>
+            </p>
+            <p><b>Your Professor will be responsible for all lecture and
+                course material, as well as grading your examinations.</b></p>
+            <p><b>Your GTA will be responsible for providing assistance
+                for and ultimately grading your course projects.</b><br>
+              Their Contact Information and Office Hours will be
+              available on <b>Piazza</b> <i>(link in section 1.7).</i><br>
+            </p>
+            <p><b>This is a 3-credit course.<br>
+              </b></p>
+          </div>
+        </div>
+        <div id="outline-container-sec-1-3" class="outline-3">
+          <h3 id="sec-1-3"><span class="section-number-3">1.3</span>
+            Office Hours</h3>
+          <div class="outline-text-3" id="text-1-3">
+            <table rules="groups" frame="hsides" cellspacing="0"
+              cellpadding="6" border="2">
+              <colgroup> <col class="right"> <col class="left"> <col
+                  class="left"> <col class="left"> <col class="left">
+                <col class="left"> </colgroup> <thead> <tr>
+                </tr>
+              </thead> <tbody>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                </tr>
+              </tbody>
+            </table>
+            Office Hours locations and times are available on <b>Blackboard
+              (see the Office Hours and TA Info sidebar tab)</b><br>
+            <ul class="org-ul">
+              <li> For Exam and Homework Grading Questions, see your
+                Professor</li>
+              <li>For Project Assistance, post on Piazza or see your
+                Section GTA in their Office Hours<br>
+              </li>
+              <li>For Project Grading Questions, email or see your GTA
+                in their Office Hours<br>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-sec-1-3" class="outline-3">
+          <h3 id="sec-1-3"><span class="section-number-3">1.4</span>
+            Prerequisites</h3>
+          <div class="outline-text-3" id="text-1-3">
+            <p>The prerequisites are automatically and strictly
+              enforced.</p>
+            <ul class="org-ul">
+              <li>Grade of C or better in CS 310 <b>and</b></li>
+              <li>Grade of C or better in (CS 367 or ECE 445)</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-sec-1-4" class="outline-3">
+          <h3 id="sec-1-4"><span class="section-number-3">1.5</span>
+            Course Outcomes</h3>
+          <div class="outline-text-3" id="text-1-4">
+            <p>The CS department has identified these outcomes as ones
+              that must be met throughout the semester.</p>
+            <ol class="org-ol">
+              <li>
+                <meta http-equiv="content-type" content="text/html;
+                  charset=windows-1252">
+                <b class="" style="text-indent:-0.25in"> <span class=""
+                    style="color:#00B050"> </span></b> <span class=""
+                  style="text-indent:-0.25in"> Demonstrate knowledge of
+                  operating systems features, evolution, and design. </span></li>
+              <li><span class="" style="text-indent:-0.25in"> Show an
+                  understanding of the need for concurrent operation of
+                  multiple tasks (processes/threads) and an ability to
+                  solve basic process synchronization problems that
+                  arise from concurrent operation settings. </span></li>
+              <li><span class="" style="text-indent:-0.25in">
+                  Demonstrate knowledge of process scheduling, basic
+                  memory management, storage systems, and file system
+                  management techniques and their impact on performance.
+                </span></li>
+              <li><span class="" style="text-indent:-0.25in"> Be able to
+                  implement basic algorithms for OS services such as
+                  memory management and process scheduling. </span></li>
+              <li><span class="" style="text-indent:-0.25in"> emonstrate
+                  knowledge of security threats to an operating system
+                  from both processes and networked sources and show an
+                  understanding of protection techniques. </span></li>
+              <li><span class="" style="text-indent:-0.25in">
+                  Demonstrate knowledge of how system calls work along
+                  with the mechanisms for interrupt handling. </span></li>
+            </ol>
+          </div>
+        </div>
+        <div id="outline-container-sec-1-5" class="outline-3">
+          <h3 id="sec-1-5"><span class="section-number-3">1.6</span>
+            Required Textbook</h3>
+          <div class="outline-text-3" id="text-1-5">
+            <p>In this class, the main resource for the material will be
+              the lectures and slides delivered by the instructor.&nbsp;
+              There are many, many different ways to approach these
+              topics, and each operating system (and each different
+              version or that code) may support completely different
+              implementations.&nbsp;&nbsp; For this reason, there is no
+              one required textbook.&nbsp;&nbsp; The lectures are the
+              primary resource for the course.<br>
+            </p>
+            <p>The following textbooks, however, all cover the same
+              topics, albeit in slightly different ways.&nbsp; Any of
+              these books may be used as supplemental reference for the
+              course.&nbsp;&nbsp; The one book that will be referred to
+              the most is the following&nbsp; book, which is available
+              completely for free online.<br>
+            </p>
+            <p><b>Operating Systems: Three Easy Pieces</b> (Online Book,
+              Arpaci-Dusseau Books) by R.H. Arpaci-Dusseau and A.C.
+              Arpaci-Dusseau. Available: <a
+                href="http://pages.cs.wisc.edu/%7Eremzi/OSTEP/">http://pages.cs.wisc.edu/~Eremzi/OSTEP/</a>
+            </p>
+            Additionally, these other textbooks are also good resources
+            for in-depth discussions of Operating Systems topics. They
+            generally cover the same topics as the Three Easy Pieces
+            textbook:
+            <ul class="org-ul">
+              <li><b>Operating System Concepts</b> by Silberschatz,
+                Galvin and Gagne (9th or 10th Edition, John Wiley &amp;
+                Sons) </li>
+              <li><b>Operating Systems - Principles and Practice</b>
+                (2nd Edition, Recursive Books) by Anderson and Dahlin </li>
+              <li><b>Modern Operating Systems</b> (4th edition, Pearson)
+                by A. S. Tanenbaum </li>
+            </ul>
+            <p>None of these books are required, but if you are
+              interested in more detailed analyses of different
+              implementations we discuss in class, or would like more
+              information about any topic, all four of these books are
+              good references for the same OS design concepts we will
+              cover in class.&nbsp; <br>
+            </p>
+            <ul class="org-ul">
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-sec-1-6" class="outline-3">
+          <h3 id="sec-1-6"><span class="section-number-3">1.7</span>
+            Piazza</h3>
+          <div class="outline-text-3" id="text-1-6">
+            <ul class="org-ul">
+              <li><b><i>You will be added to Piazza by your Professor at
+                    the beginning of the Semester.<br>
+                  </i></b></li>
+              <ul>
+                <li>There is an access code to protect the site.&nbsp; <br>
+                </li>
+                <li>If you do not have access to Piazza, please email
+                  your Professor and they will manually add you to
+                  Piazza.</li>
+              </ul>
+              <li><b>Piazza Course Link: </b><a moz-do-not-send="true"
+                  href="https://piazza.com/gmu/spring2022/cs471"><b>https://</b></a>
+                <meta http-equiv="content-type" content="text/html;
+                  charset=windows-1252">
+                <a moz-do-not-send="true"
+                  href="https://piazza.com/gmu/spring2022/cs471"><b><span
+                      class="hideForTrial" id="class-link"
+                      onclick="selectLink('class-link')"
+                      href="https://piazza.com/gmu/spring2022/cs471"
+                      style="display: inline-block;">piazza.com/gmu/spring2022/cs471</span></b></a></li>
+              <li><b>All questions concerning Projects should go through
+                  Piazza. </b></li>
+              <ul>
+                <li><b>All messages you write will be private only, but
+                    any of the course GTAs across all of the sections
+                    will be able to respond to your question about the
+                    projects. </b></li>
+              </ul>
+              <li>Assignments will be posted to Blackboard and are
+                common to all sections.<br>
+              </li>
+            </ul>
+            <div id="outline-container-sec-1-7" class="outline-3">
+              <h3 id="sec-1-7"><span class="section-number-3">1.8</span>
+                Blackboard</h3>
+              <div class="outline-text-3" id="text-1-7">
+                <ul class="org-ul">
+                  <li><a href="http://mymason.gmu.edu/">http://mymason.gmu.edu</a></li>
+                  <li>All digital work is submitted to Blackboard by the
+                    given deadlines.</li>
+                  <li>Grades are posted on Blackboard for all
+                    assignments.</li>
+                </ul>
+              </div>
+            </div>
+            <div id="outline-container-sec-1-8" class="outline-3">
+              <h3 id="sec-1-8"><span class="section-number-3">1.9</span>
+                Computer Accounts</h3>
+              <div class="outline-text-3" id="text-1-8">
+                <ul>
+                  <li>All work must compile and run on Zeus. This is the
+                    reference machine architecture and all projects will
+                    be tested and graded on the Zeus server.</li>
+                  <ul>
+                    <li>Zeus is an x86-64 Architecture server running
+                      RHEL 8.5 Linux.</li>
+                  </ul>
+                  <li>All grading occurs on this system; other systems
+                    might be more forgiving for memory errors, and you
+                    don't want to find that out with your grade!</li>
+                  <li>To access Zeus from off campus, you will need to
+                    set up a Virtual Private Network (VPN).</li>
+                  <li> Instructions for accessing Zeus in general, and
+                    from off campus, are in the following link.</li>
+                  <ul class="org-ul">
+                    <li><a
+                        href="https://labs.vse.gmu.edu/index.php/Systems/Zeus">https://labs.vse.gmu.edu/index.php/Systems/Zeus</a></li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-sec-3" class="outline-2">
+        <h2 id="sec-3"><span class="section-number-2">2</span> Grading</h2>
+        <div class="outline-text-2" id="text-3">
+          <p>The course will have two midterms and a final, which will
+            all in-person. Much of the work during the semester will be
+            completing projects, as well as regular online homework
+            assignments.</p>
+          <p>In general, all grades should be available about one week
+            after turning it in, with exam grades approximately two
+            weeks after the exam date.<br>
+          </p>
+        </div>
+        <div id="outline-container-sec-3-1" class="outline-3">
+          <h3 id="sec-3-1"><span class="section-number-3">2.1</span>
+            Semester Grades</h3>
+          <div class="outline-text-3" id="text-3-1">
+            <p>Weighting of Assessments:</p>
+            <table rules="groups" frame="hsides" cellspacing="0"
+              cellpadding="6" border="2">
+              <colgroup> <col class="left"> <col class="right"> <col
+                  class="left"> </colgroup> <thead> <tr>
+                  <th scope="col" class="left">Category</th>
+                  <th scope="col" class="right">grade %</th>
+                  <th scope="col" class="left">notes</th>
+                </tr>
+              </thead> <tbody>
+                <tr>
+                  <td class="left">Projects</td>
+                  <td class="right"><b>30%</b> <b>Total</b></td>
+                  <td class="left">Approximately Three Projects (PA0 -
+                    PA2)<br>
+                    <b>Note: Each Project is Weighted Differently</b><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">Homework Assignments</td>
+                  <td class="right"><b>15%</b> <b>Total</b></td>
+                  <td class="left">Approximately 6 Homeworks<br>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">Midterms<br>
+                  </td>
+                  <td class="right"><b>15% Each (30% Total)</b></td>
+                  <td class="left"><br>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left">Final Exam</td>
+                  <td class="right"><b>25%</b></td>
+                  <td class="left"><b>Cumulative </b><br>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="outline-container-sec-3-2" class="outline-3"> <br>
+          In order to pass the course, a minimum score of 40% is
+          required on the Final Exam.<br>
+          <h3 id="sec-3-2"><span class="section-number-3">2.2</span>
+            Grading Scale</h3>
+          <div class="outline-text-3" id="text-3-2">
+            <p>Grades will be assessed on the following scale:</p>
+            <table rules="groups" frame="hsides" cellspacing="0"
+              cellpadding="6" border="2">
+              <colgroup> <col class="left"> <col class="left"> </colgroup>
+              <colgroup> <col class="left"> <col class="right"> </colgroup>
+              <colgroup> <col class="left"> <col class="right"> </colgroup>
+              <colgroup> <col class="left"> <col class="right"> </colgroup>
+              <thead> <tr>
+                  <th scope="col" class="left">Grade</th>
+                  <th scope="col" class="left">Cut-off</th>
+                  <th scope="col" class="left">Grade</th>
+                  <th scope="col" class="right">Cut-off</th>
+                  <th scope="col" class="left">Grade</th>
+                  <th scope="col" class="right">Cut-off</th>
+                  <th scope="col" class="left">Grade</th>
+                  <th scope="col" class="right">Cut-off</th>
+                </tr>
+              </thead> <tbody>
+                <tr>
+                  <td class="left">A+</td>
+                  <td class="left">98 %</td>
+                  <td class="left">B+</td>
+                  <td class="right">88%</td>
+                  <td class="left">C+</td>
+                  <td class="right">78%</td>
+                  <td class="left">D</td>
+                  <td class="right">60%</td>
+                </tr>
+                <tr>
+                  <td class="left">A</td>
+                  <td class="left">92 %</td>
+                  <td class="left">B</td>
+                  <td class="right">82%</td>
+                  <td class="left">C</td>
+                  <td class="right">72%</td>
+                  <td class="left">F</td>
+                  <td class="right">0%</td>
+                </tr>
+                <tr>
+                  <td class="left">A-</td>
+                  <td class="left">90 %</td>
+                  <td class="left">B-</td>
+                  <td class="right">80%</td>
+                  <td class="left">C-</td>
+                  <td class="right">70%</td>
+                  <td class="left">&nbsp;</td>
+                  <td class="right">&nbsp;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p><b>Grades will not be rounded prior to assessing the letter
+              grades</b>.</p>
+        </div>
+        <div id="outline-container-sec-3-3" class="outline-3">
+          <h3 id="sec-3-3"><span class="section-number-3">2.3</span>
+            Calculating Semester Grades</h3>
+          <div class="outline-text-3" id="text-3-3">
+            <ul class="org-ul">
+              <li>You should always be able to calculate your semester
+                grade at any point in the semester with the weightings
+                and the scales above.</li>
+              <li>There will be no make-up or extra-credit assignments
+                at the end of the semester; your grade should be a
+                measure of your semester-long progress.</li>
+              <li>This is not a course that receives a curve at the end.
+                Wherever your grade is headed, that is the outcome you
+                should expect after continued efforts.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 2.4 -->
+        <div id="outline-container-sec-3-4" class="outline-3">
+          <h3 id="sec-3-4"><span class="section-number-3">2.4</span>
+            Projects (Programming Assignments)<br>
+          </h3>
+          <div class="outline-text-3" id="text-3-4">
+            <ul class="org-ul">
+              <li><b>Projects are significantly more involved than in
+                  previous classes.</b></li>
+              <ul>
+                <li><b>You will be working on an OS kernel.&nbsp; There
+                    will be hundreds of files in the build.</b></li>
+                <li><b>You will be designing new OS features and
+                    integrating them into the kernel.</b></li>
+              </ul>
+              <li style="list-style: none">
+                <ul>
+                  <li><u><b>Start your projects early. You </b></u><u><b>will</b></u><u><b>
+                        need extra time to design your solution before
+                        programming.</b></u></li>
+                  <li>You will need time to design test cases for your
+                    projects as well. Test cases will not be provided.</li>
+                  <li><b>There is a significant design and code reading
+                      component to these projects.</b><br>
+                  </li>
+                </ul>
+              </li>
+              <li>Projects are due at a specific time on a specific day.</li>
+              <li>Each Project will Specify Rules and Penalties for that
+                Project.&nbsp;&nbsp; <br>
+              </li>
+              <ul>
+                <li>In General, there will be a late penalty stated on
+                  each project.</li>
+                <li><b>S</b><b>ubmissions late by over 2 days will not
+                    be accepted.</b></li>
+                <ul>
+                  <li><b>(eg. If it is due on Friday at 11:59pm, it
+                      cannot be submitted for credit at any time on
+                      Monday)<br>
+                    </b></li>
+                </ul>
+              </ul>
+              <li style="list-style: none">
+                <ul>
+                  <li>Submit your projects early and often.</li>
+                  <li>Do not wait until the last minute, submission may
+                    take extra time at the deadlines.</li>
+                  <li>Always submit at least a few minutes before the
+                    deadline.</li>
+                </ul>
+              </li>
+              <li>There are <b>No Late Tokens</b>.&nbsp; <br>
+              </li>
+              <ul>
+                <li>The Deadlines are fixed, though each project will
+                  specify any late penalties.</li>
+              </ul>
+              <li>Code that doesn't compile will likely get a very, very
+                low score. It specifically must compile on the <font
+                  size="+1"><code>zeus</code></font> server.</li>
+              <li> <b>Turning it in on BlackBoard</b>: Each Project
+                will contain submission instructions.<br>
+                <ul class="org-ul">
+                  <li><b><i>Turning in the wrong files will likely
+                        result in a zero.</i></b></li>
+                  <li><b>Backup your work! </b>Catastrophic computer
+                    failure will <b>not</b> be cause for an extension.
+                    <br>
+                  </li>
+                  <ul>
+                    <li>Use a backup service such as DropBox (or any
+                      cloud service), emailing yourself, storing to a
+                      USB drive, whatever it takes. <br>
+                    </li>
+                    <ul>
+                      <li>Just don't put it in a public git repository
+                        where others can find it (this has happened
+                        before). <br>
+                      </li>
+                    </ul>
+                    <li>Every semester multiple students' computers die,
+                      are stolen, or otherwise 'lose' programs and
+                      digital work. Don't be the student who forgot to
+                      (frequently) back up your work!</li>
+                  </ul>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- 2.5 -->
+          <h3 id="sec-3-6"><span class="section-number-3">2.5</span>
+            Homework Assignments</h3>
+          <div class="outline-text-3" id="text-3-6">
+            <ul class="org-ul">
+              <li>There will be occasional homework assignments. </li>
+              <li>The homework assignments will all be assigned on
+                Blackboard. </li>
+              <li>These will cover the major topics in the course and
+                will be your best way to prepare for the exams.<br>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-sec-3-7" class="outline-3">
+          <!-- 2.6 -->
+          <h3 id="sec-3-7"><span class="section-number-3">2.6</span>
+            Tests and Final Exam</h3>
+          <div class="outline-text-3" id="text-3-7">
+            <ul class="org-ul">
+              <li>There will be two Midterms and one Final Exam.</li>
+              <li>All exams will be adminstered in-class, using the full
+                class time.</li>
+              <ul>
+                <li>Details will be provided by your Professor ahead of
+                  any exam.</li>
+              </ul>
+              <li>If you know you will miss a test, let your Professor
+                know as soon as possible to coordinate an alternate
+                time.</li>
+              <li style="list-style: none">
+                <ul>
+                  <li>The reason for missing a test must be verified
+                    with documentation and may not be automatically
+                    granted.</li>
+                </ul>
+              </li>
+              <li>If you miss a test (without prior approval), and a
+                valid reason is verified with documentation (ER visit,
+                traffic accident, etc.), we may elect to allow the final
+                exam to count the extra amount to give you a sort of
+                do-over. This policy is not automatic, however.&nbsp; <br>
+              </li>
+              <li>If you miss the final, there is very little I can do
+                for you. <b>Don't miss the final!</b></li>
+              <li style="list-style: none">
+                <ul>
+                  <li>The Dean has to approve any requests to take
+                    missed final exams.</li>
+                  <li>This is only granted for medical or other
+                    extraordinary circumstances.</li>
+                </ul>
+              </li>
+              <li>The final can not be given early. You are starting the
+                course with knowledge of the schedule (see <i>GMU's
+                  Final Exam Calendar</i> for the latest schedule,
+                updated as weather events require).</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-sec-3-8" class="outline-3">
+          <h3 id="sec-3-8"><span class="section-number-3">2.7</span>
+            Contested Grades</h3>
+          <div class="outline-text-3" id="text-3-8">
+            <ul class="org-ul">
+              <li>If you feel points have been incorrectly deducted,
+                contact the grader:</li>
+              <li style="list-style: none">
+                <ul>
+                  <li><b>Tests and Homework Assignments</b>: Contact
+                    your Professor.</li>
+                  <li><b>Projects</b>: Contact your GTA<br>
+                  </li>
+                </ul>
+                <ul>
+                </ul>
+              </li>
+              <li>If you have not initiated contact <b>within one week</b>
+                of the grade being made available, it is <b>permanent</b>.
+                <br>
+              </li>
+              <ul>
+                <li>No grade-hunting in the last couple of weeks!</li>
+              </ul>
+              <li>We strive to grade each student's work fairly and
+                uniformly, often through specific test cases and
+                grader-group-discussions, which might even be automated
+                as part of the grading process.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="outline-container-sec-3-8" class="outline-3">
+          <h3 id="sec-3-8"><span class="section-number-3">2.8</span>
+            Course Repetition</h3>
+          <div class="outline-text-3" id="text-3-8">
+            <ul class="org-ul">
+              <li>There is a limit of three graded attempts for this
+                course.</li>
+              <li>A Withdrawal (W) does not count as a graded attempt.</li>
+              <li>Please see AP. 1.3.4 in the University Catalog and
+                consult with your academic advisor if you have any
+                questions. </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-sec-5" class="outline-2">
+        <h2 id="sec-5"><span class="section-number-2">3</span> Safe
+          Return to Campus</h2>
+        <div class="outline-text-2" id="text-5">
+          <ul class="org-ul">
+            <meta http-equiv="content-type" content="text/html;
+              charset=windows-1252">
+          </ul>
+          <div class="outline-text-2" id="text-5">
+            <ul class="org-ul">
+              <li><b>All students taking courses with a face-to-face
+                  component are required to take Safe Return to Campus
+                  Training prior to visiting campus. </b><br>
+              </li>
+              <ul>
+                <li>Training is available in Blackboard<br>
+                </li>
+                <li><a moz-do-not-send="true"
+href="https://www2.gmu.edu/safe-return-campus/communications-and-training">https://www2.gmu.edu/safe-return-campus/communications-and-training</a></li>
+              </ul>
+              <li>Similarly, all students in face to face and hybrid
+                courses must also complete the <b>Mason COVID Health
+                  Check</b> daily, seven days a week. The COVID Health
+                Check system uses a color code system and students will
+                receive either a Green, Yellow, or Red email response. </li>
+              <li><b>Students are required to follow the university's
+                  public health and safety precautions and procedures
+                  outlined on the university Safe Return to Campus
+                  webpage.</b></li>
+              <ul>
+                <li><a href="https://www2.gmu.edu/safe-return-campus">https://www2.gmu.edu/safe-return-campus</a></li>
+              </ul>
+              <li><b>Websites on Face Masks and Vaccination
+                  Requirements:</b></li>
+              <ul>
+                <li><a moz-do-not-send="true"
+href="https://www2.gmu.edu/safe-return-campus/personal-and-public-health/face-coverings">https://www2.gmu.edu/safe-return-campus/personal-and-public-health/face-coverings</a></li>
+                <li><a moz-do-not-send="true"
+                    href="https://www2.gmu.edu/safe-return-campus/vaccination-requirements">https://www2.gmu.edu/safe-return-campus/vaccination-requirements</a></li>
+              </ul>
+              <li><b>Student Assistance (Financial):</b></li>
+              <ul>
+                <li><a moz-do-not-send="true"
+href="https://www2.gmu.edu/safe-return-campus/covid-19-student-financial-aid-faqs">https://www2.gmu.edu/safe-return-campus/covid-19-student-financial-aid-faq</a></li>
+              </ul>
+              <li><b>Only students who receive a "green" notification
+                  are permitted to attend courses with a face-to-face
+                  component. If you suspect that you are sick or have
+                  been directed to self-isolate, please quarantine or
+                  get testing. </b><b>Faculty are allowed to ask you to
+                  show them that you have received a Green email and are
+                  thereby permitted to be in class. </b></li>
+            </ul>
+          </div>
+          <ul class="org-ul">
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-4" class="outline-2">
+        <h2 id="sec-4"><span class="section-number-2">4 </span>The
+          Honor Code</h2>
+        <div class="outline-text-2" id="text-4">
+          <p>The honor code at George Mason is an important part of our
+            academic culture. A degree from this institution should be a
+            direct measure of your own progress and abilities, and as
+            such at all times we must ensure that all work that should
+            be your own <i>is</i> your own.</p>
+          <p>We take the honor code quite seriously. Any attempts at
+            copying or sharing code, algorithms, or other violations of
+            the honor code simply will not be tolerated.</p>
+          <p>As seductively simple as it may seem to just copy and paste
+            work from a friend or online source, remember that it is
+            just as easy to compare your work electronically, and
+            discover the similarities. We use automated software to flag
+            suspicious cases, and then review them by hand to find the
+            cases that must be submitted to the Office of Academic
+            Integrity. Repeat to yourself: <b>it's not worth trying to
+              cheat.</b> We will catch it, and sadly but surely, we will
+            turn it in.</p>
+          <p>The penalty for cheating will always be far worse than a
+            zero grade, to ensure it's not worth taking the chance. <b>The
+
+
+
+
+
+
+
+
+
+
+
+
+              usual recommendation is failure in the course and will be
+              accompanied by an academic integrity seminar.</b> It's a
+            pretty sure-fire way to lose a semester and lose some
+            implicated friends; please don't put yourself through that
+            experience!<br>
+          </p>
+          <h3 id="sec-4-1"><span class="section-number-3">4.0</span>
+            General Rules of Thumb<br>
+          </h3>
+          <ul class="org-ul">
+            <li>You are <b>not</b> allowed to use code from the
+              Internet.</li>
+            <ul>
+              <li>This includes Stackoverflow, Chegg, github, or any
+                other site with code.</li>
+            </ul>
+            <li>You are <b>not</b> allowed to discuss any <b>implementation
+
+
+
+
+
+
+
+
+
+
+
+
+                (code)</b> or <b>design</b> decisions with anyone
+              outside of your group.</li>
+            <ul>
+              <li>This includes prior students and students from other
+                sections or students outside of your group.</li>
+            </ul>
+            <li>You are <b>not</b> allowed to share or use any code
+              from any other student.</li>
+          </ul>
+          <h3 id="sec-4-1"><span class="section-number-3">4.1</span>
+            General Rules of Thumb<br>
+          </h3>
+          <ul class="org-ul">
+            <meta http-equiv="content-type" content="text/html;
+              charset=windows-1252">
+            <li><b>It is your responsibility</b> to ...</li>
+            <ul>
+              <li>lock your computers with a password, <br>
+              </li>
+              <li>not post your code to websites like Pastebin that are
+                publicly accessible, <br>
+              </li>
+              <li>not post code to any <b>public</b> repositories,</li>
+              <ul>
+                <li>If you use services like Github, make sure your repo
+                  is set <b>private</b>.<br>
+                </li>
+              </ul>
+              <li>guard your USB drives and computers, <br>
+              </li>
+              <li>not upload your files to someone else's computer, etc.
+                <br>
+              </li>
+            </ul>
+          </ul>
+          <ul class="org-ul">
+            <li>You will be liable for any access gained to your public
+              or unprotected code</li>
+          </ul>
+          <ul class="org-ul">
+          </ul>
+        </div>
+        <div id="outline-container-sec-4-1" class="outline-3">
+          <h3 id="sec-4-1"><span class="section-number-3">4.2</span>
+            Some Specifics and Links</h3>
+          <div class="outline-text-3" id="text-4-1">
+            <ul class="org-ul">
+              <li>All students will abide by <a
+                  href="https://oai.gmu.edu/mason-honor-code/">GMU's
+                  Honor Code</a>.</li>
+              <li>All work must be your own. If you are caught cheating,
+                you and every other involved student will be turned in
+                to the honor court.</li>
+              <li>See the <a
+                  href="https://cs.gmu.edu/resources/honor-code/"> CS
+                  Honor Code Policies</a> to understand better what
+                constitutes cheating in the CS setting. It clarifies
+                some scenarios that are unique to our sorts of
+                assignments.</li>
+              <li><a href="https://cs.gmu.edu/%7Emarks/honor.txt">Here
+                  are Prof. Snyder's thoughts</a> about the Honor Code
+                in a CS classroom.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="outline-container-sec-5" class="outline-2">
+        <h2 id="sec-5"><span class="section-number-2">5</span> Inclusion</h2>
+        <div class="outline-text-2" id="text-5">
+          <ul class="org-ul">
+            Every student in this class is exactly where they belong and
+            it is our honor to welcome each of you to join us in
+            learning throughout this semester.&nbsp; Every student in
+            this class, regardless of background, sex, gender, race,
+            ethnicity, class, political affiliation, physical or mental
+            ability, veteran status, nationality, or any other identity
+            category, is an equal member of our class.<br>
+            <br>
+            You have the right to be called by whatever name you wish,
+            to be referred to by whatever pronoun you identify, and to
+            adjust these at any point.<br>
+            <br>
+            If you feel uncomfortable in any aspect of our instruction
+            that results in any barrier to your inclusion in this
+            course, please contact your professor directly.<br>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-5" class="outline-2">
+        <h2 id="sec-5">6 Disability Services<br>
+        </h2>
+        <div class="outline-text-2" id="text-5">
+          <ul class="org-ul">
+            <li>Students with a disability or other condition
+              (documented with GMU's Office of Disability Services) that
+              may impact academic performance should speak with the
+              professor ASAP to discuss appropriate accommodations.</li>
+            <li>We are quite happy to assist as is appropriate, but it
+              must be documented ahead of time by ODS.</li>
+            <li style="list-style: none">
+              <ul>
+                <li>Bringing the paperwork with you to a scheduled exam
+                  or at the deadline for a project or assigned homework
+                  is far too late!</li>
+                <li>Even if you don't know if you plan on utilizing the
+                  accommodations ahead of time, it's in your best
+                  interest to prepare them ahead of time.</li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li><b>Here are some rules about Accommodations and their
+                use on Projects and Homework Assignments:</b> <br>
+              (source:
+https://ds.gmu.edu/wp-content/uploads/2020/11/Extended-Time-on-Out-of-Class-Assignments-Policy.pdf)<span
+                class="markedContent" id="page1R_mcid44"><span
+                  style="left: 120px; top: 837.667px; font-size: 20px;
+                  font-family: serif; transform: scaleX(1.00021);"
+                  role="presentation" dir="ltr"></span></span></li>
+            <ul>
+              <li><b><span class="markedContent" id="page1R_mcid44"><span
+                      style="left: 120px; top: 837.667px; font-size:
+                      20px; font-family: serif; transform:
+                      scaleX(1.00021);" role="presentation" dir="ltr">The
+
+
+
+                      extended time on out of class assignments
+                      accommodation does not apply for the following:</span></span></b><b><span
+                    class="markedContent" id="page1R_mcid47"></span></b><br
+                  role="presentation">
+                <span class="markedContent" id="page1R_mcid47"></span><span
+                  class="markedContent" id="page1R_mcid47"><span
+                    style="left: 150px; top: 877.667px; font-size: 20px;
+                    font-family: sans-serif;" role="presentation"
+                    dir="ltr">•</span><span style="left: 159.2px; top:
+                    877.667px; font-size: 20px; font-family:
+                    sans-serif;" role="presentation" dir="ltr"> </span><b><span
+                      style="left: 180px; top: 877.333px; font-size:
+                      20px; font-family: serif; transform:
+                      scaleX(1.00065);" role="presentation" dir="ltr">Assignments
+
+
+
+                      for which due date has already passed
+                      (accommodations are not retroactive)</span></b></span><span
+                  class="markedContent" id="page1R_mcid51"><br
+                    role="presentation">
+                </span><b><span class="markedContent" id="page1R_mcid59"><span
+                      style="left: 150px; top: 956.347px; font-size:
+                      20px; font-family: sans-serif;"
+                      role="presentation" dir="ltr">•</span><span
+                      style="left: 159.2px; top: 956.347px; font-size:
+                      20px; font-family: sans-serif;"
+                      role="presentation" dir="ltr"> </span><span
+                      style="left: 180px; top: 956.013px; font-size:
+                      20px; font-family: serif; transform:
+                      scaleX(1.00052);" role="presentation" dir="ltr">Extending
+
+
+
+                      assignments beyond the end of course date (not
+                      intended to replace an</span><br
+                      role="presentation">
+                    <span style="left: 180px; top: 980.673px; font-size:
+                      20px; font-family: serif; transform:
+                      scaleX(1.00334);" role="presentation" dir="ltr">“incomplete”)</span></span></b><span
+                  class="markedContent" id="page1R_mcid63"><br
+                    role="presentation">
+                  <b><span style="left: 150px; top: 1007.67px;
+                      font-size: 20px; font-family: sans-serif;"
+                      role="presentation" dir="ltr">•</span></b><b><span
+                      style="left: 159.2px; top: 1007.67px; font-size:
+                      20px; font-family: sans-serif;"
+                      role="presentation" dir="ltr"> </span></b><b><span
+                      style="left: 180px; top: 1007.33px; font-size:
+                      20px; font-family: serif; transform:
+                      scaleX(1.00022);" role="presentation" dir="ltr"
+                      class="">Partner/<span class="highlight selected
+                        appended">group</span> projects (Contact
+                      Disability Services for consultation as needed)</span></b></span><span
+                  class="markedContent" id="page1R_mcid67"><br
+                    role="presentation">
+                </span><span class="markedContent" id="page1R_mcid71"><span
+                    style="left: 180.02px; top: 1059.67px; font-size:
+                    20px; font-family: serif; transform:
+                    scaleX(1.00107);" role="presentation" dir="ltr"></span></span></li>
+            </ul>
+          </ul>
+          <ul class="org-ul">
+            <li style="list-style: none">
+              <ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-5" class="outline-2">
+        <h2 id="sec-5"><span class="section-number-2">7</span> Sexual
+          Harassment and Interpersonal Violence</h2>
+        <div class="outline-text-2" id="text-5">
+          <ul class="org-ul">
+            <li>As a faculty member and designated "Responsible
+              Employee," I am required to report all disclosures of
+              sexual assault, interpersonal violence, and stalking to
+              Mason's Title IX Coordinator per university policy 1412.
+              If you wish to speak with someone confidentially, please
+              contact the Student Support and Advocacy Center
+              (703-380-1434), Counseling and Psychological Services
+              (703-993-2380), Student Health Services, or Mason's Title
+              IX Coordinator (703-993-8730; cde@gmu.edu). </li>
+          </ul>
+        </div>
+      </div>
+      <div id="outline-container-sec-5" class="outline-2">
+        <h2 id="sec-5"><span class="section-number-2">8</span> Privacy
+          and Email</h2>
+        <div class="outline-text-2" id="text-5">
+          <ul class="org-ul">
+            <li>Students must use their GMU email account to receive
+              important University information, including communications
+              related to this class. <br>
+            </li>
+            <ul>
+              <li>I can not respond to messages sent from or send
+                messages to a non-Mason email address. </li>
+            </ul>
+            <li>To protect your privacy, I also cannot list your GMU
+              email address on any public forum or provide it to any
+              other students.
+              <ul>
+                <li>You may, of course, give your email address to any
+                  other students.<br>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <p>Video recordings of class meetings that are shared only
+                with the instructors and students officially enrolled in
+                a class do not violate FERPA or any other privacy
+                expectation.</p>
+              <p><em>All course materials posted to Blackboard or other
+                  course site are private; by federal law, any materials
+                  that identify specific students (via their name,
+                  voice, or image) must not be shared with anyone not
+                  enrolled in this class.</em></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <i> </i>
+  </body>
+</html>

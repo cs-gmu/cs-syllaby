@@ -1,0 +1,711 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>SWE 619 - Spring 2012 - 001</title>
+<link rel=Stylesheet type="text/css" media=all
+href="../../SWE%20619%20Fall%202010/Web%20Page/CS583WangP_files/injection_nh_graph.css">
+<link rel=Stylesheet type="text/css" media=all
+href="../../SWE%20619%20Fall%202010/Web%20Page/CS583WangP_files/skypeplugin_dropdownmenu.css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-link:"Heading 4";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-link:"Balloon Text";
+	font-family:"Tahoma","sans-serif";}
+p.msolistparagraphcxspfirst, li.msolistparagraphcxspfirst, div.msolistparagraphcxspfirst
+	{mso-style-name:msolistparagraphcxspfirst;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphcxspmiddle, li.msolistparagraphcxspmiddle, div.msolistparagraphcxspmiddle
+	{mso-style-name:msolistparagraphcxspmiddle;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.msolistparagraphcxsplast, li.msolistparagraphcxsplast, div.msolistparagraphcxsplast
+	{mso-style-name:msolistparagraphcxsplast;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.skypeplugindropdownmenuouterborder, li.skypeplugindropdownmenuouterborder, div.skypeplugindropdownmenuouterborder
+	{mso-style-name:skypeplugin_dropdownmenu_outer_border;
+	margin-right:0in;
+	margin-left:0in;
+	background:white;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.skypeplugindropdownmenu, li.skypeplugindropdownmenu, div.skypeplugindropdownmenu
+	{mso-style-name:skypeplugin_dropdownmenu;
+	margin:0in;
+	margin-bottom:.0001pt;
+	background:white;
+	font-size:6.5pt;
+	font-family:"Tahoma","sans-serif";
+	color:#333333;}
+p.msochpdefault, li.msochpdefault, div.msochpdefault
+	{mso-style-name:msochpdefault;
+	margin-right:0in;
+	margin-left:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+.MsoChpDefault
+	{font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+<script id="injection_graph_func"  charset="utf-8" src="CS583WangP_files/injection_graph_func.js">
+</script>
+
+<script id="_nameHighlight_injection">
+</script>
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=0 cellpadding=0 width=1403 style='width:
+ 1052.6pt'>
+ <tr style='height:48.75pt'>
+  <td width=273 style='width:204.75pt;padding:.75pt .75pt .75pt .75pt;
+  height:48.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span
+  style='font-size:36.0pt;color:#00B050'>GMU</span></p>
+  </td>
+  <td width=1124 style='width:843.35pt;background:#009933;padding:.75pt .75pt .75pt .75pt;
+  height:48.75pt'>
+  <p align=center style='text-align:center'>&nbsp;</p>
+  <h3 align=center style='margin-bottom:13.5pt;text-align:center'><a
+  name="_Fall_2010_"></a>Spring 2012<br>
+  SWE 619 Object Oriented Software Specification and Construction<br>
+  Section 001 </h3>
+  </td>
+ </tr>
+ <tr>
+  <td width=273 valign=top style='width:204.75pt;background:#FFCC66;padding:
+  .75pt .75pt .75pt .75pt' scope=row>
+  <p>&nbsp;&nbsp;</p>
+  <p>&nbsp;&nbsp;</p>
+  <p>&nbsp;&nbsp;</p>
+  <p>&nbsp;&nbsp;</p>
+  </td>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p style='margin-left:.5in'><strong>Course Description:</strong> </p>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p style='margin-left:.5in'>To give the students a solid understanding of
+  modern software construction. To prepare students to construct sequential and
+  concurrent programs. To encourage the construction of software systems of
+  high quality. In-depth study of software construction in a modern language
+  including control structuring and packaging. Concepts such as information
+  hiding, data abstraction, and object-based and object-oriented software
+  construction are discussed and illustrated. This course is part of the core
+  of the SWE program and utilizes the Java Programming Language. </p>
+  </blockquote>
+  <h4 style='margin-left:.5in'>Prerequisites: </h4>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-left:.5in'>SWE Foundation Courses or
+  equivalent</p>
+  </blockquote>
+  <div style='margin-left:.5in'>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </div>
+  <h4 style='margin-left:.5in'>Instructor: </h4>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p style='margin-left:.5in'>Adjunct Professor James Baldo Jr.<u><span
+  style='color:blue'><br>
+  </span></u><a href="http://cs.gmu.edu/">Computer Science Department</a><br>
+  <br>
+  <i>E-mail</i>:  &nbsp;&nbsp; jbaldo@gmu.edu<br>
+  <i>Office Hours</i>: &nbsp; available by appointment </p>
+  </blockquote>
+  <h4 style='margin-left:.5in'>Teaching Assistant: </h4>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-left:.5in'>Upsorn Praphamontripong<br>
+  <i>Email</i>: &nbsp; &nbsp;uprapham@gmu.edu<br>
+  <i>Office Hours</i>: &nbsp;Thursday 1:30 PM - 3:30 PM<br>
+  <i>Location</i>: &nbsp;&nbsp;ENGR 4456</p>
+  </blockquote>
+  <h4 style='margin-left:.5in'>Class Hours:</h4>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-left:.5in'>Sec 001: Tuesday 7:20 pm - 10 pm;
+  &nbsp; Enterprise Hall 274<br>
+  <br>
+  <br>
+  <span style='font-family:"Verdana","sans-serif"'>Students will have accounts
+  on Moodle and will be able to download lecture slide files from the Moodle
+  course page. Login information will be sent to all enrolled students by
+  email, before the first scheduled class.</span></p>
+  <div style='margin-left:.5in'>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </div>
+  <h4 style='margin-left:.5in'><a name="_Required_Textbooks_and"></a>Required
+  Textbooks and Materials: </h4>
+  <table class=MsoNormalTable border=0 cellpadding=0 style='margin-left:.5in'>
+   <tr>
+    <td width=217 style='width:162.75pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'></td>
+    <td width=513 style='width:384.75pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+    <p>Barbara Liskov with John Guttag. <i>Program Development in Java</i> .
+    Addison Wesley, 2001, ISBN 0-201-65768-6. <b>Required</b>. <br>
+    <a href="http://proquest.safaribooksonline.com/9780768685299">Direct Safari
+    Link</a> <br>
+    <a
+    href="http://mutex.gmu.edu/login?URL=http://proquest.safaribooksonline.com/?uicode=viva">General
+    Safari Link (off campus)</a></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+  <table class=MsoNormalTable border=0 cellpadding=0 style='margin-left:.5in'>
+   <tr>
+    <td width=217 style='width:162.75pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'></td>
+    <td width=513 style='width:384.75pt;padding:3.75pt 3.75pt 3.75pt 3.75pt'>
+    <p>Joshua Bloch. <i>Effective Java</i>. Second Edition. Addison Wesley,
+    2008, ISBN 0-321-35668-3. <b>Required</b>. <br>
+    <i>Note that this is the <b>SECOND</b> edition. </i><br>
+    <a href="http://proquest.safaribooksonline.com/9780137150021">Direct Safari
+    Link</a> <br>
+    <a
+    href="http://mutex.gmu.edu/login?URL=http://proquest.safaribooksonline.com/?uicode=viva">General
+    Safari Link (off campus)</a></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal>&nbsp;</p>
+  <p class=MsoNormal style='margin-left:212.85pt'><span style='font-family:
+  Symbol'>&middot;</span> Some assignments may require programming techniques
+  not covered in the two required texts. I will provide pointers to online
+  material at the appropriate time. <b>Required</b>. </p>
+  <p class=MsoNormal style='margin-left:212.85pt'><span style='font-family:
+  Symbol'>&middot;</span> Online Java documentation is available from <a
+  href="http://java.sun.com/javase/7/docs/api">Oracle</a>. <b>Recommended</b>.</p>
+  <p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+  <div style='margin-left:.5in'>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </div>
+  <p class=MsoNormal style='margin-left:.5in'>&nbsp;</p>
+  <h4 style='margin-left:37.35pt'>Attendance:</h4>
+  <h4 style='margin-left:73.35pt'><span style='font-weight:normal'>Attendance
+  is mandatory. Class is scheduled during the semester every Tuesday during the
+  Spring 2012 Semester from 7:20 PM to 10:00 PM. </span></h4>
+  <h4 align=center style='margin-left:32.85pt;text-align:center'>&nbsp;</h4>
+  <h4 style='margin-left:.5in'>Course Requirements &amp; Grading: </h4>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-left:.5in'>The course grade is based on one
+  3 hour comprehensive final examination. All required coursework must be
+  completed by the stated due dates and times. Late assignments will not be
+  accepted, no make-up for missed quizzes, and no make-up test will be given
+  for the final examination. </p>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-left:.5in'>Assignments:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  30%</p>
+  <p class=MsoNormal style='margin-left:.5in'>Quizzes:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  30%</p>
+  <p class=MsoNormal style='margin-left:.5in'>Final Exam:
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40% </p>
+  </blockquote>
+  </blockquote>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-left:.5in'>All required coursework for this
+  class is to be performed independently. Please read the information about GMU
+  and CS Department Academic Integrity and Honor Code Policies at</p>
+  <p class=MsoNormal style='margin-left:.5in'><a
+  href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage">http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage</a>.</p>
+  <p style='margin-left:.5in'>These policies will be strictly enforced. </p>
+  </blockquote>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-left:.5in'>If you have a documented learning
+  disability or other condition that may affect academic performance you
+  should: 1) make sure this documentation is on file with the Office of
+  Disability Services (SUB I, Rm. 4205; 993-2474; <a
+  href="http://www.gmu.edu/student/drc">http://ods.gmu.edu/</a>) to determine
+  the accommodations you need; and 2) talk with me to discuss your
+  accommodation needs. </p>
+  </blockquote>
+  <div style='margin-left:.5in'>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </div>
+  <h4 style='margin-left:.5in'>Important Dates: </h4>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-left:.5in'>Registration Dates:
+  &nbsp;November 01, 2011 to January 31, 2012 <br>
+  Drop without Tuition Penalty Dates: November 01 2011 to January 31, 2012<br>
+  Drop with Tuition Penalty (and final drop deadline) Dates: February 01, 2012
+  to February 24, 2012 </p>
+  <p style='margin-left:.5in'>Spring Break: Monday March 12, 2012 to Sunday
+  March 18, 2012&nbsp; - No Class<br>
+  Last day of classes: May 5, 2012</p>
+  <p style='margin-left:.5in'>Final Examination: May 15, 2015, 7:30 pm - 10:15
+  pm </p>
+  </blockquote>
+  <div style='margin-left:.5in'>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </div>
+  <h4 style='margin-left:.5in'>Tentative List of Topics: </h4>
+  <blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+  <p class=MsoNormal style='margin-top:5.0pt;margin-right:2.0in;margin-bottom:
+  5.0pt;margin-left:30.05pt'>All lecture slides are available for download on
+  the Moodle SWE619 Course Page.</p>
+  <p class=MsoNormal style='margin-top:5.0pt;margin-right:2.0in;margin-bottom:
+  5.0pt;margin-left:30.05pt'>All lectures are recorded and available for download/replay
+  on the Moodle SWE619 Course Page.</p>
+  <p class=MsoNormal style='margin-top:5.0pt;margin-right:2.0in;margin-bottom:
+  5.0pt;margin-left:30.05pt'>All assignments descriptions will be made
+  available on the Moodle SWE619 Course Page.</p>
+  <p class=MsoNormal style='margin-top:5.0pt;margin-right:2.0in;margin-bottom:
+  5.0pt;margin-left:30.05pt'>All assignments are submitted on via the Moodle
+  SWE619 Course Page.</p>
+  <p class=MsoNormal style='margin-top:5.0pt;margin-right:2.0in;margin-bottom:
+  5.0pt;margin-left:30.05pt'>All quiz descriptions will be made available on
+  the Moodle SWE619 Course Page.</p>
+  <p class=MsoNormal style='margin-top:5.0pt;margin-right:2.0in;margin-bottom:
+  5.0pt;margin-left:30.05pt'>All quizzes are performed on the Moodle SWE619
+  Course Page.</p>
+  <div align=center>
+  <table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width=1076
+   style='width:807.35pt;border:outset 3.0pt'>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'><b>Meeting</b></p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'><b>Date</b></p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'><b>Topic</b></p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'><b>Reading</b></p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'><b>Assignment</b></p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'><b>Quizzes</b></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>1</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>24 Jan </p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Course Overview || Procedural Abstraction</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>619 Review, Liskov 1, Liskov 2-3</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>&nbsp;</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>&nbsp;</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>2</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>31 Jan</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Exceptions </p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Liskov 4, Bloch 9&nbsp; </p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 1</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 1</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>3</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>07 Feb</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Data Abstraction&nbsp; || JUnit</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Liskov 5.1-5.4, JUnit</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 2</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 2</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:130%'><span
+    style='font-size:10.0pt;line-height:130%'>4</span></p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>14 Feb</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:130%'>Reasoning About Data
+    Abstraction</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:130%'>Liskov 5.5-5.10</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 3</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 3</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>5</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>21 Feb</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Iteration Abstraction || Method Guidelines</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Liskov 6, Bloch 7</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 4</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 4</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>6</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>28 Feb</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Type Abstraction || Enums and Annotations</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Liskov 7, Bloch 6</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 5</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 5</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal align=center style='text-align:center'><span
+    style='font-size:10.0pt'>7</span></p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>06 Mar</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Polymorphic Abstraction || Generics</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal>Liskov 8, Bloch 5</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 6</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 6</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'></td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>13 Mar</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Spring Break &#8211; No Class</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'></td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'></td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'></td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal align=center style='text-align:center'>8</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>20 Mar</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Concurrency</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal>General Concurrency, Bloch 10</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal>Assignment 7</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal>Quiz 7</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>9</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>27 Mar</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Specification Checking || Temporal Logic</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Slides from <a
+    href="http://courses.projects.cis.ksu.edu/index.php?option=com_content&amp;task=view&amp;id=3&amp;Itemid=2">Kansas
+    State University</a>&nbsp; <a
+    href="http://cs.gmu.edu/%7Epammann/619/ppt/SPECS-Foundations.pdf">Foundations</a>
+    <a href="http://cs.gmu.edu/%7Epammann/619/ppt/SPECS-TemporalLogic.pdf">Temporal
+    Logic</a> <a href="http://cs.gmu.edu/%7Epammann/619/ppt/SPECS-Patterns.pdf">Patterns</a>
+    </p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 8</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 8</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>10</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>03 Apr</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Common Java Contracts, Classes and Interfaces,
+    Java Doc</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Bloch 3, Bloch 4, Java Doc</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 9</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 9</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>11</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>10 Apr</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Object Initialization || General Programming ||
+    Testing</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Bloch 2, Bloch 8, Model Drive Test Design, Test
+    Driven Development</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 10</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 10</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>12</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>17 Apr</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Design Patterns</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Liskov 15</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 11</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 11</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>13</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>24 Apr</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Specifications, Security</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Liskov 9 || Java Secure Coding </p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Assignment 12</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Quiz 12</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'>14</p>
+    </td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>01 May</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>Course Wrap Up</p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>619 Review Slides</p>
+    </td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal>Assignment 13</p>
+    </td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal>Quiz 13</p>
+    </td>
+   </tr>
+   <tr>
+    <td width=73 valign=top style='width:55.1pt;padding:0in 5.4pt 0in 5.4pt'></td>
+    <td width=86 valign=top style='width:64.25pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p style='line-height:130%'>15 May</p>
+    </td>
+    <td width=338 valign=top style='width:253.4pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p align=center style='text-align:center;line-height:130%'><b>Final Exam</b></p>
+    </td>
+    <td width=365 valign=top style='width:273.95pt;padding:0in 5.4pt 0in 5.4pt'></td>
+    <td width=122 valign=top style='width:91.55pt;padding:0in 5.4pt 0in 5.4pt'></td>
+    <td width=72 valign=top style='width:53.7pt;padding:0in 5.4pt 0in 5.4pt'></td>
+   </tr>
+  </table>
+  </div>
+  </blockquote>
+  <div style='margin-left:.5in'>
+  <p class=MsoNormal align=center style='text-align:center'>&nbsp;</p>
+  </div>
+  <p style='margin-left:.5in'>Updated: 10 Jan 2012<br>
+  J. Baldo </p>
+  </blockquote>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

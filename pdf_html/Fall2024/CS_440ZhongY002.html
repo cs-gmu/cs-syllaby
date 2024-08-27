@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>CS 440 Syllabus - Fall 2024</title>
+    <meta content="Yutao Zhong" name="author">
+    <style type="text/css">
+body {
+    margin: 10px;
+    line-height: 1.3;
+    font-family: Verdana, Geneva, sans-serif;
+    background: #fcfcfc; 
+    color: #336666;
+}
+<!#cccccc; #ccffff;  color: #336666;
+>
+
+.normal
+{
+    line-height:1.3;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+p {
+    /* padding-top: 1ex; */
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+
+h1 {
+    font-size: 150%;
+    
+    /*padding: 1ex;*/
+    margin: 0;
+}
+h2 {
+    font-size: 100%;
+    font-weight: bold;
+    /* padding-top: 2ex; */
+    margin-top: 1.5em;
+    margin-bottom: 1ex;
+}
+ul {
+    /* padding-top: .5ex; */
+    list-style-type: disc;
+    padding-left: 2em;
+}
+ul,ol{
+    margin-top: 1ex;
+    margin-bottom: 1ex;
+}
+
+.nopad {
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+</style>
+  </head>
+  <body vlink="#551A8B" text="#000000" link="#0000EE" bgcolor="#cccccc"
+    alink="#EE0000">
+    <h1 align="left">CS440-002: Language Processors and Programming
+      Environments <br>
+    </h1>
+    <h1 align="left">(Fall 2024)</h1>
+    <h1><br>
+    </h1>
+    <h1>1 Course Basics</h1>
+    <h2>1.1 Meeting Time and Location:</h2>
+    <ul>
+      <li>Monday/Wednesday 9-10:15am,
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+        Innovation Hall 136</li>
+    </ul>
+    <h2>1.2 Instructor: <span class="normal">Dr. Yutao Zhong</span></h2>
+    <ul>
+      <li><strong>Email:</strong> yzhong (at) gmu (dot) edu </li>
+    </ul>
+    <br>
+    <b>1.3 Course Content </b><br>
+    <br>
+    This course will cover the theoretical and implementation aspects of
+    language processing. Emphasis will be on the techniques and the
+    issues that arise in the design and construction of compilers. There
+    are several <b>substantial</b> programming assignments associated
+    with this course.&nbsp; Main topics of the course include:
+    <ul>
+      <li>Compiler design</li>
+      <li>Lexical analysis</li>
+      <li>Syntax analysis - grammars, LL(1) parsers, LR(1) parsers</li>
+      <li>Semantic processing</li>
+      <li>Code generation</li>
+      <li>Code optimization </li>
+    </ul>
+    <p><b><br>
+        1.4 Course Outcomes</b><br>
+      <br>
+      At the end of this course, students should </p>
+    <ul>
+      <li>Be able to compare compiled and interpreted execution models,
+        outlining the relative merits of each. </li>
+      <li>Be able to describe the phases of program translation from
+        source code to executable code and the files produced by these
+        phases. </li>
+      <li>Be able to write regular expressions and finite state automata
+        for languages, be able to use tools to automatically generate
+        scanners. </li>
+      <li>Understand the definition of grammars; be able to write
+        grammar for context-free languages; be able to manually write
+        recursive-descent parsers; be able to transform grammars and use
+        automatic tools to generate bottom-up parsers. </li>
+      <li>Be able to construct and maintain symbol table; be able to
+        process declarations and scopes; understand the type system and
+        type checking. </li>
+      <li>Be able to describe the storage system and explain the
+        implementation of high-level language features like function
+        calls. </li>
+      <li>Be able to explain the major problems and solutions of code
+        generation; be able to implement code generator from
+        intermediate code. </li>
+      <li>Be able to explain important optimization schemes; be able to
+        describe and apply data-flow analysis. </li>
+    </ul>
+    <h2>1.5 Prerequisites: C or better in CS310/CS330/CS367<br>
+    </h2>
+    <p>Students are expected to be acquainted with formal models and
+      languages(CS330), computer systems and assembly languages(CS367),
+      and data structures(CS310). Students should have <b>strong</b>
+      programming skills with at least one language in C/C++/Java.<br>
+    </p>
+    <h2>1.6 Textbook:</h2>
+    <ul>
+      <li><b>Required - <a
+href="https://www.pearson.com/en-us/subject-catalog/p/compilers-principles-techniques-and-tools/P200000003472/9780321486813"
+            target="_blank" moz-do-not-send="true">Compilers:
+            Principles, Techniques and Tools</a></b>, Aho, Lam, Sethi,
+        and Ullman (aka Dragon book), 2/E, Addison-Wesley, August, 2006.
+        <a
+          href="http://infolab.stanford.edu/%7Eullman/dragon/errata.html"
+          target="_blank">Errata Page</a>. </li>
+      <li><b>Recommended - <a
+            href="http://www.oreilly.com/catalog/lex/" target="_blank">lex
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            &amp; yacc</a></b>, Levine, Mason, and Brown, published by
+        O'Reilly, 2nd Edition, October 1992. <a
+          href="http://www.oreilly.com/catalog/errata.csp?isbn=9781565920002"
+          target="_blank">Errata Page</a>.</li>
+    </ul>
+    <h2>1.7 Other Useful Resources:</h2>
+    <ul>
+      <!--<li> <i> </i><a
+href="http://www.elsevier.com/wps/find/bookdescription.cws_home/699907/description#description">Engineering
+          a Compiler</a><i>,</i> Cooper and Torczon, published by Morgan
+        Kaufmann, an imprint of Elsevier Science, October 2003. <a
+          href="http://www.cs.rice.edu/%7Ekeith/Errata.html">Errata Page</a>.</li>-->
+      <li><b>Canvas: </b>Course schedule, announcements, lecture
+        slides, assignments, and grades release. <br>
+      </li>
+      <li><b>Piazza</b>: Discussion forum. Follow the link on Canvas to
+        sign up. </li>
+      <li><b>Gradescope</b>: Quizzes. Link to Gradescope site will be
+        available from Canvas. </li>
+    </ul>
+    <h1><br>
+    </h1>
+    <h1>2 Grading</h1>
+    <h2>2.1 Assessment</h2>
+    <table width="42%" cellpadding="3" border="1" cellspacing="0">
+      <tbody>
+        <tr>
+          <td valign="top"><b>Category</b><br>
+          </td>
+          <td valign="top"><b>Percent</b><br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Coding projects<br>
+          </td>
+          <td valign="top">35%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Quizzes<br>
+          </td>
+          <td valign="top">10%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Participation<br>
+          </td>
+          <td valign="top">5%<br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Midterm<br>
+          </td>
+          <td valign="top">25% <br>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top">Final exam<br>
+          </td>
+          <td valign="top">25%<br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    The following cutoffs will be applied <i><b>without</b></i>
+    rounding: <br>
+    <meta charset="UTF-8">
+    <ul style="list-style-type: disc; padding-left: 2em; margin-top:
+      1ex; margin-bottom: 1ex; caret-color: rgb(51, 102, 102); color:
+      rgb(51, 102, 102); font-family: Verdana, Geneva, sans-serif;
+      font-style: normal; font-variant-caps: normal; font-weight:
+      normal; letter-spacing: normal; orphans: auto; text-align: start;
+      text-indent: 0px; text-transform: none; white-space: normal;
+      widows: auto; word-spacing: 0px; -webkit-text-size-adjust: auto;
+      -webkit-text-stroke-width: 0px; text-decoration: none;">
+      <li>A+ (&gt;= 97.0%) A (&gt;= 91.0%) A– (&gt;= 89.0%)</li>
+      <li>B+ (&gt;= 87.0%) B (&gt;= 80.0%) B– (&gt;= 78.0%)</li>
+      <li>C+ (&gt;= 76.0%) C (&gt;= 70.0%) C– (&gt;= 68.0%)</li>
+      <li>D (&gt;= 60.0%)</li>
+      <li>F (&lt; 60.0%)</li>
+    </ul>
+    <br>
+    <p> <b>2.2 Projects</b><br>
+    </p>
+    <ul>
+      <li>All projects must be done on an individual basis unless stated
+        otherwise.</li>
+      <li>All project grades are normalized and each contributes to your
+        final grade evenly. <br>
+      </li>
+      <li>Incorrect/broken submissions:</li>
+      <ul>
+        <li>Code that doesn't compile/run will likely get a very low
+          score. It specifically MUST compile/run on <b>zeus.cec.gmu.edu</b>(<a
+            href="http://labs.vse.gmu.edu/index.php/Systems/Zeus"
+            target="_blank" moz-do-not-send="true">Zeus</a>).</li>
+        <li>Turning in the wrong files or corrupted files will likely
+          result in a zero.</li>
+        <li>
+          <meta charset="UTF-8">
+          If you turn in the wrong files, the ONLY way you MIGHT receive
+          credit is by showing your professor a backup where the
+          modified date on the files is<span
+            class="Apple-converted-space">&nbsp;</span><b>outside of
+            your control</b>. Modified dates on personal computers
+          and/or public computers are<span class="Apple-converted-space">&nbsp;</span><i>NEVER</i><span
+            class="Apple-converted-space">&nbsp;</span>accepted as proof
+          of work. Backups which WILL ALWAYS be considered are: backup
+          copy on zeus; prior submissions to Gradescope/Canvas; or
+          emails to your Professor/GTA. Backups which MIGHT be accepted
+          include: emails from your GMU email to yourself, uploading to
+          certain backup services (such as OneDrive or a private GitHub
+          repo).</li>
+      </ul>
+      <li><font color="#ff6600"><b>Late Policy</b>: </font>
+        <ul>
+          <li>
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            Projects can be turned in <b>at most 48 hours</b> late, no
+            exceptions.</li>
+          <li>Submitting an assignment late incurs a <b>25%</b> ceiling
+            penalty <b>each day</b>.</li>
+          <ul>
+            <li>For one day late without a token or two days late with
+              only one token, your max possible score will be a 75%.</li>
+            <li>For two days late with no tokens, your max possible
+              score will be a 50%.<br>
+              <meta http-equiv="content-type" content="text/html;
+                charset=UTF-8">
+              <ul>
+              </ul>
+            </li>
+          </ul>
+          <li>Each student gets <b>three</b> "Emergency Day" tokens,
+            which are <i>automatically</i> used by late submissions to
+            avoid the late penalty. <u>Up to two token can be applied
+              to each project.</u> </li>
+          <ul>
+            <li>Unused emergency-tokens have <b>no</b> grade value at
+              the end of the semester.
+              <meta http-equiv="content-type" content="text/html;
+                charset=UTF-8">
+              <br>
+            </li>
+          </ul>
+          <li>Canvas/Gradescope being unavailable is not an excuse for
+            turning in a late assignment; in the rare situation that the
+            website is somehow unavailable or giving the student an
+            error, the student MUST email their submissions to their GTA
+            before the deadline, otherwise it will be considered late.</li>
+          <li>Catastrophic computer failure will not be cause for an
+            extension. Use a backup service such as OneDrive (or any
+            cloud service), emailing yourself, making multiple rounds of
+            submissions to Canvas/Gradescope, whatever it takes. <br>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2>2.3 Quizzes<br>
+    </h2>
+    <ul>
+      <li>There will be weekly online quizzes for most of the weeks. <br>
+      </li>
+      <li>The lowest quiz grade will be dropped.</li>
+      <li><font color="#ff6600"><b>Late Policy</b>:</font> <b>no late
+          submission</b> accepted for quizzes.</li>
+    </ul>
+    <h2>2.4 Exams</h2>
+    <ul>
+      <li>Exams are closed book unless specified otherwise by
+        instructor.&nbsp; They will be entirely paper and pencil - no
+        computers, cell phones, calculators, or other such resources are
+        allowed.
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+      </li>
+      <li>All students must have their GMU identification available on
+        testing days.</li>
+      <li>Early or Late/Makeup Exams require exceptional circumstances
+        (as judged by the professor) and must be arranged in advance.
+        Vacation plans are not exceptional circumstances. You are
+        starting the course with knowledge of the schedule (see GMU's
+        Final Exam Calendar for the latest schedule, updated as weather
+        events require). </li>
+      <li>If you miss an exam due to a university-accepted excused
+        absence (such as an illness or car accident the day and time of
+        the exam), you must notify your professor within <b>24 hours</b>
+        of your absence to make arrangements for a makeup, and bring
+        approved documentation with you when you take the make-up exam.
+        Failure to follow either of these policies will result in a
+        zero. We may elect to allow the final exam to count the extra
+        amount to give you a sort of do-over for missed midterms; we
+        also reserve the right to give oral makeup exams in lieu of
+        written. </li>
+      <li>Missing an exam due for any non-university-accepted reason
+        (such as not paying attention to when the exam is), will result
+        in a zero. </li>
+      <li> <b>Do not miss the Final Exam. This requires College Dean's
+          Approval to make-up.</b></li>
+    </ul>
+    <ul>
+    </ul>
+    <h2>2.5 Discussion board</h2>
+    <ul>
+      <li>Students are encouraged to use the discussion board, Piazza,
+        to ask and answer questions.&nbsp;&nbsp;</li>
+      <li>No sharing answers to homework assignments on the discussion
+        board.&nbsp; <br>
+      </li>
+      <li>Under no circumstances should your code of assignments be
+        posted publicly to the discussion board. Students can post
+        questions and code privately, although the instructor reserves
+        the right to make any post public, so that other students can
+        see the responses. </li>
+    </ul>
+    <h2>2.6 Other<br>
+    </h2>
+    <ul>
+      <li><b>Contested Grades</b>: Contesting of grades on any/all
+        submissions must be requested within one week of receiving the
+        grade. No grade changes will be considered subsequent to that
+        deadline.</li>
+      <li>There will be no make-up or extra-credit assignments at the
+        end of the semester; your grade should be a measure of your
+        semester-long progress.<br>
+      </li>
+      <li>IN (Incomplete) policy as indicated in the catalog will be
+        strictly adhered to. You must provide the necessary back-up
+        documentation (e.g. medical certificate) for your application to
+        be considered favorably. In all circumstances, the written
+        request, with all the back up documentation, must be received
+        before the final exam week.</li>
+    </ul>
+    <h1><br>
+    </h1>
+    <h1>3 Policies</h1>
+    <h2>3.0 <a moz-do-not-send="true"
+        href="https://stearnscenter.gmu.edu/home/gmu-common-course-policies/">GMU
+
+
+
+
+
+        Common Policies Addendum</a> </h2>
+    <h2>3.1&nbsp;<font color="#cc0000">Honor Code</font></h2>
+    <div class="hidden" id="4.1">
+      <ul>
+        <li> All students are expected to abide by the <a
+            href="https://oai.gmu.edu/full-honor-code-document/"
+            target="_blank">GMU Honor Code</a>. This policy is
+          rigorously enforced. Cheating will be prosecuted and result in
+          a notification of the Honor Committee as outlined in the GMU
+          Honor Code. <br>
+        </li>
+        <li> The computer science department has an <a
+            href="http://cs.gmu.edu/resources/honor-code/"
+            target="_blank">CS Honor Code Policies</a> that you are
+          subject to particularly for our course. The document helps you
+          to understand how GMU honor code applies to programming and
+          CS, what constitutes cheating in the CS setting. It clarifies
+          some scenarios that are unique to our sorts of assignments.
+          Make sure you read and familiarize yourself with these rules.
+          <ul>
+            <li>Examples of common honor code scenarios from CS
+              department: <a moz-do-not-send="true"
+                href="https://cs.gmu.edu/resources/honor-code/honor-code-examples/"
+                target="&quot;_blank&quot;">Honor Code Examples</a><br>
+            </li>
+          </ul>
+        </li>
+        <li> You are <b>not </b>allowed to use <b>any code that are
+            not your own </b>for the assignments. <br>
+        </li>
+        <ul>
+          <li>This includes code from Internet. <br>
+          </li>
+          <li>This includes code from any other student (including past
+            students).&nbsp;</li>
+          <li>Submitted work that is not your own is an Academic
+            Integrity violation and will be reported to the office of
+            Academic Integrity. </li>
+        </ul>
+        <li>You are <b>not</b> allowed to <b>discuss </b>any
+          implementation (code) or design decisions with any other
+          student.</li>
+        <ul>
+          <li>This includes prior students.</li>
+          <li>Sharing your code / design with other students is an
+            Academic Integrity violation and will be reported to the
+            office of Academic Integrity. This includes includes posting
+            your code to a website, like Piazza or GitHub public
+            repository.
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+          </li>
+        </ul>
+        <li><b>Generative-AI tools</b>, such as ChatGPT and Microsoft
+          CoPilot, should <b>not</b> be used in this course as an
+          assistant in projects, quizzes, or exams unless otherwise
+          specifically stated by the instructor. </li>
+        <ul>
+          <li>Use of such tools presents ethical and academic dishonesty
+            issues, especially if the work is presented as your own.
+            <meta http-equiv="content-type" content="text/html;
+              charset=UTF-8">
+            Again, submitted work that is not your own is an Academic
+            Integrity violation and will be reported to the office of
+            Academic Integrity. </li>
+          <li>If you do use generative AI software, you will be
+            responsible for any incorrect, biased, or unethical
+            information that is submitted.&nbsp; <br>
+          </li>
+        </ul>
+        <li>
+          <meta http-equiv="content-type" content="text/html;
+            charset=UTF-8">
+          We take the honor code quite seriously. Any attempts at
+          copying or sharing code, algorithms, or other violations of
+          the honor code simply will not be tolerated. We use automated
+          software to flag suspicious cases, and then review them to
+          find the cases that must be submitted to the Office of
+          Academic Integrity. The penalty for cheating will always be
+          far worse than a zero grade, to ensure it's not worth taking
+          the chance. <b>Confirmed violations of the Academic Standards
+            Code or the CS Honor Code are generally Level 2 violations
+            which always result in course failure. </b> </li>
+      </ul>
+    </div>
+    <h2>3.2 Privacy</h2>
+    <ul>
+      <li> All course materials posted to Canvas or other course sites
+        are private; by federal law, any materials that identify
+        specific students (via their name, voice, or image) must not be
+        shared with anyone not enrolled in this class. </li>
+      <li> Video recordings of class meetings that include audio or
+        visual information from other students are private and must not
+        be shared. </li>
+      <li> Live Video Conference Meetings (e.g. Collaborate or Zoom)
+        that include audio or visual information from other students
+        must be viewed privately and not shared with others. </li>
+    </ul>
+    <!---->
+    <h2>3.3 Non-discrimination and Inclusiveness</h2>
+    <ul>
+      <li> We are committed to providing an educational environment free
+        from any discrimination on the basis of race, color, religion,
+        national origin, sex, disability, veteran status, sexual
+        orientation, gender identity, gender expression, age, marital
+        status, pregnancy status, or genetic information. If you
+        encounter any barriers to your inclusion, please contact the
+        professor.
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+        You can also get assistance by contacting GMU's Office of
+        <meta http-equiv="content-type" content="text/html;
+          charset=UTF-8">
+        Diversity, Equity and Inclusion (703-993-8730; cde@gmu.edu). </li>
+      <li> Gender identity and pronoun use: If you wish, please share
+        your name and gender pronouns with us and we will attempt use
+        them to address you in class and via email. <br>
+      </li>
+    </ul>
+    <h2>3.4 Sexual Harassment, Sexual Misconduct, and Interpersonal
+      Violence</h2>
+    <ul>
+      <li> All faculty members are designated "Responsible Employees",
+        and are required to report all disclosures of sexual assault,
+        interpersonal violence, and stalking to Mason’s Title IX
+        Coordinator per university policy 1412. If you wish to speak
+        with someone confidentially, please contact the Student Support
+        and Advocacy Center (703-380-1434) or Counseling and
+        Psychological Services (703-993-2380). You may also seek
+        assistance from Mason’s Title IX Coordinator (703-993-8730;
+        titleix@gmu.edu). </li>
+    </ul>
+    <br>
+    <h1>4 Learning Disabilities</h1>
+    <p>Students with a learning disability or other condition
+      (documented with GMU's <a href="http://ds.gmu.edu"
+        target="_blank">Office of Disability Services</a>) that may
+      impact academic performance should speak with the professor <b>ASAP</b>
+      to discuss appropriate accommodations. <br>
+    </p>
+    <br>
+    <h1>5 Campus Resources</h1>
+    <ul>
+      <li><a href="http://ods.gmu.edu/" target="_blank">Office of
+          Disability Services</a></li>
+      <li><font color="#ff6600"><a
+            href="https://learningservices.gmu.edu/" target="_blank">Learning
+
+
+
+
+            Services</a></font></li>
+      <li><a href="https://oai.gmu.edu/" target="_blank"
+          moz-do-not-send="true">Office of Academic Integrity</a> </li>
+      <li><a href="http://shs.gmu.edu/" target="_blank">Student Health
+          Service</a></li>
+      <li><a href="http://caps.gmu.edu/" target="_blank">Counseling and
+          Psychological Services (CAPS) </a></li>
+      <li><a href="http://ssac.gmu.edu/" target="_blank">Student Support
+          and Advocacy Center(SSAC) </a></li>
+      <li><a href="https://writingcenter.gmu.edu/" target="_blank"
+          moz-do-not-send="true">Writing Center</a></li>
+      <li><a href="http://its.gmu.edu/service/computer-labs/"
+          target="_blank">Computer Labs</a></li>
+      <li>List of <a
+href="https://stearnscenter.gmu.edu/knowledge-center/knowing-mason-students/student-support-resources-on-campus/"
+          target="_blank">Student Support Resources on Campus</a> from <a
+          href="https://stearnscenter.gmu.edu/" target="_blank">Stearns
+          Center</a><br>
+      </li>
+    </ul>
+  </body>
+</html>

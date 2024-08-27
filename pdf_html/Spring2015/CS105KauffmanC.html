@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CS 105: Computer Ethics and Society</title>
+<!-- 2015-01-20 Tue 19:04 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="Chris Kauffman" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<style type="text/css">
+html {
+font-family: serif;
+}
+.src, .example {
+background-color: rgb(245,245,225); /*rgb(225,245,225)*/;
+}
+/* Mason green section borders, left section header style */
+div.outline-2, #table-of-contents {
+/* display: block; */
+/* position: relative; */
+margin: 3em 0;
+border-left: 0.75em solid #006633; /* #369; */
+padding-left: .5em;
+padding-bottom: 0px;
+background: rgb(250,250,250);
+}
+div.outline-2 > h2, #table-of-contents > h2 {
+background: #006633; /* #369; */
+/* width: 8em; */
+color: white; /* #FFCC33; */
+font-size: 1.5em;
+font-variant: small-caps;
+/* padding-left:0.25em; */
+margin-left:-0.5em;
+/* float:left; */
+/* display:inline-block; */
+}
+blockquote {
+font-style: italic;
+}
+td, th {
+padding-top: 2px;
+padding-bottom: 2px;
+}
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<i>Last Updated: 2015-01-20 Tue 19:04</i>
+</div>
+<div id="content">
+<h1 class="title">CS 105: Computer Ethics and Society</h1>
+<div align="center">
+<h2> George Mason University <br/>  Spring 2015 <br/> 1 Credit </h2>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Meetings</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+This is a <b>10-week</b> course and the final exam will be in class on the
+11th week.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Section</th>
+<th scope="col" class="left">Day</th>
+<th scope="col" class="left">Time</th>
+<th scope="col" class="left">Location</th>
+<th scope="col" class="left">Class Dates</th>
+<th scope="col" class="left">Final Exam</th>
+<th scope="col" class="left">Instructor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">003</td>
+<td class="left">Tue</td>
+<td class="left">1:30-2:45pm</td>
+<td class="left">Ngyuen Engineering 2608</td>
+<td class="left">1/20 - 3/31</td>
+<td class="left">4/7</td>
+<td class="left">Kauffman</td>
+</tr>
+
+<tr>
+<td class="right">004</td>
+<td class="left">Thu</td>
+<td class="left">1:30-2:45pm</td>
+<td class="left">Ngyuen Engineering 2608</td>
+<td class="left">1/22 - 4/2</td>
+<td class="left">4/9</td>
+<td class="left">Kauffman</td>
+</tr>
+
+<tr>
+<td class="right">005</td>
+<td class="left">Mon</td>
+<td class="left">9:00-10:15am</td>
+<td class="left">Ngyuen Engineering 2608</td>
+<td class="left">1/23 - 4/6</td>
+<td class="left">4/13</td>
+<td class="left">Kauffman</td>
+</tr>
+
+<tr>
+<td class="right">006</td>
+<td class="left">Wed</td>
+<td class="left">9:00-10:15am</td>
+<td class="left">Ngyuen Engineering 2608</td>
+<td class="left">1/21 - 4/1</td>
+<td class="left">4/8</td>
+<td class="left">Kauffman</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Lecturer</h2>
+<div class="outline-text-2" id="text-2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="right"><i>Name</i></td>
+<td class="left">Chris Kauffman</td>
+</tr>
+
+<tr>
+<td class="right"><i>Sections</i></td>
+<td class="left">003, 004, 005, 006</td>
+</tr>
+
+<tr>
+<td class="right"><i>Office Hours</i></td>
+<td class="left">Tue 4:30-5:30pm</td>
+</tr>
+
+<tr>
+<td class="right">&#xa0;</td>
+<td class="left">Wed 3:00-4:00pm</td>
+</tr>
+
+<tr>
+<td class="right"><i>Office</i></td>
+<td class="left">Engineering 5341</td>
+</tr>
+
+<tr>
+<td class="right"><i>Email</i></td>
+<td class="left">kauffman@cs.gmu.edu</td>
+</tr>
+
+<tr>
+<td class="right"><i>Phone</i></td>
+<td class="left">703-993-5194</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Teaching Assistants</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Office Hours available by appointment
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Sections</th>
+<th scope="col" class="left">Name</th>
+<th scope="col" class="left">Email</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">003, 004</td>
+<td class="left">Roop Mehdi</td>
+<td class="left">rmehdi2@masonlive.gmu.edu</td>
+</tr>
+
+<tr>
+<td class="left">005, 006</td>
+<td class="left">Carlo Retta</td>
+<td class="left">cretta@masonlive.gmu.edu</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Contact</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+We strongly encourage you to contact the instructor and TAs if you are
+experiencing difficulty with the course.  We are here to help you
+learn.
+</p>
+
+<p>
+For all e-mail communications, include the course and section number
+in your e-mail subject line to avoid being flagged as trash. For
+example
+</p>
+<pre class="example">
+Subject: CS 105 Section 004 Question about Kantianism
+</pre>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Materials</h2>
+<div class="outline-text-2" id="text-5">
+<ul class="org-ul">
+<li>Textbook: Quinn, Michael J., "Ethics for the Information Age" 6th
+Ed., Addison-Wesley, 2013. The textbook is required and students are
+expected to keep up with readings
+</li>
+<li>Web: Blackboard at <a href="http://mymasonportal.gmu.edu">http://mymasonportal.gmu.edu</a>.  Look for CS 105
+and you section number which may be combined with other sections
+under you professor.  All additional materials (readings, slides,
+announcements) will be available through the web site.
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Course Description</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Legal, social, and ethical issues surrounding use of computers and the
+internet.  The course will stress ethical decision-making as well as
+legal and social responsibility in connection with technology-related
+concerns.  Issues such as security, crime, privacy and intellectual
+property will be examined in the context of computer use.  Students
+may be requested to conduct research on the internet in any of these
+areas and/or learn to use practical technological tools related to
+privacy and security.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Learning Outcomes</h2>
+<div class="outline-text-2" id="text-7">
+<ol class="org-ol">
+<li>Students will understand many of the key ethical, legal and social
+issues related to information technology and how to interpret and
+comply with ethical principles, laws, regulations and institutional
+policies.
+</li>
+<li>Students will understand the essential issues related to
+information security, how to take precautions and use techniques
+and tools to defend against computer crimes.
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Prerequisites: None</h2>
+</div>
+<div id="outline-container-sec-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> General Education</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+This course has been approved to satisfy the GMU General Education
+requirement for one credit of IT Ethics.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-10" class="outline-2">
+<h2 id="sec-10"><span class="section-number-2">10</span> Course Work</h2>
+<div class="outline-text-2" id="text-10">
+<p>
+This is primarily a discussion-based course.  You are expected to
+attend all course meetings and participate in conversations about
+course material as well as in-class activities relevant to the course.
+To facilitate this, assigned readings are to be done before class.
+</p>
+
+<p>
+There are two major writing assignments to be done outside of class
+which comprise a substantial portion of the overall grade.  Additional
+work such as outside research or contributing to discussion board
+topics may be assigned.
+</p>
+
+<p>
+This class relies strongly on class participation.  Therefore, it is
+important that you attend class on a regular basis.  While you are
+welcome to attend an alternate lecture session if you miss your own,
+please note that you may not assume instructors in different sections
+will present the same materials.  Similarly, unless you obtain advance
+approval from your instructor, you may not receive credit for class
+participation or other in-class activities when attending a section
+other than your own.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-sec-11" class="outline-2">
+<h2 id="sec-11"><span class="section-number-2">11</span> Grading and Evaluation</h2>
+<div class="outline-text-2" id="text-11">
+<p>
+Grading will be based on two major assignments, three in-class
+quizzes, overall in-class participation, and the final exam.  These
+are weighted based on the following weights.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="right" />
+
+<col  class="right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Component</th>
+<th scope="col" class="right">Weight per Unit</th>
+<th scope="col" class="right">Total Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">2 Out-of-class assignments</td>
+<td class="right">15%</td>
+<td class="right">30%</td>
+</tr>
+
+<tr>
+<td class="left">3 In-class quizzes</td>
+<td class="right">6.67%</td>
+<td class="right">20%</td>
+</tr>
+
+<tr>
+<td class="left">1 Final Exam</td>
+<td class="right">30%</td>
+<td class="right">30%</td>
+</tr>
+
+<tr>
+<td class="left">Participation Chances</td>
+<td class="right">20%</td>
+<td class="right">20%</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Final grades will be determined according to following approximate ranges without rounding.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+
+<colgroup>
+<col  class="right" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="right">Percent</th>
+<th scope="col" class="left">Grade</th>
+<th scope="col" class="right">Percent</th>
+<th scope="col" class="left">Grade</th>
+<th scope="col" class="right">Percent</th>
+<th scope="col" class="left">Grade</th>
+<th scope="col" class="right">Percent</th>
+<th scope="col" class="left">Grade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="right">&gt;= 98</td>
+<td class="left">A+</td>
+<td class="right">90-88</td>
+<td class="left">B+</td>
+<td class="right">80-78</td>
+<td class="left">C+</td>
+<td class="right">70-60</td>
+<td class="left">D</td>
+</tr>
+
+<tr>
+<td class="right">98-92</td>
+<td class="left">A</td>
+<td class="right">88-82</td>
+<td class="left">B</td>
+<td class="right">78-72</td>
+<td class="left">C</td>
+<td class="right">&lt;60</td>
+<td class="left">F</td>
+</tr>
+
+<tr>
+<td class="right">92-90</td>
+<td class="left">A-</td>
+<td class="right">82-80</td>
+<td class="left">B-</td>
+<td class="right">72-70</td>
+<td class="left">C-</td>
+<td class="right">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-sec-12" class="outline-2">
+<h2 id="sec-12"><span class="section-number-2">12</span> Policies</h2>
+<div class="outline-text-2" id="text-12">
+</div><div id="outline-container-sec-12-1" class="outline-3">
+<h3 id="sec-12-1"><span class="section-number-3">12.1</span> Assignment Completion</h3>
+<div class="outline-text-3" id="text-12-1">
+<p>
+Unless otherwise specified, all papers and other written assignments
+are to be individual efforts.  Certain portions of group assignments
+may require individual efforts as well. Be careful to follow
+instructions regarding acceptable group efforts.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-12-2" class="outline-3">
+<h3 id="sec-12-2"><span class="section-number-3">12.2</span> Academic Integrity</h3>
+<div class="outline-text-3" id="text-12-2">
+<p>
+Plagiarism is governed by the GMU Honor Code and will not be
+tolerated.  Instances of cheating and/or plagiarism will be referred
+to the Honor Committee. Refer to the Familiarize yourself with both
+the honor code at GMU and the further details of the CS Honor Code
+Policies.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-12-3" class="outline-3">
+<h3 id="sec-12-3"><span class="section-number-3">12.3</span> Absences and Participation Credit</h3>
+<div class="outline-text-3" id="text-12-3">
+<p>
+Absences from class for health or emergency reasons are excusable as
+long as some proof of the situation can be provided.  Participation
+and quizzes may be made up on a case-by-case basis according to
+criteria dictated by the professor.  Making up participation must be
+discussed with the professor within 10 days of missing the class.
+After that period, participation and quiz credit can not be made up.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-12-4" class="outline-3">
+<h3 id="sec-12-4"><span class="section-number-3">12.4</span> Late Work</h3>
+<div class="outline-text-3" id="text-12-4">
+<p>
+It is at the sole discretion of the professor on whether to accept any
+late work.  In many cases the out-of class assignments are accepted
+late with a 10% penalty per day late.  Pay attention to deadlines.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-12-5" class="outline-3">
+<h3 id="sec-12-5"><span class="section-number-3">12.5</span> Grading Disputes</h3>
+<div class="outline-text-3" id="text-12-5">
+<p>
+Disputes regarding graded assignments, quizzes, and exams must be
+raised within 10 days of the graded material being available to the
+student.  Disputes not raised in that period will not be considered.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-12-6" class="outline-3">
+<h3 id="sec-12-6"><span class="section-number-3">12.6</span> Special Accommodations</h3>
+<div class="outline-text-3" id="text-12-6">
+<p>
+If you are a student with a disability and you need academic
+accommodations, please see your instructor and contact the <a href="http://ods.gmu.edu/">Office of
+Disability Services (ODS)</a>.  All academic accommodations must be
+arranged through the ODS.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-13" class="outline-2">
+<h2 id="sec-13"><span class="section-number-2">13</span> Helpful Web Links</h2>
+<div class="outline-text-2" id="text-13">
+</div><div id="outline-container-sec-13-1" class="outline-3">
+<h3 id="sec-13-1"><span class="section-number-3">13.1</span> Assistance with Essay/Report Writing:</h3>
+<div class="outline-text-3" id="text-13-1">
+<ul class="org-ul">
+<li><a href="http://classweb.gmu.edu/nccwg/">GMU New Century College: Online Writing Guide</a>
+</li>
+<li><a href="http://writingcenter.gmu.edu/">GMU Writing Center</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-13-2" class="outline-3">
+<h3 id="sec-13-2"><span class="section-number-3">13.2</span> Other</h3>
+<div class="outline-text-3" id="text-13-2">
+<ul class="org-ul">
+<li><a href="http://www.gmu.edu/departments/csdc">GMU Counseling Center</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-sec-14" class="outline-2">
+<h2 id="sec-14"><span class="section-number-2">14</span> Schedule</h2>
+<div class="outline-text-2" id="text-14">
+<p>
+The approximate schedule of topics and due dates is listed here. Check
+the web schedule for the most up-to-date version.  Readings from
+"Quinn" refer to the required course text and give the section numbers
+to read. Sections marked "Skim" can be briefly scanned. Sections
+marked "Interview" refer to end of chapter interviews to read.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Week</th>
+<th scope="col" class="left">Dates</th>
+<th scope="col" class="left">Topic</th>
+<th scope="col" class="left">Reading Assignment</th>
+<th scope="col" class="left">Homework Due</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">Week 1</td>
+<td class="left">1/20-1/26</td>
+<td class="left">Introduction: Ethics &amp; Computers</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 2</td>
+<td class="left">1/27-2/2</td>
+<td class="left">Philosophical Ethics</td>
+<td class="left">Quinn 1.1, 1.5, Skim 1.2-4</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Quinn 2 All, Interview: James Moor</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 3</td>
+<td class="left">2/3-2/9</td>
+<td class="left">Philosophical and Professional Ethics</td>
+<td class="left">Quinn 9.1-2, 9.5-6, Skim 9.3-4</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left"><a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/StatementOnAcademicIntegrity">Integrity statement</a>, <a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/CSHonorCodePolicies">CS Honor Code</a></td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Appendix A</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 4</td>
+<td class="left">2/10-2/16</td>
+<td class="left">Professional Ethics/ Plagiarism/ Accountability</td>
+<td class="left">Quinn 8 All, Focus on 8.5</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 5</td>
+<td class="left">2/17-2/23</td>
+<td class="left">Accountability/ Computer Crime</td>
+<td class="left">Quinn Ch. 7 All</td>
+<td class="left">Assignment #1 Ethical Theories</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Last Day to drop without permission from the dean</td>
+<td class="left">&#xa0;</td>
+<td class="left">Due: Tue. 2/17 By 11:59 p.m.</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 6</td>
+<td class="left">2/24-3/2</td>
+<td class="left">Computer Security</td>
+<td class="left">Interview: Matt Bishop (Ch 7 end)</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Online Security Readings</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 7</td>
+<td class="left">3/3-3/16</td>
+<td class="left">Information Privacy and Social Networking</td>
+<td class="left">Quinn 5 All</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">3/9-3/13</td>
+<td class="left">Spring Break, No Class</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 8</td>
+<td class="left">3/17-3/23</td>
+<td class="left">Privacy and the Government</td>
+<td class="left">Quinn 6 All</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Interview: Jerry Berman</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 9</td>
+<td class="left">3/24-3/30</td>
+<td class="left">Intellectual Property</td>
+<td class="left">Quinn 4.1-3 (IP Basics)</td>
+<td class="left">Assignment #2 Security/Privacy</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Skim 4.4 (Fair Use)</td>
+<td class="left">Due: Tue. 3/24 By 11:59 p.m.</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Read 4.5.7-9 (DRM)</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Read 4.6.6-9 (Internet Piracy)</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Skim 4.7-9 (Fair Use / Open Source)</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 10</td>
+<td class="left">3/31-4/6</td>
+<td class="left">Workplace Issues/ Wrap-up and Review</td>
+<td class="left">Quinn 10 All,</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">Esp. 10.5.6 (Net neutrality)</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">Week 11</td>
+<td class="left">4/7-4/13</td>
+<td class="left">Final Exam, normal class time and location</td>
+<td class="left">Comprehensive:</td>
+<td class="left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">&#xa0;</td>
+<td class="left">All previous material is fair game.</td>
+<td class="left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<hr/> <i> Author: Chris Kauffman (<a href="mailto:kauffman@cs.gmu.edu">kauffman@cs.gmu.edu</a>) <br/> Date: 2015-01-20 Tue 19:04 <br/> </i>
+</div>
+</body>
+</html>

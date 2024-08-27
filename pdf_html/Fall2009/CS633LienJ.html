@@ -1,0 +1,274 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<title>CS 633 Computation Geometry </title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:PMingLiU;
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-alt:\65B0\7D30\660E\9AD4;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+@font-face
+	{font-family:"\@PMingLiU";
+	panose-1:2 2 3 0 0 0 0 0 0 0;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 137232384 22 0 1048577 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:PMingLiU;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:PMingLiU;}
+p.vspace, li.vspace, div.vspace
+	{mso-style-name:vspace;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:PMingLiU;}
+span.wikiword
+	{mso-style-name:wikiword;}
+span.lfloat
+	{mso-style-name:lfloat;}
+p.vspacesidehead, li.vspacesidehead, div.vspacesidehead
+	{mso-style-name:"vspace sidehead";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:PMingLiU;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:656495927;
+	mso-list-template-ids:-439291842;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:950820436;
+	mso-list-template-ids:-90157038;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1113787402;
+	mso-list-template-ids:404114020;}
+@list l2:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1897158544;
+	mso-list-template-ids:-320333120;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+</style>
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<p><span class=GramE><strong><span style='font-size:18.0pt'>CS 633 Computation
+Geometry</span></strong></span><strong><span style='font-size:18.0pt'> <o:p></o:p></span></strong></p>
+
+<p><strong><a href="http://cs.gmu.edu/~jmlien/teaching/09_fall_cs633/"><span
+style='font-weight:normal'>Course Webpage</span></a><o:p></o:p></strong></p>
+
+<p class=vspacesidehead><b style='mso-bidi-font-weight:normal'>Time &amp;
+Location <o:p></o:p></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo4;tab-stops:list .5in'>Wed. 4:30 - 7:10 pm <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l1 level1 lfo4;tab-stops:list .5in'>Robinson Hall B201 <o:p></o:p></li>
+</ul>
+
+<p><b>Instructor</b>: <span style='mso-bidi-font-weight:bold'><a
+href="http://cs.gmu.edu/~jmlien/">Jyh-Ming Lien</a></span> <br>
+<b>Office hour</b>: Tue. 4:30 - 6:30 pm </p>
+
+<p><strong>Course Scope</strong> <o:p></o:p></p>
+
+<p class=vspace><span class=wikiword>CS633</span> is an introductory course to
+Computational Geometry. Computational Geometry is a study of algorithms and
+data structures for geometric objects. One important goal of <span
+class=wikiword>CS633</span> is to make you become knowledgeable and comfortable
+enough to deal with any geometric problems. <o:p></o:p></p>
+
+<p class=vspace><strong>Prerequisites</strong> <o:p></o:p></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo1;tab-stops:list .5in'><span class=wikiword>CS583</span>
+     or instructor's approval, which means you should know sorting algorithms,
+     graph algorithms, and basic data structures (lists, trees, graphs), and
+     know how to design and analyze the complexity of algorithms. <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l3 level1 lfo1;tab-stops:list .5in'><span style='color:red'>Working
+     knowledge of C/C++ </span>for most computational geometry libraries are
+     implemented in C/C++. <o:p></o:p></li>
+</ul>
+
+<p class=vspace><strong>Required Textbook</strong> </p>
+
+<p class=MsoNormal><a href="http://www.cs.uu.nl/geobook/">Computational
+Geometry: Algorithms and Applications</a> by Mark de Berg, Marc van <span
+class=SpellE>Kreveld</span>, Mark <span class=SpellE>Overmars</span>, and <span
+class=SpellE>Otfried</span> Cheong, third revised edition, Springer-<span
+class=SpellE>Verlag</span>, 2008. <span class=GramE>ISBN # 978-3-540-77973-5.</span>
+<o:p></o:p></p>
+
+<p class=vspace><strong>Grading</strong> <o:p></o:p></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo2;tab-stops:list .5in'>Assignments 50%: There will
+     be homework assignments, programming assignments, and paper review
+     assignments. <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo2;tab-stops:list .5in'>Quizzes/Mid term Exam 20% <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo2;tab-stops:list .5in'>Project presentations
+     (proposal and final) 15% <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l2 level1 lfo2;tab-stops:list .5in'>Final project report 15% <o:p></o:p></li>
+</ol>
+
+<p class=vspace><strong>List of Topics</strong> <o:p></o:p></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Line segment intersection <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Convex hull <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Triangulations <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Proximity problems <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Range searching <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Point location <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'><span class=SpellE>Voronoi</span>
+     Diagrams <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Delaunay Triangulations <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Arrangements and Duality <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Binary space partitions <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Robot Motion planning <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'><span class=SpellE>Quadtree/Octree</span>
+     <o:p></o:p></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo3;tab-stops:list .5in'>Visibility Graph <o:p></o:p></li>
+</ul>
+
+<p class=vspace><strong>Policies</strong> <o:p></o:p></p>
+
+<p class=vspace>All required assignments should be completed by the stated due
+date and time. The total score of your assignment score will be 10 points less
+every extra day after the due date (i.e., the 100 total points will become zero
+after 10 days pass the due date). <o:p></o:p></p>
+
+<p class=vspace>Please note that all coursework is to be done independently.
+Plagiarizing the homework will be penalized by maximum negative credit and
+cheating on the exam will earn you an F in the course. See the GMU Honor Code
+System and Policies at <a href="http://www.gmu.edu/catalog/acadpol.html">this
+page</a> and <a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage">this
+page</a>. You are encouraged to discuss the material BEFORE you do the assignment.
+As a part of the interaction you can discuss a meaning of the question or
+possible ways of approaching the solution. The homework should be written
+strictly by <span class=GramE>yourself</span>. In case your solution is based
+on the important idea of someone else please acknowledge that in your solution,
+to avoid any accusations. <o:p></o:p></p>
+
+<p class=vspace>The quizze and exams will be a closed book exam - no notes will be
+allowed.  There will be no makeups for the quizzes and exams. <o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
