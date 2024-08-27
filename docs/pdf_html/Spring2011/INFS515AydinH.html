@@ -1,0 +1,687 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:css="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40"
+xmlns:ns0="urn:schemas-microsoft-com:office:smarttags">
+
+<head>
+<meta name=Title content="CS 571 OPERATING SYSTEMS">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="infs515Syllabus_files/filelist.xml">
+<title>INFS 515 Computer Organization</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>haydin</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Hakan Aydin</o:LastAuthor>
+  <o:Revision>16</o:Revision>
+  <o:TotalTime>443</o:TotalTime>
+  <o:Created>2010-01-06T17:35:00Z</o:Created>
+  <o:LastSaved>2011-01-21T02:29:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>623</o:Words>
+  <o:Characters>3555</o:Characters>
+  <o:Company>GMU</o:Company>
+  <o:Lines>29</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>4365</o:CharactersWithSpaces>
+  <o:Version>12.0</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontGrowAutofit/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--p.MSONORMAL
+	{mso-style-qformat:yes;
+	mso-style-unhide:no;}
+li.MSONORMAL
+	{mso-style-qformat:yes;
+	mso-style-unhide:no;}
+div.MSONORMAL
+	{mso-style-qformat:yes;
+	mso-style-unhide:no;}
+h2
+	{mso-style-qformat:yes;
+	mso-style-unhide:no;}
+a:link
+	{mso-style-unhide:no;}
+span.MSOHYPERLINK
+	{mso-style-unhide:no;}
+a:visited
+	{mso-style-unhide:no;}
+span.MSOHYPERLINKFOLLOWED
+	{mso-style-unhide:no;}
+p.MSODOCUMENTMAP
+	{mso-style-unhide:no;}
+li.MSODOCUMENTMAP
+	{mso-style-unhide:no;}
+div.MSODOCUMENTMAP
+	{mso-style-unhide:no;}
+span.HEADING2CHAR
+	{mso-style-unhide:no;
+	mso-themecolor:accent1;}
+span.DOCUMENTMAPCHAR
+	{mso-style-unhide:no;}
+.MSOCHPDEFAULT
+	{mso-default-props:yes;}
+table.MSONORMALTABLE
+	{mso-style-priority:99;
+	mso-style-qformat:yes;}
+span.HEADING2CHAR
+	{mso-bidi-font-size:13pt;
+	mso-style-locked:yes;}
+span.DOCUMENTMAPCHAR
+	{mso-bidi-font-size:8pt;
+	mso-style-locked:yes;}
+table.MSONORMALTABLE
+	{mso-bidi-language:"\#0400";}
+
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 65536 0 -2147483648 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:black;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	color:black;}
+a:link, span.MsoHyperlink
+	{color:#0000CC;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-link:"Document Map Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Tahoma;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:black;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:black;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:black;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:black;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:black;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-locked:yes;
+	mso-style-link:"Document Map";
+	mso-ansi-font-size:8.0pt;
+	font-family:Tahoma;
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;
+	color:black;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:176041766;
+	mso-list-template-ids:-1578341024;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:482237379;
+	mso-list-type:hybrid;
+	mso-list-template-ids:866813528 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:533150871;
+	mso-list-template-ids:1677863704;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:670721037;
+	mso-list-template-ids:1031553476;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:728305953;
+	mso-list-template-ids:-1515662966;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:1128085939;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1630764856 -1851858986 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:0in;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:2003964649;
+	mso-list-template-ids:1827323406;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+<link rel=themeData
+href="file://localhost/Users/OwnerFiles/aydin/teaching/infs515/Syllabus_files:themedata.thmx">
+<link rel=colorSchemeMapping
+href="file://localhost/Users/OwnerFiles/aydin/teaching/infs515/Syllabus_files:colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<link rel=themeData
+href="file://localhost/Users/OwnerFiles/aydin/teaching/infs515/Syllabus_files:themedata.thmx">
+<link rel=colorSchemeMapping
+href="file://localhost/Users/OwnerFiles/aydin/teaching/infs515/Syllabus_files:colorschememapping.xml">
+</head>
+
+<body bgcolor="#ffffcc" lang=EN-US link="#0000cc" vlink=blue style='tab-interval:
+.5in'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><a name=TOP></a><b
+style='mso-bidi-font-weight:normal'><span style='mso-bidi-font-family:"Times New Roman"'><a
+href="http://www.gmu.edu">George Mason University</a></span></b><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='mso-bidi-font-family:"Times New Roman"'><a
+href="http://www.cs.gmu.edu">DEPARTMENT OF COMPUTER SCIENCE</a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<h2 align=center style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;text-align:center'>INFS 515 Computer Organization - Spring 2011</h2>
+
+<h2 align=center style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;text-align:center'><o:p>&nbsp;</o:p></h2>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bidi-font-family:"Times New Roman"'><a
+href="http://www.cs.gmu.edu/~aydin">Instructor: Dr. Hakan Aydin</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'><br>
+<b style='mso-bidi-font-weight:normal'>Description: </b>This course covers the
+principles of computer organization/architecture and operating systems. The
+course is divided roughly into two parts: in the first part, fundamentals of
+computer organization and architecture will be presented. The second part will
+include an overview of the main operating system services and functions. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>Prerequisites:</span></b><span
+style='mso-bidi-font-family:"Times New Roman"'> Undergraduate course or
+equivalent knowledge in structured programming in a high-level language.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>Meeting Time and Locations: </span></b><span
+style='mso-bidi-font-family:"Times New Roman"'>Monday 7:20 – 10:00 PM<span
+style="mso-spacerun: yes">&nbsp; </span>Robinson Hall B Rm. 224<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>Required Textbooks: </span></b><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'>“Computer
+Organization and Architecture”, by W. Stallings (8<sup>th</sup> Edition,
+Prentice Hall 2009, ISBN 9780136073734), and,<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'>“Operating
+System Concepts with Java”, by Silberschatz, Galvin and Gagne (8<sup>th</sup>
+Edition, John Wiley &amp; Sons 2009, ISBN: 9780470509494). <br
+style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>Office Hours: </span></b><span
+style='mso-bidi-font-family:"Times New Roman"'>Monday 4:30 – 5:30 PM; Wednesday
+7:20 PM – 8:20 PM; and by appointment (Office: Engineering Building, Room 5308)<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'>&nbsp;<b
+style='mso-bidi-font-weight:normal'>&nbsp;</b><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>Topics: </span></b><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Basic
+     Computer Hardware Architecture concepts </li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Number
+     systems and machine representation of numbers</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Instruction
+     Set Formats</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Addressing
+     Techniques</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Memory
+     Organization</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Internal
+     Processor Structure and Operation</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Symbolic
+     Assembly Language</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Basic
+     Operating System Functions</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Processes
+     and Threads</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>CPU
+     Scheduling</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Memory
+     Management </li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Virtual
+     Memory</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>File,
+     I/0, and Disk Systems </li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l3 level1 lfo3;tab-stops:list .5in'>Additional
+     Computer Architecture and Operating System Topics as time permits</li>
+</ul>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>Course Web Page: </span></b><span
+style='mso-bidi-font-family:"Times New Roman"'>http://cs.gmu.edu/~aydin/infs515.
+<span style="mso-spacerun: yes">&nbsp;</span>The lecture slides,<span
+style="mso-spacerun: yes">&nbsp; </span>assignments, and other course-related
+documents will be available at GMU Blackboard system (http://courses.gmu.edu)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:0in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;mso-para-margin-bottom:
+.01gd;mso-para-margin-left:0in'><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>Grading: </span></b><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p></o:p></span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l4 level1 lfo9;tab-stops:list .5in'>Assignments:
+     25%</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l4 level1 lfo9;tab-stops:list .5in'>Exam
+     1: 20% </li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l4 level1 lfo9;tab-stops:list .5in'>Exam
+     2 : 20% </li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-para-margin-top:
+     .01gd;mso-para-margin-bottom:.01gd;mso-list:l4 level1 lfo9;tab-stops:list .5in'>Final
+     Exam: 35% </li>
+</ul>
+
+<p class=MsoNormal style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;
+margin-left:.25in;mso-para-margin-top:.01gd;mso-para-margin-right:0in;
+mso-para-margin-bottom:.01gd;mso-para-margin-left:.25in'><span
+style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'>The
+students must achieve a total score of at least 90 (out of 100) to be
+considered for an A. No early exams will be given and make-up exams are
+strongly discouraged.<span style="mso-spacerun: yes">&nbsp; </span>A student
+should present an official and verifiable excuse to miss an exam (such as a
+doctor's note). <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'>All
+students must abide by the <a
+href="http://catalog.gmu.edu/content.php?catoid=5&amp;navoid=410#Honor">GMU Honor
+Code</a><span style="mso-spacerun: yes">&nbsp; </span>and <a
+href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/CSHonorCodePolicies">CS
+Department's Honor Code and Academic Integrity Policies</a> during the
+semester. The students are supposed to work <i style='mso-bidi-font-style:normal'>individually
+</i>on the assignments. Violations of the Honor Code or a total score of 49 (or
+less) will result in an F. <o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-bidi-font-family:"Times New Roman"'><span
+style="mso-spacerun: yes">&nbsp;</span><o:p></o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='mso-bidi-font-family:"Times New Roman"'>Disability Statement: </span></b><span
+style='mso-bidi-font-family:"Times New Roman"'>If you have a learning or
+physical difference that may affect your academic work, you will need to
+furnish appropriate documentation to GMU Disability Resource Center.&nbsp; If
+you qualify for accommodation, the DRC staff will give you a form detailing
+appropriate accommodations for your instructor.&nbsp;If you have such a
+condition, you must talk to the instructor during the first week of the term
+about the issue. <o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

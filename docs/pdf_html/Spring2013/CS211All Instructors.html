@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>CS 211: Object Oriented Programming</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="title" content="CS 211: Object Oriented Programming"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="Spring 2013"/>
+<meta name="author" content="George Mason University "/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">CS 211: Object Oriented Programming</h1>
+
+
+
+
+<div align="center">
+<h2> George Mason University</h2>
+<h2> Spring 2013 </h2>
+</div>
+
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Basic Information</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Prerequisite</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>Grade of C or better in CS 112.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Instructors</h3>
+<div class="outline-text-3" id="text-1-2">
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<tbody>
+<tr><td class="left"><b>Name</b></td><td class="left">Prof. Mark Snyder</td><td class="left">Prof. Chris Kauffman</td></tr>
+<tr><td class="left"><b>Sections</b></td><td class="left">002, 003, H01</td><td class="left">001</td></tr>
+<tr><td class="left"><b>Email</b></td><td class="left">msnyde14@gmu.edu</td><td class="left">kauffman@cs.gmu.edu</td></tr>
+<tr><td class="left"><b>Office</b></td><td class="left">ENGR 5346</td><td class="left">ENGR 5341</td></tr>
+<tr><td class="left"><b>Phone</b></td><td class="left">703-993-5624</td><td class="left">703-993-5194</td></tr>
+</tbody>
+</table>
+
+See the course Piazza site for contact info for all TAs.
+
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Lecture</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="right" /><col class="left" /><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="right">#</th><th scope="col" class="left">Day</th><th scope="col" class="left">Time</th><th scope="col" class="left">Professor</th><th scope="col" class="left">Location</th></tr>
+</thead>
+<tbody>
+<tr><td class="right">001</td><td class="left">MW</td><td class="left">12:00 pm-01:15 pm</td><td class="left">Kauffman</td><td class="left">Blueridge Hall 129</td></tr>
+<tr><td class="right">002</td><td class="left">TR</td><td class="left">12:00 pm-01:15 pm</td><td class="left">Snyder</td><td class="left">Innovation Hall 132</td></tr>
+<tr><td class="right">003</td><td class="left">T</td><td class="left">04:30 pm-07:10 pm</td><td class="left">Snyder</td><td class="left">Robinson Hall B104</td></tr>
+<tr><td class="right">H01</td><td class="left">TR</td><td class="left">10:30 am-11:45 am</td><td class="left">Snyder</td><td class="left">Robinson Hall B102</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Labs</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>All labs are in Engineering 4457, led by graduate TAs
+</p><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="right" /><col class="right" /><col class="left" /><col class="left" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="right">#</th><th scope="col" class="right">Lec</th><th scope="col" class="left">Day</th><th scope="col" class="left">Time</th><th scope="col" class="left">Professor</th></tr>
+</thead>
+<tbody>
+<tr><td class="right">201</td><td class="right">001</td><td class="left">R</td><td class="left">01:30 pm-02:20 pm</td><td class="left">Kauffman</td></tr>
+<tr><td class="right">202</td><td class="right">001</td><td class="left">R</td><td class="left">02:30 pm-03:20 pm</td><td class="left">Kauffman</td></tr>
+<tr><td class="right">203</td><td class="right">001</td><td class="left">R</td><td class="left">03:30 pm-04:20 pm</td><td class="left">Kauffman</td></tr>
+<tr><td class="right">204</td><td class="right">002</td><td class="left">F</td><td class="left">01:30 pm-02:20 pm</td><td class="left">Snyder</td></tr>
+<tr><td class="right">205</td><td class="right">002</td><td class="left">F</td><td class="left">02:30 pm-03:20 pm</td><td class="left">Snyder</td></tr>
+<tr><td class="right">206</td><td class="right">002</td><td class="left">F</td><td class="left">03:30 pm-04:20 pm</td><td class="left">Snyder</td></tr>
+<tr><td class="right">207</td><td class="right">003</td><td class="left">W</td><td class="left">08:30 am-09:20 am</td><td class="left">Snyder</td></tr>
+<tr><td class="right">208</td><td class="right">003</td><td class="left">W</td><td class="left">09:30 am-10:20 am</td><td class="left">Snyder</td></tr>
+<tr><td class="right">209</td><td class="right">003</td><td class="left">W</td><td class="left">10:30 am-11:20 am</td><td class="left">Snyder</td></tr>
+<tr><td class="right">2H1</td><td class="right">H01</td><td class="left">F</td><td class="left">12:30 pm-01:20 pm</td><td class="left">Snyder</td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> Course Materials</h3>
+<div class="outline-text-3" id="text-1-5">
+
+<dl>
+<dt>Textbook</dt><dd><i>Java Software Solutions - Foundations of Program Design</i>, 7th
+  ed. Lewis &amp; Loftus. (You do not need the extra online programming
+  supplement, but it may give you another good source of practice).
+</dd>
+<dt>Computing</dt><dd>It is assumed you will have access to a computer with
+               the ability to edit, compile, and run Java programs.
+               Some university labs provide this ability and the first
+               week of the course will cover how to set up your
+               personal environment.  If you have difficulty accessing
+               a suitable environment, contact the course staff.
+</dd>
+</dl>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Communication</h3>
+<div class="outline-text-3" id="text-1-6">
+
+<dl>
+<dt><a href="https://piazza.com/gmu/spring2013/cs211">Piazza</a></dt><dd>This will be the central site for our announcements,
+            documents repository, and discussion board. The
+            announcements and discussion board are part of the
+            <i>required reading</i> for the course.
+<ul>
+<li>All instructors and TAs can view all material on Piazza 
+</li>
+<li>Use public posts on Piazza to discuss programming assignments, HW,
+    labs, and other material related to the course.  
+</li>
+<li>Use private messages on Piazza for personal questions involving your
+    own code or situation.
+</li>
+<li>Refer to the Piazza main page for etiquette on what should be posted
+    publicly versus privately
+</li>
+</ul>
+
+</dd>
+<dt><a href="http://mymason.gmu.edu">BlackBoard</a></dt><dd>Is used for assignment submission and to disseminate
+                grades on assignment
+</dd>
+<dt>Office Hours</dt><dd>Listed for all Instructors and TAs on Piazza (Course
+                  Page &ndash;&gt; Staff).
+</dd>
+</dl>
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> Course Outcomes</h2>
+<div class="outline-text-2" id="text-2">
+
+<ol>
+<li>An understanding of basic object-oriented (OO) programming concepts
+   and principles.
+</li>
+<li>An ability to apply basic object-oriented principles and techniques
+   in the development of software systems using a specific programming
+   language.
+</li>
+<li>An ability to effectively develop software systems using both basic
+   command line tools and sophisticated integrated development
+   environments, and to understand the advantages and limitations of
+   each.
+</li>
+<li>An ability to successfully perform debugging operations and
+   techniques.
+</li>
+<li>An ability to perform software development in both individual and
+   team environments.
+</li>
+<li>An understanding of programming-related references/resources
+   available to software developers and the ability to use them
+   effectively – both in ongoing projects and in the acquisition of new
+   technical skills.
+</li>
+<li>An understanding of how acquired programming skills facilitate
+   success in upper level CS courses and in various professional
+   environments.
+</li>
+</ol>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Coursework</h2>
+<div class="outline-text-2" id="text-3">
+
+<p>During lectures we will discuss programming concepts and instructors
+will provide demos of programming relevant to assignments.
+Programming labs will be for students to work on additional exercises
+and get immediate help from teaching assistants.  In addition to
+attending the regular meeting times, you are strongly encouraged to
+visit the professor and teaching assistant(s) during office hours to
+further your understanding of the material: we are here to help you
+learn.
+</p>
+<p>
+Readings from the textbook relevant to each lecture are listed in
+schedule.  You will increase your understanding of lectures by reading
+associated textbook sections ahead of time, though this is not
+assumed.  We may provide additional reading material to supplement the
+textbook which will be posted on the course web page.
+</p>
+<p>
+Students will receive a number of programming assignments during the
+semester.  Each assignment will involve writing programs and answering
+questions about them to illustrate an understanding of course
+material.
+</p>
+<p>
+There will be two midterm exams during the course during the regularly
+scheduled lecture time.  There will also be a comprehensive final exam
+at the end semster.  Refer to the schedule for dates of the exams.
+During labs there will also be short quizzes on some meetings to
+ensure you stay up-to-date on course topics.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Grading Policy</h2>
+<div class="outline-text-2" id="text-4">
+
+<p>Final grades will be determined by scores obtained on homeworks,
+quizzes, projects, the two midterm exams, and final exams. If
+circumstances require it, the grading scale may be adjusted, generally
+in the students' favor.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="left" /><col class="right" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="left">Component</th><th scope="col" class="right">Weight</th></tr>
+</thead>
+<tbody>
+<tr><td class="left">Programming Assignments</td><td class="right">45%</td></tr>
+<tr><td class="left">Homeworks and Quizzes</td><td class="right">10%</td></tr>
+<tr><td class="left">2 Exams</td><td class="right">20%</td></tr>
+<tr><td class="left">Final Exam</td><td class="right">25%</td></tr>
+</tbody>
+</table>
+
+
+<ul>
+<li>A "ceiling penalty" of 25% is assessed each 24-hour period entered
+  after the deadline. For example, if you turn in work half a day late
+  and score 87%, you will receive min(87,75) = 75% (and not
+  87-25=62%). Note that work turned in more than three 24-hours
+  periods late will earn zero points, and will only be graded as time
+  permits. 
+</li>
+<li>You can submit work to BlackBoard as many times as desired.  Only
+  the last submission will be graded. If you anticipate being rushed
+  around the submission deadline, be sure to submit a version before
+  the deadline as a backup, in case you find yourself only moments
+  late in meeting a deadline.
+</li>
+<li>On-time submissions will generally be graded and available a week
+  from submission.  Late submissions will be graded in as timely a
+  fashion as schedules allow.
+</li>
+</ul>
+
+
+
+</div>
+
+<div id="outline-container-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Final Grade Determination</h3>
+<div class="outline-text-3" id="text-4-1">
+
+<p>Final grades will be assigned <b>without rounding</b> according to the
+following criteria. It is a 10-point scale per letter grade, with the
+upper and lower 2% of each 10% earning a + or -.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col class="right" /><col class="left" /></colgroup>
+<colgroup><col class="right" /><col class="left" />
+</colgroup>
+<thead>
+<tr><th scope="col" class="right">Percent</th><th scope="col" class="left">Grade</th><th scope="col" class="right">Percent</th><th scope="col" class="left">Grade</th></tr>
+</thead>
+<tbody>
+<tr><td class="right">&gt;=98</td><td class="left">A+</td><td class="right">80-78</td><td class="left">C+</td></tr>
+<tr><td class="right">98-92</td><td class="left">A</td><td class="right">78-72</td><td class="left">C</td></tr>
+<tr><td class="right">92-90</td><td class="left">A-</td><td class="right">72-70</td><td class="left">C-</td></tr>
+<tr><td class="right">90-88</td><td class="left">B+</td><td class="right">70-60</td><td class="left">D</td></tr>
+<tr><td class="right">88-82</td><td class="left">B</td><td class="right">&lt;60</td><td class="left">F</td></tr>
+<tr><td class="right">82-80</td><td class="left">B-</td><td class="right"></td><td class="left"></td></tr>
+</tbody>
+</table>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Contested Grades</h3>
+<div class="outline-text-3" id="text-4-2">
+
+<ul>
+<li>Do not contest a grade immediately and in person when it is handed
+  back. Schedule a meeting outside class with the grader, or send
+  written correspondence requesting feedback and reconsideration.
+</li>
+<li>If you have not initiated contact within a week after receiving a
+  grade, the chance to contest it has closed.
+</li>
+</ul>
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Academic Integrity</h2>
+<div class="outline-text-2" id="text-5">
+
+<p><b>Any attempts at cheating will not be tolerated</b>, and will be turned in
+to the Honor Court with significant penalties recommended. You
+should be familiar with both <a href="http://oai.gmu.edu/honor-code/masons-honor-code/">the honor code at GMU</a> and the further
+details of the <a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/CSHonorCodePolicies">CS Honor Code Policies</a>, but in short you should never
+see, share, or discuss any part of the solution to any graded work -
+from algorithm development to implementation to debugging to test
+cases.  When in doubt, ask your instructor instead of another
+student.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Tests</h2>
+<div class="outline-text-2" id="text-6">
+
+<ul>
+<li><b>Your Mason ID is required</b> for both the tests and final exam.
+</li>
+<li>Missing an exam or quiz results in a zero score and make-up exams
+  will be considered only in situations involving death and near
+  death.  Proof of such circumstances will be required for a make-up
+  to be considered.
+</li>
+<li>Failing the final exam will result in an F in the entire course.
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Additional Policies</h2>
+<div class="outline-text-2" id="text-7">
+
+<p>Students are expected to maintain a high level of civility for all
+participants in and out of class meetings.  This includes respecting
+the beliefs of participants of all genders, ethnicities, and social
+backgrounds.  Harassment of any type will not be tolerated and failure
+to behave in a respectful manner will result in referrals to
+University Counseling or the Office of Student Judicial Affairs.  Any
+instances of sexual harassment will be reported to the Office of Equal
+Opportunity according the following policy:
+<a href="http://universitypolicy.gmu.edu/1202gen.html">http://universitypolicy.gmu.edu/1202gen.html</a>
+</p>
+<p>
+Observance of religious events will be accommodated for students of any
+faith.
+</p>
+<p>
+All possible accommodations will be made for students with
+disabilities.  Please contact Disability Services
+(\url{<a href="http://ods.gmu.edu/">http://ods.gmu.edu/</a>}) and the instructor for further
+information.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Additional Policies for Prof. Kauffman's Sections</h2>
+<div class="outline-text-2" id="text-8">
+
+
+</div>
+
+<div id="outline-container-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> Attendance Policy</h3>
+<div class="outline-text-3" id="text-8-1">
+
+<p><b>Bonus credit</b> will be awarded based on participation in class
+discussions in lecture.  Before each lecture, I will announce a range
+of the alphabet.  Students with last names in that range may elect to
+sit in the first 3 rows of the room and answer questions (hot seats).
+Reasonable effort on answering questions in class will garner class
+participation credit.  Participation points may also be earned for
+involvement in the class discussion board such as giving suggestions
+to students with questions (but not revealing answers wholesale).
+Effort during lab sections generates one participation credit.
+</p>
+<p>
+The highest participation point winner at the end of the semester will
+receive a 3% bonus to their overall score in the course.  All other
+students will receive a bonus proportional to the highest point
+winner.  For example, someone tied with the highest point scorer will
+also receive a 3% bonus while someone with half the participation
+points will receive a 1.5% bonus.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-9" class="outline-2">
+<h2 id="sec-9"><span class="section-number-2">9</span> Additional Policies for Prof. Snyder's Sections</h2>
+<div class="outline-text-2" id="text-9">
+
+
+</div>
+
+<div id="outline-container-9-1" class="outline-3">
+<h3 id="sec-9-1"><span class="section-number-3">9.1</span> Attendance Policy</h3>
+<div class="outline-text-3" id="text-9-1">
+
+<p>Attending both lecture and lab are quite to your benefit - I have no
+reservations including test or exam questions based on materials that
+are only shared in these venues. In lieu of the hot-seat approach to
+extra credit described in Prof. Kauffman's sections, I will include
+extra credit opportunities on my tests/exams that will most likely
+pull from these only-in-class experiences. The same 3% maximum benefit
+will be possible.
+</p>
+
+
+
+<hr/>
+</div>
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: Spring 2013</p>
+<p class="author">Author: George Mason University </p>
+<p class="creator">Org version 7.8.02 with Emacs version 24</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>
