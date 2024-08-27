@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CS 635: Foundations of Parallel Computation</title>
+    <script type="text/javascript" src="/~hrangwal/sites/default/files/js/js_7f97b92a3f70662cff6fd903d3a092d8.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/~hrangwal/" });
+//--><!]]>
+</script>
+    <meta name='robots' content='noindex, nofollow' />
+    <base href='http://www.cs.gmu.edu/~hrangwal/CS635Spring2014' />
+    <link rel='shortcut icon' href='/~hrangwal/sites/all/themes/nitobe/favicon.ico' type='image/x-icon' />
+    <link type="text/css" rel="stylesheet" media="all" href="/~hrangwal/sites/default/files/css/css_b54c3412c970b5702babac4ebbb0bd57.css" />
+<link type="text/css" rel="stylesheet" media="screen" href="/~hrangwal/sites/default/files/css/css_bdacf1a851c8e549d3275d5ea9df912e.css" />
+<link type="text/css" rel="stylesheet" media="print" href="/~hrangwal/sites/default/files/css/css_bdacf1a851c8e549d3275d5ea9df912e.css" />
+  </head>
+  <body>
+        <div class="print-logo"></div>
+    <div class="print-site_name">Published on <em>MLBio+ Laboratory</em> (<a href="http://www.cs.gmu.edu/~hrangwal">http://www.cs.gmu.edu/~hrangwal</a>)</div>
+    <p />
+    <div class="print-breadcrumb"><a href="/~hrangwal/">Home</a> &gt; CS 635: Foundations of Parallel Computation</div>
+    <hr class="print-hr" />
+    <h1 class="print-title">CS 635: Foundations of Parallel Computation</h1>
+    <div class="print-submitted"></div>
+    <div class="print-created"></div>
+    <div class="print-content"><table font size="+2" border="0">
+<caption> <b> Class Information </b> </caption>
+<tr>
+<td> <b> Instructor: </b> </td>
+<td> <a href="http://www.cs.gmu.edu/~hrangwal">Huzefa Rangwala</a> <span class="print-footnote">[1]</span>, Room #4423 Engineering Building, <a href="mailto:rangwala@cs.gmu.edu">rangwala@cs.gmu.edu</a> <span class="print-footnote">[2]</span> </td>
+</tr>
+<tr>
+<td> <b>Time &amp; Location: </b> </td>
+<td> Wed: Robinson Hall A106, 4:30-7:10pm</td>
+</tr>
+<tr>
+<td> <b>Text Book (Required): </b></td>
+<td> Introduction to Parallel Computing (2nd Edition) by Grahma et. al. <a href="http://www.amazon.com/Introduction-Parallel-Computing-2nd-Edition/dp/0201648652"> Book available here. </a> <span class="print-footnote">[3]</span> </td>
+</tr>
+<tr>
+<td> <b>Text Book (Recommended): </b></td>
+<td>
+Programming Massively Parallel Processors, Second Edition: A Hands-on Approach <a href="http://www.amazon.com/Programming-Massively-Parallel-Processors-Second/dp/0124159923/ref=sr_1_5?s=books&amp;ie=UTF8&amp;qid=1386601400&amp;sr=1-5&amp;keywords=GPU+programming"> Book available here </a> <span class="print-footnote">[4]</span> </td>
+</tr>
+<tr>
+<td> <b> Teaching Assistant: </b></td>
+<td> None
+</td>
+</tr>
+<tr>
+<td> <b> Office Hours: </b></td>
+<td>Instructor: Wed 2:00-4:00 pm </td>
+</tr>
+</table>
+<p><font face color ="red"> Please note the syllabus is subject to change to enrich the student's learning experience :). Feel free to email <a href="mailto:rangwala@cs.gmu.edu">rangwala@cs.gmu.edu</a> <span class="print-footnote">[2]</span> for questions, concerns, or even say hi </font></p>
+<table>
+<caption> <b> About the Course </b> </caption>
+<tr>
+<th> Course Description </th></tr>
+<tr>
+<td>
+This course is designed to provide an introduction to the field of parallel computation. Topics chosen for discussion will illustrate architectural, algorithmic, and language requirements for parallel computing and the lectures will emphasize the relationships between these requirements. Parallel algorithm design and analysis as well as parallel programming languages will be examined in the context of specific parallel systems and models. 
+</td>
+</tr>
+<tr>
+<th> Course Prerequisites </th></tr>
+<tr>
+<td> CS 583 &amp; CS 571/CS 540 + Strong proficiency in C programming language. All assignments will require C. 
+</td>
+</tr>
+<tr>
+<th> Course Format </th></tr>
+<tr>
+<td>
+Lectures will be given by the instructor. Besides material from the textbook, topics not discussed in the book may also be covered. Grading will be based on homework assignments and exams. Homework assignments will require a substantial programming effort. Exams and homework assignments must be done on an individual basis unless stated. Any deviation from this policy will be considered a violation of the <a href="http://oai.gmu.edu/honor-code/"> GMU Honor Code </a> <span class="print-footnote">[5]</span>.
+</td>
+</tr>
+<tr>
+<th>Course Outcomes </th></tr>
+<tr>
+<td> As an outcome of taking this class, a student will be able to
+<ul>
+<li> Understand how to design parallel programs and think about concurrency, load balancing and memory issues.</li>
+<li> Understand different architectural designs and programming paradigms </li>
+<li> Be able to write programs in distributed memory architectures using MPI </li>
+<li> Be able to write programs in shared memory architectures using openMP and POSIX Threads </li>
+<li> Understand the GPGPU architecture and write SIMD (SPMD) programs in CUDA. </li>
+</ul>
+</td>
+</tr>
+</table>
+<p>Tentative Topics: </p>
+<ul>
+<li>Parallel architectures and models of computation</li>
+<li>PRAMs, pipelining, data parallel computing</li>
+<li>Parallel language constructs</li>
+<li>Designing parallel algorithms</li>
+<li>Distributed memory message passing </li>
+<li>Shared memory programming--pThreads and/or GPU computing </li>
+</ul>
+<table>
+<caption> <b>Assignments/Exams Grading </b></caption>
+<tr>
+<td> HW 0 </td>
+<td> 0% </td>
+</tr>
+<tr>
+<td> HW 1 </td>
+<td> 10%</td>
+</tr>
+<tr>
+<td> HW 2 </td>
+<td> 10%</td>
+</tr>
+<tr>
+<td> HW 3 </td>
+<td> 15%</td>
+</tr>
+<tr>
+<td> HW 4 </td>
+<td> 10%</td>
+</tr>
+<tr>
+<td> HW 5 </td>
+<td> 15%</td>
+</tr>
+<tr>
+<td> In-Class Quiz (3) </td>
+<td>10% </td>
+</tr>
+<tr>
+<td> Final Exam </td>
+<td>30% </td>
+</tr>
+<tr>
+<td> Class Participation </td>
+<td> 5% </td>
+</tr>
+</table>
+<table>
+<caption> <b>Grade Distribution</b></caption>
+<tr>
+<th> Grade
+<th> Score Range  </th></th></tr>
+<tr>
+<td> A </td>
+<td>  96-100 </td>
+<tr>
+<td> A-</td>
+<td>  92-96 </td>
+<tr>
+<td> B+</td>
+<td>  88-92 </td>
+<tr>
+<td> B</td>
+<td>     84-88 </td>
+<tr>
+<td> B-</td>
+<td>  80-84 </td>
+<tr>
+<td> C+</td>
+<td> 76-80 </td>
+<tr>
+<td> C</td>
+<td>   72-76 </td>
+<tr>
+<td> C-</td>
+<td>  68-72 </td>
+<tr>
+<td> F</td>
+<td>   &lt; 68 </td>
+</tr></tr></tr></tr></tr></tr></tr></tr></tr></table>
+<table>
+<caption> <b> Policies: </b> </caption>
+<tr>
+<th> Attendance </th></tr>
+<tr>
+<td>Attendance is not compulsory but highly recommended for doing well in the class. This class has lots of active learning exercises, and they will be a lot of fun. Extra credit i.e.,  5% grade is devoted to<br />
+active discussions in the classroom and will be possible with attendance..</td>
+</tr>
+<tr>
+<th> Email Communication: </th>
+<tr>
+<td> The best form of communication to the TA and instructor is via email. Please ensure you put "[CS 635]" in the subject header for a timely and quick response.
+</td>
+</tr>
+<tr>
+<th> Assignment Solutions and Exam Solutions </th>
+</tr>
+<tr>
+<td> Exam and HW solutions cannot be made available online to prevent future classes from plagiarism. Copies will be made available <b> only </b> on the day the graded assignments are returned. </td>
+</tr>
+<tr>
+<th>Assignment Submission </th></tr>
+<tr>
+<td>
+Please ensure that the assignments are submitted on-time, before class<br />
+begins (hard-copy and soft-copy). No late submissions.
+</td>
+</tr>
+<tr>
+<th> Make-Up Exams &amp; Incompletes </th></tr>
+<tr>
+<td>
+Make up exams and incomplete grade will not be given for this class.
+</td>
+</tr>
+<tr>
+<th> Late to Class </th>
+</tr>
+<tr>
+<td> Please arrive to class on-time. Coming late to class is disruptive to your fellow class mates. </td>
+</tr>
+<tr>
+<th> Academic Honesty and GMU Honor Code </th></tr>
+<tr>
+<td> Please visit the <a href="http://oai.gmu.edu/honor-code/"> GMU Honor Code </a> <span class="print-footnote">[5]</span> and the <a href="http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage">CS Department Honor Code </a> <span class="print-footnote">[6]</span>. Violating this policy involves getting a failing grade in this class.
+</td>
+</tr>
+<tr>
+<th> Disability Statement </th></tr>
+<tr>
+<td> If you have a documented learning disability or other condition that may affect academic performance you should: 1) make sure this documentation is on file with the Office of Disability Services (SUB I, Rm. 222; 993-2474; <a href="http://ods.gmu.edu/" title="http://ods.gmu.edu/">http://ods.gmu.edu/</a> <span class="print-footnote">[7]</span>) to determine the accommodations you need; and 2) talk with me to discuss your accommodation needs. </td>
+</tr>
+</tr></table>
+</div>
+    <div class="print-taxonomy"></div>
+    <div class="print-footer"></div>
+    <hr class="print-hr" />
+    <div class="print-source_url"><strong>Source URL:</strong> <a href="http://www.cs.gmu.edu/~hrangwal/CS635Spring2014">http://www.cs.gmu.edu/~hrangwal/CS635Spring2014</a></div>
+    <div class="print-links"><p><strong>Links:</strong><br />[1] http://www.cs.gmu.edu/~hrangwal<br />
+[2] mailto:rangwala@cs.gmu.edu<br />
+[3] http://www.amazon.com/Introduction-Parallel-Computing-2nd-Edition/dp/0201648652<br />
+[4] http://www.amazon.com/Programming-Massively-Parallel-Processors-Second/dp/0124159923/ref=sr_1_5?s=books&amp;amp;ie=UTF8&amp;amp;qid=1386601400&amp;amp;sr=1-5&amp;amp;keywords=GPU programming<br />
+[5] http://oai.gmu.edu/honor-code/<br />
+[6] http://cs.gmu.edu/wiki/pmwiki.php/HonorCode/HomePage<br />
+[7] http://ods.gmu.edu/<br />
+</p></div>
+  </body>
+</html>
