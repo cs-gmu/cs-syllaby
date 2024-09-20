@@ -309,27 +309,18 @@
 </tr>
 </tbody>
 </table>
-<p>And in the markdown file has this format.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Number</strong></th>
-<th><strong>Section(s)</strong></th>
-<th><strong>Name</strong></th>
-<th><strong>Instructor</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <ol>
-<li>Download <code>Apps/Microsoft Forms/CS SYLLABUS/Questions</code> folder on <a href="https://gmuedu.sharepoint.com/sites/CSWEBSITE-GRP/Shared%20Documents/Forms/AllItems.aspx">CS Website Sharepoint</a> after collecting all the files.</li>
+<li>Download <code>Apps/Microsoft Forms/CS SYLLABUS/Questions</code> folder on <a href="https://gmuedu.sharepoint.com/sites/CSWEBSITE-GRP/Shared%20Documents/Forms/AllItems.aspx">CS Website Sharepoint</a> after collecting all the files. Store the folder in <code>docs\pdf_html</code>, and name the folder with the semester name. For example, <code>Spring 2025</code>. </li>
+</ol>
+<p><img alt="pdf_html" src="../image/pdf_html.png" /></p>
+<ol>
+<li>Create a <code>.md</code> file in <code>Markdown</code> for the specific semester. Copy the content from template file from <code>docs/Markdown/</code>to the new <code>.md</code> file. For example, create a <code>Spring2025.md</code> file and paste this code below to the new file.</li>
+</ol>
+<pre><code>| **Number** | **Section(s)** | **Name** | **Instructor** |
+|------------|----------------|----------|----------------|
+</code></pre>
+<ol>
+<li>Run <code>docs/write_file.py</code>.</li>
 </ol>
 
 
